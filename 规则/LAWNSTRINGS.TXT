@@ -1387,7 +1387,6 @@ Bonus: {SCORE}
 [CREDITS_PVZ_TITLE]
 植物大战僵尸2
 奇妙时空之旅
-来自宝开
 
 [CREDTIS_CHINA_PRODUCER]
 制作人
@@ -1395,11 +1394,11 @@ Bonus: {SCORE}
 [CREDTIS_CHINA_DEVELOPER]
 发行总监
 
-[CREDTIS_CHINA_GOUDAN]
-开发总监
+[CREDTIS_CHINA_ASSOCIATEPRODUCER]
+助理制作人
 
 [CREDTIS_CHINA_MANAGER]
-高级产品经理
+产品总监
 
 [CREDTIS_CHINA_PM]
 运营总监
@@ -1408,13 +1407,19 @@ Bonus: {SCORE}
 产品运营
 
 [CREDTIS_CHINA_DESIGNER]
-游戏设计
+游戏策划
 
 [CREDTIS_CHINA_TD]
-技术总监
+客户端技术总监
 
 [CREDTIS_CHINA_ENGINEER]
-游戏软件工程师
+客户端工程师
+
+[CREDTIS_CHINA_SERVERDEVELOPMENTDIRECTOR]
+服务器开发总监
+
+[CREDTIS_CHINA_SERVERENGINEER]
+服务器工程师
 
 [CREDTIS_CHINA_LEAD_ARTIST]
 美术经理
@@ -1427,6 +1432,9 @@ Bonus: {SCORE}
 
 [CREDTIS_CHINA_QA]
 品质保证
+
+[CREDTIS_CHINA_MT_MANAGER]
+市场总监
 
 [CREDTIS_CHINA_BN_MANAGER]
 商务总监
@@ -1864,6 +1872,32 @@ x {NUMBER}
 [RANK_AVATAR_CONTENT_TITLE_61068]
 千里共婵娟
 
+[rank_avatar_diy_72]
+罗马冲锋
+
+[RANK_AVATAR_CONTENT_CONTENT_61069]
+时空裂缝限定奖励
+
+[RANK_AVATAR_CONTENT_TITLE_61069]
+罗马冲锋
+
+[rank_avatar_diy_73]
+战阵突围
+
+[RANK_AVATAR_CONTENT_CONTENT_61070]
+双人对决第49赛季宗师段位奖励
+
+[RANK_AVATAR_CONTENT_TITLE_61070]
+战阵突围
+
+[rank_avatar_diy_74]
+丰饶秋收季
+
+[RANK_AVATAR_CONTENT_CONTENT_61071]
+2026年参加十月同游活动的玩家奖励
+
+[RANK_AVATAR_CONTENT_TITLE_61071]
+丰饶秋收季
 
 [rank_avatar_diy_60]
 春意看花
@@ -2800,6 +2834,12 @@ FACEBOOK
 
 [START_GAME_BUTTON]
 开始游戏
+
+[START_GAME_BUTTON_OFFSKIPNEXT]
+直接开始
+
+[START_GAME_BUTTON_ONSKIPNEXT]
+关闭并开始
 
 [CHOOSER_RESET_BUTTON]
 清空卡槽
@@ -4995,6 +5035,9 @@ Chinese_China
 [SEED_CHOOSER_WARNING_TITLE]
 提示
 
+[SEED_CHOOSER_WARNING_PVZ1SKIPNEXTWAVE]
+检测到「自动刷新下一波」功能已开启，该功能会加快僵尸出现频率，关卡难度将有所提升。是否关闭此功能后再开始？
+
 [SEED_CHOOSER_SKY_CITY_PLANT_SURVIVE_WARNING]
 本关星级条件需要使用空中植物，确定不使用任何空中植物挑战本关么？
 
@@ -5018,6 +5061,12 @@ Chinese_China
 
 [SETTINGS_DEFINEID_TITLE]
 用户ID
+
+[SETTINGS_SECOND_LOCK_TITLE]
+二级密码管理
+
+[SECOND_LOCK_VERIFY_FAILED]
+输错5次密码，24小时后可重试。
 
 [SETTINGS_DATASHARING_DISABLE]
 关闭使用共享
@@ -6268,7 +6317,7 @@ http://pvztmall.popcap.com.cn
 不再提醒
 
 [STARCHALLENGE_PROTECT_PLANT]
-保卫场上初始存在的植物不被僵尸吃掉
+保卫场上初始存在的植物
 
 [STARCHALLENGE_PROTECT_PLANT_NAME]
 种子保卫战
@@ -7066,6 +7115,12 @@ X型
 
 [WARNING_BLACK_HOLE_TIP]
 黑洞要吸植物了！
+
+[WARNING_GRAVITY_GENERATOR_ANTI]
+反重力场即将生效！
+
+[WARNING_GRAVITY_GENERATOR_HEAVY]
+超重力场即将生效！
 
 [WELCOME_USER_NAME_2]
 你好，%s!
@@ -9036,6 +9091,9 @@ X型
 [UPGRADE_MOWER_17_INFO]
 得到月球基地简单难度的小推车，可以抵挡一次僵尸对房子的进攻。
 
+[UPGRADE_MOWER_18_INFO]
+得到罗马秘境简单难度的小推车，可以抵挡一次僵尸对房子的进攻。
+
 [UPGRADE_TREASURE_YETI]
 解锁宝藏雪人
 
@@ -10716,6 +10774,39 @@ UC至尊大礼包
 
 [SUMMARY_USE_OLDER_DATA_BODY]
 您将用一个旧的进度覆盖一个新的进度，您确定要这么做么？
+
+[SUMMARY_MIGRATION_CONFIRM_HEADER]
+请确认最终存档
+
+[SUMMARY_ALMANAC_UNLOCK_COUNT]
+图鉴解锁
+
+[SUMMARY_ALMANAC_AMOUNT]
+{ALMANAC_COUNT}种
+
+[SUMMARY_MAIN_WORLD_STAR_COUNT]
+主线星星
+
+[SUMMARY_RECENT_LEVEL]
+最近关卡
+
+[SUMMARY_FULL_STAR_WORLD_COUNT]
+满星世界数量
+
+[SUMMARY_MIGRATION_LOCAL_BODY]
+即将使用本地存档进入游戏。确认后，该存档将成为今后默认使用的存档。
+
+[SUMMARY_MIGRATION_CLOUD_BODY]
+即将使用云端存档进入游戏。确认后，该存档将成为今后默认使用的存档。
+
+[SUMMARY_MIGRATION_OLDER_HEADER]
+未选择最新存档
+
+[SUMMARY_MIGRATION_OLDER_LOCAL_BODY]
+即将使用本地存档进入游戏。^FF0000 该存档可能不是最新存档 ^oldclr，确认后将成为今后默认使用的存档，且不再提示选择。是否继续？
+
+[SUMMARY_MIGRATION_OLDER_CLOUD_BODY]
+即将使用云端存档进入游戏。^FF0000 该存档可能不是最新存档 ^oldclr，确认后将成为今后默认使用的存档，且不再提示选择。是否继续？
 
 [SUMMARY_TITLE]
 本地和云端的进度不同
@@ -15944,6 +16035,12 @@ Z公司技术支持僵尸从天而降，随后扔出可以爆炸的电脑
 
 [PEANUT_SKILL1_LEVEL2_DES]
 使齐射的概率提高100%。
+
+[PEANUT_SKILL1_LEVEL5]
+愤怒引擎
+
+[PEANUT_SKILL1_LEVEL5_DES]
+周围其他五阶植物数量越多，花生射手的子弹产生的爆炸伤害越高，攻速也越快
 
 [MAGNETSHROOM_SKILL1_LEVEL1]
 强力磁场
@@ -25695,6 +25792,9 @@ x {SPEED}
 [SUPER_BOSS_COMING_SOON]
 通关本世界所有困难关卡后开启
 
+[SUPER_BOSS_COMING_SOON_MOON]
+通关本世界所有专家关卡后开启
+
 [PVP_UPDATE_NOTICE_TEXT]
 我们调整了花园战争地图的结构。现在您可以同时在
 地图上搜索玩家和抢夺资源点了。但是，结构变化也
@@ -25773,6 +25873,9 @@ x {SPEED}
 
 [KILL_ALL_ZOMBIE_MOON]
 采集晶矿种植植物，抵挡僵尸入侵
+
+[KILL_ALL_ZOMBIE_MOON_MINIGAME]
+操控钩爪抓取太空物品，达到分数后通关
 
 [EVIL_DAVID_CHALLENGE_FINISH]
 您已打败邪恶戴夫。
@@ -26218,13 +26321,22 @@ x {SPEED}
 这是个头像
 
 [PVZ_ERROR_76113]
-已存在进行中的支付订单
+已存在进行中订单，请退出重进领取
+
+[PVZ_ERROR_76114]
+您有一笔幻彩定制订单尚未完成，请退出游戏重进，待奖励到账后再购买
+
+[PVZ_ERROR_76127]
+数据未刷新，请退出后重进活动
 
 [PVZ_ERROR_20017]
 服务器繁忙，请稍后再试
 
 [PVZ_ERROR_20711]
 敏感词汇
+
+[PVZ_ERROR_20730]
+进阶碎片不够
 
 [PVZ_ERROR_21508]
 剩余次数已满，无法购买
@@ -37015,6 +37127,9 @@ SDK初始化失败
 [PLANTING_NOT_ON_OBSTACLE]
 不能把植物种在冰地上
 
+[PLANTING_NOT_ON_GLADIATOR_TROPHY]
+不能种在奖杯上
+
 [PLANTING_NOT_ON_COAL_TRUCK]
 你不能把植物种在煤矿车上
 
@@ -42704,6 +42819,72 @@ SDK初始化失败
 [BUBBLECORAL_AVATAR_PLANTFOOD_DESCRIPTION]
 大招产生更多的泡泡
 
+[NAGASALAK]
+娜迦蛇皮果
+
+[NAGASALAK_DESCRIPTION]
+{KEYWORD}范围：{STAT}整行
+{KEYWORD}特点：{STAT}水龙卷穿透攻击，造成冻结效果
+{KEYWORD}植物特征：{STAT}绿色植物
+{FLAVOR}"感受深海的力量吧！"娜迦蛇皮果甩动蛇尾，卷起水龙卷席卷前方所有敌人。
+
+[NAGASALAK_DESCRIPTION_HEADER]
+甩动蛇尾卷起水龙卷前进，对前方僵尸造成持续伤害和冻结效果
+
+[NAGASALAK_TOOLTIP]
+甩动蛇尾卷起水龙卷前进，对前方僵尸造成持续伤害和冻结效果
+
+[NAGASALAK_PRODUCT_SHORT_DESC]
+甩动蛇尾卷起水龙卷前进，对前方僵尸造成持续伤害和冻结效果
+
+[NAGASALAK_SKILL_LEVEL1]
+娜迦水旋
+
+[NAGASALAK_SKILL_LEVEL1_DES]
+水龙卷会穿透所有目标，未接触僵尸时移速为1秒2格、接触到僵尸时降低为1秒1格，接触僵尸期间每0.5秒造成140点伤害，且每次造成伤害都会造成冻结0.5秒。
+
+[NAGASALAK_SKILL_LEVEL2]
+娜迦回旋
+
+[NAGASALAK_SKILL_LEVEL2_DES]
+水龙卷会穿透所有目标，未接触僵尸时移速为1秒2格、接触到僵尸时降低为1秒1格，接触僵尸期间每0.3秒造成210点伤害，且每次造成伤害都会造成冻结0.5秒。
+
+[NAGASALAK_SKILL_LEVEL5]
+水神之怒
+
+[NAGASALAK_SKILL_LEVEL5_DES]
+普攻有60%概率甩出双水龙卷，双水龙卷同样会穿透所有目标，以超高频率造成420点伤害，且每次造成伤害都会造成冻结0.5秒。
+
+[NAGASALAK_AVATAR_NAME]
+娜迦蛇皮果装扮
+
+[STORE_PRODUCT_AVATAR_NAGASALAK]
+漩涡随机包含海洋生物一起旋转
+
+[STORE_PRODUCT_AVATAR_NAGASALAK_TITLE]
+娜迦蛇皮果装扮
+
+[NAGASALAK_NEW_SKILL_LEVEL1_DES]
+娜迦蛇皮果甩动蛇尾卷起水龙卷前进，水龙卷会穿透所有目标，接触僵尸时造成伤害和冻结效果。
+
+[NAGASALAK_NEW_SKILL_LEVEL2_DES]
+水龙卷接触僵尸期间每0.4秒造成210点伤害，且每次造成伤害都会造成冻结0.5秒。
+
+[NAGASALAK_NEW_SKILL_LEVEL3_DES]
+水龙卷接触僵尸期间每0.3秒造成280点伤害，且每次造成伤害都会造成冻结0.5秒。
+
+[NAGASALAK_NEW_SKILL_LEVEL4_DES]
+种植时有中概率直接释放能量豆大招
+
+[NAGASALAK_NEW_SKILL_LEVEL5_DES]
+普攻有60%概率甩出双水龙卷，每0.15秒造成420点伤害，且每次造成伤害都会造成冻结0.5秒。
+
+[NAGASALAK_PLANTFOOD_DESCRIPTION]
+自身周围出现水流，形成水球后飞向最近僵尸，破开形成巨大漩涡将僵尸向中心聚拢，中小体型僵尸被秒杀。
+
+[NAGASALAK_AVATAR_PLANTFOOD_DESCRIPTION]
+漩涡随机包含海洋生物一起旋转
+
 [PAPHIOPEDILUM]
 百宝兜兰
 
@@ -43096,70 +43277,70 @@ SDK初始化失败
 [GRAVITREE_AVATAR_PLANTFOOD_DESCRIPTION]
 攻击发动时，额外在自身所在格砸下一颗巨型苹果，苹果爆炸对3X3范围造成伤害
 
-[DARKMATTER_DRAGONFRUIT]
+[DMDRAGONFRUIT]
 暗物质火龙果
 
-[DARKMATTER_DRAGONFRUIT_DESCRIPTION]
+[DMDRAGONFRUIT_DESCRIPTION]
 {KEYWORD}范围：{STAT}单行
 {KEYWORD}植物特征：{STAT}红色植物、宇宙家族
 {FLAVOR}他们的祖先被追杀至太空深处。如今，后代归来，只为一场冰凉的果味复仇
 
-[DARKMATTER_DRAGONFRUIT_DESCRIPTION_HEADER]
+[DMDRAGONFRUIT_DESCRIPTION_HEADER]
 吐出暗物质火焰弹攻击，对命中的僵尸造成宇宙属性伤害，并施加量子状态。量子状态下法师类僵尸施法速度变慢3倍，平射子弹命中量子状态的僵尸后不会销毁，造成伤害并触发该子弹的命中效果
 
-[DARKMATTER_DRAGONFRUIT_TOOLTIP]
+[DMDRAGONFRUIT_TOOLTIP]
 吐出暗物质火焰弹攻击造成宇宙属性伤害，并施加量子状态。
 
-[DARKMATTER_DRAGONFRUIT_PRODUCT_SHORT_DESC]
+[DMDRAGONFRUIT_PRODUCT_SHORT_DESC]
 吐出暗物质火焰弹攻击，对命中的僵尸造成宇宙属性伤害，并施加量子状态。量子状态下法师类僵尸施法速度变慢3倍，平射子弹命中量子状态的僵尸后不会销毁，造成伤害并触发该子弹的命中效果
 
-[DARKMATTER_DRAGONFRUIT_SKILL_LEVEL1]
+[DMDRAGONFRUIT_SKILL_LEVEL1]
 能量掌控
 
-[DARKMATTER_DRAGONFRUIT_SKILL_LEVEL1_DES]
+[DMDRAGONFRUIT_SKILL_LEVEL1_DES]
 火焰弹命中目标后会向目标身后产生一格范围爆炸，对范围内的僵尸造成宇宙伤害并施加量子状态
 
-[DARKMATTER_DRAGONFRUIT_SKILL_LEVEL2]
+[DMDRAGONFRUIT_SKILL_LEVEL2]
 能量驾驭
 
-[DARKMATTER_DRAGONFRUIT_SKILL_LEVEL2_DES]
+[DMDRAGONFRUIT_SKILL_LEVEL2_DES]
 火焰弹爆炸范围增加至扇形范围，对范围内的僵尸造成宇宙伤害并施加量子状态
 
-[DARKMATTER_DRAGONFRUIT_SKILL_LEVEL5]
+[DMDRAGONFRUIT_SKILL_LEVEL5]
 湮灭龙息
 
-[DARKMATTER_DRAGONFRUIT_SKILL_LEVEL5_DES]
-有30%概率吐出坍缩弹,命中湮灭（秒杀）命中的第一个僵尸（除精英、boss类僵尸）后子弹变为普通攻击子弹。使用能量豆大招后，下次触发普通攻击时必定吐出坍缩弹
+[DMDRAGONFRUIT_SKILL_LEVEL5_DES]
+攻击时有30%概率吐出坍缩弹。坍缩弹命中首个僵尸后，湮灭其所在格内所有非精英、非Boss僵尸，随后转化为普通攻击子弹继续飞行。释放能量豆大招后，下一次普通攻击必定吐出坍缩弹。
 
-[DARKMATTER_DRAGONFRUIT_AVATAR_NAME]
+[DMDRAGONFRUIT_AVATAR_NAME]
 暗物质火龙果装扮
 
-[STORE_PRODUCT_AVATAR_DARKMATTER_DRAGONFRUIT]
+[STORE_PRODUCT_AVATAR_DMDRAGONFRUIT]
 吐息次数增加至5次
 
-[STORE_PRODUCT_AVATAR_DARKMATTER_DRAGONFRUIT_TITLE]
+[STORE_PRODUCT_AVATAR_DMDRAGONFRUIT_TITLE]
 暗物质火龙果装扮
 
-[DARKMATTER_DRAGONFRUIT_NEW_SKILL_LEVEL1_DES]
+[DMDRAGONFRUIT_NEW_SKILL_LEVEL1_DES]
 吐出暗物质火焰弹攻击，对命中的僵尸造成宇宙属性伤害，并施加量子状态。
 量子状态：法师类僵尸施法速度变慢3倍，平射子弹命中量子状态的僵尸后穿透不消失，正常造成伤害并触发该子弹的命中效果
 
-[DARKMATTER_DRAGONFRUIT_NEW_SKILL_LEVEL2_DES]
+[DMDRAGONFRUIT_NEW_SKILL_LEVEL2_DES]
 火焰弹命中目标后会向目标身后产生一格范围爆炸，对范围内的僵尸造成宇宙伤害并施加量子状态
 
-[DARKMATTER_DRAGONFRUIT_NEW_SKILL_LEVEL3_DES]
+[DMDRAGONFRUIT_NEW_SKILL_LEVEL3_DES]
 火焰弹爆炸范围增加至扇形范围，对范围内的僵尸造成宇宙伤害并施加量子状态
 
-[DARKMATTER_DRAGONFRUIT_NEW_SKILL_LEVEL4_DES]
+[DMDRAGONFRUIT_NEW_SKILL_LEVEL4_DES]
 种植时有低概率直接释放能量豆大招
 
-[DARKMATTER_DRAGONFRUIT_NEW_SKILL_LEVEL5_DES]
-有30%概率吐出坍缩弹,命中湮灭（秒杀）命中的第一个僵尸（除精英、boss类僵尸）后子弹变为普通攻击子弹。使用能量豆大招后，下次触发普通攻击时必定吐出坍缩弹
+[DMDRAGONFRUIT_NEW_SKILL_LEVEL5_DES]
+攻击时有30%概率吐出坍缩弹。坍缩弹命中首个僵尸后，湮灭其所在格内所有非精英、非Boss僵尸，随后转化为普通攻击子弹继续飞行。释放能量豆大招后，下一次普通攻击必定吐出坍缩弹。
 
-[DARKMATTER_DRAGONFRUIT_PLANTFOOD_DESCRIPTION]
+[DMDRAGONFRUIT_PLANTFOOD_DESCRIPTION]
 暗物质火龙果召唤巨龙，，向场上随机 3 个僵尸位置各吐出一枚巨型暗物质弹，对落点5×5范围内的僵尸造成 1500 点伤害并施加量子状态。
 
-[DARKMATTER_DRAGONFRUIT_AVATAR_PLANTFOOD_DESCRIPTION]
+[DMDRAGONFRUIT_AVATAR_PLANTFOOD_DESCRIPTION]
 巨龙吐息次数增加至5次
 
 [COSMICNUT]
@@ -49612,7 +49793,7 @@ Your current streak:
 挑战僵博概率公示
 
 [BOSSCHALLENGE_LEGENDPLANTS_PIECE]
-凤凰木花车植物碎片
+阳光韭菜植物碎片
 
 [BOSSCHALLENGE_EPICPLANTS_PIECE]
 其余紫色植物碎片
@@ -52179,6 +52360,18 @@ X{NUM}刷新
 [GENE_DESCRIPTION_RHEUMNOBILE]
 大招有{Param_1}%概率额外吸收2只僵尸。
 
+[GENE_DESCRIPTION_OAKSHOOTER]
+攻击力提升{Param_1}%。
+
+[GENE_DESCRIPTION_OXYGENALGAE]
+2、3 阶的攻击力强化效果提升{Param_1}%。
+
+[GENE_DESCRIPTION_PASSIONFLOWER]
+所有齿轮持续时间增加{Param_1}%。
+
+[GENE_DESCRIPTION_HOYACORDATA]
+安可概率增加{Param_1}%。
+
 [BATTLE_ORDER_AUTUMN]
 金秋出游
 
@@ -52372,7 +52565,7 @@ X{NUM}刷新
 花盆和稀有挂件碎片:加速花盆、聚光花盆、太阳能花盆、小黄鸭游泳圈、节能罐
 超级挂件1:牛仔手套、月亮锅盔、节能电池、白蜡烛、公主冰冠
 超级挂件2:金属弹弓、大爆竹、加速时钟、警用电击棍、止疼剂
-7.五十级后可获得橙色植物^FF8000^枫影剑客^oldclr^碎片。
+7.五十级后可获得橙色植物^FF8000^寒霜白毛丹^oldclr^碎片。
 
 [BATTLE_ORDER_DESCRIPTION_WINTER]
 活动规则:
@@ -53489,7 +53682,7 @@ X{NUM}刷新
 植物培育计划
 
 [PLANT_CULTIVATE_CONFIRM_SELECT]
-确认选择{NAME}么?
+确认选择{NAME}么?^FF0000^选择后将不再支持更换，请慎重选择！^oldclr^
 
 [PLANT_CULTIVATE_SHORT_DESCRIPTION]
 参加植物培育计划，稀有植物碎片等您来领
@@ -53564,7 +53757,7 @@ X{NUM}刷新
 植物培育计划活动说明
 
 [PLANT_CULTIVATE_DESCRIPTION]
-1.本次活动持续时间为8月28日-9月10日，共14天
+1.本次活动持续时间为10月1日-10月14日，共14天
 2.活动开始后，玩家可以在培育植物列表中选择一个，获取该植物的五阶限时体验14天，并解锁培育任务
 3.选择培育植物后，不可再次换，请谨慎选择
 4.玩家完成培育任务会获得成长值，当成长值积满时，可以获得永久该植物碎片*10及伴生装扮。
@@ -55192,6 +55385,26 @@ K、神器材料礼包：购买礼包获得^FF0000^ 时空能量罐*20^oldclr^�
 
 [NEW_AVATAR_EFFECT]
 装扮效果
+[PLANT_AVATAR_EFFECT_BUTTON_ON]
+装扮效果:开
+[PLANT_AVATAR_EFFECT_BUTTON_OFF]
+装扮效果:关
+[PLANT_AVATAR_EFFECT_BUTTON_DISABLED]
+装扮效果
+[PLANT_AVATAR_EFFECT_DIALOG_TITLE]
+装扮效果是否启用
+[PLANT_AVATAR_EFFECT_OPEN]
+开
+[PLANT_AVATAR_EFFECT_CLOSE]
+关
+[PLANT_AVATAR_EFFECT_CANCEL]
+取消
+[PLANT_AVATAR_EFFECT_CONFIRM]
+确定
+[PLANT_AVATAR_EFFECT_INFO]
+开启装扮效果：装扮效果正常生效\n关闭装扮效果：装扮效果失效，但是装扮外形正常显示
+[PLANT_AVATAR_EFFECT_DISABLED_NOTICE]
+装扮效果关闭
 
 [NEW_AVATAR_WEAR]
 穿戴
@@ -56488,7 +56701,7 @@ K、神器材料礼包：购买礼包获得^FF0000^ 时空能量罐*20^oldclr^�
 月光花周年庆装扮
 
 [NEW_AVATAR_DESCRIPTION_MOONFLOWER_1]
-阳光产出间隔缩短5秒
+阳光生产速度加成15%
 
 [NEW_AVATAR_SHORT_DESCRIPTION_PUFFSHROOM_1]
 小喷菇周年庆装扮
@@ -62268,10 +62481,10 @@ Z联赛结算奖励
 {FLAVOR}扔下盾牌，抵挡伤害。
 
 [ZOMBIE_FAIRY_TALE_GARGANTUAR_DESCRIPTION_HEADER]
-红皇后小鬼僵尸的贴身近卫，手持重盾，能力出众。
+手持重盾，能力出众。
 
 [ZOMBIE_FAIRY_TALE_ARMED_GARGANTUAR]
-近卫巨人僵尸
+皇室近卫巨人僵尸
 
 [ZOMBIE_FAIRY_TALE_ARMED_GARGANTUAR_DESCRIPTION]
 {KEYWORD}特点：{STAT}强大的减伤能力，手中的盾牌在死亡时会掉落！！
@@ -62740,17 +62953,32 @@ Z联赛结算奖励
 [ZOMBIE_CHILDREN_TOCAR]
 玩具车僵尸
 
+[ZOMBIE_CHILDREN_TOCAR_DESCRIPTION]
+玩具车小鬼僵尸喜欢冒险，他总是吹嘘这辆玩具车已经陪伴它数载，大概是一年两个月零三天
+
 [ZOMBIE_CHILDREN_TOYGUN]
-玩具枪小鬼僵尸
+泡泡枪小鬼僵尸
+
+[ZOMBIE_CHILDREN_TOCAR_DESCRIPTION]
+这个泡泡枪的调制溶液中，加入了僵尸博士最新发明的强力黏合剂，使泡泡变得非常坚硬
 
 [ZOMBIE_CHILDREN_LOLIPOPS]
 棒棒糖僵尸
 
+[ZOMBIE_CHILDREN_LOLIPOPS_DESCRIPTION]
+舔到糖果的时候，有那么一瞬间，棒棒糖僵尸甚至放弃了对脑子的追求，在激烈的思想斗争后，他果断扔掉了手中的棒棒糖，又掏出了另外一根
+
 [ZOMBIE_CHILDREN_BALLON]
-气球书包僵尸
+儿童节气球小鬼僵尸
+
+[ZOMBIE_CHILDREN_BALLON_DESCRIPTION]
+气球小鬼僵尸并不喜欢这么漂着，但他找不到帮他把气球取下来的僵尸
 
 [ZOMBIE_CHILDREN_SCHOOLBAG]
-书包僵尸
+儿童节小鬼
+
+[ZOMBIE_CHILDREN_SCHOOLBAG_DESCRIPTION]
+儿童节小鬼僵尸购买了“小僵僵乐园”的一整年套票，可他忘了这个乐园一年只开一次
 
 [ZOMBIE_CHILDRENSDAY]
 儿童节普通僵尸
@@ -62871,6 +63099,14 @@ Z联赛结算奖励
 [ZOMBIE_ZOMBIE_SUPERNOVA_GARGANTUAR_DESCRIPTION_HEADER]
 超新星巨人僵尸每次攻击击杀植物时，会将其拓印在权杖上，随后释放黑洞将场上所有同名的植物全部秒杀。
 
+[ZOMBIE_LUNAR_RADIATION_GARGANTUAR]
+宇宙辐射巨人僵尸
+
+[ZOMBIE_LUNAR_RADIATION_GARGANTUAR_DESCRIPTION]
+辐射之前，他只是个普通僵尸。辐射之后，他长出了惊人的肌肉，还学会了徒手拆墙。幸好他的衣服与他一起进化了，不至于只穿一条裤子。
+
+[ZOMBIE_LUNAR_RADIATION_GARGANTUAR_DESCRIPTION_HEADER]
+突变增强了肉体，死亡时发生尸爆，辐射周围的植物与僵尸。
 
 [ZOMBIE_PARKOUR]
 保安普通僵尸
@@ -63546,6 +63782,12 @@ Z公司征服者
 [UNCHARTED_NO42_HEAD_DES_ID_10001]
 完美通关41号平行宇宙的证明
 
+[UNCHARTED_ROMAN_HEAD_ID_25940]
+罗马荣光征服者
+
+[UNCHARTED_ROMAN_HEAD_DES_ID_25940]
+完美通关罗马荣光的证明
+
 [ANNIVERSARY_10TH_HEAD_ID_25388]
 大吃一顿
 
@@ -63850,6 +64092,12 @@ Z公司征服者
 星际来客
 
 [LEVEL_EDITOR_HEAD_DES_ID_25919]
+幻彩定制活动限定头像
+
+[LEVEL_EDITOR_HEAD_ID_25944]
+炎夏冰瓜
+
+[LEVEL_EDITOR_HEAD_DES_ID_25944]
 幻彩定制活动限定头像
 
 [UNCHARTED_CHILDRENSDAY_ID_25547]
@@ -69384,6 +69632,87 @@ pH值大危机-第8天
 [S32_MEMORY_LEVEL_NAME_040]
 枫落秋原-第8天
 
+[S32_MEMORY_LEVEL_NAME_041]
+戴夫的荒地大开拓-第1天
+
+[S32_MEMORY_LEVEL_NAME_042]
+戴夫的荒地大开拓-第2天
+
+[S32_MEMORY_LEVEL_NAME_043]
+戴夫的荒地大开拓-第3天
+
+[S32_MEMORY_LEVEL_NAME_044]
+戴夫的荒地大开拓-第4天
+
+[S32_MEMORY_LEVEL_NAME_045]
+戴夫的荒地大开拓-第5天
+
+[S32_MEMORY_LEVEL_NAME_046]
+戴夫的荒地大开拓-第6天
+
+[S32_MEMORY_LEVEL_NAME_047]
+戴夫的荒地大开拓-第7天
+
+[S32_MEMORY_LEVEL_NAME_048]
+戴夫的荒地大开拓-第8天
+
+[S32_MEMORY_LEVEL_NAME_049]
+秋高气爽-第1天
+
+[S32_MEMORY_LEVEL_NAME_050]
+秋高气爽-第2天
+
+[S32_MEMORY_LEVEL_NAME_051]
+秋高气爽-第3天
+
+[S32_MEMORY_LEVEL_NAME_052]
+秋高气爽-第4天
+
+[S32_MEMORY_LEVEL_NAME_053]
+秋高气爽-第5天
+
+[S32_MEMORY_LEVEL_NAME_054]
+秋高气爽-第6天
+
+[S32_MEMORY_LEVEL_NAME_055]
+秋高气爽-第7天
+
+[S32_MEMORY_LEVEL_NAME_056]
+秋高气爽-第8天
+
+[S32_MEMORY_LEVEL_NAME_057]
+探月之行-第1天
+
+[S32_MEMORY_LEVEL_NAME_058]
+探月之行-第2天
+
+[S32_MEMORY_LEVEL_NAME_059]
+探月之行-第3天
+
+[S32_MEMORY_LEVEL_NAME_060]
+探月之行-第4天
+
+[S32_MEMORY_LEVEL_NAME_061]
+探月之行-第5天
+
+[S32_MEMORY_LEVEL_NAME_062]
+探月之行-第6天
+
+[S32_MEMORY_LEVEL_NAME_063]
+探月之行-第7天
+
+[S32_MEMORY_LEVEL_NAME_064]
+探月之行-第8天
+
+[S32_MEMORY_LEVEL_NAME_BOSS_6]
+荒原飞掠者
+
+[S32_MEMORY_LEVEL_NAME_BOSS_7]
+秃鹫裂空者
+
+[S32_MEMORY_LEVEL_NAME_BOSS_8]
+探月旅行者
+
 [S32_MEMORY_LEVEL_NAME_1]
 猛虎下山
 
@@ -71149,7 +71478,7 @@ Z公司支援！
 1、开启时间
 	
 [ANNIVERSARY_KEY_INFO_TEXT_2]
-本次秘境的时间为8月30号至9月20号。
+本次秘境的时间为8月28号至9月20号。
 
 [ANNIVERSARY_KEY_INFO_TEXT_3]
 2、关卡解锁
@@ -71386,6 +71715,31 @@ z公司僵尸大收购行动开始！还会有新机制出现！
 4、任务奖励
 
 [ANNIVERSARY_KEY_INFO_TEXT_8_UNCHARTED_CHILDRENSDAY_2026]
+每关的奖励不可重复获得
+
+
+[ANNIVERSARY_KEY_INFO_TEXT_1_UNCHARTED_ROMA]
+1、开启条件
+
+[ANNIVERSARY_KEY_INFO_TEXT_2_UNCHARTED_ROMA]
+普通关卡在秘境开启后全部开放，困难难度每天解锁两关。
+
+[ANNIVERSARY_KEY_INFO_TEXT_3_UNCHARTED_ROMA]
+2、关卡内容
+
+[ANNIVERSARY_KEY_INFO_TEXT_4_UNCHARTED_ROMA]
+普通关卡僵尸阶数为3阶，困难关卡僵尸阶数随任务选择变动
+
+[ANNIVERSARY_KEY_INFO_TEXT_5_UNCHARTED_ROMA]
+3、任务说明
+
+[ANNIVERSARY_KEY_INFO_TEXT_6_UNCHARTED_ROMA]
+每关都有指定任务，完成后可获得奖励。
+
+[ANNIVERSARY_KEY_INFO_TEXT_7_UNCHARTED_ROMA]
+4、任务奖励
+
+[ANNIVERSARY_KEY_INFO_TEXT_8_UNCHARTED_ROMA]
 每关的奖励不可重复获得
 
 
@@ -73251,7 +73605,7 @@ ca=大招能用金箍棒把僵尸砸进地里|提升大招高能激光的伤害|
 [BIND_UNIQUE_ID_DESC]
 1.绑定设备可以将您的渠道账号、设备以及存档进行绑定
 2.当您在新设备上使用相同渠道账号登录时，只有先绑定设备才能继续存档
-3.绑定设备后需要12小时后才能重新绑定其他设备
+3.绑定设备后需要1小时后才能重新绑定其他设备
 4.恢复出厂设置、格式化、刷机等深度清理操作会定义为新设备
 5.每个账号允许绑定多台设备
 
@@ -73265,7 +73619,7 @@ ca=大招能用金箍棒把僵尸砸进地里|提升大招高能激光的伤害|
 绑定
 
 [PVZ_ERROR_20320]
-绑定后需要12小时后才能绑定其他设备
+绑定后需要1小时后才能绑定其他设备
 
 [PVZ_ERROR_20321]
 一年只能绑定4台设备
@@ -74418,11 +74772,29 @@ Z公司(困难)-第10天
 [PVZ2_UNCHARTED_MODE_MODE_DESC_NOMOD]
 经典模式，没有特别的机制
 
-[PVZ2_UNCHARTED_MODE_MODE_TITLE_NOMOD]
-一如往常
+[PVZ2_UNCHARTED_MODE_MODE_TITLE_AQUILA]
+罗马鹰旗
 
-[PVZ2_UNCHARTED_MODE_MODE_DESC_NOMOD]
-经典模式，没有特别的机制
+[PVZ2_UNCHARTED_MODE_MODE_DESC_AQUILA]
+持旗者为中心产生3×3光环，提供50%减伤与免控；磁力菇/吸金磁可永久摧毁鹰旗。
+
+[PVZ2_UNCHARTED_MODE_MODE_TITLE_COLOSSEUM]
+角斗行
+
+[PVZ2_UNCHARTED_MODE_MODE_DESC_COLOSSEUM]
+在战场中临时封锁横向五格形成“角斗行”，本次角斗的胜负会在结算后带给玩家大量能量豆或投放更多敌对僵尸
+
+[PVZ2_UNCHARTED_MODE_AQUILA_TITLE_NOMOD]
+罗马鹰旗
+
+[PVZ2_UNCHARTED_MODE_AQUILA_DESC_NOMOD]
+持旗者为中心产生3×3光环，提供50%减伤与免控；磁力菇/吸金磁可永久摧毁鹰旗。
+
+[PVZ2_UNCHARTED_MODE_COLOSSEUM_TITLE_NOMOD]
+角斗行
+
+[PVZ2_UNCHARTED_MODE_COLOSSEUM_DESC_NOMOD]
+在战场中临时封锁横向五格形成“角斗行”，本次角斗的胜负会在结算后带给玩家大量能量豆或投放更多敌对僵尸
 
 [PVZ2_UNCHARTED_MODE_MODE_TITLE_ICEAGE1]
 开胃菜
@@ -74601,6 +74973,77 @@ z机甲僵尸来袭！
 
 [PLAYERS_TRIP_TO_ICEAGENIGHTMARE]
 {PLAYER}的冰河噩梦
+
+[PVZ2_UNCHARTED_MODE_TIPS_DESC_UNCHARTED_ROMA]
+1.时空秘境中拥有各种不同的新世界和新僵尸等待你来探索，每个世界都有普通和困难关卡。
+2.普通与困难模式关卡分别拥有首通奖励与正常过关奖励，首通奖励在第一次通关时获得，且无法重复领取。
+3.普通模式关卡全部通关后解锁困难模式关卡。
+4.困难关卡随时间推进解锁。
+5.困难模式有特定的挑战目标，勾选挑战目标完成任务可获得奖励，未达成不影响正常通关。
+6.普通模式固定包含3个挑战目标，首次完成挑战目标可获得该目标对应的奖励
+
+[ROMA_LEVEL_NAME_01_N]
+罗马秘境-第1天
+
+[ROMA_LEVEL_NAME_02_N]
+罗马秘境-第2天
+
+[ROMA_LEVEL_NAME_03_N]
+罗马秘境-第3天
+
+[ROMA_LEVEL_NAME_04_N]
+罗马秘境-第4天
+
+[ROMA_LEVEL_NAME_05_N]
+罗马秘境-第5天
+
+[ROMA_LEVEL_NAME_06_N]
+罗马秘境-第6天
+
+[ROMA_LEVEL_NAME_07_N]
+罗马秘境-第7天
+
+[ROMA_LEVEL_NAME_08_N]
+罗马秘境-第8天
+
+[ROMA_LEVEL_NAME_09_N]
+罗马秘境-第9天
+
+[ROMA_LEVEL_NAME_10_N]
+罗马秘境-第10天
+
+[ROMA_LEVEL_NAME_01_H]
+罗马秘境-第1天（困难）
+
+[ROMA_LEVEL_NAME_02_H]
+罗马秘境-第2天（困难）
+
+[ROMA_LEVEL_NAME_03_H]
+罗马秘境-第3天（困难）
+
+[ROMA_LEVEL_NAME_04_H]
+罗马秘境-第4天（困难）
+
+[ROMA_LEVEL_NAME_05_H]
+罗马秘境-第5天（困难）
+
+[ROMA_LEVEL_NAME_06_H]
+罗马秘境-第6天（困难）
+
+[ROMA_LEVEL_NAME_07_H]
+罗马秘境-第7天（困难）
+
+[ROMA_LEVEL_NAME_08_H]
+罗马秘境-第8天（困难）
+
+[ROMA_LEVEL_NAME_09_H]
+罗马秘境-第9天（困难）
+
+[ROMA_LEVEL_NAME_10_H]
+罗马秘境-第10天（困难）
+
+[PLAYERS_TRIP_TO_ROMA]
+{PLAYER}的罗马秘境
 
 [PLAYERS_TRIP_TO_CHRISTMAS]
 {PLAYER}的圣诞派对
@@ -78082,7 +78525,7 @@ FPS：{NUM}
 历史最高星数到达10星
 
 [ANNIVERSARY_2026_TASK_NAME_8_1]
-完成三个组合挑战：奇兵植物消耗增加(1星)，冰河酋长僵尸受到的植物伤害降低20%(2星)，僵尸速度提升(3星)
+完成三个组合挑战：奇兵植物消耗增加(1星)，冰风酋长僵尸受到的植物伤害降低20%(2星)，僵尸速度提升(3星)
 
 [ANNIVERSARY_2026_TASK_NAME_8_2]
 历史最高星数到达2星
@@ -78112,7 +78555,7 @@ FPS：{NUM}
 历史最高星数到达10星
 
 [ANNIVERSARY_2026_TASK_NAME_10_1]
-完成三个组合挑战：奇兵植物消耗增加(1星)，搬运工小鬼移动速度提升50%(2星)，僵尸速度提升(3星)
+完成三个组合挑战：奇兵植物消耗增加(1星)，小鬼搬运工移动速度提升50%(2星)，僵尸速度提升(3星)
 
 [ANNIVERSARY_2026_TASK_NAME_10_2]
 历史最高星数到达2星
@@ -78124,6 +78567,155 @@ FPS：{NUM}
 历史最高星数到达6星
 
 [ANNIVERSARY_2026_TASK_NAME_10_5]
+
+[UNCHARTED_ROMA_TASK_NAME_1_1]
+完成三个组合挑战：鹰旗降临(1星)，卡槽数量减少(2星)，僵尸攻击提升(3星)
+
+[UNCHARTED_ROMA_TASK_NAME_1_2]
+历史最高星数到达2星
+
+[UNCHARTED_ROMA_TASK_NAME_1_3]
+历史最高星数到达4星
+
+[UNCHARTED_ROMA_TASK_NAME_1_4]
+历史最高星数到达6星
+
+[UNCHARTED_ROMA_TASK_NAME_1_5]
+历史最高星数到达10星
+
+[UNCHARTED_ROMA_TASK_NAME_2_1]
+完成三个组合挑战：僵尸攻击提升(1星)，收取阳光减少(2星)，卡槽数量减少(3星)
+
+[UNCHARTED_ROMA_TASK_NAME_2_2]
+历史最高星数到达2星
+
+[UNCHARTED_ROMA_TASK_NAME_2_3]
+历史最高星数到达4星
+
+[UNCHARTED_ROMA_TASK_NAME_2_4]
+历史最高星数到达6星	
+
+[UNCHARTED_ROMA_TASK_NAME_2_5]
+历史最高星数到达10星
+
+[UNCHARTED_ROMA_TASK_NAME_3_1]
+完成三个组合挑战：远程种植冷却增加(3星)，鹰旗降临(2星)，僵尸攻击提升(3星)
+
+[UNCHARTED_ROMA_TASK_NAME_3_2]
+历史最高星数到达2星
+
+[UNCHARTED_ROMA_TASK_NAME_3_3]
+历史最高星数到达4星
+
+[UNCHARTED_ROMA_TASK_NAME_3_4]
+历史最高星数到达6星
+
+[UNCHARTED_ROMA_TASK_NAME_3_5]
+历史最高星数到达10星
+
+[UNCHARTED_ROMA_TASK_NAME_4_1]
+完成三个组合挑战：奇兵植物消耗增加(1星)，免疫控制效果(2星)，鹰旗降临(3星)
+
+[UNCHARTED_ROMA_TASK_NAME_4_2]
+历史最高星数到达2星
+
+[UNCHARTED_ROMA_TASK_NAME_4_3]
+历史最高星数到达4星
+
+[UNCHARTED_ROMA_TASK_NAME_4_4]
+历史最高星数到达6星
+
+[UNCHARTED_ROMA_TASK_NAME_4_5]
+历史最高星数到达10星
+
+[UNCHARTED_ROMA_TASK_NAME_5_1]
+完成三个组合挑战：远程植物消耗增加(1星)，僵尸移速提升(2星)，僵尸攻击提升(3星)
+
+[UNCHARTED_ROMA_TASK_NAME_5_2]
+历史最高星数到达2星
+
+[UNCHARTED_ROMA_TASK_NAME_5_3]
+历史最高星数到达4星
+
+[UNCHARTED_ROMA_TASK_NAME_5_4]
+历史最高星数到达6星
+
+[UNCHARTED_ROMA_TASK_NAME_5_5]
+历史最高星数到达10星
+
+[UNCHARTED_ROMA_TASK_NAME_6_1]
+完成三个组合挑战：奇兵植物消耗增加(1星)，植物伤害降低(2星)，僵尸攻击提升(3星)
+
+[UNCHARTED_ROMA_TASK_NAME_6_2]
+历史最高星数到达2星
+
+[UNCHARTED_ROMA_TASK_NAME_6_3]
+历史最高星数到达4星
+
+[UNCHARTED_ROMA_TASK_NAME_6_4]
+历史最高星数到达6星
+
+[UNCHARTED_ROMA_TASK_NAME_6_5]
+历史最高星数到达10星
+
+[UNCHARTED_ROMA_TASK_NAME_7_1]
+完成三个组合挑战：辅助植物消耗增加(1星)，僵尸攻击提升(2星)，卡槽数量减少(3星)
+
+[UNCHARTED_ROMA_TASK_NAME_7_2]
+历史最高星数到达2星
+
+[UNCHARTED_ROMA_TASK_NAME_7_3]
+历史最高星数到达4星
+
+[UNCHARTED_ROMA_TASK_NAME_7_4]
+历史最高星数到达6星
+
+[UNCHARTED_ROMA_TASK_NAME_7_5]
+历史最高星数到达10星
+
+[UNCHARTED_ROMA_TASK_NAME_8_1]
+完成三个组合挑战：收取阳光减少(1星)，卡槽数量减少(2星)，角斗士派对(3星)
+
+[UNCHARTED_ROMA_TASK_NAME_8_2]
+历史最高星数到达2星
+
+[UNCHARTED_ROMA_TASK_NAME_8_3]
+历史最高星数到达4星
+
+[UNCHARTED_ROMA_TASK_NAME_8_4]
+历史最高星数到达6星
+
+[UNCHARTED_ROMA_TASK_NAME_8_5]
+历史最高星数到达10星
+
+[UNCHARTED_ROMA_TASK_NAME_9_1]
+完成三个组合挑战：远程植物消耗增加(1星)，僵尸移速提升(2星)，僵尸阶数提升(3星)
+
+[UNCHARTED_ROMA_TASK_NAME_9_2]
+历史最高星数到达2星
+
+[UNCHARTED_ROMA_TASK_NAME_9_3]
+历史最高星数到达4星
+
+[UNCHARTED_ROMA_TASK_NAME_9_4]
+历史最高星数到达6星
+
+[UNCHARTED_ROMA_TASK_NAME_9_5]
+历史最高星数到达10星
+
+[UNCHARTED_ROMA_TASK_NAME_10_1]
+完成三个组合挑战：卡槽数量减少(1星)，僵尸移速提升(2星)，僵尸攻击提升(3星)
+
+[UNCHARTED_ROMA_TASK_NAME_10_2]
+历史最高星数到达2星
+
+[UNCHARTED_ROMA_TASK_NAME_10_3]
+历史最高星数到达4星
+
+[UNCHARTED_ROMA_TASK_NAME_10_4]
+历史最高星数到达6星
+
+[UNCHARTED_ROMA_TASK_NAME_10_5]
 历史最高星数到达10星
 
 [ANNIVERSARY_2026_TASK_NAME_11_1]
@@ -78142,7 +78734,7 @@ FPS：{NUM}
 历史最高星数到达10星
 
 [ANNIVERSARY_2026_TASK_NAME_12_1]
-完成三个组合挑战：奇兵植物消耗增加(1星)，恐龙驯兽师僵尸移动速度提升50%(2星)，僵尸速度提升(3星)
+完成三个组合挑战：奇兵植物消耗增加(1星)，推蛋小鬼僵尸移动速度提升50%(2星)，僵尸速度提升(3星)
 
 [ANNIVERSARY_2026_TASK_NAME_12_2]
 历史最高星数到达2星
@@ -78172,7 +78764,7 @@ FPS：{NUM}
 历史最高星数到达10星
 
 [ANNIVERSARY_2026_TASK_NAME_14_1]
-完成三个组合挑战：奇兵植物消耗增加(1星)，煤矿工僵尸受到的植物伤害降低20%(2星)，僵尸速度提升(3星)
+完成三个组合挑战：奇兵植物消耗增加(1星)，煤矿僵尸受到的植物伤害降低20%(2星)，僵尸速度提升(3星)
 
 [ANNIVERSARY_2026_TASK_NAME_14_2]
 历史最高星数到达2星
@@ -78187,7 +78779,7 @@ FPS：{NUM}
 历史最高星数到达10星
 
 [ANNIVERSARY_2026_TASK_NAME_15_1]
-完成三个组合挑战：奇兵植物消耗增加(1星)，滑翔僵尸移动速度提升50%(2星)，僵尸速度提升(3星)
+完成三个组合挑战：奇兵植物消耗增加(1星)，飞行器僵尸移动速度提升50%(2星)，僵尸速度提升(3星)
 
 [ANNIVERSARY_2026_TASK_NAME_15_2]
 历史最高星数到达2星
@@ -78262,7 +78854,7 @@ FPS：{NUM}
 历史最高星数到达10星
 
 [ANNIVERSARY_2026_TASK_NAME_20_1]
-完成三个组合挑战：奇兵植物消耗增加(1星)，周年庆飞行僵尸移动速度提升50%(2星)，僵尸速度提升(3星)
+完成三个组合挑战：奇兵植物消耗增加(1星)，周年庆喷射器僵尸移动速度提升50%(2星)，僵尸速度提升(3星)
 
 [ANNIVERSARY_2026_TASK_NAME_20_2]
 历史最高星数到达2星
@@ -78393,6 +78985,11 @@ FPS：{NUM}
 [ZOMBIE_DEFAULT_DIFFICULTY_3_DESCRIPTION]
 僵尸初始阶数为5阶，无法使用神器和能量豆
 
+[ZOMBIE_NODEFAULT_DIFFICULTY_3]
+难度Ⅲ
+[ZOMBIE_NODEFAULT_DIFFICULTY_3_DESCRIPTION]
+僵尸初始阶数为5阶，无法使用神器
+
 [ZOMBIE_12TH_DIFFICULTY_3]
 难度Ⅲ
 [ZOMBIE_12TH_DIFFICULTY_3_DESCRIPTION]
@@ -78439,17 +79036,19 @@ FPS：{NUM}
 移动速度提升100%
 
 [ZOMBIE_IMMUNITY_DIFFICULTY_1]
-免疫眩晕(1星）
+免疫眩晕(1星)
 [ZOMBIE_IMMUNITY_DIFFICULTY_1_DESCRIPTION]
 免疫眩晕
 
 [ZOMBIE_IMMUNITY_DIFFICULTY_2]
-免疫控制效果(2星）
+免疫控制效果(2星)
 [ZOMBIE_IMMUNITY_DIFFICULTY_2_DESCRIPTION]
 免疫控制效果
 
 [ZOMBIE_IMMUNITY_DIFFICULTY_3]
+免疫控制效果(3星)
 [ZOMBIE_IMMUNITY_DIFFICULTY_3_DESCRIPTION]
+免疫控制效果
 
 [ZOMBIE_ATTACK_DIFFICULTY_1]
 僵尸攻击提升(1星)
@@ -79753,6 +80352,9 @@ FPS：{NUM}
 
 [PEANUT_NEW_SKILL_LEVEL4_DES]
 种植时有中概率直接释放能量豆大招！
+
+[PEANUT_NEW_SKILL_LEVEL5_DES]
+周围格上其他五阶的植物数量越多，花生射手越愤怒。愤怒可以使花生射手提升愤怒档位，档位越高，花生子弹产生的爆炸伤害越高，攻速也越快。
 
 [PEANUT_PLANTFOOD_DESCRIPTION]
 花生射手快速发射出大量花生，恢复自身的生命值同时获得一个可以吸收4000伤害的金属头盔。
@@ -82087,13 +82689,13 @@ FPS：{NUM}
 
 [APSARLOTUS_NEW_SKILL_LEVEL1_DES]
 在前方1格生成祥云。在其上种植植物若未触发四阶觉醒，将消耗该植物200%的基础阳光消耗（最低消耗50点）强制触发四阶觉醒并提升100%攻击力。
-【胡旋舞】：每10秒提升3x3范围内植物的50%攻速与20%攻击力，持续5秒。
+【胡旋舞】：开始起舞时，立即使3×3范围内的植物提升50%攻速与20%攻击力，持续5秒。舞蹈结束后进入10秒冷却
 
 [APSARLOTUS_NEW_SKILL_LEVEL2_DES]
-祥云触发代价降低，扣除的阳光比例由200%降低至100%。【胡旋舞】的触发间隔缩短至每8秒触发一次。
+祥云的触发代价降低，扣除的阳光比例由200%降至100%。【胡旋舞】结束后的冷却时间由10秒缩短至8秒。
 
 [APSARLOTUS_NEW_SKILL_LEVEL3_DES]
-祥云触发代价降低，扣除的阳光比例由100%降低至50%。【胡旋舞】的触发间隔缩短，缩短至每6秒触发一次。
+祥云的触发代价降低，扣除的阳光比例由100%降至50%。【胡旋舞】结束后的冷却时间由8秒缩短至6秒。
 
 [APSARLOTUS_NEW_SKILL_LEVEL4_DES]
 种植时有中概率直接释放能量豆大招
@@ -83912,7 +84514,7 @@ FPS：{NUM}
 未来礼盒活动说明
 
 [TOURISM_OCTOBER_TITLE]
-七月同游
+十月同游
 
 [TOURISM_OCTOBER_DEFAULT_TEXT2]
 已在小队中，不符合填写条件
@@ -83971,6 +84573,12 @@ FPS：{NUM}
 [TOURISM_OCTOBER_INVITATION_SUCCESS]
 已申请进入小队
 
+[TOURISM_OCTOBER_REWARD_EMPTY_TITLE]
+提示
+
+[TOURISM_OCTOBER_REWARD_EMPTY]
+代币已达到获取上限
+
 [PVP_ERROR_75525]
 已加入小队，不能申请加入其它小队
 
@@ -84004,11 +84612,26 @@ FPS：{NUM}
 [PVP_ERROR_75535]
 该成员已加入其他小队，需重新打开页面刷新
 
+[PVZ_ERROR_75536]
+队长不可离队，小队仍有成员
+
+[PVZ_ERROR_75537]
+离队后申请冷却中
+
+[PVZ_ERROR_75538]
+小队踢人冷却中
+
+[PVZ_ERROR_75539]
+友谊币已达到可获得上限
+
+
 [PVP_ERROR_76000]
 通过 普通 难度 第四关 后开放兑换
 
 [PVP_ERROR_76001]
 通过 困难 难度 第七关 后开放兑换
+
+
 
 
 [ALL_ARTIFACT]
@@ -84607,6 +85230,84 @@ FPS：{NUM}
 
 [NEW_AVATAR_DESCRIPTION_AEONIUM_1]
 攻击休息时间减少10%
+
+[NEW_AVATAR_SHORT_DESCRIPTION_GLACIERSHROOM_2]
+冰川菇断魂魔剑装扮
+
+[NEW_AVATAR_DESCRIPTION_GLACIERSHROOM_2]
+主动技能冷却减少35%
+
+[NEW_AVATAR_SHORT_DESCRIPTION_MANDRAKE_4]
+曼德拉草燃极音浪装扮
+
+[NEW_AVATAR_DESCRIPTION_MANDRAKE_4]
+种植冷却减少20%
+
+[NEW_AVATAR_SHORT_DESCRIPTION_WINTERMELON_4]
+冰西瓜泳池焦点装扮
+
+[NEW_AVATAR_DESCRIPTION_WINTERMELON_4]
+攻击速度提升25%
+
+[NEW_AVATAR_SHORT_DESCRIPTION_WINTERMELON_5]
+冰西瓜泳池焦点-彩棱
+
+[NEW_AVATAR_DESCRIPTION_WINTERMELON_5]
+无
+
+[NEW_AVATAR_SHORT_DESCRIPTION_DMDRAGONFRUIT_1]
+暗物质火龙果龙翼装扮
+
+[NEW_AVATAR_DESCRIPTION_DMDRAGONFRUIT_1]
+攻击力提升15%
+
+[NEW_AVATAR_SHORT_DESCRIPTION_BROCCOLI_1]
+大力花菜拳套装扮
+
+[NEW_AVATAR_DESCRIPTION_BROCCOLI_1]
+生命值提升15%
+
+[NEW_AVATAR_SHORT_DESCRIPTION_HYDROCOTYLEDRUMMER_3]
+铜钱草鼓手摇滚装扮
+
+[NEW_AVATAR_DESCRIPTION_HYDROCOTYLEDRUMMER_3]
+阳光消耗减少20
+
+[NEW_AVATAR_SHORT_DESCRIPTION_JALAPENO_1]
+火爆辣椒时髦眼镜装扮
+
+[NEW_AVATAR_DESCRIPTION_JALAPENO_1]
+种植冷却减少15%
+
+[NEW_AVATAR_SHORT_DESCRIPTION_SHADOWPEASHOOTER_3]
+暗影豌豆井盖装扮
+
+[NEW_AVATAR_DESCRIPTION_SHADOWPEASHOOTER_3]
+攻击力提升20%
+
+[NEW_AVATAR_SHORT_DESCRIPTION_BOOPHONEGEISHA_1]
+刺眼花艺伎折扇装扮
+
+[NEW_AVATAR_DESCRIPTION_BOOPHONEGEISHA_1]
+攻击力提升20%
+
+[NEW_AVATAR_SHORT_DESCRIPTION_ESCAPEROOT_3]
+逃脱树根骑士套装装扮
+
+[NEW_AVATAR_DESCRIPTION_ESCAPEROOT_3]
+降低阳光消耗30
+
+[NEW_AVATAR_SHORT_DESCRIPTION_AQUAWEED_3]
+海神草潜水镜装扮
+
+[NEW_AVATAR_DESCRIPTION_AQUAWEED_3]
+攻击速度提升15%
+
+[NEW_AVATAR_SHORT_DESCRIPTION_PUFFSHROOM_3]
+小喷菇炫目节拍装扮
+
+[NEW_AVATAR_DESCRIPTION_PUFFSHROOM_3]
+四阶落地开大概率提升10%
 
 [NEW_AVATAR_SHORT_DESCRIPTION_EAGLECLAW_2]
 电击鹰爪花电池装扮
@@ -85935,6 +86636,33 @@ FPS：{NUM}
 [TOURISMOCTOBER_MEMBER_TEXT]
 小队成员人数
 
+[TOURISM_OCTOBER_TEAM_MANAGEMENT]
+小队管理
+
+[TOURISM_OCTOBER_REMOVE_MEMBER]
+移除队员
+
+[TOURISM_OCTOBER_LEAVE_TEAM]
+离开小队
+
+[TOURISM_OCTOBER_KICK_CONFIRM]
+确定要将该队员移出小队吗？
+
+[TOURISM_OCTOBER_LEAVE_CONFIRM]
+确定要离开当前小队吗？
+
+[TOURISM_OCTOBER_JOIN_COOLDOWN]
+加入小队操作冷却中，还需等待{TIME}
+
+[TOURISM_OCTOBER_KICK_COOLDOWN]
+移除队员操作冷却中，还需等待{TIME}
+
+[TOURISM_OCTOBER_LEAVE_COOLDOWN]
+离开小队操作冷却中，还需等待{TIME}
+
+[TOURISM_OCTOBER_KICKED_TIP]
+你已被移出小队，请重新加入小队
+
 [TOURISMOCTOBER_TASK_NAME_2]
 通过任意关卡3次
 
@@ -85976,12 +86704,14 @@ FPS：{NUM}
 
 [TOURISMOCTOBER_MAIN_TIPS_INFO]
 1.玩家可以通过完成每日任务、本月任务和个人任务来获取活动代币
-2.活动代币可在兑换商店换取丰厚奖励，代币不会继承到下一期
-3.每日任务每天刷新，本月任务与个人任务不刷新只能完成一次
-4.小队成员最多三人，第一个同意其他玩家进入队伍的玩家成为队长！
-5.加入小队后只有队长决定其他玩家是否进入小队，已入组的不能再填写邀请码
-6.小队成员完成任务后，其他组员也可以领取相同数量的奖励哦
-7.完成个人任务挑战，获取更多积分兑换奖励！（个人任务代币仅可自己领取，队友不共享奖励）
+2.每期活动能够获取的代币存在上限（个人任务获取的代币不计入上限）
+3.活动代币可在兑换商店换取丰厚奖励，代币不会继承到下一期
+4.每日任务每天刷新，本月任务与个人任务不刷新只能完成一次
+5.小队成员最多三人，第一个同意其他玩家进入队伍的玩家成为队长！
+6.加入小队后只有队长决定其他玩家是否进入小队，已入组的不能再填写邀请码
+7.小队成员完成任务后，其他组员也可以领取相同数量的奖励哦
+8.在管理界面，队长可以将小队成员踢出小队，小队成员也可以自主退出小队。执行踢出和退出操作时所有组员会自动领取共享的奖励。
+9.完成个人任务挑战，获取更多积分兑换奖励！（个人任务代币仅可自己领取，队友不共享奖励）
 
 [ZOMBIE_DARK_KING_ELITE]
 精英国王僵尸
@@ -86103,7 +86833,7 @@ FPS：{NUM}
 1、通过购买礼包获得终焉币，消耗终焉币在活动中抽取奖励，终焉币与毁灭星尘无法继承至下期活动，活动结束后根据1：10与1：1的比例自动转化为钻石。
 2、每次抽奖有概率获得毁灭星尘或其他奖励，幸运的小僵僵有概率直接获取毁灭菇吾即终焉超级装扮。
 3、若连续20次内抽奖未抽到大奖，则下次抽奖奖励会在保底奖池中抽取。
-4、重复抽到的超级装扮会自动转化为200个毁灭星尘奖励。
+4、重复获得的超级装扮会自动转化为200个毁灭星尘奖励。
 
 保底奖池概率：
 毁灭菇吾即终焉超级装扮：    3.72%    大奖
@@ -86247,7 +86977,7 @@ FPS：{NUM}
 攻击力提升30%
 
 [GINGLEBELL_TITLE]
-周年响叮当
+王国响叮当
 
 [GINGLEBELL_TIPS]
 活动在封榜期间,无法挑战
@@ -86269,32 +86999,32 @@ FPS：{NUM}
 
 [GINGLEBELL_DESCRIPTION]
 活动规则：
-    1.在限定时间内对蛋糕坦克造成的所有伤害即为通关分数。
+    1.在限定时间内对 国王造成的所有伤害即为通关分数。
     2.通过最新解锁关卡获得的分数用于完成每日奖励任务，任务每天刷新。
-    3.活动时间内将会依次解锁三个主题（甜蜜陷阱、层层惊喜、狂欢派对），每个主题下有三个关卡。每两天解锁一个新关卡，每六天解锁新主题。
+    3.活动时间内将会依次解锁三个主题（王棋对弈、巡车布棋、移形换位），每个主题下有三个关卡。每两天解锁一个新关卡，每六天解锁新主题。
     4.本期主题的特殊机制可在主界面右上角查看。
     5.排行榜会依据最新主题下三关分数之和排序，解锁新主题后0点至10点期间封榜进行排行榜公示，公示期间活动关卡不可游玩。游玩非最新主题关卡不会计入排行榜分数。
-    6.10点排行榜公示结束后，自动发放排行榜奖励。2026年9月15日排行榜公示延长至一天，期间不能挑战关卡。
+    6.10点排行榜公示结束后，自动发放排行榜奖励。2026年10月18日排行榜公示延长至一天，期间不能挑战关卡。
     7.检测到分数异常的玩家，活动期间打出的分数不再计入排行榜。
 
 
 [GINGLEBELL_HOWTOPLAY_1_DESCRIPTION]
-蛋糕坦克移动时，若碰到植物，则立即将其消灭
+国王僵尸受到一定伤害后，会在周围8格召唤士兵棋子。当周围8格存在士兵棋子时，国王僵尸获得减伤护盾。
 
 [GINGLEBELL_HOWTOPLAY_2_DESCRIPTION]
-蛋糕坦克被攻击时，会在周围召唤1个蛋糕木桩和1个玩具匣木桩
+士兵棋子受到5次攻击后会立即碎裂，若 10 秒内未被摧毁则自动碎裂
 
 [GINGLEBELL_HOWTOPLAY_3_DESCRIPTION]
-蛋糕木桩为普通木桩；玩具匣木桩为特殊木桩，死亡后会爆炸，对周围植物造成秒杀效果
+当国王僵尸周围8格内没有士兵棋子时，移除减伤护盾并获得虚弱效果，此时受到的伤害增加100%。持续5秒。
 
 [GINGLEBELL_HOWTOPLAY_4_DESCRIPTION]
-主题一：木桩会根据指定路线进行循环移动，从起点开始按顺序向中途点移动，并在最后回到起点。
+主题一：场地中存在若干个木桩，不会进行移动。
 
 [GINGLEBELL_HOWTOPLAY_5_DESCRIPTION]
-主题二：场中有既定的上下轨道路线，当木桩受到攻击时，木桩的移动速度会加快。该速度加成存在速度上限
+主题二：场中有既定的上下轨道路线，木桩会站在矿车上。国王木桩召唤士兵棋子时，木桩下的矿车会停止运动，进入虚弱期后恢复运动
 
 [GINGLEBELL_HOWTOPLAY_6_DESCRIPTION]
-主题三：每过X秒，木桩会出现指定位置，并朝左侧或右侧持续移动，到场外后木桩自动消失。
+主题三：场中有木桩的出现固定地块，每当木桩受到一定伤害后，木桩会从当前地块消失并出现在另一个固定地块上。
 
 [GINGLEBELL_HOWTOPLAY_7_DESCRIPTION]
 主题三：场中有既定的上下轨道路线，当木桩受到攻击时，木桩的移动速度会加快。
@@ -86414,10 +87144,13 @@ FPS：{NUM}
 全服参与人数:{NUMBER}
 
 [GINGLEBELL_RANK_REWARD_TITLE]
-周年响叮当排行榜奖励
+王国响叮当排行榜奖励
 
 [GINGLEBELL_TAB1]
 主题挑战
+
+[GINGLEBELL_TAB2]
+排行奖励
 
 [GINGLEBELL_TAB3]
 每日奖励
@@ -86438,10 +87171,10 @@ FPS：{NUM}
 在30秒内尽可能打出更多伤害
 
 [TRAINING_CHALLENGE_ZERO_NAME]
-周年响叮当
+国王响叮当
 
 [GINGLEBELL_TASKDESCRIPTION]
-最新关卡对蛋糕坦克造成伤害达 {NUMBER}  
+最新关卡对 国王造成伤害达 {NUMBER}  
 
 [A_PILE_SNOWMEN1_TITLE]
 冰天雪地-关卡一
@@ -86471,31 +87204,31 @@ FPS：{NUM}
 冰消云散-关卡三
 
 [GINGLEBELL_S1_1_TITLE]
-甜蜜陷阱-关卡一
+王棋对弈-关卡一
 
 [GINGLEBELL_S1_2_TITLE]
-甜蜜陷阱-关卡二
+王棋对弈-关卡二
 
 [GINGLEBELL_S1_3_TITLE]
-甜蜜陷阱-关卡三
+王棋对弈-关卡三
 
 [GINGLEBELL_S2_1_TITLE]
-层层惊喜-关卡一
+巡车布棋-关卡一
 
 [GINGLEBELL_S2_2_TITLE]
-层层惊喜-关卡二
+巡车布棋-关卡二
 
 [GINGLEBELL_S2_3_TITLE]
-层层惊喜-关卡三
+巡车布棋-关卡三
 
 [GINGLEBELL_S3_1_TITLE]
-狂欢派对-关卡一
+移形换位-关卡一
 
 [GINGLEBELL_S3_2_TITLE]
-狂欢派对-关卡二
+移形换位-关卡二
 
 [GINGLEBELL_S3_3_TITLE]
-狂欢派对-关卡三
+移形换位-关卡三
 
 [GINGLEBELL_S4_1_TITLE]
 打卡上班-关卡一
@@ -86528,16 +87261,16 @@ FPS：{NUM}
 挑战在30秒内打出最高的伤害！
 
 [SNOWMODERNSTAGE1_LEVEL_NAME]
-甜蜜陷阱 - 第 {LEVEL_NUMBER} 关
+王棋对弈 - 第 {LEVEL_NUMBER} 关
 
 [SNOWMODERNSTAGE2_LEVEL_NAME]
-层层惊喜 - 第 {LEVEL_NUMBER} 关
+巡车布棋 - 第 {LEVEL_NUMBER} 关
 
 [SNOWNIGHTSTAGE3_LEVEL_NAME]
-狂欢派对 - 第 {LEVEL_NUMBER} 关
+移形换位 - 第 {LEVEL_NUMBER} 关
 
 [PLAYERS_TRIP_TO_SNOWNIGHT]
-{PLAYER}的周年响叮当之旅
+{PLAYER}的王国响叮当之旅
 
 [NEW_AVATAR_SHORT_DESCRIPTION_TWINSHONEYSUCKLE_1]
 日月金银花冬日装扮
@@ -86930,14 +87663,24 @@ FPS：{NUM}
 庆典累积充值说明：
   活动期间游戏内任意位置充值都可叠加累积充值进度条
 
-[NEWYEARPACK_MAIN_TIPS_INFO]
+[NEWYEARPACK_MAIN_TIPS_INFO_16]
 每日0元见面礼：钻石*15	
 2元福利礼包：钻石*30、10%概率获得初级装扮宝箱
 3元福利礼包：钻石*90、10%概率获得中级装扮宝箱
 6元福利礼包：钻石*180、10%概率获得高级装扮宝箱
 
 初级装扮宝箱可选装扮：豌豆春节装扮、土豆地雷新年装扮、大喷菇舞狮装扮、棉小雪洋帽装扮、梅小美面纱装扮、黄金蓓蕾花球装扮
-中级装扮宝箱可选装扮：火柴花披风装扮、芦笋战机莫西干装扮、电击蓝莓学士帽装扮、双重射手马头帽、野兽猕猴桃八戒装扮、磁力菇国风装扮、豌豆荚毛绒帽装扮、西瓜礼帽装扮
+中级装扮宝箱可选装扮：幽灵辣椒灯笼装扮、芦笋战机莫西干装扮、椰子炮复古帽装扮、双重射手马头帽、野兽猕猴桃八戒装扮、爆浆玉露装扮、豌豆荚毛绒帽装扮、西瓜礼帽装扮
+高级装扮宝箱可选装扮：尖刺秋葵大冬被装扮、蛇妖瓶子草墨镜装扮、大喷菇麋鹿装扮、向日葵歌手奥运装扮、火焰花女王芭蕉扇装扮、毒液豌豆射手潮流小帽装扮、黑法师魔法书装扮、暗夜菇背包装扮
+
+[NEWYEARPACK_MAIN_TIPS_INFO_15]
+每日0元见面礼：钻石*15	
+2元福利礼包：钻石*30、10%概率获得初级装扮宝箱
+3元福利礼包：钻石*90、10%概率获得中级装扮宝箱
+6元福利礼包：钻石*180、10%概率获得高级装扮宝箱
+
+初级装扮宝箱可选装扮：豌豆春节装扮、土豆地雷新年装扮、大喷菇舞狮装扮、棉小雪洋帽装扮、梅小美面纱装扮、黄金蓓蕾花球装扮
+中级装扮宝箱可选装扮：火柴花拳手披风装扮、芦笋战机莫西干装扮、电击蓝莓学士帽装扮、双重射手马头帽、野兽猕猴桃八戒装扮、磁力菇国风装扮、豌豆荚毛绒帽装扮、西瓜礼帽装扮
 高级装扮宝箱可选装扮：尖刺秋葵大冬被装扮、蛇妖瓶子草墨镜装扮、大喷菇麋鹿装扮、向日葵歌手奥运装扮、火焰花女王芭蕉扇装扮、毒液豌豆射手潮流小帽装扮、黑法师魔法书装扮、暗夜菇背包装扮
 
 [PRODUCT_NEW_YEAR_PACK_2_SHORTDESC]
@@ -86978,7 +87721,7 @@ FPS：{NUM}
 
 [UINEWYEARREDPACKET_DES_DESCRIPTION]
 1.活动每日固定时间12:00-14:00及18：00-21：00可在主界面领取一次红包（一天最多可领取2次）
-2.8月28日到9月10期间，每日21点，将从全服(ios和安卓各1)抽出一个幸运玩家（需领取过当日红包），获得当日配置的极高价值头奖
+2.10月1日到10月14期间，每日21点，将从全服(ios和安卓各1)抽出一个幸运玩家（需领取过当日红包），获得当日配置的极高价值头奖
 3.每日头奖在第二天开奖前未登录领取，视为放弃奖励。
 
 [UINEWYEARREDPACKET_DES_TITLE]
@@ -87004,46 +87747,46 @@ FPS：{NUM}
 玩家 ^FFFF00 {NAME} ^oldclr 
 
 [REDPACKETWIDGET_REWARD_PLAYER_WITH_ITEMCOUNT_DESC2_0]
-恭喜 ^FFFF00 {NAME} ^oldclr 获得八月二十八日头奖 
+恭喜 ^FFFF00 {NAME} ^oldclr 获得十月一日头奖 
 
 [REDPACKETWIDGET_REWARD_PLAYER_WITH_ITEMCOUNT_DESC2_1]
-恭喜 ^FFFF00 {NAME} ^oldclr 获得八月二十九日头奖
+恭喜 ^FFFF00 {NAME} ^oldclr 获得十月二日头奖
 
 [REDPACKETWIDGET_REWARD_PLAYER_WITH_ITEMCOUNT_DESC2_2]
-恭喜 ^FFFF00 {NAME} ^oldclr 获得八月三十日头奖
+恭喜 ^FFFF00 {NAME} ^oldclr 获得十月三日头奖
 
 [REDPACKETWIDGET_REWARD_PLAYER_WITH_ITEMCOUNT_DESC2_3]
-恭喜 ^FFFF00 {NAME} ^oldclr 获得八月三十一日头奖
+恭喜 ^FFFF00 {NAME} ^oldclr 获得十月四日头奖
 
 [REDPACKETWIDGET_REWARD_PLAYER_WITH_ITEMCOUNT_DESC2_4]
-恭喜 ^FFFF00 {NAME} ^oldclr 获得九月一日头奖  
+恭喜 ^FFFF00 {NAME} ^oldclr 获得十月五日头奖  
 
 [REDPACKETWIDGET_REWARD_PLAYER_WITH_ITEMCOUNT_DESC2_5]
-恭喜 ^FFFF00 {NAME} ^oldclr 获得九月二日头奖 
+恭喜 ^FFFF00 {NAME} ^oldclr 获得十月六日头奖 
 
 [REDPACKETWIDGET_REWARD_PLAYER_WITH_ITEMCOUNT_DESC2_6]
-恭喜 ^FFFF00 {NAME} ^oldclr 获得九月三日头奖 
+恭喜 ^FFFF00 {NAME} ^oldclr 获得十月七日头奖 
 
 [REDPACKETWIDGET_REWARD_PLAYER_WITH_ITEMCOUNT_DESC2_7]
-恭喜 ^FFFF00 {NAME} ^oldclr 获得九月四日头奖  
+恭喜 ^FFFF00 {NAME} ^oldclr 获得十月八日头奖  
 
 [REDPACKETWIDGET_REWARD_PLAYER_WITH_ITEMCOUNT_DESC2_8]
-恭喜 ^FFFF00 {NAME} ^oldclr 获得九月五日头奖  
+恭喜 ^FFFF00 {NAME} ^oldclr 获得十月九日日头奖  
 
 [REDPACKETWIDGET_REWARD_PLAYER_WITH_ITEMCOUNT_DESC2_9]
-恭喜 ^FFFF00 {NAME} ^oldclr 获得九月六日头奖 
+恭喜 ^FFFF00 {NAME} ^oldclr 获得十月十日头奖 
 
 [REDPACKETWIDGET_REWARD_PLAYER_WITH_ITEMCOUNT_DESC2_10]
-恭喜 ^FFFF00 {NAME} ^oldclr 获得九月七日头奖 
+恭喜 ^FFFF00 {NAME} ^oldclr 获得十月十一日头奖 
 
 [REDPACKETWIDGET_REWARD_PLAYER_WITH_ITEMCOUNT_DESC2_11]
-恭喜 ^FFFF00 {NAME} ^oldclr 获得九月八日头奖 
+恭喜 ^FFFF00 {NAME} ^oldclr 获得十月十二日头奖 
 
 [REDPACKETWIDGET_REWARD_PLAYER_WITH_ITEMCOUNT_DESC2_12]
-恭喜 ^FFFF00 {NAME} ^oldclr 获得九月九日头奖 
+恭喜 ^FFFF00 {NAME} ^oldclr 获得十月十三日头奖 
 
 [REDPACKETWIDGET_REWARD_PLAYER_WITH_ITEMCOUNT_DESC2_13]
-恭喜 ^FFFF00 {NAME} ^oldclr 获得九月十日头奖  
+恭喜 ^FFFF00 {NAME} ^oldclr 获得十月十四日头奖  
 
 [REDPACKETWIDGET_REWARD_PLAYER_WITH_ITEMCOUNT_DESC3_1]
 ^0775F7 {ITEM} ^oldclr x {NUMS} 
@@ -87227,6 +87970,12 @@ FPS：{NUM}
 [NEWYEAR_GIFT_HEAD_DES_ID_25921]
 在庆典礼包活动期间，达到活动中累计充值进度领取
 
+[NEWYEAR_GIFT_HEAD_ID_25945]
+花生纳喜
+
+[NEWYEAR_GIFT_HEAD_DES_ID_25945]
+在庆典礼包活动期间，达到活动中累计充值进度领取
+
 [TEN_THOUSAND_HEAD_ID_25636]
 植物热爱者
 
@@ -87250,23 +87999,23 @@ FPS：{NUM}
 
 [UINEWYEARREDPACKET_DES_REWARD_DESCRIPTION]
 奖励预览：
-八月二十八日：^ff0000^万能碎片^oldclr^*200
-八月二十九日：^ff0000^进阶书^oldclr^*10
-八月三十日：^ff0000^定向碎片^oldclr^*300
-八月三十一日：^ff0000^钻石^oldclr^*20260
-九月一日：^ff0000^限时夺宝奖杯^oldclr^*5
-九月二日：^ff0000^万能碎片^oldclr^*200
-九月三日：^ff0000^进阶书^oldclr^*10
-九月四日：^ff0000^定向碎片^oldclr^*300
-九月五日：^ff0000^钻石^oldclr^*20260
-九月六日：^ff0000^限时夺宝奖杯^oldclr^*5
-九月七日：^ff0000^万能碎片^oldclr^*200
-九月八日：^ff0000^进阶书^oldclr^*10
-九月九日：^ff0000^定向碎片^oldclr^*300
-九月十日：^ff0000^钻石^oldclr^*20260
+十月一日：^ff0000^万能碎片^oldclr^*200
+十月二日：^ff0000^进阶书^oldclr^*10
+十月三日：^ff0000^定向碎片^oldclr^*300
+十月四日：^ff0000^钻石^oldclr^*20260
+十月五日：^ff0000^限时夺宝奖杯^oldclr^*5
+十月六日：^ff0000^万能碎片^oldclr^*200
+十月七日：^ff0000^进阶书^oldclr^*10
+十月八日：^ff0000^定向碎片^oldclr^*300
+十月九日：^ff0000^钻石^oldclr^*20260
+十月十日：^ff0000^限时夺宝奖杯^oldclr^*5
+十月十一日：^ff0000^万能碎片^oldclr^*200
+十月十二日：^ff0000^进阶书^oldclr^*10
+十月十三日：^ff0000^定向碎片^oldclr^*300
+十月十四日：^ff0000^钻石^oldclr^*20260
 
 [UINEWYEARREDPACKET_DES_REWARD_TITLE]
-头号幸运玩家奖
+锦鲤玩家奖
 
 [ACTIVITY_NEWYEARPACK_SHORT_DESCRIPTION]
 打开庆典礼包，获取超多钻石与稀有装扮
@@ -87656,6 +88405,12 @@ FPS：{NUM}
 [TOYS_HEAD_DES_ID_25920]
 参与活动觐见终焉获得
 
+[TOYS_HEAD_ID_25941]
+玄冰彻剑
+
+[TOYS_HEAD_DES_ID_25941]
+参与活动魔晶化剑获得
+
 [PARALLEL_SPIKEWEED]
 41号地刺
 
@@ -87900,6 +88655,12 @@ x{NUMS}完成
 [HARVEST_BATTLE_HEAD_DES_ID_25894]
 在农场大作战活动中，通过超级玉米兑换
 
+[HARVEST_BATTLE_HEAD_ID_25946]
+强音巨浪
+
+[HARVEST_BATTLE_HEAD_DES_ID_25946]
+在农场大作战活动中，通过超级玉米兑换
+
 [TIANGONG_HEAD_ID_25712]
 DJ芦荟
 
@@ -87988,6 +88749,12 @@ DJ芦荟
 虚空行者
 
 [TIANGONG_HEAD_DES_ID_25913]
+在天宫寻宝活动中，累积抽取阶段奖励获取
+
+[TIANGONG_HEAD_ID_25942]
+幻象魔僵
+
+[TIANGONG_HEAD_DES_ID_25942]
 在天宫寻宝活动中，累积抽取阶段奖励获取
 
 [PVP_ERROR_76030]
@@ -88464,8 +89231,12 @@ DJ芦荟
 是否花费 {NUMS} 精粹购买？
 注：需要拥有本体装扮才可佩戴
 
-[ACTIVITY_COLORCUSTOMIZATION_SHORT_DESCRIPTION]
-1.可获取胆小菇星夜伴眠装扮-闪耀幻彩装扮和其他超值奖励。
+[ACTIVITY_COLORCUSTOMIZATION_SHORT_DESCRIPTION_8]
+1.可获取原始豌豆远洋统帅-银河装扮和其他超值奖励。
+2.植物幻彩装扮需要获得装扮本体后才能使用，可在装扮佩戴页面切换幻彩装扮
+
+[ACTIVITY_COLORCUSTOMIZATION_SHORT_DESCRIPTION_9]
+1.可获取冰西瓜泳池焦点-彩棱装扮和其他超值奖励。
 2.植物幻彩装扮需要获得装扮本体后才能使用，可在装扮佩戴页面切换幻彩装扮
 
 [COLORCUSTOMIZATION_DESCRIPTION_TITLE_1]
@@ -88477,12 +89248,20 @@ DJ芦荟
     若九次购买礼包未掉落幻彩装扮，则第十次购买礼包必定掉落幻彩装扮
 植物幻彩装扮需要获得装扮本体后才能使用，可在装扮佩戴页面切换幻彩装扮
 
-[COLORCUSTOMIZATION_DESCRIPTION]
+[COLORCUSTOMIZATION_DESCRIPTION_8]
 活动规则：
 1.购买幻彩礼包可获得钻石、自选奖励与幻彩精粹等奖励
-2.每次购买幻彩礼包有概率获得胆小菇星夜伴眠装扮-闪耀幻彩装扮，保底十次购买礼包获得
+2.每次购买幻彩礼包有概率获得原始豌豆远洋统帅-银河装扮，保底十次购买礼包获得
 3.每累计购买5次任意幻彩礼包可免费再购买一次礼包
-4.重复获得的胆小菇星夜伴眠装扮-闪耀幻彩装扮会转化为胆小菇星夜伴眠装扮-闪耀幻彩装扮碎片，胆小菇星夜伴眠装扮-闪耀幻彩装扮碎片可在活动时间内在兑换商店兑换为钻石。有需要请尽早兑换哦。
+4.重复获得的原始豌豆远洋统帅-银河装扮会转化为原始豌豆远洋统帅-银河装扮碎片，原始豌豆远洋统帅-银河装扮碎片可在活动时间内在兑换商店兑换为钻石。有需要请尽早兑换哦。
+5.未消耗的幻彩精粹可保留至下期使用
+
+[COLORCUSTOMIZATION_DESCRIPTION_9]
+活动规则：
+1.购买幻彩礼包可获得钻石、自选奖励与幻彩精粹等奖励
+2.每次购买幻彩礼包有概率获得冰西瓜泳池焦点-彩棱装扮，保底十次购买礼包获得
+3.每累计购买5次任意幻彩礼包可免费再购买一次礼包
+4.重复获得的冰西瓜泳池焦点-彩棱装扮会转化为冰西瓜泳池焦点-彩棱装扮碎片，冰西瓜泳池焦点-彩棱装扮碎片可在活动时间内在兑换商店兑换为钻石。有需要请尽早兑换哦。
 5.未消耗的幻彩精粹可保留至下期使用
 
 [PRODUCT_COLOR_CUSTOMIZATION]
@@ -88767,7 +89546,7 @@ Z机甲僵尸
 2.装扮券*399
 3.橙色营养液*5
 4.时空裂缝限定名片
-5.向日葵 萌映心梦超级装扮
+5.小喷菇 炫目节拍超级装扮
 6.秘宝券*5
 
 当日活动内，玩家与组队玩家共同造成的伤害总和满足节点所需伤害时，玩家可领取“今日小队挑战累计伤害”节点奖励。
@@ -88867,11 +89646,11 @@ Z机甲僵尸
 时空裂缝活动说明
 
 [SPACETIMERIFT_MAIN_DES_DESCRIPTION]
-1、活动开启后，2026年7月8日至2026年7月14日期间，玩家每日有3次挑战boss的次数，该时段为挑战期。
+1、活动开启后，2026年9月30日至2026年10月6日期间，玩家每日有3次挑战boss的次数，该时段为挑战期。
 2、第一天0:00活动开启后，玩家可立刻进行挑战。第二天开始，0:00-8:00会对前一天的排行榜结算，结算期间挑战将暂时关闭。
 3、结算时间结束后，会根据排行榜排名，给所有参与活动的玩家发放奖励。
 4、结算时间结束后，还会有一名幸运玩家获得锦鲤奖励（钻石*2888 + 万能碎片*20）。
-5、挑战期结束后，会有三天的公示期。公示期期间，玩家不再能够进行挑战/助战，但可以正常领取奖励或进行练习。
+5、挑战期结束后，会有一天的公示期。公示期期间，玩家不再能够进行挑战/助战，但可以正常领取奖励或进行练习。
 
 [SPACETIMERIFT_CHEAT_DES_DESCRIPTION]
 您的账号数据存在异常，暂时被禁止参与该活动，请联系客服处理
@@ -88920,6 +89699,12 @@ Z机甲僵尸
 冰火冰火冰
 
 [TIME_SPACE_HEAD_DES_ID_25898]
+时空裂缝助战累计奖励头像
+
+[TIME_SPACE_HEAD_ID_25943]
+你我合力
+
+[TIME_SPACE_HEAD_DES_ID_25943]
 时空裂缝助战累计奖励头像
 
 [SEARCH_MODE_HEAD_ID_25912]
@@ -91205,6 +91990,52 @@ NO.666号宇宙中出现的游戏光盘，看起来就很好玩。
 [POINTSCHALLENGE_MEMORY_NODE_6]
 26关
 
+[ZOMBIE_ZOMBIE_MOON_BLADE]
+星际剑客僵尸
+
+[ZOMBIE_ZOMBIE_MOON_BLADE_DESCRIPTION]
+星际剑客僵尸手持一把高科技量子切割刃，这把切割刃甚至能够切开空间！星际剑客僵尸得到了这把剑后总能在一次次的冒险中成功回到家，因为他可以切开空间拿到落在家里的钥匙。
+
+[ZOMBIE_ZOMBIE_MOON_BLADE_DESCRIPTION_HEADER]
+能切割植物发射的实体子弹，还能将同行植物牵引至面前处决
+
+[ZOMBIE_ZOMBIE_MOON_ILLUSIONIST]
+维度幻象僵尸
+
+[ZOMBIE_ZOMBIE_MOON_ILLUSIONIST_DESCRIPTION]
+他原本只是月球剧团的道具师，因为总偷穿主角戏服被开除，一气之下把道具改装成了武器。
+
+[ZOMBIE_ZOMBIE_MOON_ILLUSIONIST_DESCRIPTION_HEADER]
+可随机变身为埃及Boss、气功教主或Z机甲释放技能，半血时进入无敌变身
+
+[ZOMBIE_ZOMBIE_MOON_ILLUSIONIST]
+维度幻象僵尸
+
+[ZOMBIE_ZOMBIE_MOON_ILLUSIONIST_DESCRIPTION]
+他原本只是月球剧团的道具师，因为总偷穿主角戏服被开除，一气之下把道具改装成了武器。
+
+[ZOMBIE_ZOMBIE_MOON_ILLUSIONIST_DESCRIPTION_HEADER]
+可随机变身为埃及Boss、气功教主或Z机甲释放技能，半血时进入无敌变身
+
+[ZOMBIE_ZOMBIE_SUPERNOVA_IMP]
+超新星小鬼僵尸
+
+[ZOMBIE_ZOMBIE_SUPERNOVA_IMP_DESCRIPTION]
+“嘿！我的枪呢？”每次超新星巨人将他发射出来的时候都会把他的枪留在背上。多亏如此，这家伙在地上时毫无威胁。
+
+[ZOMBIE_ZOMBIE_SUPERNOVA_IMP_DESCRIPTION_HEADER]
+普通小鬼，无任何能力
+
+[ZOMBIE_SUPERNOVA_GARGANTUAR_GEMINI]
+超新星双子僵尸
+
+[ZOMBIE_SUPERNOVA_GARGANTUAR_GEMINI_DESCRIPTION]
+“你知道的，我们是宇宙中最臭名昭著，最恶贯满盈的——宇宙无敌双子星组合！”自从他们夺得了复制松果的复制科技，这两只臭味相投的僵尸就一直在一起搭档了
+
+[ZOMBIE_SUPERNOVA_GARGANTUAR_GEMINI_DESCRIPTION_HEADER]
+背上的超新星小鬼会瞄准前方植物，随后将目标周围3×3范围内的其他植物同化为目标植物；濒死时会被投掷出去。
+
+
 [NARRATIVE_MOON1_TUTORIAL_1_1]
 {NPC_ENTER:ASTRONAUTCRAZYDAVE}{NPC_ENTER:WINNIE}{SAY:ASTRONAUTCRAZYDAVE}月球表面太糟糕了，没办法种植植物了
 
@@ -91287,7 +92118,7 @@ NO.666号宇宙中出现的游戏光盘，看起来就很好玩。
 {NPC_ENTER:ASTRONAUTCRAZYDAVE}{NPC_ENTER:WINNIE}{SAY:WINNIE}宇宙豌豆、宇宙坚果和宇宙蘑菇乘坐火箭时，会触发不同效果。
 
 [NARRATIVE_ROCKET_TUTORIAL_2_2]
-{SAY:CRAZYDAVE}起飞！！！
+{SAY:ASTRONAUTCRAZYDAVE}起飞！！！
 
 [ROCKET_TUTORIAL_PLANT_COSMICPEA]
 试着将宇宙豌豆种植到火箭上
@@ -91313,6 +92144,87 @@ NO.666号宇宙中出现的游戏光盘，看起来就很好玩。
 [METEOR_TUTORIAL_TERMINAL_DRAG]
 把采集终端拖至场上
 
+[NARRATIVE_GRAVITY_TUTORIAL_1_1]
+{NPC_ENTER:ASTRONAUTCRAZYDAVE}{NPC_ENTER:WINNIE}{SAY:ASTRONAUTCRAZYDAVE}前方怎么有一块巨大的磁铁？
+
+[NARRATIVE_GRAVITY_TUTORIAL_1_2]
+{EXCITED:WINNIE}那是重力发生器！能够改变目标范围内的重力！
+
+[NARRATIVE_GRAVITY_TUTORIAL_1_3]
+{SAY:WINNIE}磁铁会发出紫色的反重力子弹，落到场上后会让目标区域的单位进入反重力状态
+
+[NARRATIVE_GRAVITY_TUTORIAL_1_4]
+{SAY:WINNIE}植物会一直上浮，而僵尸会进入上升前进状态
+
+[NARRATIVE_GRAVITY_TUTORIAL_1_5]
+{SAY:ASTRONAUTCRAZYDAVE}噢,我不喜欢飘来飘去的！
+
+[NARRATIVE_GRAVITY_TUTORIAL_1_6]
+{SAY:WINNIE}是时候让重力树接管这里了！重力树可以解除反重力状态。
+
+[GRAVITY_TUTORIAL_PLANT_GRAVITREE]
+把重力树拖至目标地块上
+
+[NARRATIVE_GRAVITY_TUTORIAL_2_1]
+{NPC_ENTER:ASTRONAUTCRAZYDAVE}{NPC_ENTER:WINNIE}{SAY:WINNIE}磁铁还会发出绿色的超重力子弹，落到场上后会让目标区域的单位进入超重力状态
+
+[NARRATIVE_GRAVITY_TUTORIAL_2_2]
+{SAY:WINNIE}植物会陷入地里，而僵尸会免疫击退效果
+
+[NARRATIVE_GRAVITY_TUTORIAL_2_3]
+{SAY:ASTRONAUTCRAZYDAVE}陷在地里？怎么感觉和僵尸一样？
+
+[NARRATIVE_GRAVITY_TUTORIAL_2_4]
+{SAY:WINNIE}种植宇宙飞碟瓜吧！宇宙飞碟瓜可以解除超重力状态！
+
+[NARRATIVE_GRAVITY_TUTORIAL_3_1]
+{NPC_ENTER:ASTRONAUTCRAZYDAVE}{NPC_ENTER:WINNIE}{SAY:WINNIE}灵活运用这两株植物来反制重力发生器吧！
+
+[NARRATIVE_GRAVITY_TUTORIAL_3_2]
+{SAY:ASTRONAUTCRAZYDAVE}看上去很简单啊！直接开战吧！
+
+[GRAVITY_TUTORIAL_PLANT_COSMICSAUCER]
+把宇宙飞碟瓜拖至目标地块上
+
+[NARRATIVE_MOON_13_INTRO_1]
+{NPC_ENTER:ASTRONAUTCRAZYDAVE}{NPC_ENTER:WINNIE}{SAY:ASTRONAUTCRAZYDAVE}怎么有一块奇怪的矿石？
+
+[NARRATIVE_MOON_13_INTRO_2]
+{EXCITED:WINNIE}那是坚壳矿石！只有打破坚壳才可以采集里面的晶矿！
+
+[NARRATIVE_MOON_13_INTRO_3]
+{SAY:WINNIE}多种些植物将坚壳打碎吧！
+
+[NARRATIVE_MOON_14_INTRO_1]
+{NPC_ENTER:ASTRONAUTCRAZYDAVE}{NPC_ENTER:WINNIE}{SAY:WINNIE}滴滴！检测到易碎晶矿！
+
+[NARRATIVE_MOON_14_INTRO_2]
+{SAY:ASTRONAUTCRAZYDAVE}这个也需要打碎吗？
+
+[NARRATIVE_MOON_14_INTRO_3]
+{SAY:WINNIE}不！易碎晶矿在采集一段时间后会碎掉，之后就无法采集了
+
+[NARRATIVE_MOON_14_INTRO_4]
+{SAY:WINNIE}部分易碎晶矿中有能量豆，晶矿碎掉后可以获得
+
+[NARRATIVE_MOON_14_INTRO_5]
+{SAY:ASTRONAUTCRAZYDAVE}好吧！没办法好好采个尽兴了！
+
+[NARRATIVE_MOON_20_INTRO_1]
+{NPC_ENTER:ASTRONAUTCRAZYDAVE}{NPC_ENTER:WINNIE}{EXCITED:WINNIE}危险！前方检测到辐射晶矿！
+
+[NARRATIVE_MOON_20_INTRO_2]
+{SAY:WINNIE}辐射晶矿会周期性对周围的植物和僵尸进行辐射
+
+[NARRATIVE_MOON_20_INTRO_3]
+{SAY:WINNIE}植物会随机变成其他植物，僵尸会有概率变成辐射巨人
+
+[NARRATIVE_MOON_20_INTRO_4]
+{SAY:ASTRONAUTCRAZYDAVE}那我过去会变成什么呢？
+
+[NARRATIVE_MOON_20_INTRO_5]
+{SAY:WINNIE}呃，我不知道，但最好别那样做
+
 [MOON1_TUTORIAL_PLANT_PEASHOOTER]
 把豌豆射手拖至苔藓地块上
 
@@ -91330,6 +92242,24 @@ NO.666号宇宙中出现的游戏光盘，看起来就很好玩。
 
 [MOON1_TUTORIAL_TERMINAL_DRAG]
 把采集终端拖至场上
+
+[NARRATIVE_ARENA_TUTORIAL_1_1]
+{NPC_ENTER:CRAZYDAVE}{NPC_ENTER:WINNIE}{EXCITED:CRAZYDAVE}是奖杯！它是属于我的了！
+
+[NARRATIVE_ARENA_TUTORIAL_1_2]
+{SAY:WINNIE}这是角斗场在进行表演！我们要和僵尸进行角斗！
+
+[NARRATIVE_ARENA_TUTORIAL_2_1]
+{NPC_ENTER:CRAZYDAVE}{NPC_ENTER:WINNIE}{EXCITED:CRAZYDAVE}哇！好多能量豆！大招用个爽！
+
+[NARRATIVE_ARENA_TUTORIAL_2_2]
+{SAY:WINNIE}在角斗胜利后，奖杯会爆发出大量能量豆
+
+[NARRATIVE_ARENA_TUTORIAL_2_3]
+{SAY:WINNIE}但如果角斗失败，会从天上降下大量的僵尸铁笼！
+
+[NARRATIVE_ARENA_TUTORIAL_2_4]
+{SAY:CRAZYDAVE}那我要赢下每一场角斗！
 
 [ANNIVERSARY_2026_1_ZOMBIE_MODIFIER]
 法老僵尸减伤
@@ -91450,5 +92380,207 @@ NO.666号宇宙中出现的游戏光盘，看起来就很好玩。
 
 [ANNIVERSARY_2026_20_ZOMBIE_MODIFIER_DESCRIPTION]
 周年庆飞行僵尸移动速度提升50%
+
+[MOON_GRAPPLE_UPGRADE_WINCH]
+强力绞盘
+
+[MOON_GRAPPLE_UPGRADE_LAUNCHER]
+高速发射器
+
+[MOON_GRAPPLE_UPGRADE_MAGNET]
+月晶磁铁
+
+[MOON_GRAPPLE_UPGRADE_DOUBLE_HOOK]
+双钩发射架
+
+[MOON_GRAPPLE_UPGRADE_BOUNTY]
+僵王估价系统
+
+[MOON_GRAPPLE_GUIDE_DESC_1]
+按住瞄准，拖动调整，松开发射！抓取物品获得分数和经验。每局限时内达到目标分，连续通过三局即可获胜！
+
+[MOON_GRAPPLE_GUIDE_DESC_2]
+经验攒满即可选择一次升级。选中卡牌后，点击“确认”生效；选择期间游戏暂停。
+
+[MOON_GRAPPLE_GUIDE_DESC_3]
+狂热：连续10次抓取或击碎物品即可触发，期间发射和抓空返回速度翻倍。
+
+[MOON_GRAPPLE_GUIDE_DESC_4]
+流星雨：抓取并回收每局仅出现一次的流星花即可触发，期间不刷新月球岩石，回收分数翻倍
+
+[MOON_GRAPPLE_UPGRADE_WINCH_DESC_1]
+回收速度提高35%
+[MOON_GRAPPLE_UPGRADE_WINCH_DESC_2]
+回收速度累计提高70%
+[MOON_GRAPPLE_UPGRADE_WINCH_DESC_3]
+回收速度累计提高110%，重物额外减速削弱25%
+
+[MOON_GRAPPLE_UPGRADE_LAUNCHER_DESC_1]
+发射速度提高35%，抓空返回速度提高20%
+[MOON_GRAPPLE_UPGRADE_LAUNCHER_DESC_2]
+发射速度累计提高70%，抓空返回速度累计提高50%
+[MOON_GRAPPLE_UPGRADE_LAUNCHER_DESC_3]
+发射速度累计提高110%，抓空返回速度累计提高90%
+
+[MOON_GRAPPLE_UPGRADE_MAGNET_DESC_1]
+吸附小范围内1枚小月晶
+[MOON_GRAPPLE_UPGRADE_MAGNET_DESC_2]
+提高吸附半径和牵引速度
+[MOON_GRAPPLE_UPGRADE_MAGNET_DESC_3]
+进一步提高吸附半径，一次最多吸附并带回2枚
+
+[MOON_GRAPPLE_UPGRADE_DOUBLE_HOOK_DESC_1]
+主钩发射后可再次瞄准，以70%速度发射副钩；两钩归位后开启下一轮
+[MOON_GRAPPLE_UPGRADE_DOUBLE_HOOK_DESC_2]
+副钩速度提高至主钩的90%；继续等待两钩归位
+[MOON_GRAPPLE_UPGRADE_DOUBLE_HOOK_DESC_3]
+副钩达到主钩100%速度；任意钩爪归位后均可独立再发
+
+[MOON_GRAPPLE_UPGRADE_BOUNTY_DESC_1]
+每12秒标记1个悬赏目标；回收分数提高50%
+[MOON_GRAPPLE_UPGRADE_BOUNTY_DESC_2]
+每10秒标记1个悬赏目标；回收分数提高100%
+[MOON_GRAPPLE_UPGRADE_BOUNTY_DESC_3]
+回收悬赏后标记转移至其他编队的合格物品，并保持100%加分，可持续连锁
+
+[MOON_GRAPPLE_FRENZY_WARNING]
+进入狂热！
+
+[MOON_GRAPPLE_LOSS_MESSAGE]
+挑战失败！
+
+[MOON_GRAPPLE_CANNOT_FIRE]
+当前不能出钩
+
+[EAGLE_FLAG_ARRIVAL]
+鹰旗降临
+
+[EAGLE_FLAG_ARRIVAL_DIFFICULTY_1_DESCRIPTION]
+开局在右侧第8、9列的空位中随机额外生成1个鹰旗
+
+[EAGLE_FLAG_ARRIVAL_DIFFICULTY_2_DESCRIPTION]
+开局在右侧第8、9列的空位中随机额外生成3个鹰旗
+
+[EAGLE_FLAG_ARRIVAL_DIFFICULTY_3_DESCRIPTION]
+开局在右侧第8、9列的空位中随机额外生成5个鹰旗
+
+[ADVICE_GLADIATOR_ROW_WARNING]
+角斗行即将开启！
+
+[ADVICE_GLADIATOR_ROW_PLANTS_WIN]
+植物赢得角斗！
+
+[ADVICE_GLADIATOR_ROW_ZOMBIES_WIN]
+僵尸赢得角斗！
+
+[ADVICE_GLADIATOR_ROW_ACTION_INSIDE]
+角斗期间只能操作角斗场内区域！
+
+[COSMICSAUCER]
+宇宙飞碟瓜
+
+[COSMICSAUCER_DESCRIPTION]
+{KEYWORD}范围：{STAT}单格
+{KEYWORD}植物特征：{STAT}紫色植物、宇宙家族
+{FLAVOR}宇宙飞碟瓜约坚果去附近兜风。听说目的地在三十八万公里外，坚果默默放下了野餐篮。“怎么了？”宇宙飞碟瓜问，“我还特意挑了个能看见家的地方。”
+
+[COSMICSAUCER_DESCRIPTION_HEADER]
+将同格的中小型僵尸吸至空中，并救出周围陷入强引力的植物。
+
+[COSMICSAUCER_TOOLTIP]
+悬浮靠近的中小型僵尸
+
+[COSMICSAUCER_PRODUCT_SHORT_DESC]
+控制靠近的僵尸，并解除植物的强引力状态。
+
+[COSMICSAUCER_AVATAR_NAME]
+宇宙飞碟瓜装扮
+
+[STORE_PRODUCT_AVATAR_COSMICSAUCER_TITLE]
+宇宙飞碟瓜装扮
+
+[STORE_PRODUCT_AVATAR_COSMICSAUCER]
+大招可吸收的中小型僵尸数量上限由3个提升至6个。
+
+[COSMICSAUCER_SKILL_LEVEL1]
+引力捕手
+
+[COSMICSAUCER_SKILL_LEVEL1_DES]
+可吸收同格内剩余总生命值低于1000的中小型僵尸，休息时间缩短至12秒。
+
+[COSMICSAUCER_SKILL_LEVEL2]
+引力升级
+
+[COSMICSAUCER_SKILL_LEVEL2_DES]
+可吸收同格内剩余总生命值低于2000的中小型僵尸，休息时间缩短至10秒。
+
+[COSMICSAUCER_SKILL_LEVEL5]
+迷幻光束
+
+[COSMICSAUCER_SKILL_LEVEL5_DES]
+悬浮僵尸落地后有20%概率被魅惑，巨人、精英和首领单位免疫。
+
+[COSMICSAUCER_NEW_SKILL_LEVEL1_DES]
+将同格内符合条件的中小型僵尸吸至空中，悬浮4秒，攻击结束后休息14秒。自身免疫强引力，并能救出周围3×3范围内陷入强引力的植物。
+
+[COSMICSAUCER_NEW_SKILL_LEVEL2_DES]
+可吸收同格内剩余总生命值低于1000的中小型僵尸，休息时间缩短至12秒。
+
+[COSMICSAUCER_NEW_SKILL_LEVEL3_DES]
+可吸收同格内剩余总生命值低于2000的中小型僵尸，休息时间缩短至10秒。
+
+[COSMICSAUCER_NEW_SKILL_LEVEL4_DES]
+种植时有中概率直接释放能量豆大招！
+
+[COSMICSAUCER_NEW_SKILL_LEVEL5_DES]
+悬浮僵尸落地后有20%概率被魅惑，无法魅惑的僵尸不受此效果影响。
+
+[COSMICSAUCER_PLANTFOOD_DESCRIPTION]
+依次吸收以自身为中心3×3范围内最多3个符合条件的中小型僵尸，优先吸收距离较近的目标。
+
+[COSMICSAUCER_AVATAR_PLANTFOOD_DESCRIPTION]
+依次吸收以自身为中心3×3范围内最多6个符合条件的中小型僵尸，优先吸收距离较近的目标。
+
+[PLANT_FAMILY_NAME_50052]
+步月登云
+
+[ROMAN_BALLISTA_PARTY]
+罗马攻城车派对
+[ROMAN_BALLISTA_PARTY_DESCRIPTION]
+罗马攻城车的生命值提升至300%，每次额外投掷1个罐子
+
+[ROMAN_HEALER_PARTY]
+治愈者派对
+[ROMAN_HEALER_PARTY_DESCRIPTION]
+治愈者僵尸的生命值提升至300%，治疗间隔缩短至2.5秒
+
+[GLADIATOR_PARTY]
+角斗士派对
+[GLADIATOR_PARTY_DESCRIPTION]
+角斗士僵尸的移动速度和攻击力提升至300%
+
+[UNCHARTED_ROMA_N_CHALLENGE_2]
+击败{NUMBER}只罗马盾牌僵尸
+
+[UNCHARTED_ROMA_N_CHALLENGE_3]
+累计击败{NUMBER}只罗马铁桶僵尸、百夫长僵尸或石像僵尸
+
+[UNCHARTED_ROMA_N_CHALLENGE_4]
+累计击败{NUMBER}只罗马盾牌僵尸
+
+[UNCHARTED_ROMA_N_CHALLENGE_5]
+击败{NUMBER}只治愈者僵尸
+
+[UNCHARTED_ROMA_N_CHALLENGE_6]
+击败{NUMBER}只美杜莎僵尸
+
+[UNCHARTED_ROMA_N_CHALLENGE_9]
+击败{NUMBER}只角斗士僵尸
+
+[UNCHARTED_ROMA_N_CHALLENGE_10]
+击败罗马僵王，完成关卡
+
+[ARENA_TUTORIAL_PLANT_PEASHOOTER]
+把豌豆射手拖至目标地块上
 
 [PVZ2_CHINESE_END]

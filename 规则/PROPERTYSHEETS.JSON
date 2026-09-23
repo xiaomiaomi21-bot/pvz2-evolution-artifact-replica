@@ -334,7 +334,9 @@
 					"cosmicpea",
 					"cosmicmushroom",
 					"cosmicnut",
-					"phoenixfloat"
+					"phoenixfloat",
+					"cosmicsaucer",
+					"nagasalak"
 				],
 				"PlantAlmanacOrder": [
 					"sunflower",
@@ -652,8 +654,10 @@
 					"gravitree",
 					"cosmicmushroom",
 					"cosmicnut",
-					"darkmatter_dragonfruit",
-					"phoenixfloat"
+					"dmdragonfruit",
+					"phoenixfloat",
+					"cosmicsaucer",
+					"nagasalak"
 				],
 				"ParallelPlantAlmanacOrder": [
 					"parallel_sunflower",
@@ -971,6 +975,7 @@
 					"fairy_tale_witch",
 					"fairy_tale_gargantuar",
 					"fairy_tale_imp",
+					"fairy_tale_armed_gargantuar",
 					"fairy_tale_knight",
 					"mirror_queen_phase1",
 					"summer_basic",
@@ -1015,6 +1020,7 @@
 					"childrensday_flag",
 					"childrensday_gargantuar",
 					"childrensday_imp",
+					"children_lollipops",
 					"bumpercar",
 					"parkour_runner",
 					"parkour",
@@ -1177,7 +1183,11 @@
 					"explorer_veteran",
 					"west_bull_veteran",
 					"dino_bully_veteran",
-					"pelican"
+					"zombie_moon_blade",
+					"zombie_moon_illusionist",
+					"supernova_gargantuar_gemini",
+					"zombie_supernova_imp",
+					"lunar_radiation_gargantuar"
 				],
 				"PowerTilePropagationAlpha": 1,
 				"PowerTilePropagationDelay": 0.2,
@@ -2782,39 +2792,9 @@
 						"AdvancedSkillType": "RTID(Zoybeanpod_skill_level5@SkillTypes)"
 					}
 				],
-				"ValidStages": [
-					"beach",
-					"cowboy",
-					"dark",
-					"dino",
-					"egypt",
-					"eighties",
-					"future",
-					"heian",
+				"BlackListStages": [
 					"atlantis",
-					"iceage",
-					"kongfu",
-					"lostcity",
-					"modern",
-					"renai",
-					"steam",
-					"pirate",
-					"night",
-					"roof",
-					"snow_roof",
-					"snow_night",
-					"snow_modern",
-					"rift",
-					"fairy_tale",
-					"newyear_daylight",
-					"newyear_night",
-					"halloween",
-					"spring_night",
-					"spring_daylight",
-					"uncharted_iceage",
-					"childrenday",
-					"newyear_night",
-					"uncharted_needforspeed"
+					"skycity"
 				],
 				"DetailProps": {
 					"DetailsList": [
@@ -3442,6 +3422,10 @@
 				"PacketCooldown": 5,
 				"PlantGridType": "ground",
 				"PlantFoodPlayCount": 1,
+				"BlackListStages": [
+					"atlantis",
+					"skycity"
+				],
 				"Actions": [
 					{
 						"Type": "special",
@@ -3500,40 +3484,6 @@
 						"Type": "recharge",
 						"Value": "recharge4"
 					}
-				],
-				"ValidStages": [
-					"beach",
-					"cowboy",
-					"dark",
-					"dino",
-					"egypt",
-					"eighties",
-					"future",
-					"heian",
-					"atlantis",
-					"iceage",
-					"kongfu",
-					"lostcity",
-					"modern",
-					"renai",
-					"steam",
-					"pirate",
-					"night",
-					"roof",
-					"snow_roof",
-					"snow_night",
-					"snow_modern",
-					"rift",
-					"fairy_tale",
-					"newyear_daylight",
-					"newyear_night",
-					"halloween",
-					"spring_night",
-					"spring_daylight",
-					"uncharted_iceage",
-					"childrenday",
-					"newyear_night",
-					"uncharted_needforspeed"
 				],
 				"PlantLevelStats": [
 					{
@@ -3643,6 +3593,10 @@
 				"StunnedTime": 5,
 				"StunnedTime2": 8,
 				"AmuletNum": 2,
+				"BlackListStages": [
+					"atlantis",
+					"skycity"
+				],
 				"Actions": [
 					{
 						"Type": "special",
@@ -3686,40 +3640,6 @@
 						"Type": "recharge",
 						"Value": "recharge3"
 					}
-				],
-				"ValidStages": [
-					"beach",
-					"cowboy",
-					"dark",
-					"dino",
-					"egypt",
-					"eighties",
-					"future",
-					"heian",
-					"atlantis",
-					"iceage",
-					"kongfu",
-					"lostcity",
-					"modern",
-					"renai",
-					"steam",
-					"pirate",
-					"night",
-					"roof",
-					"snow_roof",
-					"snow_night",
-					"snow_modern",
-					"rift",
-					"fairy_tale",
-					"newyear_daylight",
-					"newyear_night",
-					"halloween",
-					"spring_night",
-					"spring_daylight",
-					"uncharted_iceage",
-					"childrenday",
-					"newyear_night",
-					"uncharted_needforspeed"
 				],
 				"PlantLevelStats": [
 					{
@@ -3818,6 +3738,10 @@
 				"PacketCooldown": 15,
 				"PlantGridType": "ground",
 				"PlantFoodPlayCount": 1,
+				"BlackListStages": [
+					"atlantis",
+					"skycity"
+				],
 				"Actions": [
 					{
 						"Type": "special",
@@ -3848,40 +3772,6 @@
 						"Type": "recharge",
 						"Value": "recharge2"
 					}
-				],
-				"ValidStages": [
-					"beach",
-					"cowboy",
-					"dark",
-					"dino",
-					"egypt",
-					"eighties",
-					"future",
-					"heian",
-					"atlantis",
-					"iceage",
-					"kongfu",
-					"lostcity",
-					"modern",
-					"renai",
-					"steam",
-					"pirate",
-					"night",
-					"roof",
-					"snow_roof",
-					"snow_night",
-					"snow_modern",
-					"rift",
-					"fairy_tale",
-					"newyear_daylight",
-					"newyear_night",
-					"halloween",
-					"spring_night",
-					"spring_daylight",
-					"uncharted_iceage",
-					"childrenday",
-					"newyear_night",
-					"uncharted_needforspeed"
 				],
 				"PlantLevelStats": [
 					{
@@ -9881,7 +9771,8 @@
 				"PacketCooldown": 5,
 				"PlantGridType": "ground",
 				"BlackListStages": [
-					"moon"
+					"moon",
+					"skycity"
 				],
 				"PlantFoodPlayCount": 1,
 				"ArtCenter": {
@@ -13506,15 +13397,21 @@
 				"Cost": 150,
 				"PowerCost": 2,
 				"MinLevel": 1,
-				"MaxLevel": 4,
+				"MaxLevel": 5,
 				"Hitpoints": 4000,
 				"BoostRate": 0.45,
 				"PacketCooldown": 20,
 				"PlantGridType": "ground",
+				"BlackListStages": [
+					"atlantis"
+				],
 				"PlantFoodDurationSeconds": 2,
 				"PlantFoodProjectileCount": 60,
 				"PlantFoodActivationSound": "Play_Plant_DarkAges_Peanut_PF_Attack",
 				"PlantFoodShieldHitpoints": 4000,
+				"FiveStageBlacklist": [
+					"peanut"
+				],
 				"Actions": [
 					{
 						"Type": "projectile",
@@ -13572,10 +13469,10 @@
 						"AdvancedSkillType": "RTID(plant_wakeup_level1@SkillTypes)"
 					},
 					{
-						"AttackLevel": 1,
-						"HitPointsLevel": 1,
+						"AttackLevel": 3,
+						"HitPointsLevel": 3,
 						"PropertySkillType": "RTID(SunflowerLevel5Avatar@SkillTypes)",
-						"AdvancedSkillType": "RTID(plant_wakeup_level2@SkillTypes)"
+						"AdvancedSkillType": "RTID(Peanut_Skill1_Level5@SkillTypes)"
 					}
 				],
 				"DetailProps": {
@@ -13592,9 +13489,11 @@
 						20,
 						30,
 						40,
-						50
+						50,
+						60
 					],
 					"AttackInterval": [
+						1.3,
 						1.3,
 						1.3,
 						1.3,
@@ -13604,9 +13503,11 @@
 						"[RANGE_0]",
 						"[RANGE_0]",
 						"[RANGE_0]",
+						"[RANGE_0]",
 						"[RANGE_0]"
 					],
 					"Area": [
+						"[AREA_SINGLE]",
 						"[AREA_SINGLE]",
 						"[AREA_SINGLE]",
 						"[AREA_SINGLE]",
@@ -15119,7 +15020,7 @@
 			],
 			"objdata": {
 				"Cost": 25,
-				"PowerCost": 1,
+				"PowerCost": 0,
 				"Hitpoints": 300,
 				"MinLevel": 1,
 				"MaxLevel": 1,
@@ -23079,7 +22980,17 @@
 					"zombie_cosmic_imp",
 					"zombie_cosmic_imp_toycar",
 					"zombie_cosmic_imp_bubblegun",
-					"zombie_cosmic_imp_corporate"
+					"zombie_cosmic_imp_corporate",
+					"roman",
+					"roman_imp",
+					"roman_armor1",
+					"roman_armor2",
+					"roman_armor3",
+					"roman_armor4",
+					"roman_flag",
+					"roman_healer",
+					"roman_medusa",
+					"gladiator_zombie"
 				],
 				"PlantLevelStats": [
 					{
@@ -24990,6 +24901,10 @@
 				"PacketCooldown": 5,
 				"PlantGridType": "ground",
 				"PlantFoodActivationSound": "",
+				"BlackListStages": [
+					"atlantis",
+					"skycity"
+				],
 				"ArtCenter": {
 					"x": 97,
 					"y": 115
@@ -25105,39 +25020,6 @@
 						"y": -40
 					}
 				},
-				"ValidStages": [
-					"beach",
-					"cowboy",
-					"dark",
-					"dino",
-					"egypt",
-					"eighties",
-					"future",
-					"heian",
-					"atlantis",
-					"iceage",
-					"kongfu",
-					"lostcity",
-					"modern",
-					"renai",
-					"steam",
-					"pirate",
-					"night",
-					"snow_night",
-					"snow_modern",
-					"skycity",
-					"fairy_tale",
-					"rift",
-					"newyear_daylight",
-					"newyear_night",
-					"halloween",
-					"spring_night",
-					"spring_daylight",
-					"uncharted_iceage",
-					"childrenday",
-					"newyear_night",
-					"uncharted_needforspeed"
-				],
 				"PFTargetSearchExpirationSeconds": 4,
 				"PFMaxNumberOfTargets": 4,
 				"PFTongueRange": 4,
@@ -29747,7 +29629,7 @@
 					5.0
 				],
 				"BoostRate": 0.3,
-				"AnnihilationChance": 0.15,
+				"AnnihilationChance": 0.3,
 				"PlantfoodShotCount": 3,
 				"AvatarPlantfoodShotCount": 5,
 				"PlantfoodGiantDamage": 1500,
@@ -33219,6 +33101,7 @@
 				"PacketCooldown": 10.0,
 				"StartingCooldown": 5.0,
 				"PlantFoodDurationSeconds": 0.15,
+				"CanLiveUniverse": true,
 				"PlantGridType": "ground",
 				"ArtCenter": {
 					"x": 93,
@@ -33365,6 +33248,7 @@
 				"PacketCooldown": 10.0,
 				"PlantGridType": "ground",
 				"PlantFoodPlayCount": 1,
+				"CanLiveUniverse": true,
 				"PlantFoodActivationSound": "Play_Plant_CabbagePult_Nitro",
 				"ArtCenter": {
 					"x": 99,
@@ -34023,6 +33907,7 @@
 				"PacketCooldown": 10.0,
 				"StartingCooldown": 0.05,
 				"PlantFoodPlayCount": 1,
+				"CanLiveUniverse": true,
 				"PlantFoodActivationSound": "Play_Plant_Potato_Nitro",
 				"PlantGridType": "ground",
 				"ArtCenter": {
@@ -34179,6 +34064,7 @@
 				"PacketCooldown": 5.0,
 				"PlantGridType": "ground",
 				"PlantFoodPlayCount": 1,
+				"CanLiveUniverse": true,
 				"PlantFoodActivationSound": "Play_Plant_WallNut_Nitro",
 				"ArtCenter": {
 					"x": 99,
@@ -34497,6 +34383,7 @@
 				"StartingCooldown": 15.0,
 				"PacketCooldown": 20.0,
 				"PlantGridType": "ground",
+				"CanLiveUniverse": true,
 				"PlantFoodDurationSeconds": 2.0,
 				"PlantFoodActivationSound": "",
 				"ArtCenter": {
@@ -37926,6 +37813,159 @@
 			}
 		},
 		{
+			"objclass": "CosmicSaucerProps",
+			"aliases": [
+				"CosmicSaucerDefault"
+			],
+			"objdata": {
+				"Cost": 25,
+				"PowerCost": 1,
+				"Hitpoints": 300,
+				"MinLevel": 1,
+				"MaxLevel": 5,
+				"BoostRate": 0.5,
+				"PacketCooldown": 20,
+				"PlantGridType": "ground",
+				"PlantFoodDurationSeconds": 3,
+				"PlantFoodActivationSound": "Play_Saucer_PlantFood",
+				"FloatDuration": 4,
+				"FloatRiseDuration": 0.5,
+				"FloatFallDuration": 0.5,
+				"FloatHeight": 20,
+				"NormalAbsorbDuration": 1,
+				"NormalCaptureRangeExpand": 20,
+				"RescueRiseDuration": 1,
+				"RescueFallDuration": 0.5,
+				"PlantFoodMaxTargets": 3,
+				"AvatarPlantFoodMaxTargets": 6,
+				"Level5CharmChance": 0.2,
+				"PlantFoodBeamColor": {
+					"mRed": 255,
+					"mGreen": 96,
+					"mBlue": 96,
+					"mAlpha": 255
+				},
+				"AvatarPlantFoodBeamColor": {
+					"mRed": 190,
+					"mGreen": 96,
+					"mBlue": 255,
+					"mAlpha": 255
+				},
+				"RestCooldownByLevel": [
+					14,
+					12,
+					10,
+					10,
+					10
+				],
+				"AbsorbHealthThresholdByLevel": [
+					0,
+					1000,
+					2000,
+					2000,
+					2000
+				],
+				"ExcludedZombieTypes": [
+					"cannon",
+					"uncharted_cannon",
+					"dark_king",
+					"dark_king_elite",
+					"beach_fisherman",
+					"general_caesar_phase1",
+					"general_caesar_phase2",
+					"general_caesar_phase3",
+					"time_stop"
+				],
+				"ArtCenter": {
+					"x": 97,
+					"y": 105
+				},
+				"CanLiveOnWaves": true,
+				"CanLiveInSky": true,
+				"CanLiveUniverse": true,
+				"PlantStats": [
+					{
+						"Type": "range",
+						"Value": "touch"
+					},
+					{
+						"Type": "recharge",
+						"Value": "recharge2"
+					}
+				],
+				"PlantLevelStats": [
+					{
+						"AttackLevel": 1,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 1.5,
+						"HitPointsLevel": 1.5,
+						"PropertySkillType": "RTID(Plant_PropertyUp_Level1@SkillTypes)",
+						"AdvancedSkillType": "RTID(CosmicSaucer_Skill_Level1@SkillTypes)"
+					},
+					{
+						"AttackLevel": 2,
+						"HitPointsLevel": 2,
+						"PropertySkillType": "RTID(Plant_PropertyUp_Level2@SkillTypes)",
+						"AdvancedSkillType": "RTID(CosmicSaucer_Skill_Level2@SkillTypes)"
+					},
+					{
+						"AttackLevel": 2.5,
+						"HitPointsLevel": 2.5,
+						"PropertySkillType": "RTID(Plant_PropertyUp_Level3@SkillTypes)",
+						"AdvancedSkillType": "RTID(plant_wakeup_level1@SkillTypes)"
+					},
+					{
+						"AttackLevel": 3,
+						"HitPointsLevel": 3,
+						"PropertySkillType": "RTID(Plant_PropertyUp_Level4@SkillTypes)",
+						"AdvancedSkillType": "RTID(CosmicSaucer_Skill_Level5@SkillTypes)"
+					}
+				],
+				"DetailProps": {
+					"DetailsList": [
+						"suncost",
+						"cooldown",
+						"hitpoint",
+						"rest",
+						"range",
+						"area"
+					],
+					"Damages": [
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"Rest": [
+						14,
+						12,
+						10,
+						10,
+						10
+					],
+					"Ranage": [
+						"[RANGE_22]",
+						"[RANGE_22]",
+						"[RANGE_22]",
+						"[RANGE_22]",
+						"[RANGE_22]"
+					],
+					"Area": [
+						"[AREA_GROUP3]",
+						"[AREA_GROUP3]",
+						"[AREA_GROUP3]",
+						"[AREA_GROUP3]",
+						"[AREA_GROUP3]"
+					]
+				},
+				"DisplayActions": "RTID(CosmicSaucerDefault@DisplayActions)",
+				"DisplayAvatarActions": "RTID(CosmicSaucerDefault@DisplayAvatarActions)"
+			}
+		},
+		{
 			"objclass": "CosmicPeaProps",
 			"aliases": [
 				"CosmicPeaDefault"
@@ -38868,39 +38908,9 @@
 				"Level3ReducedCd": 1,
 				"Level5Rate": 0.3,
 				"BoostRate": 0.6,
-				"ValidStages": [
-					"egypt",
-					"pirate",
-					"cowboy",
-					"kongfu",
-					"future",
-					"dark",
-					"beach",
-					"iceage",
-					"lostcity",
-					"eighties",
-					"dino",
-					"modern",
-					"steam",
-					"renai",
-					"heian",
+				"BlackListStages": [
 					"atlantis",
-					"night",
-					"roof",
-					"snow_roof",
-					"snow_night",
-					"snow_modern",
-					"rift",
-					"newyear_daylight",
-					"newyear_night",
-					"fairy_tale",
-					"halloween",
-					"spring_daylight",
-					"spring_night",
-					"uncharted_iceage",
-					"childrenday",
-					"newyear_night",
-					"uncharted_needforspeed"
+					"skycity"
 				],
 				"Actions": [
 					{
@@ -46301,6 +46311,7 @@
 				"PacketCooldown": 5,
 				"PlantGridType": "ground",
 				"PlantFoodPlayCount": 1,
+				"CanLiveUniverse": true,
 				"PlantFoodActivationSound": "Play_Peashooter_Food",
 				"ShadowAvatarHurricaneDamage": 50,
 				"WhirlPoolRatios": [
@@ -49580,6 +49591,7 @@
 				"PacketCooldown": 5.0,
 				"PlantGridType": "ground",
 				"PlantFoodPlayCount": 3,
+				"CanLiveUniverse": true,
 				"SpecialAttackRate": 0.1,
 				"ImprovedSpecialAttackBonus": 1.0,
 				"PoweredAttackSlowDuration": 5.0,
@@ -49873,6 +49885,17 @@
 						"SpawnOffset": {
 							"x": -25.0,
 							"y": -125.0
+						}
+					},
+					{
+						"Type": "projectile",
+						"Projectile": "RTID(ThrownMedusaParticle@ProjectileTypes)",
+						"InitialMinCooldownTime": 0,
+						"CooldownTimeMin": 1.35,
+						"CooldownTimeMax": 1.5,
+						"SpawnOffset": {
+							"x": 35.0,
+							"y": -32.0
 						}
 					}
 				],
@@ -52939,35 +52962,8 @@
 						}
 					}
 				],
-				"ValidStages": [
-					"beach",
-					"cowboy",
-					"dark",
-					"dino",
-					"egypt",
-					"eighties",
-					"future",
-					"heian",
-					"atlantis",
-					"iceage",
-					"kongfu",
-					"lostcity",
-					"modern",
-					"renai",
-					"steam",
-					"night",
-					"snow_night",
-					"snow_modern",
-					"fairy_tale",
-					"newyear_daylight",
-					"newyear_night",
-					"halloween",
-					"spring_night",
-					"spring_daylight",
-					"uncharted_iceage",
-					"childrenday",
-					"newyear_night",
-					"uncharted_needforspeed"
+				"BlackListStages": [
+					"atlantis"
 				],
 				"CanLiveOnWaves": false,
 				"CanLiveInSky": false,
@@ -54898,12 +54894,17 @@
 				"WaterPlants": {
 					"List": [
 						"tanglekelp",
+						"nagasalak",
 						"nekotail",
 						"guacodile",
 						"lotusshower",
 						"narcissusshooter",
 						"electricpeel",
-						"seashroom"
+						"seashroom",
+						"seashooter",
+						"aquaweed",
+						"duckpear",
+						"bubblecoral"
 					],
 					"ListType": "whitelist"
 				},
@@ -55558,6 +55559,30 @@
 						"CooldownTimeMax": 1.5,
 						"SpawnOffset": {
 							"x": 25,
+							"y": 0
+						}
+					},
+					{
+						"Type": "projectile",
+						"Projectile": "RTID(SeashooterProjectileDefault@ProjectileTypes)",
+						"ProjectileLaunchSound": "Play_Throw",
+						"InitialMinCooldownTime": 0,
+						"CooldownTimeMin": 1.35,
+						"CooldownTimeMax": 1.5,
+						"SpawnOffset": {
+							"x": 35,
+							"y": 0
+						}
+					},
+					{
+						"Type": "projectile",
+						"Projectile": "RTID(CosmicPeaProjectile@ProjectileTypes)",
+						"ProjectileLaunchSound": "Play_Throw",
+						"InitialMinCooldownTime": 0,
+						"CooldownTimeMin": 1.35,
+						"CooldownTimeMax": 1.5,
+						"SpawnOffset": {
+							"x": 35,
 							"y": 0
 						}
 					}
@@ -57227,6 +57252,7 @@
 				"PlantGridType": "ground",
 				"MultiPlantLayer": "armor",
 				"PlantFoodPlayCount": 1,
+				"CanLiveUniverse": true,
 				"MinLevel": 1,
 				"MaxLevel": 5,
 				"BoostRate": 0.55,
@@ -58878,6 +58904,10 @@
 				"PlantFoodActivationSound": "Play_Plant_Wizardthorns_plantfood",
 				"PacketCooldown": 8,
 				"PlantGridType": "ground",
+				"BlackListStages": [
+					"atlantis",
+					"skycity"
+				],
 				"Attack1Cooldown": 10.0,
 				"Attack2Cooldown": 2.0,
 				"LevelsubCooldown": 2.0,
@@ -58890,39 +58920,6 @@
 				"poisonedlv5dot": 0.03,
 				"poisonedduration": 5.0,
 				"plantfoodspawncount": 2,
-				"ValidStages": [
-					"egypt",
-					"pirate",
-					"cowboy",
-					"kongfu",
-					"future",
-					"dark",
-					"beach",
-					"iceage",
-					"lostcity",
-					"eighties",
-					"dino",
-					"modern",
-					"steam",
-					"renai",
-					"heian",
-					"atlantis",
-					"night",
-					"roof",
-					"snow_roof",
-					"snow_night",
-					"snow_modern",
-					"rift",
-					"newyear_daylight",
-					"fairy_tale",
-					"halloween",
-					"spring_daylight",
-					"spring_night",
-					"uncharted_iceage",
-					"childrenday",
-					"newyear_night",
-					"uncharted_needforspeed"
-				],
 				"SeedChooserPreviewAdjust": {
 					"x": 0,
 					"y": -10
@@ -61539,6 +61536,7 @@
 				"SuperStarRate": 0.3,
 				"PlantGridType": "ground",
 				"PlantFoodPlayCount": 1,
+				"CanLiveUniverse": true,
 				"PlantFoodDurationSeconds": 1.9,
 				"PlantFoodProjectileCount": 120,
 				"PFSpitAttackBoosted": 135,
@@ -61799,6 +61797,7 @@
 				"SuperStarRate": 0.3,
 				"PacketCooldown": 7.5,
 				"PlantGridType": "ground",
+				"CanLiveUniverse": true,
 				"PlantFoodDurationSeconds": 1.9,
 				"PlantFoodProjectileCount": 120,
 				"PoisonDPS": 30,
@@ -119222,6 +119221,26 @@
 		{
 			"objclass": "GridItemGravestonePropertySheet",
 			"aliases": [
+				"GridItemMoonIllusionistGravestoneDefault"
+			],
+			"objdata": {
+				"Hitpoints": 700,
+				"HitRectOffsetX": 15,
+				"HitRectOffsetWidth": -30,
+				"ArtCenter": {
+					"x": 98,
+					"y": 127
+				},
+				"PopAnim": "POPANIM_EFFECTS_ZOMBIE_GALACTIC_MYSTERIO_ZOMBOSS_HIEROGLYPH",
+				"DamageStateCount": 5,
+				"IsAnimated": true,
+				"BreakEffect": "POPANIM_EFFECTS_ZOMBIE_GALACTIC_MYSTERIO_ZOMBOSS_HIEROGLYPH_DAMAGE",
+				"BreakEffectSound": "Play_Zomb_Egypt_Grave_Crumble"
+			}
+		},
+		{
+			"objclass": "GridItemGravestonePropertySheet",
+			"aliases": [
 				"GridItemGravestoneThemeDefault"
 			],
 			"objdata": {
@@ -120394,6 +120413,38 @@
 			"objclass": "GridItemHotRodicusFireWallProps",
 			"aliases": [
 				"GridItemHotRodicusFireWallBlue"
+			],
+			"objdata": {
+				"Hitpoints": 750,
+				"HitRectOffsetX": -15,
+				"HitRectOffsetWidth": 30,
+				"ArtCenter": {
+					"x": 98,
+					"y": 127
+				},
+				"IsBlueFire": true
+			}
+		},
+		{
+			"objclass": "GridItemRomanHotRodicusFireWallProps",
+			"aliases": [
+				"GridItemRomanHotRodicusFireWallRed"
+			],
+			"objdata": {
+				"Hitpoints": 500,
+				"HitRectOffsetX": -15,
+				"HitRectOffsetWidth": 30,
+				"ArtCenter": {
+					"x": 98,
+					"y": 127
+				},
+				"IsBlueFire": false
+			}
+		},
+		{
+			"objclass": "GridItemRomanHotRodicusFireWallProps",
+			"aliases": [
+				"GridItemRomanHotRodicusFireWallBlue"
 			],
 			"objdata": {
 				"Hitpoints": 750,
@@ -122811,6 +122862,36 @@
 			}
 		},
 		{
+			"objclass": "PVZ2KingGridItemProps",
+			"aliases": [
+				"PVZ2GingleKingGridItemDefault"
+			],
+			"objdata": {
+				"PopAnimRenderOffset": {
+					"x": 98,
+					"y": 127
+				},
+				"PopAnim": "POPANIM_EFFECTS_SNOWMAN_GINGLE_KING",
+				"PopAnimRigClass": "GravestoneAnimRig",
+				"StandardDamage": 1000
+			}
+		},
+		{
+			"objclass": "GridItemAnimationProps",
+			"aliases": [
+				"PVZ2GingleSoldierGridItemDefault"
+			],
+			"objdata": {
+				"PopAnimRenderOffset": {
+					"x": 98,
+					"y": 127
+				},
+				"Hitpoints": 5,
+				"PopAnim": "POPANIM_EFFECTS_SNOWMAN_GINGLE_SOLDIER",
+				"PopAnimRigClass": "GravestoneAnimRig"
+			}
+		},
+		{
 			"objclass": "PVZ2LiondanceGridItemProps",
 			"aliases": [
 				"PVZ2GingleLiondanceGridItemDefault"
@@ -123698,6 +123779,284 @@
 			],
 			"objdata": {
 				"PopAnim": "POPANIM_EFFECTS_LUNARMINE_ORE_RAW",
+				"PopAnimRenderOffset": {
+					"x": 96,
+					"y": 123
+				}
+			}
+		},
+		{
+			"objclass": "LunarMineFragileOreProperties",
+			"aliases": [
+				"LunarMineOreFragile"
+			],
+			"objdata": {
+				"MaxCollectorCount": 5,
+				"CapacityPerConnection": 3,
+				"Durability": 50,
+				"DrainPerCollectorPerSecond": 1,
+				"PopAnim": "POPANIM_EFFECTS_LUNARMINE_ORE_EFFECT",
+				"IdleAnimation": "idle_purple",
+				"CrackStageThresholds": [
+					0.5
+				],
+				"CrackAnimations": [
+					"idle_purple",
+					"idle_purple_02"
+				],
+				"CrackTransitionAnimations": [
+					"purple_boom"
+				],
+				"BreakAnimation": "purple_boom_02",
+				"PlantFoodRewardCount": 0,
+				"PopAnimRenderOffset": {
+					"x": 96,
+					"y": 123
+				}
+			}
+		},
+		{
+			"objclass": "LunarMineFragileOreProperties",
+			"aliases": [
+				"LunarMineOreFragilePlantFood"
+			],
+			"objdata": {
+				"MaxCollectorCount": 5,
+				"CapacityPerConnection": 3,
+				"Durability": 80,
+				"DrainPerCollectorPerSecond": 1,
+				"PopAnim": "POPANIM_EFFECTS_LUNARMINE_ORE_EFFECT",
+				"IdleAnimation": "idle_purple2",
+				"CrackStageThresholds": [
+					0.5
+				],
+				"CrackAnimations": [
+					"idle_purple2",
+					"idle_purple2_02"
+				],
+				"BreakAnimation": "purple2_boom",
+				"PlantFoodRewardCount": 1,
+				"PopAnimRenderOffset": {
+					"x": 96,
+					"y": 123
+				}
+			}
+		},
+		{
+			"objclass": "LunarMineRadiationOreProperties",
+			"aliases": [
+				"LunarMineOreRadiation"
+			],
+			"objdata": {
+				"MaxCollectorCount": 5,
+				"CapacityPerConnection": 6,
+				"BaseRadiationInterval": 5,
+				"RadiationIntervalPerCollector": 5,
+				"RadiationGridRadius": 1,
+				"ZombieMutationChance": 0.5,
+				"ZombieMaxHealthDamageRate": 0.2,
+				"RadiationGargantuarTypeName": "lunar_radiation_gargantuar",
+				"PlantMutationBlackList": [
+					"sunflower",
+					"twinsunflower",
+					"birthsunflower",
+					"primalsunflower",
+					"imitater",
+					"goldbloom",
+					"sunshroom",
+					"powerplant",
+					"coffeebean",
+					"armorflame",
+					"aquaweed",
+					"oxygenalgae",
+					"kelpguard",
+					"seashroom",
+					"seaderris",
+					"seashooter",
+					"uncharted_phatbeet",
+					"uncharted_haystack",
+					"uncharted_carrotlauncher",
+					"moton",
+					"sunflowerzombie",
+					"gloombara",
+					"soudacheMegagatling",
+					"soudacheMegagatling_Fire",
+					"soudacheMegagatling_Electric"
+				],
+				"RadiationEffectPAM": "POPANIM_EFFECTS_LUNARMINE_ORE_EXTRA",
+				"RadiationEffectAnimation": "tx1_01",
+				"PlantMutationEffectPAM": "POPANIM_EFFECTS_RADIATION_TX",
+				"PlantMutationEffectAnimation": "spawn",
+				"PopAnim": "POPANIM_EFFECTS_LUNARMINE_ORE_EFFECT",
+				"IdleAnimation": "idle_green_02",
+				"PopAnimRenderOffset": {
+					"x": 96,
+					"y": 123
+				}
+			}
+		},
+		{
+			"objclass": "LunarMineHardenedShellProperties",
+			"aliases": [
+				"LunarMineHardenedShellMoon13Start"
+			],
+			"objdata": {
+				"Height": "tall",
+				"Hitpoints": 2000,
+				"HitRectOffsetX": 10,
+				"HitRectOffsetWidth": -20,
+				"PopAnim": "POPANIM_EFFECTS_LUNARMINE_ORE_EFFECT",
+				"PopAnimIdleAnim": "idle_blue_02",
+				"PopAnimDeathAnim": "blue_boom",
+				"CoreOreTypeName": "lunar_mine_ore_hardened_core",
+				"Regenerates": false,
+				"DamagePhases": {
+					"Phases": [
+						{
+							"StartAtHealthPercent": 0.5,
+							"Layers": [
+								"switch_complete_blue_stone_01",
+								"switch_damaged_blue_01",
+								"switch_complete_blue_stone_02",
+								"switch_damaged_blue_02"
+							]
+						},
+						{
+							"StartAtHealthPercent": 0,
+							"Layers": [
+								"switch_complete_blue_stone_02",
+								"switch_damaged_blue_02"
+							]
+						}
+					]
+				},
+				"PopAnimRenderOffset": {
+					"x": 96,
+					"y": 123
+				}
+			}
+		},
+		{
+			"objclass": "LunarMineHardenedShellProperties",
+			"aliases": [
+				"LunarMineHardenedShellDefault"
+			],
+			"objdata": {
+				"Height": "tall",
+				"Hitpoints": 3000,
+				"HitRectOffsetX": 10,
+				"HitRectOffsetWidth": -20,
+				"PopAnim": "POPANIM_EFFECTS_LUNARMINE_ORE_EFFECT",
+				"PopAnimIdleAnim": "idle_blue_02",
+				"PopAnimDeathAnim": "blue_boom",
+				"CoreOreTypeName": "lunar_mine_ore_hardened_core",
+				"Regenerates": false,
+				"DamagePhases": {
+					"Phases": [
+						{
+							"StartAtHealthPercent": 0.5,
+							"Layers": [
+								"switch_complete_blue_stone_01",
+								"switch_damaged_blue_01",
+								"switch_complete_blue_stone_02",
+								"switch_damaged_blue_02"
+							]
+						},
+						{
+							"StartAtHealthPercent": 0,
+							"Layers": [
+								"switch_complete_blue_stone_02",
+								"switch_damaged_blue_02"
+							]
+						}
+					]
+				},
+				"PopAnimRenderOffset": {
+					"x": 96,
+					"y": 123
+				}
+			}
+		},
+		{
+			"objclass": "LunarMineOreProperties",
+			"aliases": [
+				"LunarMineOreHardenedCore"
+			],
+			"objdata": {
+				"MaxCollectorCount": 5,
+				"CapacityPerConnection": 3,
+				"PopAnim": "POPANIM_EFFECTS_LUNARMINE_ORE_EFFECT",
+				"IdleAnimation": "idle_blue_02",
+				"HiddenLayers": [
+					"switch_complete_blue_stone_01",
+					"switch_damaged_blue_01",
+					"switch_complete_blue_stone_02",
+					"switch_damaged_blue_02"
+				],
+				"PopAnimRenderOffset": {
+					"x": 96,
+					"y": 123
+				}
+			}
+		},
+		{
+			"objclass": "LunarMineVeinProperties",
+			"aliases": [
+				"LunarMineVeinFragile"
+			],
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_LUNARMINE_ORE_EFFECT",
+				"IdleAnimation": "idle_purple_01",
+				"SpawnAnimation": "up_purple",
+				"SpawnOreTypeName": "lunar_mine_ore_fragile",
+				"PopAnimRenderOffset": {
+					"x": 96,
+					"y": 123
+				}
+			}
+		},
+		{
+			"objclass": "LunarMineVeinProperties",
+			"aliases": [
+				"LunarMineVeinFragilePlantFood"
+			],
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_LUNARMINE_ORE_EFFECT",
+				"IdleAnimation": "idle_purple_01",
+				"SpawnAnimation": "up_purple2",
+				"SpawnOreTypeName": "lunar_mine_ore_fragile_plantfood",
+				"PopAnimRenderOffset": {
+					"x": 96,
+					"y": 123
+				}
+			}
+		},
+		{
+			"objclass": "LunarMineVeinProperties",
+			"aliases": [
+				"LunarMineVeinRadiation"
+			],
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_LUNARMINE_ORE_EFFECT",
+				"IdleAnimation": "idle_green",
+				"SpawnAnimation": "up_green",
+				"SpawnOreTypeName": "lunar_mine_ore_radiation",
+				"PopAnimRenderOffset": {
+					"x": 96,
+					"y": 123
+				}
+			}
+		},
+		{
+			"objclass": "LunarMineVeinProperties",
+			"aliases": [
+				"LunarMineVeinHardened"
+			],
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_LUNARMINE_ORE_EFFECT",
+				"IdleAnimation": "idle_blue_01",
+				"SpawnAnimation": "up_blue",
+				"SpawnOreTypeName": "lunar_mine_ore_hardened_shell",
 				"PopAnimRenderOffset": {
 					"x": 96,
 					"y": 123
@@ -126318,6 +126677,10 @@
 					"moon_ship5000"
 				],
 				"DisallowedZombies": [
+					"zombie_moon_illusionist",
+					"zombie_moon_blade",
+					"supernova_gargantuar_gemini",
+					"zombie_supernova_imp",
 					"moon_walker",
 					"moon_walker_beacon",
 					"moon_ship5000",
@@ -138107,7 +138470,7 @@
 					"bearberry",
 					"peashooter",
 					"cosmicpea",
-					"darkmatter_dragonfruit",
+					"dmdragonfruit",
 					"phoenixfloat",
 					"wallnut",
 					"cosmicnut",
@@ -138203,6 +138566,7 @@
 					"pepperpult",
 					"chardguard",
 					"levitater",
+					"cosmicsaucer",
 					"stunion",
 					"xshot",
 					"rafflesia",
@@ -138242,6 +138606,7 @@
 					"flamelady",
 					"meteorflower",
 					"gatlingpea",
+					"nagasalak",
 					"pineclone",
 					"phatbeet",
 					"cactus",
@@ -138431,7 +138796,7 @@
 					"bearberry",
 					"peashooter",
 					"cosmicpea",
-					"darkmatter_dragonfruit",
+					"dmdragonfruit",
 					"phoenixfloat",
 					"sunflower",
 					"wallnut",
@@ -138524,6 +138889,7 @@
 					"pepperpult",
 					"chardguard",
 					"levitater",
+					"cosmicsaucer",
 					"stunion",
 					"xshot",
 					"acorn",
@@ -138717,6 +139083,7 @@
 					"marigold",
 					"chardguard",
 					"levitater",
+					"cosmicsaucer",
 					"stunion",
 					"sugarcane",
 					"doublesamara",
@@ -138822,7 +139189,7 @@
 					"bearberry",
 					"peashooter",
 					"cosmicpea",
-					"darkmatter_dragonfruit",
+					"dmdragonfruit",
 					"phoenixfloat",
 					"hollyknight",
 					"sunflower",
@@ -138912,6 +139279,7 @@
 					"pepperpult",
 					"chardguard",
 					"levitater",
+					"cosmicsaucer",
 					"stunion",
 					"xshot",
 					"rafflesia",
@@ -138947,6 +139315,7 @@
 					"matchflower",
 					"flamelady",
 					"gatlingpea",
+					"nagasalak",
 					"pineclone",
 					"phatbeet",
 					"cactus",
@@ -139135,7 +139504,7 @@
 					"electricitea",
 					"peashooter",
 					"cosmicpea",
-					"darkmatter_dragonfruit",
+					"dmdragonfruit",
 					"phoenixfloat",
 					"alarmsagittifolia",
 					"hollyknight",
@@ -139219,6 +139588,7 @@
 					"marigold",
 					"chardguard",
 					"levitater",
+					"cosmicsaucer",
 					"stunion",
 					"xshot",
 					"rafflesia",
@@ -139255,6 +139625,7 @@
 					"wintersweet",
 					"pinkstarfruit",
 					"gatlingpea",
+					"nagasalak",
 					"pineclone",
 					"phatbeet",
 					"cactus",
@@ -139459,7 +139830,7 @@
 					"bearberry",
 					"peashooter",
 					"cosmicpea",
-					"darkmatter_dragonfruit",
+					"dmdragonfruit",
 					"phoenixfloat",
 					"alarmsagittifolia",
 					"hollyknight",
@@ -139551,6 +139922,7 @@
 					"pepperpult",
 					"chardguard",
 					"levitater",
+					"cosmicsaucer",
 					"stunion",
 					"xshot",
 					"rafflesia",
@@ -139590,6 +139962,7 @@
 					"flamelady",
 					"meteorflower",
 					"gatlingpea",
+					"nagasalak",
 					"pineclone",
 					"phatbeet",
 					"cactus",
@@ -139790,7 +140163,7 @@
 					"bearberry",
 					"peashooter",
 					"cosmicpea",
-					"darkmatter_dragonfruit",
+					"dmdragonfruit",
 					"phoenixfloat",
 					"hollyknight",
 					"sunflower",
@@ -139883,6 +140256,7 @@
 					"pepperpult",
 					"chardguard",
 					"levitater",
+					"cosmicsaucer",
 					"stunion",
 					"xshot",
 					"rafflesia",
@@ -139917,6 +140291,7 @@
 					"flamelady",
 					"meteorflower",
 					"gatlingpea",
+					"nagasalak",
 					"pineclone",
 					"cactus",
 					"celerystalker",
@@ -141660,7 +142035,7 @@
 					"bearberry",
 					"peashooter",
 					"cosmicpea",
-					"darkmatter_dragonfruit",
+					"dmdragonfruit",
 					"phoenixfloat",
 					"sunflower",
 					"wallnut",
@@ -141753,6 +142128,7 @@
 					"pepperpult",
 					"chardguard",
 					"levitater",
+					"cosmicsaucer",
 					"stunion",
 					"xshot",
 					"acorn",
@@ -141930,7 +142306,7 @@
 					"bearberry",
 					"peashooter",
 					"cosmicpea",
-					"darkmatter_dragonfruit",
+					"dmdragonfruit",
 					"phoenixfloat",
 					"sunflower",
 					"wallnut",
@@ -142019,6 +142395,7 @@
 					"pepperpult",
 					"chardguard",
 					"levitater",
+					"cosmicsaucer",
 					"stunion",
 					"xshot",
 					"rafflesia",
@@ -142054,6 +142431,7 @@
 					"matchflower",
 					"flamelady",
 					"gatlingpea",
+					"nagasalak",
 					"pineclone",
 					"phatbeet",
 					"cactus",
@@ -142253,7 +142631,7 @@
 					"electricitea",
 					"peashooter",
 					"cosmicpea",
-					"darkmatter_dragonfruit",
+					"dmdragonfruit",
 					"phoenixfloat",
 					"sunflower",
 					"wallnut",
@@ -142335,6 +142713,7 @@
 					"marigold",
 					"chardguard",
 					"levitater",
+					"cosmicsaucer",
 					"stunion",
 					"xshot",
 					"rafflesia",
@@ -142371,6 +142750,7 @@
 					"wintersweet",
 					"pinkstarfruit",
 					"gatlingpea",
+					"nagasalak",
 					"pineclone",
 					"phatbeet",
 					"cactus",
@@ -142572,7 +142952,7 @@
 					"bearberry",
 					"peashooter",
 					"cosmicpea",
-					"darkmatter_dragonfruit",
+					"dmdragonfruit",
 					"phoenixfloat",
 					"sunflower",
 					"wallnut",
@@ -142662,6 +143042,7 @@
 					"pepperpult",
 					"chardguard",
 					"levitater",
+					"cosmicsaucer",
 					"stunion",
 					"xshot",
 					"rafflesia",
@@ -142701,6 +143082,7 @@
 					"flamelady",
 					"meteorflower",
 					"gatlingpea",
+					"nagasalak",
 					"pineclone",
 					"phatbeet",
 					"cactus",
@@ -142902,7 +143284,7 @@
 					"bearberry",
 					"peashooter",
 					"cosmicpea",
-					"darkmatter_dragonfruit",
+					"dmdragonfruit",
 					"phoenixfloat",
 					"sunflower",
 					"wallnut",
@@ -142994,6 +143376,7 @@
 					"pepperpult",
 					"chardguard",
 					"levitater",
+					"cosmicsaucer",
 					"stunion",
 					"xshot",
 					"rafflesia",
@@ -143029,6 +143412,7 @@
 					"flamelady",
 					"meteorflower",
 					"gatlingpea",
+					"nagasalak",
 					"pineclone",
 					"cactus",
 					"celerystalker",
@@ -143452,7 +143836,7 @@
 					"electricitea",
 					"peashooter",
 					"cosmicpea",
-					"darkmatter_dragonfruit",
+					"dmdragonfruit",
 					"phoenixfloat",
 					"sunflower",
 					"wallnut",
@@ -143534,6 +143918,7 @@
 					"marigold",
 					"chardguard",
 					"levitater",
+					"cosmicsaucer",
 					"stunion",
 					"xshot",
 					"rafflesia",
@@ -143570,6 +143955,7 @@
 					"wintersweet",
 					"pinkstarfruit",
 					"gatlingpea",
+					"nagasalak",
 					"pineclone",
 					"phatbeet",
 					"cactus",
@@ -143767,7 +144153,7 @@
 					"bearberry",
 					"peashooter",
 					"cosmicpea",
-					"darkmatter_dragonfruit",
+					"dmdragonfruit",
 					"phoenixfloat",
 					"sunflower",
 					"wallnut",
@@ -143858,6 +144244,7 @@
 					"pepperpult",
 					"chardguard",
 					"levitater",
+					"cosmicsaucer",
 					"stunion",
 					"xshot",
 					"rafflesia",
@@ -143897,6 +144284,7 @@
 					"flamelady",
 					"meteorflower",
 					"gatlingpea",
+					"nagasalak",
 					"pineclone",
 					"phatbeet",
 					"cactus",
@@ -144096,7 +144484,7 @@
 					"bearberry",
 					"peashooter",
 					"cosmicpea",
-					"darkmatter_dragonfruit",
+					"dmdragonfruit",
 					"phoenixfloat",
 					"sunflower",
 					"wallnut",
@@ -144190,6 +144578,7 @@
 					"pepperpult",
 					"chardguard",
 					"levitater",
+					"cosmicsaucer",
 					"stunion",
 					"xshot",
 					"rafflesia",
@@ -144226,6 +144615,7 @@
 					"flamelady",
 					"meteorflower",
 					"gatlingpea",
+					"nagasalak",
 					"pineclone",
 					"cactus",
 					"celerystalker",
@@ -149337,7 +149727,7 @@
 					"bearberry",
 					"peashooter",
 					"cosmicpea",
-					"darkmatter_dragonfruit",
+					"dmdragonfruit",
 					"phoenixfloat",
 					"hollyknight",
 					"sunflower",
@@ -149430,6 +149820,7 @@
 					"pepperpult",
 					"chardguard",
 					"levitater",
+					"cosmicsaucer",
 					"stunion",
 					"xshot",
 					"rafflesia",
@@ -149463,6 +149854,7 @@
 					"matchflower",
 					"flamelady",
 					"gatlingpea",
+					"nagasalak",
 					"celerystalker",
 					"thymewarp",
 					"garlic",
@@ -149797,7 +150189,7 @@
 					"bearberry",
 					"peashooter",
 					"cosmicpea",
-					"darkmatter_dragonfruit",
+					"dmdragonfruit",
 					"phoenixfloat",
 					"hollyknight",
 					"sunflower",
@@ -149891,6 +150283,7 @@
 					"pepperpult",
 					"chardguard",
 					"levitater",
+					"cosmicsaucer",
 					"stunion",
 					"xshot",
 					"rafflesia",
@@ -149924,6 +150317,7 @@
 					"matchflower",
 					"flamelady",
 					"gatlingpea",
+					"nagasalak",
 					"celerystalker",
 					"thymewarp",
 					"garlic",
@@ -152093,7 +152487,7 @@
 					"bearberry",
 					"peashooter",
 					"cosmicpea",
-					"darkmatter_dragonfruit",
+					"dmdragonfruit",
 					"phoenixfloat",
 					"wallnut",
 					"cosmicnut",
@@ -152190,6 +152584,7 @@
 					"pepperpult",
 					"chardguard",
 					"levitater",
+					"cosmicsaucer",
 					"stunion",
 					"xshot",
 					"rafflesia",
@@ -152229,6 +152624,7 @@
 					"flamelady",
 					"meteorflower",
 					"gatlingpea",
+					"nagasalak",
 					"pineclone",
 					"phatbeet",
 					"cactus",
@@ -153094,6 +153490,7 @@
 					"marigold",
 					"chardguard",
 					"levitater",
+					"cosmicsaucer",
 					"stunion",
 					"sugarcane",
 					"saucer",
@@ -156778,7 +157175,7 @@
 				"CrosshairAnimation": "missile_lock_reticle",
 				"RocketAnimation": "idle",
 				"RocketExplosionAnimation": "boom",
-				"ResilienceMaxHp": 300,
+				"ResilienceMaxHp": 450,
 				"FireWallGridItemType": "hotRodicusFireWallRed",
 				"BlueFireWallGridItemType": "hotRodicusFireWallBlue",
 				"Stages": [
@@ -156844,6 +157241,374 @@
 						"IdleTime": {
 							"Min": 0.2,
 							"Max": 0.5
+						},
+						"RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+						"StunTime": 8,
+						"StunDamageScale": 1.5,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieZombossMechRomanHotRodicusProps",
+			"aliases": [
+				"ZombieZombossMechRomanHotRodicus"
+			],
+			"objdata": {
+				"Speed": 0.1,
+				"CanSpawnPlantFood": false,
+				"EnableAutoTest": false,
+				"SizeType": "big",
+				"CanBeLaunchedByPlants": false,
+				"HeadDropFraction": -1,
+				"ArmDropFraction": -1,
+				"HitRect": {
+					"mX": 30,
+					"mY": 10,
+					"mWidth": 115,
+					"mHeight": 340
+				},
+				"GridExtents": {
+					"mX": 3,
+					"mY": 2
+				},
+				"AttackRect": {
+					"mX": 15,
+					"mY": 0,
+					"mWidth": 20,
+					"mHeight": 125
+				},
+				"ArtCenter": {
+					"x": 30,
+					"y": 130
+				},
+				"AlmanacOffset": {
+					"x": 50,
+					"y": 150
+				},
+				"AlmanacScale": 0.65,
+				"ShadowOffset": {
+					"x": 55,
+					"y": -50,
+					"z": 0.8
+				},
+				"ShadowScaling": {
+					"x": 4.5,
+					"y": 4.5
+				},
+				"GroundTrackName": "ground_swatch",
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness8"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				],
+				"ZombieLevelStats": [
+					{
+						"AttackLevel": 1,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 2,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 3,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 4.5,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 5,
+						"HitPointsLevel": 1
+					}
+				],
+				"CanTriggerZombieWin": false,
+				"IsValidPinchTarget": false,
+				"CanBeFlicked": false,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"SquashZombies": true,
+				"SquashGridItems": false,
+				"MinColumn": 6,
+				"MaxColumn": 8,
+				"HideDuringIntro": true,
+				"PowerUpDamageModifier": 0.25,
+				"CrosshairPopAnim": "POPANIM_EFFECTS_ZOMBOSS_MISSILE_EXPLOSION_SPECIAL",
+				"CrosshairAnimation": "missile_lock_reticle",
+				"RocketAnimation": "idle",
+				"RocketExplosionAnimation": "boom",
+				"FireWallGridItemType": "romanHotRodicusFireWallRed",
+				"BlueFireWallGridItemType": "romanHotRodicusFireWallBlue",
+				"FixedGladiatorTriggerHealthFraction": 0.85,
+				"FixedGladiatorAction": "RTID(ZombossRomanHotRodicusFixedGladiatorSummon@ZombieActions)",
+				"FireWallEffectYOffset": -30,
+				"IntroEffectYOffset": -20,
+				"SummonPortalEffectYOffset": -90,
+				"StageFireWallColumn": 5,
+				"FireWallRespawnDelay": 3,
+				"FireWallSpreadWarningTime": 2,
+				"RedFireWallSpreadInterval": 3.333333,
+				"BlueFireWallSpreadInterval": 6,
+				"FireWallBurnDamagePerSecond": 20,
+				"RedFireWallBurnSpeedUp": 0.5,
+				"BlueFireWallBurnSpeedUp": 0.8,
+				"RedFireWallBurnClearDamage": 100,
+				"BlueFireWallBurnClearDamage": 200,
+				"StageChangeDuration": 3,
+				"InvinciblePlantImpactStunDuration": 5,
+				"Stages": [
+					{
+						"Actions": [
+							"RTID(ZombossRomanHotRodicusJump1@ZombieActions)",
+							"RTID(ZombossRomanHotRodicusRomanSquad1@ZombieActions)",
+							"RTID(ZombossRomanHotRodicusHorseHammer1@ZombieActions)",
+							"RTID(ZombossRomanHotRodicusRush1@ZombieActions)"
+						],
+						"HitPoints": 80000,
+						"DamageIndexFull": 0,
+						"DamageIndexHalf": 0,
+						"AnimRateModifier": 1,
+						"ChilledDurationFromFrozen": 10,
+						"IdleTime": {
+							"Min": 1.5,
+							"Max": 2
+						},
+						"RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+						"StunTime": 8,
+						"StunDamageScale": 1.5,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4
+					},
+					{
+						"Actions": [
+							"RTID(ZombossRomanHotRodicusJump2@ZombieActions)",
+							"RTID(ZombossRomanHotRodicusRomanSquad2@ZombieActions)",
+							"RTID(ZombossRomanHotRodicusHorseHammer2@ZombieActions)",
+							"RTID(ZombossRomanHotRodicusRush2@ZombieActions)"
+						],
+						"HitPoints": 120000,
+						"DamageIndexFull": 3,
+						"DamageIndexHalf": 3,
+						"AnimRateModifier": 1.1,
+						"ChilledDurationFromFrozen": 10,
+						"IdleTime": {
+							"Min": 1,
+							"Max": 1.5
+						},
+						"RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+						"StunTime": 8,
+						"StunDamageScale": 1.5,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4
+					},
+					{
+						"Actions": [
+							"RTID(ZombossRomanHotRodicusJump3@ZombieActions)",
+							"RTID(ZombossRomanHotRodicusRomanSquad3@ZombieActions)",
+							"RTID(ZombossRomanHotRodicusHorseHammer3@ZombieActions)",
+							"RTID(ZombossRomanHotRodicusRush3@ZombieActions)"
+						],
+						"HitPoints": 250000,
+						"DamageIndexFull": 6,
+						"DamageIndexHalf": 6,
+						"AnimRateModifier": 1.25,
+						"ChilledDurationFromFrozen": 10,
+						"IdleTime": {
+							"Min": 0.8,
+							"Max": 1.2
+						},
+						"RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+						"StunTime": 8,
+						"StunDamageScale": 1.5,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieZombossMechRomanHotRodicusProps",
+			"aliases": [
+				"ZombieZombossMechRomanHotRodicusUnchartedHard"
+			],
+			"objdata": {
+				"Speed": 0.1,
+				"CanSpawnPlantFood": false,
+				"EnableAutoTest": false,
+				"SizeType": "big",
+				"CanBeLaunchedByPlants": false,
+				"HeadDropFraction": -1,
+				"ArmDropFraction": -1,
+				"HitRect": {
+					"mX": 30,
+					"mY": 10,
+					"mWidth": 115,
+					"mHeight": 340
+				},
+				"GridExtents": {
+					"mX": 3,
+					"mY": 2
+				},
+				"AttackRect": {
+					"mX": 15,
+					"mY": 0,
+					"mWidth": 20,
+					"mHeight": 125
+				},
+				"ArtCenter": {
+					"x": 30,
+					"y": 130
+				},
+				"AlmanacOffset": {
+					"x": 50,
+					"y": 150
+				},
+				"AlmanacScale": 0.65,
+				"ShadowOffset": {
+					"x": 55,
+					"y": -50,
+					"z": 0.8
+				},
+				"ShadowScaling": {
+					"x": 4.5,
+					"y": 4.5
+				},
+				"GroundTrackName": "ground_swatch",
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness8"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				],
+				"ZombieLevelStats": [
+					{
+						"AttackLevel": 1,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 2,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 3,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 4.5,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 5,
+						"HitPointsLevel": 1
+					}
+				],
+				"CanTriggerZombieWin": false,
+				"IsValidPinchTarget": false,
+				"CanBeFlicked": false,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedWeak": false,
+				"SquashZombies": true,
+				"SquashGridItems": false,
+				"MinColumn": 6,
+				"MaxColumn": 8,
+				"HideDuringIntro": true,
+				"PowerUpDamageModifier": 0.25,
+				"CrosshairPopAnim": "POPANIM_EFFECTS_ZOMBOSS_MISSILE_EXPLOSION_SPECIAL",
+				"CrosshairAnimation": "missile_lock_reticle",
+				"RocketAnimation": "idle",
+				"RocketExplosionAnimation": "boom",
+				"FireWallGridItemType": "romanHotRodicusFireWallRed",
+				"BlueFireWallGridItemType": "romanHotRodicusFireWallBlue",
+				"FixedGladiatorTriggerHealthFraction": 0.85,
+				"FixedGladiatorAction": "RTID(ZombossRomanHotRodicusFixedGladiatorSummon@ZombieActions)",
+				"FireWallEffectYOffset": -30,
+				"IntroEffectYOffset": -20,
+				"SummonPortalEffectYOffset": -90,
+				"StageFireWallColumn": 5,
+				"FireWallRespawnDelay": 3,
+				"FireWallSpreadWarningTime": 2,
+				"RedFireWallSpreadInterval": 3.333333,
+				"BlueFireWallSpreadInterval": 6,
+				"FireWallBurnDamagePerSecond": 20,
+				"RedFireWallBurnSpeedUp": 0.5,
+				"BlueFireWallBurnSpeedUp": 0.8,
+				"RedFireWallBurnClearDamage": 100,
+				"BlueFireWallBurnClearDamage": 200,
+				"StageChangeDuration": 3,
+				"InvinciblePlantImpactStunDuration": 5,
+				"Stages": [
+					{
+						"Actions": [
+							"RTID(ZombossRomanHotRodicusJump1@ZombieActions)",
+							"RTID(ZombossRomanHotRodicusRomanSquad1@ZombieActions)",
+							"RTID(ZombossRomanHotRodicusHorseHammer1@ZombieActions)",
+							"RTID(ZombossRomanHotRodicusRush1@ZombieActions)"
+						],
+						"HitPoints": 16000,
+						"DamageIndexFull": 0,
+						"DamageIndexHalf": 0,
+						"AnimRateModifier": 1,
+						"ChilledDurationFromFrozen": 10,
+						"IdleTime": {
+							"Min": 1.5,
+							"Max": 2
+						},
+						"RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+						"StunTime": 8,
+						"StunDamageScale": 1.5,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4
+					},
+					{
+						"Actions": [
+							"RTID(ZombossRomanHotRodicusJump2@ZombieActions)",
+							"RTID(ZombossRomanHotRodicusRomanSquad2@ZombieActions)",
+							"RTID(ZombossRomanHotRodicusHorseHammer2@ZombieActions)",
+							"RTID(ZombossRomanHotRodicusRush2@ZombieActions)"
+						],
+						"HitPoints": 24000,
+						"DamageIndexFull": 3,
+						"DamageIndexHalf": 3,
+						"AnimRateModifier": 1.1,
+						"ChilledDurationFromFrozen": 10,
+						"IdleTime": {
+							"Min": 1,
+							"Max": 1.5
+						},
+						"RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
+						"StunTime": 8,
+						"StunDamageScale": 1.5,
+						"StunStaggerBackMovement": 80,
+						"StunStaggerBackTime": 0.4
+					},
+					{
+						"Actions": [
+							"RTID(ZombossRomanHotRodicusJump3@ZombieActions)",
+							"RTID(ZombossRomanHotRodicusRomanSquad3@ZombieActions)",
+							"RTID(ZombossRomanHotRodicusHorseHammer3@ZombieActions)",
+							"RTID(ZombossRomanHotRodicusRush3@ZombieActions)"
+						],
+						"HitPoints": 50000,
+						"DamageIndexFull": 6,
+						"DamageIndexHalf": 6,
+						"AnimRateModifier": 1.25,
+						"ChilledDurationFromFrozen": 10,
+						"IdleTime": {
+							"Min": 0.8,
+							"Max": 1.2
 						},
 						"RetreatAction": "RTID(ZombossRetreatJump@ZombieActions)",
 						"StunTime": 8,
@@ -160486,6 +161251,139 @@
 						"HitPointsLevel": 5
 					}
 				]
+			}
+		},
+		{
+			"objclass": "ZombieGargantuarProps",
+			"aliases": [
+				"ZombieIZombieTutorialGargantuar"
+			],
+			"objdata": {
+				"Speed": 0.16,
+				"Hitpoints": 8000,
+				"PacketCooldown": 60,
+				"StartingCooldown": 60,
+				"EatDPS": 0,
+				"CanSpawnPlantFood": true,
+				"ExplodesWhenMowed": true,
+				"IsValidPinchTarget": false,
+				"SizeType": "big",
+				"HeadDropFraction": 0,
+				"ArmDropFraction": -1,
+				"HitRect": {
+					"mX": 0,
+					"mY": 10,
+					"mWidth": 42,
+					"mHeight": 95
+				},
+				"AttackRect": {
+					"mX": 10,
+					"mY": 10,
+					"mWidth": 50,
+					"mHeight": 95
+				},
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 120
+				},
+				"AlmanacScale": 0.8,
+				"AlmanacOffset": {
+					"x": 0,
+					"y": 70
+				},
+				"Cost": 500,
+				"FirstWave": 5,
+				"WavePointCost": 1500,
+				"Weight": 3000,
+				"ImpType": "",
+				"MinPosXThrowImp": 400,
+				"ThrowImpDuration": 1,
+				"ImpTargetColumn": 2,
+				"ImpApex": 250,
+				"ImpFlightTime": 1.5,
+				"ImpSpawnOffset": {
+					"x": -100,
+					"y": 2,
+					"z": 115
+				},
+				"SmashDuration": 2,
+				"SmashDamage": 1500,
+				"StaticArtImageAsset": "IMAGE_GARGANTUAR",
+				"ArtScale": 0.55,
+				"HealthThresholdToImpAmmoLayers": [
+					{
+						"HealthPercentThrowImp": 0.0,
+						"ProjectileLayersToHide": [
+							"zombie_imp_skull",
+							"zombie_imp_jaw",
+							"Zombie_gargantuar_whiterope",
+							"zombie_imp_arm_inner_lower",
+							"zombie_imp_arm_inner_upper",
+							"zombie_imp_arm_outer_lower",
+							"zombie_imp_arm_outer_upper_01",
+							"zombie_imp_arm_outer_upper_02",
+							"zombie_imp_arms_outer_upper",
+							"zombie_imp_eye",
+							"zombie_imp_eye_sm",
+							"zombie_imp_hand_inner",
+							"zombie_imp_hand_outer",
+							"zombie_imp_leg_inner_lower",
+							"zombie_imp_leg_inner_upper",
+							"zombie_imp_leg_outer_lower",
+							"zombie_imp_leg_outer_upper",
+							"zombie_imp_pupil",
+							"zombie_imp_torso",
+							"zombie_imp_waist",
+							"zombie_imp_toe_outer",
+							"zombie_imp_toe_inner"
+						]
+					}
+				],
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.4
+				},
+				"GroundTrackName": "ground_swatch",
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness7"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				],
+				"ZombieLevelStats": [
+					{
+						"AttackLevel": 1,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 2,
+						"HitPointsLevel": 2
+					},
+					{
+						"AttackLevel": 3,
+						"HitPointsLevel": 3
+					},
+					{
+						"AttackLevel": 4.5,
+						"HitPointsLevel": 4.5
+					},
+					{
+						"AttackLevel": 5,
+						"HitPointsLevel": 5
+					}
+				],
+				"SoundOnIdle": "Play_Zomb_Tutorial_Gargantuar_Mvmt_Idle",
+				"SoundOnAsh": "Play_Zomb_Global_Gargantuar_Mvmt_Death_Ash",
+				"SoundOnElectrocute": "Play_Zomb_Global_Gargantuar_Mvmt_Shock"
 			}
 		},
 		{
@@ -164664,6 +165562,80 @@
 			}
 		},
 		{
+			"objclass": "ZombiePropertySheet",
+			"aliases": [
+				"ZombieSupernovaImpDefault"
+			],
+			"objdata": {
+				"ArtCenter": {
+					"x": 102,
+					"y": 124
+				},
+				"AttackRect": {
+					"mHeight": 80,
+					"mWidth": 20,
+					"mX": 15,
+					"mY": 0
+				},
+				"CanSpawnPlantFood": false,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"HitRect": {
+					"mHeight": 80,
+					"mWidth": 42,
+					"mX": 0,
+					"mY": 10
+				},
+				"Hitpoints": 270,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 48
+				},
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 0.8
+				},
+				"Size": "imp",
+				"Speed": 0.16,
+				"WavePointCost": 100,
+				"Weight": 1000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness1"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				]
+			}
+		},
+		{
 			"aliases": [
 				"ZombieRomanImp"
 			],
@@ -164838,6 +165810,149 @@
 					{
 						"AttackLevel": 5,
 						"HitPointsLevel": 5
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieSupernovaGargantuarProps",
+			"aliases": [
+				"ZombieSupernovaGargantuarGeminiDefault"
+			],
+			"objdata": {
+				"AlmanacOffset": {
+					"x": 20,
+					"y": 70
+				},
+				"AlmanacScale": 0.8,
+				"ArmDropFraction": -1,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 30,
+					"mX": 0,
+					"mY": 10
+				},
+				"CanBeFlickedOff": false,
+				"CanSpawnPlantFood": true,
+				"Cost": 600,
+				"SizeType": "big",
+				"SoundOnTakeDamage": "Play_Zomb_Moon_Basic_Impact",
+				"EatDPS": 1500,
+				"ExplodesWhenMowed": true,
+				"FlickIsLaneRestricted": true,
+				"GroundTrackName": "ground_swatch",
+				"HealthThresholdToImpAmmoLayers": [
+					{
+						"HealthPercentThrowImp": 0.65,
+						"ProjectileLayersToHide": [
+							"zombie_roman_imp_skull",
+							"zombie_roman_imp_jaw",
+							"zombie_roman_imp_arm_inner_lower",
+							"zombie_roman_imp_arm_inner_upper",
+							"zombie_roman_imp_arm_outer_lower",
+							"zombie_roman_imp_arm_outer_upper_01",
+							"zombie_roman_imp_arm_outer_upper_02",
+							"zombie_roman_imp_arms_outer_upper",
+							"zombie_roman_imp_eye",
+							"zombie_roman_imp_eye_sm",
+							"zombie_roman_imp_hand_inner",
+							"zombie_roman_imp_hand_outer",
+							"zombie_roman_imp_leg_inner_lower",
+							"zombie_roman_imp_leg_inner_upper",
+							"zombie_roman_imp_leg_outer_lower",
+							"zombie_roman_imp_leg_outer_upper",
+							"zombie_roman_imp_pupil",
+							"zombie_roman_imp_torso",
+							"zombie_roman_imp_waist",
+							"zombie_roman_imp_toe_outer",
+							"zombie_roman_net_animation",
+							"zombie_roman_imp_head_top",
+							"zombie_roman_imp_helm_jaw",
+							"zombie_roman_imp_helm_jaw_lion_fur"
+						]
+					}
+				],
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 62,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 3200,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 120
+				},
+				"ImpApex": 350,
+				"ImpFlightTime": 1.5,
+				"ImpTargetColumn": 2,
+				"ImpSpawnOffset": {
+					"x": 0,
+					"y": 2,
+					"z": 115
+				},
+				"ImpType": "zombie_supernova_imp",
+				"IsValidPinchTarget": false,
+				"MinPosXThrowImp": 400,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "EatDPS"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					},
+					{
+						"Formula": "constant",
+						"Key": "WavePointCost"
+					},
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "SmashDamage"
+					}
+				],
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.4
+				},
+				"SmashDamage": 1500,
+				"SmashDuration": 2,
+				"SoundOnCannon": "Play_Zomb_Future_Gargantuar_Mvmt_Cannon",
+				"SoundOnDeath": "Play_Zomb_Future_Gargantuar_Mvmt_Death",
+				"SoundOnSmash": "Play_Zomb_Future_Gargantuar_Mvmt_Attack",
+				"SoundOnWalk": "Play_Zomb_Future_Gargantuar_Mvmt_Foley",
+				"Speed": 0.16,
+				"StaticArtImageAsset": "IMAGE_GARGANTUAR",
+				"ThrowImpDuration": 1,
+				"WavePointCost": 2000,
+				"Weight": 3000,
+				"ZombieArmorProps": [
+					
+				],
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness7"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed1"
 					}
 				]
 			}
@@ -177266,6 +178381,36 @@
 			}
 		},
 		{
+			"objclass": "LivingArmorGridItemProps",
+			"aliases": [
+				"LivingArmorLeftGridItemDefault"
+			],
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_SNOWMAN_DRUNKARD",
+				"PopAnimRigClass": "PopAnimRig",
+				"MoveSpeed": 1.0,
+				"AttackDamage": 50.0,
+				"AttackCooldown": 5.0,
+				"DetectionRange": 3,
+				"StartsFacingRight": false
+			}
+		},
+		{
+			"objclass": "LivingArmorGridItemProps",
+			"aliases": [
+				"LivingArmorRightGridItemDefault"
+			],
+			"objdata": {
+				"PopAnim": "POPANIM_EFFECTS_SNOWMAN_DRUNKARD",
+				"PopAnimRigClass": "PopAnimRig",
+				"MoveSpeed": 1.0,
+				"AttackDamage": 50.0,
+				"AttackCooldown": 5.0,
+				"DetectionRange": 3,
+				"StartsFacingRight": true
+			}
+		},
+		{
 			"objclass": "SoudacheResourceProps",
 			"aliases": [
 				"SoudacheResourceDefault"
@@ -177582,7 +178727,8 @@
 						"HitPointsLevel": 5
 					}
 				]
-			}
+			},
+			"Resilience": "RTID(ResiliencePoison2@ResilienceConfig)"
 		},
 		{
 			"aliases": [
@@ -197454,7 +198600,262 @@
 			}
 		},
 		{
+			"objclass": "GladiatorRowModuleProperties",
+			"aliases": [
+				"DefaultGladiatorRowConfig"
+			],
+			"objdata": {
+				"GameplayVersion": 0,
+				"TrophyGridItemType": "gladiator_trophy",
+				"TrophyHealth": 0.0,
+				"ArenaDuration": 35.0,
+				"SettlementDuration": 1.0,
+				"SettlementVisualDuration": 1.0,
+				"LeftBoundaryX": 0,
+				"PerformerZombieType": "",
+				"PerformerEnterGridX": 8,
+				"PerformerExitOffsetX": 0.0,
+				"PerformerExitOffsetY": -1000.0,
+				"PerformerExitJumpHeight": 600.0,
+				"PerformerExitJumpDuration": 0.8,
+				"PerformerEffectPopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_HOT_RODICUS",
+				"PerformerEffectOffsetX": -64.0,
+				"PerformerEffectYOffset": -38.0,
+				"PerformerEffectScale": 1.0,
+				"PerformerEffectRenderLayer": 0,
+				"WallUpPopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_UP",
+				"WallDownPopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_DOWN",
+				"WallLeftPopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_LEFT",
+				"WallRightPopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_RIGHT",
+				"LavaEffectPopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_LAVA",
+				"DustEffectPopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_DUST",
+				"ResultEffectPopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_RESULT",
+				"ArenaEffectOffsetX": -64.0,
+				"ArenaEffectYOffset": -38.0,
+				"ArenaEffectScale": 1.0,
+				"ArenaEffectRenderLayer": 0,
+				"WallEffectOffsetY": 12.0,
+				"WallShadowIdleAnimation": "shadow",
+				"HiddenGridItemWhitelist": [
+					"GridItemPowerTile",
+					"GridItemGoldTile",
+					"GridItemProjectileTrap",
+					"GridItemGridRegionAreaOfEffectTrap",
+					"GridItemSliderTile",
+					"GridItemZombieBuffTileShield",
+					"GridItemZombieBuffTileCondition",
+					"GridItemTriggerTile",
+					"GridItemFakeMold",
+					"GridItemRailcart",
+					"GridItemCoal",
+					"GridItemCoalCart",
+					"GridItemWaterHole",
+					"GridItemFairyTaleFog",
+					"GridItemHydraFog",
+					"PeriplocaCalophyllaFogGrid",
+					"GridItemPotionPoisonPile",
+					"GridItemPoisonMist",
+					"GridItemPoisonGas",
+					"PoisonGridItem",
+					"PoisonMistGridItem"
+				],
+				"CrossRowSkillWhitelist": [
+					"powerup_tactical_cuke"
+				],
+				"TriggerUnitBlacklist": [
+					
+				],
+				"PlantTileGridItemType": "",
+				"LavaTileGridItemType": "gladiator_lava_tile",
+				"FencePopAnim": "",
+				"FenceGridItemType": "",
+				"FenceTopGridItemType": "",
+				"FenceBottomGridItemType": "",
+				"FenceEndGridItemType": "",
+				"FenceEnterAnimation": "birth",
+				"FenceLoopAnimation": "loop",
+				"FenceExitAnimation": "over",
+				"FenceRenderLayer": 0,
+				"CageFallDuration": 0.8,
+				"CageStartHeight": 600.0,
+				"CageEffectOffsetX": 0.0,
+				"CageEffectOffsetY": -38.0,
+				"CageCleanupDelay": 1.0,
+				"CagePopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_CAGE",
+				"CageFallAnimation": "LOOP",
+				"CageLandAnimation": "BOOM",
+				"CageRenderLayer": 0,
+				"PlantWinAttackFrequencyMultiplier": 1.3,
+				"PlantLoseAttackFrequencyMultiplier": 0.7,
+				"ZombieWinMoveSpeedMultiplier": 1.3,
+				"ZombieLoseMoveSpeedMultiplier": 0.7,
+				"ResultStatusDuration": 20.0,
+				"ResultStatusImmuneTypes": [
+					
+				],
+				"VictoryEffectPopAnim": "",
+				"DefeatEffectPopAnim": "",
+				"VictoryEffectAnimation": "",
+				"DefeatEffectAnimation": "",
+				"ResultEffectLeftGridX": 1,
+				"ResultEffectRightGridX": 7,
+				"ResultEffectYOffset": -38.0,
+				"ResultEffectScale": 1.0,
+				"ResultEffectRenderLayer": 0,
+				"TrophyResultEffectPopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_TROPHY_RESULT",
+				"TrophyResultEffectOffsetX": 0.0,
+				"TrophyResultEffectOffsetY": -38.0,
+				"TrophyResultEffectScale": 1.0,
+				"TrophyResultEffectRenderLayer": 0,
+				"TrophyResultEffectDuration": 3.0,
+				"TrophyResultWinAnimation": "win",
+				"TrophyResultLoseAnimation": "die_03",
+				"TrophyDamageTransitionAnimation": "die",
+				"CageMarkEffectPopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_CAGE_MARK",
+				"CageMarkEffectOffsetX": 0.0,
+				"CageMarkEffectOffsetY": -38.0,
+				"CageMarkEffectScale": 1.0,
+				"CageMarkEffectRenderLayer": 0,
+				"CageMarkEnterAnimation": "in",
+				"CageMarkIdleAnimation": "idle",
+				"FieldMaskAlpha": 150,
+				"FieldMaskFadeInDuration": 0.5,
+				"FieldMaskFadeOutDuration": 0.5,
+				"WarningAdviceDuration": 2.0,
+				"ZombieWinPerformerDelayAfterMask": 0.0,
+				"ArenaTimerBarOffsetX": 0.0,
+				"ArenaTimerBarOffsetY": 4.0,
+				"ArenaTimerBarScale": 0.16,
+				"ArenaTimerFillOffsetX": 110.0,
+				"ArenaTimerFillOffsetY": -8.0,
+				"ArenaTimerClockOffsetX": -13.0,
+				"ArenaTimerClockOffsetY": 0.0,
+				"PlantWinPlantfoodCount": 10,
+				"PlantWinPlantfoodInterval": 0.3,
+				"PlantWinPlantfoodLaunchVelocityZ": 250.0,
+				"PlantWinPlantfoodLaunchGravityZ": -600.0,
+				"PlantWinPlantfoodLaunchSpreadX": 80.0,
+				"ZombieWinPunishmentCageCount": 20,
+				"ZombieWinPunishmentDuration": 10.0,
+				"ZombieWinPunishmentZombiePool": [
+					{
+						"ZombieTypeName": "mummy",
+						"Weight": 1
+					}
+				],
+				"ZombieWinPunishmentZombieLevel": 1,
+				"ZombieWinShakeX": 14,
+				"ZombieWinShakeY": 10,
+				"ZombieWinShakeDuration": 1.0,
+				"ZombieWinImpactAnimation": "into2"
+			}
+		},
+		{
 			"#comment": "############## Griditem zhousen ###############"
+		},
+		{
+			"objclass": "GridItemGladiatorTrophyProps",
+			"aliases": [
+				"GridItemGladiatorTrophyDefault"
+			],
+			"objdata": {
+				"Height": "normal",
+				"Health": 2000.0,
+				"PopAnimRigClass": "PopAnimRig",
+				"PopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_TROPHY",
+				"EnterAnimation": "tx1_01",
+				"CompleteAnimation": "idle",
+				"Damage1Animation": "idle_02",
+				"Damage2Animation": "idle_03",
+				"BrokenAnimation": "",
+				"DamageFlashDuration": 0.1,
+				"PopAnimRenderOffset": {
+					"x": 100.0,
+					"y": 130.0
+				}
+			}
+		},
+		{
+			"objclass": "GridItemGladiatorVisualProps",
+			"aliases": [
+				"GridItemGladiatorPlantTile"
+			],
+			"objdata": {
+				"PopAnimRigClass": "PopAnimRig",
+				"PopAnim": "POPANIM_EFFECTS_GOLDTILE",
+				"Animation": "INACTIVE_UNUSED",
+				"PopAnimRenderOffset": {
+					"x": 96.0,
+					"y": 139.0
+				}
+			}
+		},
+		{
+			"objclass": "GridItemGladiatorVisualProps",
+			"aliases": [
+				"GridItemGladiatorLavaTile"
+			],
+			"objdata": {
+				"PopAnimRigClass": "PopAnimRig",
+				"PopAnim": "POPANIM_EFFECTS_GLADIATOR_ROW_LAVA",
+				"EnterAnimation": "IN",
+				"Animation": "LOOP",
+				"ExitAnimation": "END",
+				"PopAnimRenderOffset": {
+					"x": 100.0,
+					"y": 130.0
+				}
+			}
+		},
+		{
+			"objclass": "GridItemGladiatorVisualProps",
+			"aliases": [
+				"GridItemGladiatorFenceTop"
+			],
+			"objdata": {
+				"Height": "ground",
+				"PopAnimRigClass": "PopAnimRig",
+				"PopAnim": "POPANIM_PLANT_SPIKEROCK",
+				"Animation": "idle",
+				"PopAnimRenderOffset": {
+					"x": 99.0,
+					"y": 95.0
+				}
+			}
+		},
+		{
+			"objclass": "GridItemGladiatorVisualProps",
+			"aliases": [
+				"GridItemGladiatorFenceBottom"
+			],
+			"objdata": {
+				"Height": "ground",
+				"PopAnimRigClass": "PopAnimRig",
+				"PopAnim": "POPANIM_PLANT_SPIKEROCK",
+				"Animation": "idle",
+				"PopAnimRenderOffset": {
+					"x": 99.0,
+					"y": 195.0
+				}
+			}
+		},
+		{
+			"objclass": "GridItemGladiatorVisualProps",
+			"aliases": [
+				"GridItemGladiatorFence"
+			],
+			"objdata": {
+				"Height": "ground",
+				"PopAnimRigClass": "PopAnimRig",
+				"PopAnim": "POPANIM_EFFECTS_ARTIFACT_SILVERKEY_GATE",
+				"EnterAnimation": "birth",
+				"Animation": "loop",
+				"ExitAnimation": "over",
+				"PopAnimRenderOffset": {
+					"x": 96.0,
+					"y": 125.0
+				}
+			}
 		},
 		{
 			"objclass": "GridItemAnimControllerProps",
@@ -200654,7 +202055,7 @@
 				"EatDPS": 100,
 				"CanSpawnPlantFood": true,
 				"Helm": "meteorite",
-				"HelmHitpoints": 1600,
+				"HelmHitpoints": 2200,
 				"HitRect": {
 					"mX": 0,
 					"mY": 10,
@@ -201226,7 +202627,592 @@
 			}
 		},
 		{
+			"objclass": "ZombieMoonBladeProps",
+			"aliases": [
+				"ZombieMoonBladeDefault"
+			],
+			"objdata": {
+				"Speed": 0.165,
+				"Hitpoints": 1000,
+				"EatDPS": 500,
+				"CanSpawnPlantFood": true,
+				"SizeType": "small",
+				"HitRect": {
+					"mX": 10,
+					"mY": 10,
+					"mWidth": 32,
+					"mHeight": 95
+				},
+				"AttackRect": {
+					"mX": -12,
+					"mY": 0,
+					"mWidth": 30,
+					"mHeight": 95
+				},
+				"Cost": 200,
+				"FirstWave": 3,
+				"WavePointCost": 300,
+				"Weight": 3000,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"GroundTrackName": "ground_swatch",
+				"PullCooldown": 6,
+				"PullWindupTime": 2,
+				"PullFlyTime": 0.4,
+				"PullFloatHeight": 15,
+				"SlashArcDegrees": 120,
+				"ProjectileClassNamesCannotBeBlocked": [
+					"FishHookGrassProjectile",
+					"ArtifactSquidProjectile"
+				],
+				"ProjectileTypesCannotBeBlocked": [
+					
+				],
+				"NormalAttackDamage": 250,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				],
+				"ZombieLevelStats": [
+					{
+						"AttackLevel": 1,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 2,
+						"HitPointsLevel": 2
+					},
+					{
+						"AttackLevel": 3,
+						"HitPointsLevel": 3
+					},
+					{
+						"AttackLevel": 4.5,
+						"HitPointsLevel": 4.5
+					},
+					{
+						"AttackLevel": 5,
+						"HitPointsLevel": 5
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieMoonIllusionistProps",
+			"aliases": [
+				"ZombieMoonIllusionistDefault"
+			],
+			"objdata": {
+				"Speed": 0.165,
+				"Hitpoints": 1600,
+				"EatDPS": 100,
+				"CanSpawnPlantFood": true,
+				"SizeType": "small",
+				"HitRect": {
+					"mX": 10,
+					"mY": 10,
+					"mWidth": 32,
+					"mHeight": 95
+				},
+				"AttackRect": {
+					"mX": -12,
+					"mY": 0,
+					"mWidth": 30,
+					"mHeight": 95
+				},
+				"Cost": 200,
+				"FirstWave": 3,
+				"WavePointCost": 300,
+				"Weight": 3000,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"ShadowOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 1.2
+				},
+				"GroundTrackName": "ground_swatch",
+				"MaxDrones": 2,
+				"MissileCount": 4,
+				"QigongRootDuration": 4,
+				"TeleportDistance": 1,
+				"LowHpPercent": 0.5,
+				"FormScale": 1.0,
+				"TransformGrowDuration": 0.25,
+				"TransformShrinkDuration": 0.25,
+				"RocketHitTime": 0.75,
+				"RocketSpeed": 500,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness6"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				],
+				"ZombieLevelStats": [
+					{
+						"AttackLevel": 1,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 2,
+						"HitPointsLevel": 2
+					},
+					{
+						"AttackLevel": 3,
+						"HitPointsLevel": 3
+					},
+					{
+						"AttackLevel": 4.5,
+						"HitPointsLevel": 4.5
+					},
+					{
+						"AttackLevel": 5,
+						"HitPointsLevel": 5
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieGargantuarProps",
+			"aliases": [
+				"ZombieRaditionGargantuar"
+			],
+			"objdata": {
+				"Speed": 0.16,
+				"Hitpoints": 3600,
+				"EatDPS": 0,
+				"CanSpawnPlantFood": true,
+				"ExplodesWhenMowed": true,
+				"IsValidPinchTarget": false,
+				"SizeType": "big",
+				"HeadDropFraction": 0,
+				"ArmDropFraction": -1,
+				"HitRect": {
+					"mX": 0,
+					"mY": 10,
+					"mWidth": 42,
+					"mHeight": 95
+				},
+				"AttackRect": {
+					"mX": 10,
+					"mY": 10,
+					"mWidth": 50,
+					"mHeight": 95
+				},
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 120
+				},
+				"AlmanacScale": 0.8,
+				"AlmanacOffset": {
+					"x": 0,
+					"y": 70
+				},
+				"Cost": 500,
+				"DiedSun": 200,
+				"FirstWave": 5,
+				"WavePointCost": 1500,
+				"Weight": 3000,
+				"ImpType": "tutorial_imp",
+				"MinPosXThrowImp": 400,
+				"ThrowImpDuration": 1,
+				"ImpTargetColumn": 2,
+				"ImpApex": 250,
+				"ImpFlightTime": 1.5,
+				"ImpSpawnOffset": {
+					"x": -100,
+					"y": 2,
+					"z": 115
+				},
+				"SmashDuration": 2,
+				"SmashDamage": 1500,
+				"StaticArtImageAsset": "IMAGE_GARGANTUAR",
+				"ArtScale": 0.55,
+				"HealthThresholdToImpAmmoLayers": [
+					{
+						"HealthPercentThrowImp": 0.5,
+						"ProjectileLayersToHide": [
+							"zombie_imp_skull",
+							"zombie_imp_jaw",
+							"Zombie_gargantuar_whiterope",
+							"zombie_imp_arm_inner_lower",
+							"zombie_imp_arm_inner_upper",
+							"zombie_imp_arm_outer_lower",
+							"zombie_imp_arm_outer_upper_01",
+							"zombie_imp_arm_outer_upper_02",
+							"zombie_imp_arms_outer_upper",
+							"zombie_imp_eye",
+							"zombie_imp_eye_sm",
+							"zombie_imp_hand_inner",
+							"zombie_imp_hand_outer",
+							"zombie_imp_leg_inner_lower",
+							"zombie_imp_leg_inner_upper",
+							"zombie_imp_leg_outer_lower",
+							"zombie_imp_leg_outer_upper",
+							"zombie_imp_pupil",
+							"zombie_imp_torso",
+							"zombie_imp_waist",
+							"zombie_imp_toe_outer",
+							"zombie_imp_toe_inner"
+						]
+					}
+				],
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.4
+				},
+				"GroundTrackName": "ground_swatch",
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness7"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				],
+				"ZombieLevelStats": [
+					{
+						"AttackLevel": 1,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 2,
+						"HitPointsLevel": 2
+					},
+					{
+						"AttackLevel": 3,
+						"HitPointsLevel": 3
+					},
+					{
+						"AttackLevel": 4.5,
+						"HitPointsLevel": 4.5
+					},
+					{
+						"AttackLevel": 5,
+						"HitPointsLevel": 5
+					}
+				],
+				"SoundOnIdle": "Play_Zomb_Tutorial_Gargantuar_Mvmt_Idle",
+				"SoundOnAsh": "Play_Zomb_Global_Gargantuar_Mvmt_Death_Ash",
+				"SoundOnElectrocute": "Play_Zomb_Global_Gargantuar_Mvmt_Shock"
+			}
+		},
+		{
+			"objclass": "GridItemEagleFlagProps",
+			"aliases": [
+				"GridItemEagleFlagDefault"
+			],
+			"objdata": {
+				"Hitpoints": 0,
+				"PopAnim": "POPANIM_EFFECTS_EAGLE_FLAG",
+				"PopAnimRenderOffset": {
+					"x": 101.0,
+					"y": 145.0
+				},
+				"PickupZombieTypes": [
+					"roman",
+					"roman_armor1",
+					"roman_armor2",
+					"roman_armor3",
+					"roman_armor4",
+					"roman_imp",
+					"roman_flag"
+				],
+				"PickupRange": 6.4,
+				"PickupDuration": 0.25,
+				"DropDuration": 0.5,
+				"EntryDuration": 0.75,
+				"EntryHeight": 600.0,
+				"AuraColumnRadius": 1,
+				"AuraRowRadius": 1,
+				"DamageReduction": 0.5,
+				"MagnetProjectileDamage": 300.0,
+				"CarryOffset": {
+					"x": 0.0,
+					"y": 0.0,
+					"z": 60.0
+				},
+				"CarrierFlagLayers": [
+					"switchflag_03",
+					"gold_chicken"
+				]
+			}
+		},
+		{
+			"objclass": "GridItemAnimationProps",
+			"aliases": [
+				"GridItemEagleFlagGoldChickenDefault"
+			],
+			"objdata": {
+				"Hitpoints": 0,
+				"PopAnim": "POPANIM_EFFECTS_EAGLE_FLAG",
+				"PopAnimRigClass": "PopAnimRig",
+				"PopAnimRenderOffset": {
+					"x": 90.0,
+					"y": 100.0
+				}
+			}
+		},
+		{
+			"objclass": "NagaSalakProps",
+			"aliases": [
+				"NagaSalakDefault"
+			],
+			"objdata": {
+				"Cost": 200,
+				"PowerCost": 7,
+				"Hitpoints": 300,
+				"MinLevel": 1,
+				"MaxLevel": 5,
+				"BoostRate": 0.6,
+				"PacketCooldown": 10,
+				"PlantGridType": "ground",
+				"CanLiveOnWaves": true,
+				"CanLiveInDeepSea": true,
+				"PlantFoodPlayCount": 1,
+				"PlantFoodActivationSound": "Play_Plant_Aquavine_Food",
+				"TornadoDamageInterval": 0.5,
+				"TornadoFreezeDuration": 0.5,
+				"VortexRadius": 2.5,
+				"VortexDuration": 4.0,
+				"VortexMaxExtension": 3,
+				"VortexExtensionDuration": 1.0,
+				"VortexDamageInterval": 0.25,
+				"Level2DamageInterval": 0.4,
+				"Level3DamageInterval": 0.3,
+				"Level5DamageInterval": 0.15,
+				"Level5DoubleRate": 0.6,
+				"Actions": [
+					{
+						"Type": "projectile",
+						"Projectile": "RTID(NagaSalakTornado@ProjectileTypes)",
+						"ProjectileLaunchSound": "Play_Throw",
+						"InitialMinCooldownTime": 0,
+						"CooldownTimeMin": 2.5,
+						"CooldownTimeMax": 2.5,
+						"SpawnOffset": {
+							"x": 53.0,
+							"y": -31.0
+						},
+						"TriggerType": "rect",
+						"RectTriggerRange": {
+							"mX": 0,
+							"mY": -50,
+							"mWidth": 600,
+							"mHeight": 80
+						}
+					},
+					{
+						"Type": "projectile",
+						"Projectile": "RTID(NagaSalakPlantFood@ProjectileTypes)",
+						"InitialMinCooldownTime": 0,
+						"CooldownTimeMin": 2.5,
+						"CooldownTimeMax": 2.5,
+						"SpawnOffset": {
+							"x": 63.0,
+							"y": -34.0
+						}
+					},
+					{
+						"Type": "projectile",
+						"Projectile": "RTID(NagaSalakLv5Tornado@ProjectileTypes)",
+						"InitialMinCooldownTime": 0,
+						"CooldownTimeMin": 2.5,
+						"CooldownTimeMax": 2.5,
+						"SpawnOffset": {
+							"x": 53.0,
+							"y": -31.0
+						},
+						"TriggerType": "rect",
+						"RectTriggerRange": {
+							"mX": -10,
+							"mY": -50,
+							"mWidth": 600,
+							"mHeight": 80
+						}
+					}
+				],
+				"IdleAnimationWeights": {
+					"idle": 100,
+					"idle2": 100
+				},
+				"ArtCenter": {
+					"x": 99,
+					"y": 120
+				},
+				"PlantStats": [
+					{
+						"Type": "damage",
+						"Value": "damage5"
+					},
+					{
+						"Type": "range",
+						"Value": "fullboard"
+					},
+					{
+						"Type": "recharge",
+						"Value": "recharge4"
+					}
+				],
+				"PlantLevelStats": [
+					{
+						"AttackLevel": 1,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 1.5,
+						"HitPointsLevel": 1.5,
+						"PropertySkillType": "RTID(Plant_PropertyUp_Level1@SkillTypes)",
+						"AdvancedSkillType": "RTID(NagaSalak_Skill_Level1@SkillTypes)"
+					},
+					{
+						"AttackLevel": 2,
+						"HitPointsLevel": 2,
+						"PropertySkillType": "RTID(Plant_PropertyUp_Level2@SkillTypes)",
+						"AdvancedSkillType": "RTID(NagaSalak_Skill_Level2@SkillTypes)"
+					},
+					{
+						"AttackLevel": 2.5,
+						"HitPointsLevel": 2.5,
+						"PropertySkillType": "RTID(Plant_PropertyUp_Level3@SkillTypes)",
+						"AdvancedSkillType": "RTID(plant_wakeup_level1@SkillTypes)"
+					},
+					{
+						"AttackLevel": 3,
+						"HitPointsLevel": 3,
+						"PropertySkillType": "RTID(Plant_PropertyUp_Level4@SkillTypes)",
+						"AdvancedSkillType": "RTID(NagaSalak_SuperSkill@SkillTypes)"
+					}
+				],
+				"DetailProps": {
+					"DetailsList": [
+						"suncost",
+						"cooldown",
+						"hitpoint",
+						"attackInterval",
+						"range",
+						"area"
+					],
+					"AttackInterval": [
+						2.5,
+						2.5,
+						2.5,
+						2.5,
+						2.5
+					],
+					"Ranage": [
+						"[RANGE_1]",
+						"[RANGE_1]",
+						"[RANGE_1]",
+						"[RANGE_1]",
+						"[RANGE_1]"
+					],
+					"Area": [
+						"[AREA_GROUP3]",
+						"[AREA_GROUP3]",
+						"[AREA_GROUP3]",
+						"[AREA_GROUP3]",
+						"[AREA_GROUP3]"
+					]
+				},
+				"DisplayActions": "RTID(NagaSalakDefault@DisplayActions)",
+				"DisplayAvatarActions": "RTID(NagaSalakDefault@DisplayAvatarActions)"
+			}
+		},
+		{
+			"objclass": "GridItemNagaSalakVortexProps",
+			"aliases": [
+				"GridItemNagaSalakVortexDefault"
+			],
+			"objdata": {
+				"Height": "ground",
+				"PopAnim": "POPANIM_EFFECTS_NAGASALAK_VORTEX",
+				"PopAnimRenderOffset": {
+					"x": 100,
+					"y": 130
+				},
+				"VortexRadius": 2.5,
+				"VortexDuration": 4.0,
+				"MaxExtension": 3,
+				"ExtensionDuration": 1.0,
+				"DamageInterval": 0.25
+			}
+		},
+		{
+			"objclass": "GridItemNagaSalakPufferProps",
+			"aliases": [
+				"GridItemNagaSalakPufferDefault"
+			],
+			"objdata": {
+				"Height": "tall",
+				"PopAnim": "POPANIM_EFFECTS_NAGASALAK_GLOBEFISH",
+				"PopAnimRenderOffset": {
+					"x": 94,
+					"y": 124
+				},
+				"Hitpoints": 1000,
+				"Regenerates": false,
+				"HitRectOffsetX": 25,
+				"HitRectOffsetWidth": -30,
+				"ExplosionDamage": 420.0,
+				"ExplosionRadius": 1.0
+			}
+		},
+		{
 			"############ INDUSTRY EVENT END ############": 0
+		},
+		{
+			"objclass": "GridItemBreakableTargetProps",
+			"aliases": [
+				"MoonEndingGeneratorDefault"
+			],
+			"objdata": {
+				"Height": "tall",
+				"Hitpoints": 5000,
+				"HitRectOffsetX": 0,
+				"HitRectOffsetWidth": 0,
+				"HitRectOffsetY": -35,
+				"HitRectOffsetHeight": 35,
+				"PopAnim": "POPANIM_EFFECTS_GRAVITYGENERATOR",
+				"PopAnimRenderOffset": {
+					"x": 195,
+					"y": 300
+				},
+				"PopAnimRenderScale": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"PopAnimSpawnAnim": "up",
+				"PopAnimIdleAnim": "animate_03",
+				"PopAnimDeathAnim": "break",
+				"Regenerates": false
+			}
 		}
 	]
 }
