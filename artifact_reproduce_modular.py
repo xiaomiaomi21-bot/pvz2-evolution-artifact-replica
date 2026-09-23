@@ -13,6 +13,12 @@ MASK32 = 0xFFFFFFFF
 MT_N, MT_M, MT_A = 624, 397, 0x9908B0DF
 DEFAULT_SEED = 5489
 
+# 植物名兼容别名：关卡/运行时数据有时使用缩写，属性对象使用完整名称。
+# 内部比较统一使用去掉下划线的小写形式。
+PLANT_NAME_ALIASES = {
+    "dmdragonfruit": "darkmatterdragonfruit",
+}
+
 
 # 全局黑名单：所有关卡和世界均不允许作为神器候选输出的固定植物。
 GLOBAL_BLACKLIST = {
@@ -283,6 +289,12 @@ def name_variants(value: str) -> set[str]:
     return variants
 
 
+#读取植物：将外部植物名转换为属性表使用的规范键。
+def canonical_plant_key(value: str) -> str:
+    key = "".join(char.lower() for char in str(value) if char.isalnum())
+    return PLANT_NAME_ALIASES.get(key, key)
+
+
 #读取植物：读取 PlantTypeOrder 和植物属性。
 def load_plants(path: Path) -> tuple[list[Plant], set[str]]:
     document = read_json(path); objects = document.get("objects", []) if isinstance(document, Mapping) else []
@@ -311,10 +323,11 @@ def load_plants(path: Path) -> tuple[list[Plant], set[str]]:
         raise ValueError("属性表缺少 GamePropertySheet.PlantTypeOrder")
     result, unresolved = [], set()
     for name in order:
-        key = "".join(char.lower() for char in name if char.isalnum()); source = index.get(key)
+        key = canonical_plant_key(name); source = index.get(key)
         if source is None:
             unresolved.add(name); continue
-        result.append(Plant(name, source.cost, source.consumable, source.grid, source.waves, source.sky, source.blacklist, source.valid_stages, source.mausoleum_cost, source.is_pult))
+        canonical_name = "darkmatter_dragonfruit" if key == "darkmatterdragonfruit" else name
+        result.append(Plant(canonical_name, source.cost, source.consumable, source.grid, source.waves, source.sky, source.blacklist, source.valid_stages, source.mausoleum_cost, source.is_pult))
     return result, unresolved
 
 
@@ -324,10 +337,10 @@ def load_plant_catalog(properties_file: Path) -> tuple[list[Plant], set[str]]:
     for item in document.get("objects", []) if isinstance(document, Mapping) else []:
         data = _obj_data(item)
         if data and isinstance(data.get("PlantTypeOrder"), list): order = [str(x) for x in data["PlantTypeOrder"]]; break
-    rank = {name.lower(): index for index, name in enumerate(order)}; known = {plant.name.lower() for plant in plants}
+    rank = {canonical_plant_key(name): index for index, name in enumerate(order)}; known = {canonical_plant_key(plant.name) for plant in plants}
     if "dazeychain" not in known: plants.append(Plant("dazeychain", 125)); unresolved.discard("dazeychain")
     if "mapleblade" not in known: plants.append(Plant("mapleblade", 400)); unresolved.discard("mapleblade")
-    plants.sort(key=lambda plant: (rank.get(plant.name.lower(), 10**9), plant.name.lower()))
+    plants.sort(key=lambda plant: (rank.get(canonical_plant_key(plant.name), 10**9), plant.name.lower()))
     return plants, unresolved
 
 
