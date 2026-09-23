@@ -1,0 +1,1047 @@
+{
+	"#comment": "Memory",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_MEMORY]",
+				"LevelNumber": 1,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(SliderPlacement@CurrentLevel)",
+					"RTID(TimeEnergy@CurrentLevel)"
+				],
+				"MusicType": "MiniGame_A",
+				"Name": "[S29_MEMORY_LEVEL_NAME_1]",
+				"FirstIntroNarrative": "PVZ1_S29_1_H_INTRO",
+				"ReplayIntroNarrative": "PVZ1_S29_1_H_INTRO",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+				"StageModule": "RTID(NewYearNightStage@CurrentLevel)",
+				"ShowZombies": [
+					"needforspeed",
+					"needforspeed_armor1",
+					"needforspeed_armor2",
+					"eighties_breakdancer",
+					"future_jetpack_veteran",
+					"nutcracker_gargantuar",
+					"pole_vaulting",
+					"ladder",
+					"modern_allstar"
+				]
+			}
+		},
+		{
+			"objclass": "EightiesStageProperties",
+			"aliases": [
+				"NewYearNightStage"
+			],
+			"objdata": {
+				"ResourceGroupNames": [
+					"DelayLoad_Background_NewYear_Night",
+					"Dirt_Spawn_Eighties",
+					"AudioEighties",
+					"Eighties_Background_Effects"
+				],
+				"ResourceGroupNames-Need for fix": [
+					"DelayLoad_Background_Eighties_Compressed",
+					"Dirt_Spawn_Eighties",
+					"EightiesGroansAudio",
+					"Eighties_Background_Effects",
+					"EightiesLootPinatas"
+				],
+				"GroupsToUnloadForAds": [
+					"DelayLoad_Background_Eighties_Compressed"
+				],
+				"BelongsToWorld": "eighties",
+				"StagePrefix": "summer_night",
+				"BackgroundResourceGroup": "DelayLoad_Background_NewYear_Night",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_NEWYEAR_NIGHT",
+				"LevelPowerupSet": "LevelPowerupsDefault",
+				"BasicZombieTypeName": "summer_basic",
+				"FlagZombieTypeName": "needforspeed_flag",
+				"Armor1ZombieTypeName": "summer_armor1",
+				"Armor2ZombieTypeName": "summer_armor2",
+				"RailcartDefaultTypeName": "railcart_egypt",
+				"GravestoneDefaultTypeName": "gravestone_eighties",
+				"DirtSpawnEffectName": "POPANIM_EFFECTS_DIRT_SPAWN_EIGHTIES",
+				"MusicSuffix": "Eighties",
+				"DisabledStreetCells": [
+					
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SliderPlacement"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 7,
+						"GridY": 1,
+						"TypeName": "slider_up_modern"
+					},
+					{
+						"GridX": 7,
+						"GridY": 3,
+						"TypeName": "slider_down_modern"
+					},
+					{
+						"GridX": 5,
+						"GridY": 0,
+						"TypeName": "slider_down_modern"
+					},
+					{
+						"GridX": 5,
+						"GridY": 4,
+						"TypeName": "slider_up_modern"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "TimeEnergyModuleProperties",
+			"aliases": [
+				"TimeEnergy"
+			],
+			"objdata": {
+				"TimeEnergyValueMax": 600.0,
+				"TimeEnergyTriggers": [
+					
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(ApplyZombieConditionsChallenge@CurrentLevel)",
+						"RTID(SimultaneousPlants@CurrentLevel)",
+						"RTID(PlantFoodNonuse@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"ApplyZombieConditionsChallenge"
+			],
+			"objclass": "ApplyZombieConditionsChallengeProps",
+			"objdata": {
+				"ConditionToInflict": [
+					"stalled"
+				],
+				"IncludeBurnedToAsh": false,
+				"IncludeElectrified": false,
+				"NumZombieConditionsToApply": 40
+			}
+		},
+		{
+			"aliases": [
+				"SimultaneousPlants"
+			],
+			"objclass": "StarChallengeSimultaneousPlantsProps",
+			"objdata": {
+				"MaximumPlants": 28
+			}
+		},
+		{
+			"aliases": [
+				"PlantFoodNonuse"
+			],
+			"objclass": "StarChallengePlantFoodNonuseProps",
+			"objdata": {
+				
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"SelectionMethod": "chooser",
+				"PresetPlantList": [
+					"stallia"
+				],
+				"PlantWhiteList": [
+					"peashooter",
+					"wallnut",
+					"potatomine",
+					"cabbagepult",
+					"repeater",
+					"tallnut",
+					"spikerock",
+					"threepeater",
+					"gravebuster",
+					"torchwood",
+					"kernelpult",
+					"imitater",
+					"spikeweed",
+					"squash",
+					"splitpea",
+					"starfruit",
+					"melonpult",
+					"blover",
+					"pumpkin",
+					"gatlingpea",
+					"hypnoshroom",
+					"puffshroom",
+					"fumeshroom",
+					"magnetshroom",
+					"streetlamp",
+					"chomper",
+					"cobcannon",
+					"coffeebean",
+					"sunflower",
+					"sunshroom",
+					"twinsunflower",
+					"cherry_bomb",
+					"jalapeno",
+					"cobcannon",
+					"imitater"
+				],
+				"PlantBlackList": [
+					"blover",
+					"cactus",
+					"nekotail",
+					"doomshroom",
+					"wintermelon"
+				],
+				"OverrideSeedSlotsCount": 8
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": 60,
+						"StartingPoints": 400,
+						"StartingWave": 3,
+						"ZombiePool": [
+							"RTID(needforspeed@ZombieTypes)",
+							"RTID(needforspeed_armor1@ZombieTypes)",
+							"RTID(needforspeed_armor2@ZombieTypes)",
+							"RTID(pole_vaulting@ZombieTypes)"
+						]
+					}
+				],
+				"WaveManagerPropsVector": [
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerPropsWeek1"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 5,
+				"WaveCount": 15,
+				"WaveSpendingPointIncrement": 100,
+				"WaveSpendingPoints": 100,
+				"NextWaveHealthPercentage": 10,
+				"ZombieCountdownFirstWaveSecs": 30,
+				"DescriptionName": "[PVZ1MODE_BRICK]",
+				"Description": "[PVZ1MODE_BRICK_HARD_DESC]",
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)",
+						"RTID(Wave5BrickEvent@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)",
+						"RTID(Wave7BrickEvent@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10@CurrentLevel)"
+					],
+					[
+						"RTID(Wave11@CurrentLevel)"
+					],
+					[
+						"RTID(Wave12@CurrentLevel)",
+						"RTID(Wave12BrickEvent@CurrentLevel)"
+					],
+					[
+						"RTID(Wave13@CurrentLevel)"
+					],
+					[
+						"RTID(Wave14@CurrentLevel)"
+					],
+					[
+						"RTID(Wave15@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"NotificationEvents": [
+					"jam_rap"
+				],
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(pole_vaulting@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(needforspeed@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(needforspeed@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pole_vaulting@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(needforspeed@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(needforspeed@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(kongfu_monk_drink@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(needforspeed_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(Neuropathy@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(needforspeed@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(needforspeed@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(needforspeed_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(ladder@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(ladder@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(kongfu_monk_drink@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(needforspeed_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(kongfu_monk_drink@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(ladder@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pole_vaulting@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(needforspeed@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(needforspeed_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(needforspeed_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(needforspeed_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(nutcracker_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(needforspeed_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(needforspeed_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(pole_vaulting@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pole_vaulting@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(kongfu_monk_drink@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(kongfu_monk_drink@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(ladder@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(Neuropathy@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(ladder@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(ladder@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(needforspeed_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(needforspeed_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(needforspeed_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(needforspeed_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(needforspeed_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(kongfu_monk_drink@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(kongfu_monk_drink@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(Neuropathy@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(needforspeed_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(needforspeed_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(needforspeed_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(needforspeed_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(needforspeed_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(eighties_breakdancer@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(ladder@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(ladder@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(needforspeed_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(needforspeed_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(needforspeed_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(needforspeed_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(needforspeed_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(needforspeed@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(needforspeed@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(Neuropathy@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(Neuropathy@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(needforspeed_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5BrickEvent"
+			],
+			"objclass": "ZombiePotionActionProps",
+			"objdata": {
+				"Potions": [
+					{
+						"Location": {
+							"mX": 8,
+							"mY": 1
+						},
+						"Type": "bufftile_speed"
+					},
+					{
+						"Location": {
+							"mX": 8,
+							"mY": 3
+						},
+						"Type": "bufftile_speed"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7BrickEvent"
+			],
+			"objclass": "ZombiePotionActionProps",
+			"objdata": {
+				"Potions": [
+					{
+						"Location": {
+							"mX": 7,
+							"mY": 0
+						},
+						"Type": "bufftile_speed"
+					},
+					{
+						"Location": {
+							"mX": 7,
+							"mY": 2
+						},
+						"Type": "bufftile_speed"
+					},
+					{
+						"Location": {
+							"mX": 7,
+							"mY": 4
+						},
+						"Type": "bufftile_speed"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12BrickEvent"
+			],
+			"objclass": "ZombiePotionActionProps",
+			"objdata": {
+				"Potions": [
+					{
+						"Location": {
+							"mX": 6,
+							"mY": 1
+						},
+						"Type": "bufftile_speed"
+					},
+					{
+						"Location": {
+							"mX": 6,
+							"mY": 3
+						},
+						"Type": "bufftile_speed"
+					},
+					{
+						"Location": {
+							"mX": 5,
+							"mY": 2
+						},
+						"Type": "bufftile_speed"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"kongfu_monk_drink"
+			],
+			"objdata": {
+				"TypeName": "kongfu_monk_drink",
+				"ZombieClass": "ZombieMonkDrink",
+				"Properties": "RTID(ZombieMonkDrinkDefault@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieKongFuMonkDrinkGroup"
+				],
+				"AnimRigClass": "ZombieAnimRig_MonkDrink",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_KONGFU_MONK_DRINK",
+				"BoardAlmanac": false,
+				"RecommendPlants": [
+					"cherry_bomb"
+				],
+				"HomeWorld": "kongfu"
+			}
+		},
+		{
+			"objclass": "ZombieMonkDrinkProps",
+			"aliases": [
+				"ZombieMonkDrinkDefault"
+			],
+			"objdata": {
+				"Speed": 0.11,
+				"Hitpoints": 600,
+				"CrazySpeed": 0.25,
+				"CrazyDamagePercent": 0.99,
+				"CrazyHitPoints": 300,
+				"ChargeDamage": 100,
+				"CrazyChargeDamage": 100,
+				"EatDPS": 150,
+				"CanSpawnPlantFood": true,
+				"SizeType": "small",
+				"HitRect": {
+					"mX": 10,
+					"mY": 10,
+					"mWidth": 32,
+					"mHeight": 95
+				},
+				"AttackRect": {
+					"mX": -45,
+					"mY": 0,
+					"mWidth": 115,
+					"mHeight": 95
+				},
+				"Cost": 150,
+				"FirstWave": 2,
+				"WavePointCost": 100,
+				"Weight": 700,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"ShadowOffset": {
+					"x": 10,
+					"y": 0,
+					"z": 1.2
+				},
+				"GroundTrackName": "ground_swatch",
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness1"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed3"
+					}
+				],
+				"ZombieLevelStats": [
+					{
+						"AttackLevel": 1,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 2,
+						"HitPointsLevel": 2
+					},
+					{
+						"AttackLevel": 3,
+						"HitPointsLevel": 3
+					},
+					{
+						"AttackLevel": 4.5,
+						"HitPointsLevel": 4.5
+					},
+					{
+						"AttackLevel": 5,
+						"HitPointsLevel": 5
+					}
+				]
+			}
+		}
+	],
+	"version": 1
+}

@@ -1,0 +1,890 @@
+{
+	"#comment": "Memory",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_MEMORY]",
+				"LevelNumber": 2,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(GridItemPlacement@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(TunnelDefendDefault0@LevelModules)",
+					"RTID(FastSpeed@CurrentLevel)",
+					"RTID(TimeEnergy@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)"
+				],
+				"MusicType": "Minigame_A",
+				"Name": "[S32_MEMORY_LEVEL_NAME_023]",
+				"StageModule": "RTID(UnchartedMausoleumStage@LevelModules)",
+				"DisablePeavine": true,
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+				"ShowZombies": [
+					
+				]
+			}
+		},
+		{
+			"objclass": "TimeEnergyModuleProperties",
+			"aliases": [
+				"TimeEnergy"
+			],
+			"objdata": {
+				"TimeEnergyValueMax": 540
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"OverrideSeedSlotsCount": 8,
+				"PlantBlackList": [
+					
+				],
+				"PlantWhiteList": [
+					
+				],
+				"PresetPlantList": [
+					
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"FastSpeed"
+			],
+			"objclass": "ZombieMoveFastModuleProperties",
+			"objdata": {
+				"SpeedUp": 2.0,
+				"StopColumn": 8
+			}
+		},
+		{
+			"aliases": [
+				"GridItemPlacement"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 4,
+						"GridY": 0,
+						"TypeName": "terracottaArmy"
+					},
+					{
+						"GridX": 7,
+						"GridY": 0,
+						"TypeName": "terracottaArmy"
+					},
+					{
+						"GridX": 3,
+						"GridY": 2,
+						"TypeName": "terracottaArmy"
+					},
+					{
+						"GridX": 5,
+						"GridY": 4,
+						"TypeName": "terracottaArmy"
+					},
+					{
+						"GridX": 8,
+						"GridY": 3,
+						"TypeName": "terracottaArmy"
+					},
+					{
+						"GridX": 5,
+						"GridY": 1,
+						"TypeName": "terracottaArmy"
+					},
+					{
+						"GridX": 6,
+						"GridY": 1,
+						"TypeName": "terracottaArmy"
+					},
+					{
+						"GridX": 4,
+						"GridY": 2,
+						"TypeName": "terracottaArmy"
+					},
+					{
+						"GridX": 7,
+						"GridY": 2,
+						"TypeName": "terracottaArmy"
+					},
+					{
+						"GridX": 5,
+						"GridY": 3,
+						"TypeName": "terracottaArmy"
+					},
+					{
+						"GridX": 6,
+						"GridY": 3,
+						"TypeName": "terracottaArmy"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(SunProduced@CurrentLevel)",
+						"RTID(KillZombies@CurrentLevel)",
+						"RTID(PlantsSurive@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"KillZombies"
+			],
+			"objclass": "StarChallengeKillZombiesInTimeProps",
+			"objdata": {
+				"Time": 10,
+				"ZombiesToKill": 10
+			}
+		},
+		{
+			"aliases": [
+				"PlantsSurive"
+			],
+			"objclass": "StarChallengePlantsSurviveProps",
+			"objdata": {
+				"Count": 15
+			}
+		},
+		{
+			"aliases": [
+				"SunProduced"
+			],
+			"objclass": "StarChallengeSunProducedProps",
+			"objdata": {
+				"TargetSun": 4000
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"WaveManagerPropsVector": [
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerPropsWeek1"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 5,
+				"MaxNextWaveHealthPercentage": 0.85,
+				"MinNextWaveHealthPercentage": 0.7,
+				"DescriptionName": "[PVZ1MODE_PEACE]",
+				"Description": "[PVZ1MODE_PEACE_NORMAL_DESC]",
+				"WaveCount": 15,
+				"Waves": [
+					[
+						"RTID(Wave1Jittered0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2Jittered0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3Jittered0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4Jittered0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5Jittered0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6Jittered0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7Jittered0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8Jittered0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9Jittered0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10Jittered0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave11Jittered0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave12Jittered0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave13Jittered0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave14Jittered0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave15Jittered0@CurrentLevel)"
+					]
+				],
+				"ZombieCountDownFirstWaveConveyorSecs": 5,
+				"ZombieCountDownFirstWaveSecs": 12,
+				"ZombieCountDownHugeWaveDelay": 5
+			}
+		},
+		{
+			"aliases": [
+				"Wave1Jittered0"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Level": 2,
+						"Row": "1",
+						"Type": "RTID(mausoleum_basic@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "1",
+						"Type": "RTID(mausoleum_basic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2Jittered0"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 4,
+						"Row": "4",
+						"Type": "RTID(qin_jingke@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3Jittered0"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Level": 3,
+						"Row": "5",
+						"Type": "RTID(mausoleum_basic@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "5",
+						"Type": "RTID(mausoleum_basic@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "2",
+						"Type": "RTID(qin_taoist@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4Jittered0"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 2,
+						"Row": "3",
+						"Type": "RTID(mausoleum_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mausoleum_drunkard@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "5",
+						"Type": "RTID(mausoleum_drunkard@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5Jittered0"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Level": 2,
+						"Row": "2",
+						"Type": "RTID(qin_jingke@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "5",
+						"Type": "RTID(mausoleum_vendor@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "4",
+						"Type": "RTID(qin_taoist@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "1",
+						"Type": "RTID(mausoleum_basic@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "1",
+						"Type": "RTID(mausoleum_armor2@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "3",
+						"Type": "RTID(mausoleum_basic@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "3",
+						"Type": "RTID(mausoleum_armor1@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "5",
+						"Type": "RTID(mausoleum_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6Jittered0"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 2,
+						"Row": "4",
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "2",
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "5",
+						"Type": "RTID(mausoleum_armor1@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "1",
+						"Type": "RTID(mausoleum_armor1@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "3",
+						"Type": "RTID(mausoleum_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7Jittered0"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 2,
+						"Row": "1",
+						"Type": "RTID(journey_to_the_west_superfan@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "1",
+						"Type": "RTID(journey_to_the_west_allstar@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "5",
+						"Type": "RTID(mausoleum_basic@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "4",
+						"Type": "RTID(mausoleum_armor2@ZombieTypes)"
+					},
+					{
+						"Level": 1,
+						"Row": "2",
+						"Type": "RTID(mausoleum_armor2@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "5",
+						"Type": "RTID(mausoleum_drunkard@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "3",
+						"Type": "RTID(mausoleum_drunkard@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8Jittered0"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Level": 2,
+						"Row": "5",
+						"Type": "RTID(mausoleum_vendor@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "1",
+						"Type": "RTID(mausoleum_vendor@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "3",
+						"Type": "RTID(mausoleum_vendor@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "4",
+						"Type": "RTID(journey_to_the_west_superfan@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "2",
+						"Type": "RTID(journey_to_the_west_superfan@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9Jittered0"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Level": 2,
+						"Row": "4",
+						"Type": "RTID(journey_to_the_west_allstar@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "2",
+						"Type": "RTID(journey_to_the_west_allstar@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "1",
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "5",
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(mausoleum_drunkard@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "3",
+						"Type": "RTID(mausoleum_drunkard@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(mausoleum_drunkard@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "3",
+						"Type": "RTID(mausoleum_basic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10Jittered0"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Level": 3,
+						"Row": "5",
+						"Type": "RTID(mausoleum_vendor@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "4",
+						"Type": "RTID(qin_jingke@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "1",
+						"Type": "RTID(mausoleum_drunkard@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "1",
+						"Type": "RTID(qin_taoist@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "2",
+						"Type": "RTID(mausoleum_basic@ZombieTypes)"
+					},
+					{
+						"Level": 1,
+						"Row": "2",
+						"Type": "RTID(mausoleum_drunkard@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "3",
+						"Type": "RTID(mausoleum_drunkard@ZombieTypes)"
+					},
+					{
+						"Level": 4,
+						"Row": "3",
+						"Type": "RTID(mausoleum_gargantuar@ZombieTypes)"
+					},
+					{
+						"Level": 1,
+						"Row": "5",
+						"Type": "RTID(mausoleum_drunkard@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "4",
+						"Type": "RTID(mausoleum_drunkard@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11Jittered0"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 4,
+						"Row": "2",
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "5",
+						"Type": "RTID(journey_to_the_west_superfan@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "5",
+						"Type": "RTID(journey_to_the_west_allstar@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "1",
+						"Type": "RTID(mausoleum_basic@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "4",
+						"Type": "RTID(mausoleum_armor2@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "3",
+						"Type": "RTID(mausoleum_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12Jittered0"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 3,
+						"Row": "4",
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "2",
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "4",
+						"Type": "RTID(qin_taoist@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "2",
+						"Type": "RTID(qin_taoist@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "1",
+						"Type": "RTID(mausoleum_drunkard@ZombieTypes)"
+					},
+					{
+						"Level": 4,
+						"Row": "1",
+						"Type": "RTID(mausoleum_armor1@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "3",
+						"Type": "RTID(mausoleum_drunkard@ZombieTypes)"
+					},
+					{
+						"Level": 4,
+						"Row": "3",
+						"Type": "RTID(mausoleum_basic@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "5",
+						"Type": "RTID(mausoleum_drunkard@ZombieTypes)"
+					},
+					{
+						"Level": 4,
+						"Row": "5",
+						"Type": "RTID(mausoleum_basic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13Jittered0"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 3,
+						"Row": "2",
+						"Type": "RTID(qin_jingke@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "4",
+						"Type": "RTID(mausoleum_vendor@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "3",
+						"Type": "RTID(journey_to_the_west_superfan@ZombieTypes)"
+					},
+					{
+						"Level": 1,
+						"Row": "3",
+						"Type": "RTID(journey_to_the_west_allstar@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "5",
+						"Type": "RTID(mausoleum_armor2@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "1",
+						"Type": "RTID(mausoleum_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14Jittered0"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 4,
+						"Row": "1",
+						"Type": "RTID(mausoleum_vendor@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "2",
+						"Type": "RTID(journey_to_the_west_superfan@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "2",
+						"Type": "RTID(journey_to_the_west_allstar@ZombieTypes)"
+					},
+					{
+						"Level": 4,
+						"Row": "3",
+						"Type": "RTID(qin_taoist@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "3",
+						"Type": "RTID(mausoleum_drunkard@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "4",
+						"Type": "RTID(mausoleum_drunkard@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "4",
+						"Type": "RTID(mausoleum_basic@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "5",
+						"Type": "RTID(mausoleum_armor1@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "5",
+						"Type": "RTID(mausoleum_gargantuar@ZombieTypes)"
+					},
+					{
+						"Level": 4,
+						"Row": "1",
+						"Type": "RTID(mausoleum_drunkard@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15Jittered0"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Level": 3,
+						"Row": "1",
+						"Type": "RTID(mausoleum_vendor@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "1",
+						"Type": "RTID(qin_jingke@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "3",
+						"Type": "RTID(mausoleum_vendor@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "3",
+						"Type": "RTID(qin_jingke@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "5",
+						"Type": "RTID(mausoleum_vendor@ZombieTypes)"
+					},
+					{
+						"Level": 1,
+						"Row": "5",
+						"Type": "RTID(qin_jingke@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "4",
+						"Type": "RTID(journey_to_the_west_superfan@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "4",
+						"Type": "RTID(journey_to_the_west_allstar@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Row": "2",
+						"Type": "RTID(mausoleum_armor1@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "4",
+						"Type": "RTID(mausoleum_gargantuar@ZombieTypes)"
+					},
+					{
+						"Level": 3,
+						"Row": "2",
+						"Type": "RTID(mausoleum_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}
+	],
+	"version": 1
+}

@@ -1,0 +1,12 @@
+{
+  "world": "modern",
+  "columns": 5,
+  "rows": 3,
+  "airflow_center": {
+    "col": 3,
+    "row": 1
+  },
+  "sunflower_sun": 50,
+  "plants": [],
+  "cells": []
+}

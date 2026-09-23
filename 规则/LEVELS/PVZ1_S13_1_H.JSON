@@ -1,0 +1,1209 @@
+{
+	"#comment": "Memory",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_MEMORY]",
+				"LevelNumber": 1,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(TimeEnergy@LevelModules)",
+					"RTID(Gravestones@CurrentLevel)",
+					"RTID(JuggledModule@CurrentLevel)"
+				],
+				"Name": "[S13_MEMORY_LEVEL_NAME_001_H]",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+				"StageModule": "RTID(SummerDaylightStage@LevelModules)",
+				"ShowZombies": [
+					"summer_basic",
+					"summer_armor1",
+					"summer_armor2",
+					"kongfu_selfexplode",
+					"modern_allstar",
+					"zombie_jalapeno"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Gravestones"
+			],
+			"objclass": "GravestoneProperties",
+			"objdata": {
+				"ForceSpawnData": [
+					{
+						"GridX": 8,
+						"GridY": 0,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 8,
+						"GridY": 1,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 8,
+						"GridY": 3,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 8,
+						"GridY": 4,
+						"TypeName": "gravestoneSunOnDestruction"
+					},
+					{
+						"GridX": 7,
+						"GridY": 0,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 7,
+						"GridY": 1,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 7,
+						"GridY": 2,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 7,
+						"GridY": 3,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 7,
+						"GridY": 4,
+						"TypeName": "gravestoneSunOnDestruction"
+					},
+					{
+						"GridX": 6,
+						"GridY": 0,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 6,
+						"GridY": 1,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 6,
+						"GridY": 2,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 6,
+						"GridY": 3,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 6,
+						"GridY": 4,
+						"TypeName": "gravestoneSunOnDestruction"
+					},
+					{
+						"GridX": 5,
+						"GridY": 0,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 5,
+						"GridY": 1,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 5,
+						"GridY": 2,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 5,
+						"GridY": 3,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 5,
+						"GridY": 4,
+						"TypeName": "gravestoneSunOnDestruction"
+					},
+					{
+						"GridX": 4,
+						"GridY": 0,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 4,
+						"GridY": 1,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 4,
+						"GridY": 2,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 4,
+						"GridY": 3,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 4,
+						"GridY": 4,
+						"TypeName": "gravestoneSunOnDestruction"
+					},
+					{
+						"GridX": 3,
+						"GridY": 0,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 3,
+						"GridY": 1,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 3,
+						"GridY": 2,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 3,
+						"GridY": 3,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 3,
+						"GridY": 4,
+						"TypeName": "gravestoneSunOnDestruction"
+					},
+					{
+						"GridX": 2,
+						"GridY": 0,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 2,
+						"GridY": 1,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 2,
+						"GridY": 2,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 2,
+						"GridY": 3,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 2,
+						"GridY": 4,
+						"TypeName": "gravestoneSunOnDestruction"
+					},
+					{
+						"GridX": 1,
+						"GridY": 0,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 1,
+						"GridY": 1,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 1,
+						"GridY": 2,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 1,
+						"GridY": 3,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 1,
+						"GridY": 4,
+						"TypeName": "gravestoneSunOnDestruction"
+					},
+					{
+						"GridX": 0,
+						"GridY": 0,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 0,
+						"GridY": 1,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 0,
+						"GridY": 3,
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"GridX": 0,
+						"GridY": 4,
+						"TypeName": "gravestoneSunOnDestruction"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(PlantFoodNonuse@CurrentLevel)",
+						"RTID(DefeatZombie@CurrentLevel)",
+						"RTID(PlantsSurvive@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"PlantFoodNonuse"
+			],
+			"objclass": "StarChallengePlantFoodNonuseProps",
+			"objdata": {
+				
+			}
+		},
+		{
+			"aliases": [
+				"DefeatZombie"
+			],
+			"objclass": "PlantDefeatZombieChallengeProps",
+			"objdata": {
+				"Description": "[KILL_DESC]",
+				"NumZombiesToKill": 10,
+				"PlantTypeName": "chomper"
+			}
+		},
+		{
+			"aliases": [
+				"PlantsSurvive"
+			],
+			"objclass": "StarChallengePlantsSurviveProps",
+			"objdata": {
+				"Count": 25
+			}
+		},
+		{
+			"aliases": [
+				"JuggledModule"
+			],
+			"objclass": "JuggledModuleProperties",
+			"objdata": {
+				"LaunchVelocity": {
+					"x": 500,
+					"y": 0,
+					"z": 0
+				},
+				"LaunchAcceleration": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"LaunchHeight": {
+					"Min": 50,
+					"Max": 50
+				},
+				"MaxProjectilesToJuggle": 1000,
+				"JuggleLaunchDelay": 0.5,
+				"MoveSpeedMultiplierWhileJuggling": 1.1,
+				"CatchArcDegrees": 120,
+				"JuggleableProjectiles": [
+					"PeaDefault",
+					"ThreepeaterPeaDefault",
+					"ThreepeaterPeaSnow",
+					"ThreepeaterPeaFire",
+					"ThreepeaterPeaUltraFire",
+					"PlantfoodPeaDefault",
+					"FirePeaDefault",
+					"UltraFirePeaDefault",
+					"SnowPeaDefault",
+					"GiantPeaDefault",
+					"GiantFirePeaDefault",
+					"GiantUltraFirePeaDefault",
+					"CannonballDefault",
+					"CabbageDefault",
+					"MelonDefault",
+					"WinterMelonDefault",
+					"KernelDefault",
+					"ButterDefault",
+					"StarFruitShot",
+					"BloomerangDefault",
+					"BloomerangAvatar",
+					"PlasmaBall",
+					"PuffSporeDefault",
+					"ThrownZombieParticle",
+					"GuacodileDefault",
+					"HomingThistleDefault",
+					"HomingThistlePlantfood",
+					"BowlingBulbDefault",
+					"BowlingBulbDefault2",
+					"BowlingBulbDefault3",
+					"PameBulletNormal",
+					"PameBulletPlantfood",
+					"PameBulletAvatarPlantfood",
+					"PeanutDefault",
+					"IceLancePeaDefault",
+					"PepperpultDefault",
+					"PepperpultPlantfoodDefault",
+					"XShotShot",
+					"XShotGiantShot",
+					"StingerDefault",
+					"AkeeDefault",
+					"MegaAkeeDefault",
+					"NekotailStabDefault",
+					"NekotailStabAdvance",
+					"HugeNekotailStab",
+					"wasabiwhipLevel5",
+					"BearberryDefaultProjectile",
+					"BearberryLevel2Projectile",
+					"PoisonPeaDefault"
+				],
+				"UnthrowableProjectiles": [
+					
+				],
+				"AngleAgnosticProjectiles": [
+					"HomingThistleDefault",
+					"HomingThistlePlantfood"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": -40,
+						"StartingPoints": -100,
+						"StartingWave": 3,
+						"ZombiePool": [
+							"RTID(summer_basic@ZombieTypes)",
+							"RTID(summer_armor1@ZombieTypes)"
+						]
+					},
+					{
+						"PointIncrementPerWave": 40,
+						"StartingPoints": 200,
+						"StartingWave": 4,
+						"ZombiePool": [
+							"RTID(summer_basic@ZombieTypes)",
+							"RTID(summer_armor1@ZombieTypes)"
+						]
+					}
+				],
+				"WaveManagerPropsVector": [
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerPropsWeek1"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 5,
+				"WaveCount": 15,
+				"WaveSpendingPointIncrement": 100,
+				"WaveSpendingPoints": 100,
+				"DescriptionName": "[PVZ1MODE_SUMMERFIREWORKS]",
+				"Description": "[PVZ1MODE_SUMMERFIREWORKS_NORMAL_DESC]",
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)",
+						"RTID(Wave1SummerFireworks0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)",
+						"RTID(Wave5SummerFireworks0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10@CurrentLevel)",
+						"RTID(Wave10SummerFireworks0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave11@CurrentLevel)"
+					],
+					[
+						"RTID(Wave12@CurrentLevel)"
+					],
+					[
+						"RTID(Wave13@CurrentLevel)"
+					],
+					[
+						"RTID(Wave14@CurrentLevel)"
+					],
+					[
+						"RTID(Wave15@CurrentLevel)",
+						"RTID(Wave15SummerFireworks0@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(zombie_jalapeno@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(summer_basic@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(summer_basic@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(summer_basic@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(summer_basic@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(summer_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(summer_basic@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_basic@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(summer_basic@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_basic@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor1@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(summer_basic@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_basic@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(summer_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor1@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor1@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(summer_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(summer_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(summer_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(summer_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1SummerFireworks0"
+			],
+			"objclass": "SummerFireworksWaveActionProps",
+			"objdata": {
+				"SummerFireworksGroup": [
+					{
+						"Column": 9,
+						"Row": 1,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 9,
+						"Row": 2,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 9,
+						"Row": 3,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 9,
+						"Row": 4,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 9,
+						"Row": 5,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5SummerFireworks0"
+			],
+			"objclass": "SummerFireworksWaveActionProps",
+			"objdata": {
+				"SummerFireworksGroup": [
+					{
+						"Column": 9,
+						"Row": 1,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 9,
+						"Row": 2,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 9,
+						"Row": 3,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 9,
+						"Row": 4,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 9,
+						"Row": 5,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 8,
+						"Row": 1,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 8,
+						"Row": 2,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 8,
+						"Row": 3,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 8,
+						"Row": 4,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 8,
+						"Row": 5,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10SummerFireworks0"
+			],
+			"objclass": "SummerFireworksWaveActionProps",
+			"objdata": {
+				"SummerFireworksGroup": [
+					{
+						"Column": 9,
+						"Row": 1,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 9,
+						"Row": 2,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 9,
+						"Row": 3,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 9,
+						"Row": 4,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 9,
+						"Row": 5,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 8,
+						"Row": 1,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 8,
+						"Row": 2,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 8,
+						"Row": 3,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 8,
+						"Row": 4,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 8,
+						"Row": 5,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 7,
+						"Row": 1,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 7,
+						"Row": 2,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 7,
+						"Row": 3,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 7,
+						"Row": 4,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 7,
+						"Row": 5,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15SummerFireworks0"
+			],
+			"objclass": "SummerFireworksWaveActionProps",
+			"objdata": {
+				"SummerFireworksGroup": [
+					{
+						"Column": 9,
+						"Row": 1,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 9,
+						"Row": 2,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 9,
+						"Row": 3,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 9,
+						"Row": 4,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 9,
+						"Row": 5,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 8,
+						"Row": 1,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 8,
+						"Row": 2,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 8,
+						"Row": 3,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 8,
+						"Row": 4,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 8,
+						"Row": 5,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 7,
+						"Row": 1,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 7,
+						"Row": 2,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 7,
+						"Row": 3,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 7,
+						"Row": 4,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					},
+					{
+						"Column": 7,
+						"Row": 5,
+						"Hitpoints": 20000,
+						"ExplodeDamageAmount": 2000
+					}
+				]
+			}
+		}
+	],
+	"version": 1
+}

@@ -1,0 +1,767 @@
+{
+	"#comment": "Cristmas Danger Room",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DANGER_ROOM]",
+				"ForceNextLevel": "festival_dangerroom_level_endless",
+				"IsDangerRoom": true,
+				"LevelNumber": 1005,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(DangerRoomIntro@CurrentLevel)",
+					"RTID(DangerRoomModule@CurrentLevel)",
+					"RTID(FrontLawnMowers@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(LastStand@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				],
+				"Name": "[DANGER_ROOM_EGYPT_LEVEL_NAME]",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"StartingSun": 1500,
+				"StageModule": "RTID(FestivalStageLevelEndless@LevelModules)"
+			}
+		},
+		{
+			"objclass": "WaveManagerModuleProperties",
+			"aliases": [
+				"NewWaves"
+			],
+			"objdata": {
+				
+			}
+		},
+		{
+			"objclass": "DangerRoomModuleProperties",
+			"aliases": [
+				"DangerRoomModule"
+			],
+			"objdata": {
+				"WorldSpecificProperties": "RTID(Festival_level_endlessDangerRoomProps@PropertySheets)",
+				"LevelDesigners": [
+					"RTID(FestivalDangerRoomWaveGenerator@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"DangerRoomIntro"
+			],
+			"objclass": "DangerRoomLevelIntroProperties",
+			"objdata": {
+				
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [
+					"sunflower",
+					"twinsunflower",
+					"sunshroom",
+					"iceburg",
+					"puffshroom",
+					"gravebuster",
+					"sunbean",
+					"powerplant",
+					"birthsunflower",
+					"goldleaf",
+					"imppear"
+				],
+				"SelectionMethod": "chooser",
+				"AlwaysUseChooser": false
+			}
+		},
+		{
+			"aliases": [
+				"LastStand"
+			],
+			"objclass": "LastStandMinigameProperties",
+			"objdata": {
+				"StartingPlantfood": 0,
+				"StartingSun": 0
+			}
+		},
+		{
+			"aliases": [
+				"FestivalDangerRoomWaveGenerator"
+			],
+			"objclass": "DangerRoomJitteredWaveGenerator",
+			"objdata": {
+				"StartingPoints": 200,
+				"BasePointIncrementPerWave": 100,
+				"BasePointIncrementPerLevel": 100,
+				"ZombiePoolConfigs": [
+					{
+						"MinSpawnLevel": 1,
+						"MaxSpawnLevel": 3,
+						"ZombieType": "RTID(mummy@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 1,
+						"MaxSpawnLevel": 3,
+						"ZombieType": "RTID(mummy_armor1@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 1,
+						"MaxSpawnLevel": 3,
+						"ZombieType": "RTID(mummy_armor2@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 1,
+						"MaxSpawnLevel": 1,
+						"ZombieType": "RTID(ra@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 2,
+						"MaxSpawnLevel": 2,
+						"ZombieType": "RTID(camel_onehump@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 3,
+						"MaxSpawnLevel": 3,
+						"ZombieType": "RTID(explorer@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 4,
+						"MaxSpawnLevel": 6,
+						"ZombieType": "RTID(pirate@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 4,
+						"MaxSpawnLevel": 6,
+						"ZombieType": "RTID(pirate_armor1@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 4,
+						"MaxSpawnLevel": 6,
+						"ZombieType": "RTID(pirate_armor2@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 4,
+						"MaxSpawnLevel": 4,
+						"ZombieType": "RTID(swashbuckler@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 5,
+						"MaxSpawnLevel": 5,
+						"ZombieType": "RTID(seagull@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 6,
+						"MaxSpawnLevel": 6,
+						"ZombieType": "RTID(barrelroller@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 7,
+						"MaxSpawnLevel": 9,
+						"ZombieType": "RTID(cowboy@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 7,
+						"MaxSpawnLevel": 9,
+						"ZombieType": "RTID(cowboy_armor1@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 7,
+						"MaxSpawnLevel": 9,
+						"ZombieType": "RTID(cowboy_armor2@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 7,
+						"MaxSpawnLevel": 7,
+						"ZombieType": "RTID(prospector@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 8,
+						"MaxSpawnLevel": 8,
+						"ZombieType": "RTID(poncho@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 9,
+						"MaxSpawnLevel": 9,
+						"ZombieType": "RTID(piano@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 10,
+						"MaxSpawnLevel": 10,
+						"ZombieType": "RTID(kongfu_agile_bronze@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 10,
+						"MaxSpawnLevel": 10,
+						"ZombieType": "RTID(kongfu_basic_armor2@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 10,
+						"MaxSpawnLevel": 10,
+						"ZombieType": "RTID(kongfu_hammer@ZombieTypes)",
+						"Level": 1
+					},
+					{
+						"MinSpawnLevel": 11,
+						"MaxSpawnLevel": 13,
+						"ZombieType": "RTID(kongfu_basic@ZombieTypes)",
+						"Level": 2
+					},
+					{
+						"MinSpawnLevel": 11,
+						"MaxSpawnLevel": 13,
+						"ZombieType": "RTID(kongfu_basic_armor1@ZombieTypes)",
+						"Level": 2
+					},
+					{
+						"MinSpawnLevel": 11,
+						"MaxSpawnLevel": 13,
+						"ZombieType": "RTID(kongfu_basic_armor2@ZombieTypes)",
+						"Level": 2
+					},
+					{
+						"MinSpawnLevel": 11,
+						"MaxSpawnLevel": 11,
+						"ZombieType": "RTID(kongfu_torch@ZombieTypes)",
+						"Level": 2
+					},
+					{
+						"MinSpawnLevel": 12,
+						"MaxSpawnLevel": 12,
+						"ZombieType": "RTID(kongfu_torch@ZombieTypes)",
+						"Level": 2
+					},
+					{
+						"MinSpawnLevel": 13,
+						"MaxSpawnLevel": 13,
+						"ZombieType": "RTID(kongfu_drink@ZombieTypes)",
+						"Level": 2
+					},
+					{
+						"MinSpawnLevel": 14,
+						"MaxSpawnLevel": 17,
+						"ZombieType": "RTID(kongfu_monk_cone@ZombieTypes)",
+						"Level": 2
+					},
+					{
+						"MinSpawnLevel": 14,
+						"MaxSpawnLevel": 17,
+						"ZombieType": "RTID(kongfu_monk_bucket@ZombieTypes)",
+						"Level": 2
+					},
+					{
+						"MinSpawnLevel": 14,
+						"MaxSpawnLevel": 14,
+						"ZombieType": "RTID(kongfu_monk_drink@ZombieTypes)",
+						"Level": 2
+					},
+					{
+						"MinSpawnLevel": 15,
+						"MaxSpawnLevel": 15,
+						"ZombieType": "RTID(kongfu_monk_blade@ZombieTypes)",
+						"Level": 2
+					},
+					{
+						"MinSpawnLevel": 16,
+						"MaxSpawnLevel": 16,
+						"ZombieType": "RTID(kongfu_monk_torch@ZombieTypes)",
+						"Level": 2
+					},
+					{
+						"MinSpawnLevel": 17,
+						"MaxSpawnLevel": 17,
+						"ZombieType": "RTID(kongfu_monk_nunchaku@ZombieTypes)",
+						"Level": 2
+					},
+					{
+						"MinSpawnLevel": 18,
+						"MaxSpawnLevel": 20,
+						"ZombieType": "RTID(future_armor1@ZombieTypes)",
+						"Level": 2
+					},
+					{
+						"MinSpawnLevel": 18,
+						"MaxSpawnLevel": 20,
+						"ZombieType": "RTID(future_armor2@ZombieTypes)",
+						"Level": 2
+					},
+					{
+						"MinSpawnLevel": 21,
+						"MaxSpawnLevel": 22,
+						"ZombieType": "RTID(future_armor1@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 21,
+						"MaxSpawnLevel": 22,
+						"ZombieType": "RTID(future_armor2@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 18,
+						"MaxSpawnLevel": 18,
+						"ZombieType": "RTID(future_jetpack@ZombieTypes)",
+						"Level": 2
+					},
+					{
+						"MinSpawnLevel": 19,
+						"MaxSpawnLevel": 19,
+						"ZombieType": "RTID(future_protector@ZombieTypes)",
+						"Level": 2
+					},
+					{
+						"MinSpawnLevel": 20,
+						"MaxSpawnLevel": 20,
+						"ZombieType": "RTID(future_gargantuar@ZombieTypes)",
+						"Level": 2
+					},
+					{
+						"MinSpawnLevel": 20,
+						"MaxSpawnLevel": 20,
+						"ZombieType": "RTID(mech_cone@ZombieTypes)",
+						"Level": 2
+					},
+					{
+						"MinSpawnLevel": 21,
+						"MaxSpawnLevel": 21,
+						"ZombieType": "RTID(disco_mech@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 22,
+						"MaxSpawnLevel": 22,
+						"ZombieType": "RTID(future_jetpack_disco@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 23,
+						"MaxSpawnLevel": 25,
+						"ZombieType": "RTID(dark_armor1@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 23,
+						"MaxSpawnLevel": 25,
+						"ZombieType": "RTID(dark_armor2@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 23,
+						"MaxSpawnLevel": 23,
+						"ZombieType": "RTID(dark_armor3@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 24,
+						"MaxSpawnLevel": 24,
+						"ZombieType": "RTID(dark_imp_dragon@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 25,
+						"MaxSpawnLevel": 25,
+						"ZombieType": "RTID(dark_juggler@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 26,
+						"MaxSpawnLevel": 27,
+						"ZombieType": "RTID(beach_armor1@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 26,
+						"MaxSpawnLevel": 27,
+						"ZombieType": "RTID(beach_fem_armor2@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 26,
+						"MaxSpawnLevel": 26,
+						"ZombieType": "RTID(beach_octopus@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 27,
+						"MaxSpawnLevel": 27,
+						"ZombieType": "RTID(beach_shell@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 28,
+						"MaxSpawnLevel": 30,
+						"ZombieType": "RTID(iceage_armor1@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 28,
+						"MaxSpawnLevel": 30,
+						"ZombieType": "RTID(iceage_armor2@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 28,
+						"MaxSpawnLevel": 28,
+						"ZombieType": "RTID(iceage_dodo@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 29,
+						"MaxSpawnLevel": 29,
+						"ZombieType": "RTID(iceage_hunter@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 30,
+						"MaxSpawnLevel": 30,
+						"ZombieType": "RTID(iceage_gargantuar@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 31,
+						"MaxSpawnLevel": 32,
+						"ZombieType": "RTID(mummy_armor1@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 31,
+						"MaxSpawnLevel": 32,
+						"ZombieType": "RTID(mummy_armor2@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 31,
+						"MaxSpawnLevel": 31,
+						"ZombieType": "RTID(tomb_raiser@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 32,
+						"MaxSpawnLevel": 32,
+						"ZombieType": "RTID(pharaoh@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 33,
+						"MaxSpawnLevel": 34,
+						"ZombieType": "RTID(pirate_armor1@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 33,
+						"MaxSpawnLevel": 34,
+						"ZombieType": "RTID(pirate_armor2@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 33,
+						"MaxSpawnLevel": 33,
+						"ZombieType": "RTID(cannon@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 34,
+						"MaxSpawnLevel": 34,
+						"ZombieType": "RTID(pirate_captain@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 35,
+						"MaxSpawnLevel": 35,
+						"ZombieType": "RTID(cowboy_armor1@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 35,
+						"MaxSpawnLevel": 35,
+						"ZombieType": "RTID(cowboy_armor2@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 35,
+						"MaxSpawnLevel": 35,
+						"ZombieType": "RTID(west_bull@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"MinSpawnLevel": 36,
+						"MaxSpawnLevel": 36,
+						"ZombieType": "RTID(cowboy_armor1@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 36,
+						"MaxSpawnLevel": 36,
+						"ZombieType": "RTID(cowboy_armor2@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 36,
+						"MaxSpawnLevel": 36,
+						"ZombieType": "RTID(piano@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 37,
+						"MaxSpawnLevel": 38,
+						"ZombieType": "RTID(kongfu_basic@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 37,
+						"MaxSpawnLevel": 38,
+						"ZombieType": "RTID(kongfu_basic_armor1@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 37,
+						"MaxSpawnLevel": 38,
+						"ZombieType": "RTID(kongfu_basic_armor2@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 37,
+						"MaxSpawnLevel": 37,
+						"ZombieType": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 38,
+						"MaxSpawnLevel": 38,
+						"ZombieType": "RTID(kongfu_magic_bronze@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 39,
+						"MaxSpawnLevel": 39,
+						"ZombieType": "RTID(future_armor1@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 39,
+						"MaxSpawnLevel": 39,
+						"ZombieType": "RTID(future_armor2@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 39,
+						"MaxSpawnLevel": 39,
+						"ZombieType": "RTID(football_mech@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 40,
+						"MaxSpawnLevel": 42,
+						"ZombieType": "RTID(dark_juggler@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 40,
+						"MaxSpawnLevel": 42,
+						"ZombieType": "RTID(dark_rogue@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 40,
+						"MaxSpawnLevel": 40,
+						"ZombieType": "RTID(dark_wizard@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 41,
+						"MaxSpawnLevel": 41,
+						"ZombieType": "RTID(dark_cavalry@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 42,
+						"MaxSpawnLevel": 42,
+						"ZombieType": "RTID(dark_archmage@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 43,
+						"MaxSpawnLevel": 44,
+						"ZombieType": "RTID(iceage_armor1@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 43,
+						"MaxSpawnLevel": 44,
+						"ZombieType": "RTID(iceage_armor2@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 43,
+						"MaxSpawnLevel": 43,
+						"ZombieType": "RTID(iceage_troglobite@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 44,
+						"MaxSpawnLevel": 44,
+						"ZombieType": "RTID(iceage_walrus@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 45,
+						"MaxSpawnLevel": 45,
+						"ZombieType": "RTID(prospector@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 45,
+						"MaxSpawnLevel": 45,
+						"ZombieType": "RTID(west_bull@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 45,
+						"MaxSpawnLevel": 45,
+						"ZombieType": "RTID(cowboy_gargantuar@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 46,
+						"MaxSpawnLevel": 46,
+						"ZombieType": "RTID(kongfu_monk_nunchaku@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 46,
+						"MaxSpawnLevel": 46,
+						"ZombieType": "RTID(kongfu_monk_drink@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 46,
+						"MaxSpawnLevel": 46,
+						"ZombieType": "RTID(kongfu_agile_bronze@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 47,
+						"MaxSpawnLevel": 47,
+						"ZombieType": "RTID(football_mech@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 47,
+						"MaxSpawnLevel": 47,
+						"ZombieType": "RTID(future_protector@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 47,
+						"MaxSpawnLevel": 47,
+						"ZombieType": "RTID(future_gargantuar@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 48,
+						"MaxSpawnLevel": 48,
+						"ZombieType": "RTID(dark_wizard@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 48,
+						"MaxSpawnLevel": 48,
+						"ZombieType": "RTID(dark_cavalry@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 48,
+						"MaxSpawnLevel": 48,
+						"ZombieType": "RTID(dark_gargantuar@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 49,
+						"MaxSpawnLevel": 49,
+						"ZombieType": "RTID(iceage_weaselhoarder@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 49,
+						"MaxSpawnLevel": 49,
+						"ZombieType": "RTID(iceage_walrus@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 49,
+						"MaxSpawnLevel": 49,
+						"ZombieType": "RTID(iceage_gargantuar@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 50,
+						"MaxSpawnLevel": 50,
+						"ZombieType": "RTID(dark_rogue@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 50,
+						"MaxSpawnLevel": 50,
+						"ZombieType": "RTID(football_mech@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 50,
+						"MaxSpawnLevel": 50,
+						"ZombieType": "RTID(dark_archmage@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"MinSpawnLevel": 51,
+						"MaxSpawnLevel": 999,
+						"ZombieType": "RTID(kongfu_magic_bronze@ZombieTypes)",
+						"Level": 5
+					},
+					{
+						"MinSpawnLevel": 51,
+						"MaxSpawnLevel": 999,
+						"ZombieType": "RTID(egypt_gargantuar@ZombieTypes)",
+						"Level": 5
+					},
+					{
+						"MinSpawnLevel": 51,
+						"MaxSpawnLevel": 999,
+						"ZombieType": "RTID(pirate_gargantuar@ZombieTypes)",
+						"Level": 5
+					},
+					{
+						"MinSpawnLevel": 51,
+						"MaxSpawnLevel": 999,
+						"ZombieType": "RTID(future_gargantuar@ZombieTypes)",
+						"Level": 5
+					}
+				]
+			}
+		}
+	],
+	"version": 1
+}

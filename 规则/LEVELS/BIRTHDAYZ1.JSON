@@ -1,0 +1,69 @@
+{
+	"#comment": "BirthdayZ 1",
+	"version": 1,
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"LevelNumber": 1,
+				"Name": "[CHILDREN_DAY_CHALLENGE_LEVEL1]",
+				"IsVasebreaker": true,
+				"IsLevelOfTheDay": true,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"LevelPowerupSet": "LevelPowerupsVasebreaker",
+				"StageModule": "RTID(ChildrenDayStage@LevelModules)",
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)",
+				"FirstRewardParam": "moneybag",
+				"Modules": [
+					"RTID(VaseBreakerArcade@LevelModules)",
+					"RTID(VaseBreakerFlow@LevelModules)",
+					"RTID(VaseBreakerProps@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)"
+				]
+			}
+		},
+		{
+			"objclass": "VaseBreakerPresetProperties",
+			"aliases": [
+				"VaseBreakerProps"
+			],
+			"objdata": {
+				"MinColumnIndex": 3,
+				"MaxColumnIndex": 8,
+				"Vases": [
+					{
+						"ZombieTypeName": "children_schoolbag",
+						"Count": 9
+					},
+					{
+						"ZombieTypeName": "children_lollipops",
+						"Count": 2
+					},
+					{
+						"ZombieTypeName": "children_ballon",
+						"Count": 2
+					},
+					{
+						"PlantTypeName": "bloomerang",
+						"Count": 7
+					},
+					{
+						"PlantTypeName": "wallnut",
+						"Count": 4
+					},
+					{
+						"PlantTypeName": "potatomine",
+						"Count": 4
+					},
+					{
+						"CollectableTypeName": "plantfood",
+						"Count": 2
+					}
+				],
+				"NumColoredPlantVases": 3,
+				"NumColoredZombieVases": 0
+			}
+		}
+	]
+}

@@ -1,0 +1,902 @@
+{
+	"#comment": "Memory",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_MEMORY]",
+				"LevelNumber": 1,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(ZCorpMowers@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(TimeEnergy@CurrentLevel)",
+					"RTID(FastSpeed@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(PaperPlacement@CurrentLevel)"
+				],
+				"Name": "[S30_MEMORY_LEVEL_NAME_001]",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+				"StageModule": "RTID(RiftStage@LevelModules)",
+				"ShowZombies": [
+					"tutorial",
+					"zcorp_fem_armor1",
+					"zcorp_fem_armor2"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"FastSpeed"
+			],
+			"objclass": "ZombieMoveFastModuleProperties",
+			"objdata": {
+				"StopColumn": 8,
+				"SpeedUp": 3.0
+			}
+		},
+		{
+			"objclass": "TimeEnergyModuleProperties",
+			"aliases": [
+				"TimeEnergy"
+			],
+			"objdata": {
+				"TimeEnergyValueMax": 400
+			}
+		},
+		{
+			"aliases": [
+				"PaperPlacement"
+			],
+			"objclass": "InitialGridItemProperties",
+			"objdata": {
+				"InitialGridItemPlacements": [
+					{
+						"GridX": 4,
+						"GridY": 0,
+						"TypeName": "printer_small_paper"
+					},
+					{
+						"GridX": 4,
+						"GridY": 1,
+						"TypeName": "printer_small_paper"
+					},
+					{
+						"GridX": 4,
+						"GridY": 2,
+						"TypeName": "printer_small_paper"
+					},
+					{
+						"GridX": 4,
+						"GridY": 3,
+						"TypeName": "printer_small_paper"
+					},
+					{
+						"GridX": 4,
+						"GridY": 4,
+						"TypeName": "printer_small_paper"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PresetPlantList": [
+					"rhubarbarian"
+				],
+				"SelectionMethod": "chooser",
+				"OverrideSeedSlotsCount": 8,
+				"PlantWhiteList": [
+					"sunflower",
+					"wintermelon",
+					"peashooter",
+					"tallnut",
+					"gatlingpea",
+					"nekotail",
+					"doomshroom",
+					"imitater",
+					"bonkchoy",
+					"seashooter",
+					"slingpea",
+					"aquaweed",
+					"kelpguard",
+					"cabbagepult",
+					"melonpult",
+					"iceburg",
+					"laser_bean",
+					"seashroom",
+					"repeater",
+					"snapdragon",
+					"threepeater",
+					"springbean",
+					"chilibean",
+					"phatbeet",
+					"peapod",
+					"magnifyinggrass",
+					"bloomerang",
+					"blover",
+					"empea",
+					"starfruit",
+					"holonut",
+					"twinsunflower",
+					"spikerock",
+					"squash",
+					"citron",
+					"bamboo",
+					"turnip",
+					"peach",
+					"sunshroom",
+					"puffshroom",
+					"fumeshroom",
+					"sunbean",
+					"peanut",
+					"magnetshroom",
+					"oakshooter",
+					"sweetpotato",
+					"banana",
+					"guacodile",
+					"homingthistle",
+					"lotusshower",
+					"lilypad",
+					"ghostpepper",
+					"asparagus",
+					"saucer",
+					"horsebean",
+					"anthurium",
+					"sapfling",
+					"hotpotato",
+					"chardguard",
+					"stunion",
+					"akee",
+					"redstinger",
+					"stallia",
+					"celerystalker",
+					"sporeshroom",
+					"garlic",
+					"intensivecarrot",
+					"morningglory",
+					"primalpeashooter",
+					"primalwallnut",
+					"primalsunflower",
+					"primalpotatomine",
+					"shadowshroom",
+					"moonflower",
+					"nightshade",
+					"bloominghearts",
+					"xshot",
+					"magicshroom",
+					"roseswordman",
+					"electricblueberry",
+					"endurian",
+					"lotusshooter",
+					"vanilla",
+					"stephania",
+					"icelotus",
+					"tupistrastalker",
+					"carrotlauncher",
+					"broccoli",
+					"cottonyeti",
+					"dragonfruit",
+					"shrinkingviolet",
+					"electriccurrant",
+					"electricpeashooter",
+					"spikeweed",
+					"wallnut",
+					"lightningreed",
+					"kernelpult",
+					"coconutcannon",
+					"cherry_bomb",
+					"buduhboom",
+					"dragonbruit",
+					"tuliptrumpeter",
+					"electricitea",
+					"pumpkin",
+					"splitpea",
+					"repeater",
+					"snowpea",
+					"goldbloom",
+					"jalapeno",
+					"marigold",
+					"stickybombrice",
+					"hatmushroom",
+					"springprincess",
+					"hocuscrocus",
+					"scaredyshroom",
+					"snappea",
+					"beanchemist",
+					"vamporcini",
+					"zoybeanpod",
+					"pumpkinwitch",
+					"beercoconut",
+					"hydrocotyledrummer",
+					"firecrackerflower",
+					"plantain",
+					"birthsunflower",
+					"parsnip",
+					"eagleclaw",
+					"egretflower",
+					"monotropa",
+					"narcissusshooter",
+					"tuliptrumpeter",
+					"icycurrant",
+					"kiwibeast",
+					"imppear",
+					"alarmsagittifolia",
+					"strawburst",
+					"elaeocarpus",
+					"shadowvanilla",
+					"dazeychain",
+					"clawgloriosa",
+					"impatiensshooter",
+					"tigerstool",
+					"mandrake",
+					"maybee",
+					"happyleek",
+					"electricpeel",
+					"waxgourd",
+					"shinevine",
+					"gloomvine",
+					"aquavine",
+					"rafflesia",
+					"hurrikale",
+					"winterrambutan",
+					"mapleblade",
+					"dracaena",
+					"bowlingbulb",
+					"kiwifruit",
+					"shadowpeashooter",
+					"dusklobber",
+					"caulipower",
+					"toadstool",
+					"pomegranatejeweler",
+					"poisonvine",
+					"wizardthorns",
+					"riflebamboo",
+					"coldsnapdragon",
+					"cactus",
+					"grapeshot",
+					"lemon",
+					"powervine",
+					"heathseeker",
+					"bubblecoral",
+					"dartichoke",
+					"primalrafflesia",
+					"bramble",
+					"oxygenalgae",
+					"mangosteen",
+					"turkeypult",
+					"heliconiagunner",
+					"goldencassia",
+					"longmalily",
+					"inferno",
+					"tristerixaphyllus",
+					"aeonium",
+					"pinkstarfruit",
+					"missiletoe",
+					"flamelady",
+					"matchflower",
+					"thundersnapdragon",
+					"byttneriameteorhammer",
+					"duckpear",
+					"chainsawburmannii",
+					"twinshoneysuckle",
+					"megagatling"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(DefeatZombie@CurrentLevel)",
+						"RTID(SunProduced@CurrentLevel)",
+						"RTID(SaveMowers@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"DefeatZombie"
+			],
+			"objclass": "PlantDefeatZombieChallengeProps",
+			"objdata": {
+				"Description": "[KILL_DESC]",
+				"NumZombiesToKill": 15,
+				"PlantTypeName": "rhubarbarian"
+			}
+		},
+		{
+			"aliases": [
+				"SunProduced"
+			],
+			"objclass": "StarChallengeSunProducedProps",
+			"objdata": {
+				"TargetSun": 3500
+			}
+		},
+		{
+			"aliases": [
+				"SaveMowers"
+			],
+			"objclass": "StarChallengeSaveMowersProps",
+			"objdata": {
+				
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": 150,
+						"StartingPoints": 100,
+						"StartingWave": 3,
+						"ZombiePool": [
+							"RTID(zcorp@ZombieTypes)",
+							"RTID(zcorp_armor1@ZombieTypes)",
+							"RTID(zcorp_armor2@ZombieTypes)",
+							"RTID(roman@ZombieTypes)",
+							"RTID(roman_armor1@ZombieTypes)",
+							"RTID(roman_armor2@ZombieTypes)"
+						]
+					}
+				],
+				"WaveManagerPropsVector": [
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerPropsWeek1"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 5,
+				"WaveCount": 15,
+				"WaveSpendingPointIncrement": 100,
+				"WaveSpendingPoints": 100,
+				"MaxNextWaveHealthPercentage": 0.4,
+				"MinNextWaveHealthPercentage": 0.35,
+				"DescriptionName": "[PVZ1MODE_HAMSTERBALL]",
+				"Description": "[PVZ1MODE_HAMSTERBALL_NORMAL_DESC]",
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)",
+						"RTID(HamsterStormEvent@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8@CurrentLevel)",
+						"RTID(HamsterStormEvent@CurrentLevel)",
+						"RTID(HamsterStormEvent@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10@CurrentLevel)"
+					],
+					[
+						"RTID(Wave11@CurrentLevel)"
+					],
+					[
+						"RTID(Wave12@CurrentLevel)",
+						"RTID(HamsterStormEvent@CurrentLevel)"
+					],
+					[
+						"RTID(Wave13@CurrentLevel)"
+					],
+					[
+						"RTID(Wave14@CurrentLevel)"
+					],
+					[
+						"RTID(Wave15@CurrentLevel)",
+						"RTID(HamsterStormEvent@CurrentLevel)",
+						"RTID(HamsterStormEvent@CurrentLevel)",
+						"RTID(HamsterStormEvent@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_armor3@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp_fem@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp_fem@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_armor3@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp_fem@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_fem_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": 1,
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Row": 2,
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Row": 3,
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Row": 4,
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Row": 5,
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Row": 1,
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Row": 2,
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Row": 3,
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Row": 4,
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Row": 5,
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Row": 1,
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Row": 2,
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Row": 3,
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Row": 4,
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Row": 5,
+						"Type": "RTID(roman_segment@ZombieTypes)"
+					},
+					{
+						"Row": 2,
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					},
+					{
+						"Row": 4,
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"HamsterStormEvent"
+			],
+			"objclass": "HamsterZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 4,
+				"ColumnStart": 0,
+				"GroupSize": 1,
+				"TimeBetweenGroups": 2,
+				"TimeBeforeFullSpawn": 5,
+				"Zombies": [
+					{
+						"Level": 1,
+						"Behavior": 1,
+						"HasPlantfood": false,
+						"SpeedBeforeImpact": 0.2,
+						"Type": "RTID(hamster_ball@ZombieTypes)",
+						"ZombieInsideBallType": "RTID(roman_armor3@ZombieTypes)"
+					}
+				]
+			}
+		}
+	],
+	"version": 1
+}

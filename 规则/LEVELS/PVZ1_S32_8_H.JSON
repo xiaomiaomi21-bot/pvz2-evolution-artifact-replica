@@ -1,0 +1,1563 @@
+{
+	"#comment": "Memory",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_MEMORY]",
+				"LevelNumber": 1,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ProtectThePlant@CurrentLevel)",
+					"RTID(CowboyRails@CurrentLevel)",
+					"RTID(TimeEnergy@CurrentLevel)"
+				],
+				"Name": "[S31_MEMORY_LEVEL_NAME_8]",
+				"FirstIntroNarrative": "PVZ1_S31_8_H_INTRO",
+				"ReplayIntroNarrative": "PVZ1_S31_8_H_INTRO",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+				"StageModule": "RTID(DaveCupStage@LevelModules)",
+				"ShowZombies": [
+					"roman_armor1",
+					"roman_armor2"
+				]
+			}
+		},
+		{
+			"objclass": "TimeEnergyModuleProperties",
+			"aliases": [
+				"TimeEnergy"
+			],
+			"objdata": {
+				"TimeEnergyValueMax": 600.0,
+				"TimeEnergyTriggers": [
+					
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ProtectThePlant"
+			],
+			"objclass": "ProtectThePlantChallengeProperties",
+			"objdata": {
+				"MustProtectCount": 2,
+				"Plants": [
+					{
+						"GridX": 2,
+						"GridY": 1,
+						"PlantType": "wintermelon"
+					},
+					{
+						"GridX": 2,
+						"GridY": 3,
+						"PlantType": "wintermelon"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"CowboyRails"
+			],
+			"objclass": "RailcartProperties",
+			"objdata": {
+				"RailcartType": "railcart_cowboy",
+				"Railcarts": [
+					{
+						"Column": 0,
+						"Row": 1
+					},
+					{
+						"Column": 0,
+						"Row": 3
+					},
+					{
+						"Column": 4,
+						"Row": 2
+					}
+				],
+				"Rails": [
+					{
+						"Column": 0,
+						"RowEnd": 1,
+						"RowStart": 0
+					},
+					{
+						"Column": 0,
+						"RowEnd": 4,
+						"RowStart": 3
+					},
+					{
+						"Column": 4,
+						"RowEnd": 4,
+						"RowStart": 0
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(ZombieSpeed@CurrentLevel)",
+						"RTID(SunProduced@CurrentLevel)",
+						"RTID(PlantFoodNonuse@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"ZombieSpeed"
+			],
+			"objclass": "StarChallengeZombieSpeedProps",
+			"objdata": {
+				"SpeedModifier": 0.2
+			}
+		},
+		{
+			"aliases": [
+				"SunProduced"
+			],
+			"objclass": "StarChallengeSunProducedProps",
+			"objdata": {
+				"TargetSun": 8888
+			}
+		},
+		{
+			"aliases": [
+				"PlantFoodNonuse"
+			],
+			"objclass": "StarChallengePlantFoodNonuseProps",
+			"objdata": {
+				
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"SelectionMethod": "chooser",
+				"PresetPlantList": [
+					"umbrellaleaf"
+				],
+				"PlantWhiteList": [
+					"bloomerang",
+					"bonkchoy",
+					"iceburg",
+					"lightningreed",
+					"peapod",
+					"chilibean",
+					"laser_bean",
+					"citron",
+					"holonut",
+					"sunbean",
+					"banana",
+					"guacodile",
+					"homingthistle",
+					"stunion",
+					"chardguard",
+					"sapfling",
+					"xshot",
+					"redstinger",
+					"akee",
+					"phatbeet",
+					"celerystalker",
+					"sporeshroom"
+				],
+				"PlantBlackList": [
+					"blover",
+					"torchwood",
+					"pumpkin",
+					"nekotail",
+					"scaredyshroom",
+					"imitater",
+					"glaciershroom",
+					"doomshroom",
+					"lilypad",
+					"tanglekelp",
+					"seashroom",
+					"streetlamp",
+					"flowerpot",
+					"coffeebean",
+					"cobcannon",
+					"wintermelon"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": 60,
+						"StartingPoints": 400,
+						"StartingWave": 6,
+						"ZombiePool": [
+							"RTID(roman_armor1@ZombieTypes)",
+							"RTID(roman_armor2@ZombieTypes)",
+							"RTID(roman_armor3@ZombieTypes)"
+						]
+					}
+				],
+				"WaveManagerPropsVector": [
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerPropsWeek1"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 5,
+				"WaveCount": 20,
+				"WaveSpendingPointIncrement": 100,
+				"WaveSpendingPoints": 100,
+				"DescriptionName": "[PVZ1MODE_DROP]",
+				"Description": "[PVZ1MODE_DROP_NORMAL_DESC]",
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10@CurrentLevel)"
+					],
+					[
+						"RTID(Wave11@CurrentLevel)"
+					],
+					[
+						"RTID(Wave12@CurrentLevel)"
+					],
+					[
+						"RTID(Wave13@CurrentLevel)"
+					],
+					[
+						"RTID(Wave14@CurrentLevel)"
+					],
+					[
+						"RTID(Wave15@CurrentLevel)"
+					],
+					[
+						"RTID(Wave16@CurrentLevel)"
+					],
+					[
+						"RTID(Wave17@CurrentLevel)"
+					],
+					[
+						"RTID(Wave18@CurrentLevel)"
+					],
+					[
+						"RTID(Wave19@CurrentLevel)"
+					],
+					[
+						"RTID(Wave20@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(roman_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(roman_shield_triad@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(roman_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(general_caesar_phase1@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(roman_shield_top@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pole_vaulting@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pole_vaulting@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(roman_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(catapult_zomboss@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(catapult_zomboss@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_armor3@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_armor3@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(roman_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(roman_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pole_vaulting@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(catapult_zomboss@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(catapult_zomboss@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(roman_medusa@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(catapult_zomboss@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(roman_medusa@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pole_vaulting@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pole_vaulting@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(roman_shield_triad@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(roman_shield_triad@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_armor4@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(roman_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(roman_medusa@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(catapult_zomboss@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(catapult_zomboss@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(roman_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(roman_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(general_caesar_phase2@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(roman_shield_triad@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(roman_shield_triad@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(roman_shield_triad@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(roman_shield_triad@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pole_vaulting@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(roman_medusa@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(roman_medusa@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(catapult_zomboss@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(pole_vaulting@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pole_vaulting@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(roman_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(roman_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(catapult_zomboss@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(catapult_zomboss@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(roman_armor3@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(roman_armor3@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(pole_vaulting@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pole_vaulting@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(roman_shield_triad@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(roman_shield_triad@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(catapult_zomboss@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(catapult_zomboss@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(catapult_zomboss@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(catapult_zomboss@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(roman_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(roman_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(roman_shield_triad@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(roman_shield_triad@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pole_vaulting@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pole_vaulting@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(roman_medusa@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(roman_medusa@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(roman_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(roman_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave16"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(roman_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave17"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(catapult_zomboss@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(catapult_zomboss@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(roman_medusa@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave18"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(general_caesar_elite@CurrentLevel)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(roman_shield_triad@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(roman_shield_triad@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(roman_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(roman_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave19"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(roman_shield_triad@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(roman_shield_triad@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(roman_shield_triad@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(roman_shield_triad@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(roman_shield_triad@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pole_vaulting@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pole_vaulting@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(roman_medusa@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(roman_medusa@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave20"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(general_caesar_phase1@CurrentLevel)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(roman_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(roman_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(roman_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(general_caesar_phase1@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"general_caesar_phase1"
+			],
+			"objdata": {
+				"TypeName": "general_caesar_phase1",
+				"ZombieClass": "ZombieGeneralCaesar",
+				"Properties": "RTID(ZombieGeneralCaesarDefault@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieWitchGroup",
+					"ZombieCaesarGroup",
+					"ZombieDarkKingGroup",
+					"Egypt_Gravestone",
+					"ZombossCommonGroup"
+				],
+				"AnimRigClass": "ZombieAnimRig_GeneralCaesar",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_ROMAN_GENERAL_CAESAR",
+				"HomeWorld": "rift1a",
+				"BoardAlmanac": true,
+				"Placeable": true,
+				"Resistences": [
+					1.0,
+					1.0,
+					1.0,
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieGeneralCaesarDefault"
+			],
+			"objclass": "ZombieGeneralCaesarProps",
+			"objdata": {
+				"Actions": [
+					"RTID(ZombieGeneralCaesarWalkOn@CurrentLevel)",
+					"RTID(ZombieGeneralCaesarIdleAction@CurrentLevel)",
+					"RTID(ZombieGeneralCaesarProjectileAction@CurrentLevel)",
+					"RTID(ZombieGeneralCaesarSummonAction1@CurrentLevel)",
+					"RTID(ZombieGeneralWalkOff@ZombieActions)",
+					"RTID(ZombieGeneralCaesarInjured@ZombieActions)"
+				],
+				"ConditionImmunities": [
+					{
+						"Condition": "butter"
+					}
+				],
+				"SizeType": "big",
+				"EnableShowHealthBarByDamage": true,
+				"EnableEliteImmunities": true,
+				"EnableNoInvincibleTakeDamage": true,
+				"NoInvincibleTakeDamagePlantsList": [
+					"escaperoot"
+				],
+				"AffectedBySliders": true,
+				"LifetimeSeconds": 45,
+				"GeneralPhase": 0,
+				"ActionAttackTargetRect": {
+					"mX": 6,
+					"mY": 0,
+					"mWidth": 2.5,
+					"mHeight": 5
+				},
+				"ScoreOverride": 100000,
+				"StreetSize": {
+					"x": 3,
+					"y": 2
+				},
+				"SkipHeadDropState": true,
+				"ArtScale": 1.0,
+				"ArtCenter": {
+					"x": 90,
+					"y": 137
+				},
+				"AlmanacOffset": {
+					"x": 0,
+					"y": 46
+				},
+				"ShadowOffset": {
+					"x": 10,
+					"y": 0,
+					"z": 1.2
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 82,
+					"mX": 10,
+					"mY": 0
+				},
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 62,
+					"mX": 10,
+					"mY": 10
+				},
+				"CollideHypnotizedZombies": "crush",
+				"CanBeLaunchedByPlants": false,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedweak": false,
+				"HeadDropFraction": -1,
+				"ArmDropFraction": -1,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"Hitpoints": 99999,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					}
+				],
+				"Speed": 0.5,
+				"WavePointCost": 900,
+				"Weight": 3500,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed0"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombieGeneralCaesarSummonAction1"
+			],
+			"objdata": {
+				"Weight": 70,
+				"RepeatMin": 0,
+				"RepeatMax": 1,
+				"ColumnEnd": "9",
+				"ColumnStart": "7",
+				"MinSpawn": "3",
+				"MaxSpawn": "5",
+				"ZombieNames": [
+					"roman",
+					"roman_armor1"
+				],
+				"ZombieWeights": [
+					100,
+					100
+				],
+				"TimeBeforeSpawn": 2,
+				"ZombieFallTime": 0,
+				"Phase": "Attacking",
+				"PhaseAfter": "Cooldown",
+				"RiseFromGround": "true",
+				"RampUpAnimation": "",
+				"LoopingAnimation": "summon",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"general_caesar_phase2"
+			],
+			"objdata": {
+				"TypeName": "general_caesar_phase2",
+				"ZombieClass": "ZombieGeneralCaesar",
+				"Properties": "RTID(ZombieGeneralCaesarDefault2@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieWitchGroup",
+					"ZombieCaesarGroup",
+					"ZombieDarkKingGroup",
+					"Egypt_Gravestone",
+					"ZombossCommonGroup"
+				],
+				"AnimRigClass": "ZombieAnimRig_GeneralCaesar",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_ROMAN_GENERAL_CAESAR",
+				"HomeWorld": "rift1a",
+				"BoardAlmanac": true,
+				"Placeable": true,
+				"Resistences": [
+					1.0,
+					1.0,
+					1.0,
+					1.0,
+					1.0,
+					1.0,
+					1.0
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieGeneralCaesarDefault2"
+			],
+			"objclass": "ZombieGeneralCaesarProps",
+			"objdata": {
+				"Actions": [
+					"RTID(ZombieGeneralCaesarWalkOn@CurrentLevel)",
+					"RTID(ZombieGeneralCaesarIdleAction@CurrentLevel)",
+					"RTID(ZombieGeneralCaesarProjectileAction@CurrentLevel)",
+					"RTID(ZombieGeneralCaesarSummonAction2@CurrentLevel)",
+					"RTID(ZombieGeneralCaesarSummonSpecialAction2@CurrentLevel)",
+					"RTID(ZombieGeneralWalkOff@ZombieActions)",
+					"RTID(ZombieGeneralCaesarInjured@ZombieActions)"
+				],
+				"ConditionImmunities": [
+					{
+						"Condition": "butter"
+					}
+				],
+				"SizeType": "big",
+				"EnableShowHealthBarByDamage": true,
+				"EnableEliteImmunities": true,
+				"EnableNoInvincibleTakeDamage": true,
+				"NoInvincibleTakeDamagePlantsList": [
+					"escaperoot"
+				],
+				"AffectedBySliders": true,
+				"LifetimeSeconds": 60,
+				"GeneralPhase": 0,
+				"ActionAttackTargetRect": {
+					"mX": 6,
+					"mY": 0,
+					"mWidth": 2.5,
+					"mHeight": 5
+				},
+				"ScoreOverride": 100000,
+				"StreetSize": {
+					"x": 3,
+					"y": 2
+				},
+				"SkipHeadDropState": true,
+				"ArtScale": 1.0,
+				"ArtCenter": {
+					"x": 90,
+					"y": 137
+				},
+				"AlmanacOffset": {
+					"x": 0,
+					"y": 46
+				},
+				"ShadowOffset": {
+					"x": 10,
+					"y": 0,
+					"z": 1.2
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 82,
+					"mX": 10,
+					"mY": 0
+				},
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 62,
+					"mX": 10,
+					"mY": 10
+				},
+				"CollideHypnotizedZombies": "crush",
+				"CanBeLaunchedByPlants": false,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedweak": false,
+				"HeadDropFraction": -1,
+				"ArmDropFraction": -1,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"Hitpoints": 99999,
+				"ScaledProps": [
+					{
+						"Arg1": 1.3,
+						"Arg2": 0.05,
+						"Formula": "standard",
+						"Key": "Hitpoints"
+					},
+					{
+						"Formula": "constant",
+						"Key": "Speed"
+					}
+				],
+				"Speed": 0.5,
+				"WavePointCost": 900,
+				"Weight": 3500,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed0"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombieGeneralCaesarSummonSpecialAction2"
+			],
+			"objdata": {
+				"Weight": 50,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "12",
+				"ColumnStart": "10",
+				"MinSpawn": "2",
+				"MaxSpawn": "3",
+				"ZombieNames": [
+					"catapult_zomboss"
+				],
+				"ZombieWeights": [
+					100
+				],
+				"TimeBeforeSpawn": 1.5,
+				"ZombieFallTime": 0.5,
+				"Phase": "Attacking",
+				"RampUpAnimation": "",
+				"LoopingAnimation": "promotion",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombieGeneralCaesarSummonAction2"
+			],
+			"objdata": {
+				"Weight": 50,
+				"RepeatMin": 0,
+				"RepeatMax": 1,
+				"ColumnEnd": "9",
+				"ColumnStart": "7",
+				"MinSpawn": "3",
+				"MaxSpawn": "4",
+				"ZombieNames": [
+					"roman_armor2",
+					"roman_armor3"
+				],
+				"ZombieWeights": [
+					100,
+					100
+				],
+				"TimeBeforeSpawn": 2,
+				"ZombieFallTime": 0,
+				"Phase": "Attacking",
+				"PhaseAfter": "Cooldown",
+				"RiseFromGround": "true",
+				"RampUpAnimation": "",
+				"LoopingAnimation": "summon",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"general_caesar_elite"
+			],
+			"objdata": {
+				"TypeName": "general_caesar_phase3",
+				"ZombieClass": "ZombieGeneralCaesar",
+				"Properties": "RTID(ZombieGeneralCaesarElite@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieWitchGroup",
+					"ZombieCaesarGroup",
+					"ZombieDarkKingGroup",
+					"Egypt_Gravestone",
+					"ZombossCommonGroup"
+				],
+				"AnimRigClass": "ZombieAnimRig_GeneralCaesar",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_ROMAN_GENERAL_CAESAR",
+				"HomeWorld": "rift1a",
+				"AlmanacBackdropName": "warp",
+				"BoardAlmanac": false,
+				"Placeable": true,
+				"Resistences": [
+					1.0,
+					0.2,
+					0.4,
+					0.4,
+					0.7,
+					0.4,
+					0.4
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombieGeneralCaesarElite"
+			],
+			"objclass": "ZombieGeneralCaesarProps",
+			"objdata": {
+				"Actions": [
+					"RTID(ZombieGeneralCaesarWalkOn@CurrentLevel)",
+					"RTID(ZombieGeneralCaesarIdleAction@CurrentLevel)",
+					"RTID(ZombieGeneralCaesarProjectileAction@CurrentLevel)",
+					"RTID(ZombieGeneralCaesarSummonAction3@CurrentLevel)",
+					"RTID(ZombieGeneralCaesarSummonSpecialAction3@CurrentLevel)",
+					"RTID(ZombieGeneralDying@ZombieActions)"
+				],
+				"SizeType": "big",
+				"EnableShowHealthBarByDamage": true,
+				"EnableEliteImmunities": true,
+				"EnableNoInvincibleTakeDamage": true,
+				"NoInvincibleTakeDamagePlantsList": [
+					"escaperoot"
+				],
+				"LifetimeSeconds": 50000,
+				"ActionAttackTargetRect": {
+					"mX": 5,
+					"mY": 0,
+					"mWidth": 3.5,
+					"mHeight": 5
+				},
+				"ScoreOverride": 150000,
+				"StreetSize": {
+					"x": 3,
+					"y": 2
+				},
+				"ArtScale": 1,
+				"ArtCenter": {
+					"x": 90,
+					"y": 137
+				},
+				"AlmanacOffset": {
+					"x": 0,
+					"y": 46
+				},
+				"ShadowOffset": {
+					"x": 10,
+					"y": 0,
+					"z": 1.2
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 82,
+					"mX": 10,
+					"mY": 0
+				},
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 62,
+					"mX": 10,
+					"mY": 10
+				},
+				"CollideHypnotizedZombies": "crush",
+				"AffectedBySliders": true,
+				"CanBeFlickedOff": false,
+				"CanBeLaunchedByPlants": false,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedweak": false,
+				"HeadDropFraction": -1,
+				"ArmDropFraction": -1,
+				"CanSpawnPlantFood": false,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"Hitpoints": 15000,
+				"HurtDamageLimit": 1500,
+				"DrawHealthBarTime": 9999,
+				"Speed": 0.5,
+				"WavePointCost": 900,
+				"Weight": 3500,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed0"
+					}
+				],
+				"ZombieLevelStats": [
+					{
+						"AttackLevel": 1,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 2,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 3,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 4.5,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 5,
+						"HitPointsLevel": 1
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieWalkActionDefinition",
+			"aliases": [
+				"ZombieGeneralCaesarWalkOn"
+			],
+			"objdata": {
+				"Weight": 1,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"Phase": "Entering",
+				"PhaseAfter": "Attacking",
+				"SoundOnStart": "Play_Zombie_Roman_Caesar_Enter",
+				"StopAtColumn": 7,
+				"TransitionAtStart": false,
+				"TransitionAnimation": "landing",
+				"HasTransition": true
+			}
+		},
+		{
+			"objclass": "ZombieMirrorQueenIdleActionDefinition",
+			"aliases": [
+				"ZombieGeneralCaesarIdleAction"
+			],
+			"objdata": {
+				"Weight": 50,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"Phase": "Attacking",
+				"Duration": 5
+			}
+		},
+		{
+			"objclass": "ZombieProjectileActionDefinition",
+			"aliases": [
+				"ZombieGeneralCaesarProjectileAction"
+			],
+			"objdata": {
+				"Weight": 50,
+				"RepeatMin": 0,
+				"RepeatMax": 2,
+				"Phase": "Cooldown",
+				"PhaseAfter": "Attacking",
+				"TargetType": "PlantGroups",
+				"OnlyHitTarget": true,
+				"NoRepeatTargets": true,
+				"Projectile": "RTID(ZombieCaesarSaladDefault@CurrentLevel)",
+				"ProjectileSound": "Play_Zomb_Egypt_Zomboss_Attack_Rush",
+				"SpawnOffset": {
+					"x": 0,
+					"y": 0,
+					"z": 50
+				},
+				"ApexHeight": 250,
+				"TimeUntilHit": 1
+			}
+		},
+		{
+			"objclass": "WitchRageProjectileProps",
+			"aliases": [
+				"ZombieCaesarSaladDefault"
+			],
+			"objdata": {
+				"ClassName": "WitchRageProjectile",
+				"HealthRatio": 0.3,
+				"SpeedRatio": 0.4,
+				"CollisionFlags": [
+					"ground"
+				],
+				"DamageFlags": [
+					"lobbed"
+				],
+				"InitialAngularVelocity": {
+					"Min": -5,
+					"Max": -2
+				},
+				"InitialVelocity": [
+					{
+						"Min": -20,
+						"Max": -20
+					},
+					{
+						"Min": 64,
+						"Max": -64
+					},
+					{
+						"Min": -25,
+						"Max": -25
+					}
+				],
+				"InitialScale": {
+					"Min": 1,
+					"Max": 1
+				},
+				"AttachedPAM": "POPANIM_EFFECTS_SALAD_PROJECTILE",
+				"AttachedPAMOffset": {
+					"x": -100,
+					"y": -97
+				},
+				"AttachedPAMAnimationToPlay": "animation",
+				"ImpactPAMAnimationToPlay": "",
+				"ImpactPAM": "",
+				"CollisionRect": {
+					"mX": -10,
+					"mY": -10,
+					"mWidth": 20,
+					"mHeight": 20
+				},
+				"ImpactSoundEvent": "Play_Zombie_Witch_Lightning_Hit"
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombieGeneralCaesarSummonAction3"
+			],
+			"objdata": {
+				"Weight": 100,
+				"RepeatMin": 0,
+				"RepeatMax": 1,
+				"ColumnEnd": "9",
+				"ColumnStart": "7",
+				"MinSpawn": "3",
+				"MaxSpawn": "5",
+				"ZombieNames": [
+					"roman_shield_triad"
+				],
+				"ZombieWeights": [
+					100
+				],
+				"TimeBeforeSpawn": 2,
+				"ZombieFallTime": 0,
+				"Phase": "Attacking",
+				"PhaseAfter": "Cooldown",
+				"RiseFromGround": "true",
+				"RampUpAnimation": "",
+				"LoopingAnimation": "summon",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": "",
+				"DropAudioEvent": ""
+			}
+		},
+		{
+			"objclass": "ZombieDropZombiesOnBoardActionDefinition",
+			"aliases": [
+				"ZombieGeneralCaesarSummonSpecialAction3"
+			],
+			"objdata": {
+				"Weight": 50,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"ColumnEnd": "9",
+				"ColumnStart": "7",
+				"MinSpawn": "2",
+				"MaxSpawn": "4",
+				"ZombieNames": [
+					"roman_armor3",
+					"roman_armor4"
+				],
+				"ZombieWeights": [
+					100,
+					100
+				],
+				"TimeBeforeSpawn": 1.5,
+				"ZombieFallTime": 0.5,
+				"Phase": "Attacking",
+				"RampUpAnimation": "",
+				"LoopingAnimation": "promotion",
+				"RampDownAnimation": "",
+				"EffectTypeToShow": ""
+			}
+		}
+	],
+	"version": 1
+}

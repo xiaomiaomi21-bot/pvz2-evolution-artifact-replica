@@ -1,0 +1,155 @@
+{
+	"#comment": "headbutterlettuce",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"IsLevelOfTheDay": true,
+				"LevelNumber": 1,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(LevelEscalationModule@CurrentLevel)",
+					"RTID(ModernMowers@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ConveyorBelt@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)"
+				],
+				"Name": "[CHILDREN_DAY_CHALLENGE_LEVEL1]",
+				"NormalPresentTable": "modern_normal_01",
+				"ShinyPresentTable": "modern_shiny_01",
+				"StageModule": "RTID(FutureStage@LevelModules)",
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"ConveyorBelt"
+			],
+			"objclass": "ConveyorSeedBankProperties",
+			"objdata": {
+				"DropDelayConditions": [
+					{
+						"Delay": 3,
+						"MaxPackets": 0
+					},
+					{
+						"Delay": 6,
+						"MaxPackets": 2
+					},
+					{
+						"Delay": 9,
+						"MaxPackets": 4
+					},
+					{
+						"Delay": 12,
+						"MaxPackets": 8
+					}
+				],
+				"InitialPlantList": [
+					{
+						"MaxCount": 1,
+						"MaxWeightFactor": 0,
+						"PlantType": "hotdate",
+						"Weight": 100
+					},
+					{
+						"MaxCount": 20,
+						"MaxWeightFactor": 0,
+						"PlantType": "escaperoot",
+						"Weight": 10
+					}
+				],
+				"SpeedConditions": [
+					{
+						"MaxPackets": 0,
+						"Speed": 100
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"LevelEscalationModule"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 3,
+				"PlantfoodToSpawnCount": 3,
+				"PointIncrementPerWave": 75,
+				"StartingPoints": 100,
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
+				"WavesPerFlag": 3,
+				"ZombiePool": [
+					"RTID(future@ZombieTypes)",
+					"RTID(future_armor1@ZombieTypes)",
+					"RTID(future_armor2@ZombieTypes)",
+					"RTID(future_flag@ZombieTypes)",
+					"RTID(heian_ninja@ZombieTypes)",
+					"RTID(future_imp@ZombieTypes)",
+					"RTID(kongfu_torch@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 3,
+				"MaxNextWaveHealthPercentage": 0.9,
+				"MinNextWaveHealthPercentage": 0.8,
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(kongfu_torch@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(future@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(eighties_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dark_armor3@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(future_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(future_protector@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				
+			}
+		}
+	],
+	"version": 1
+}

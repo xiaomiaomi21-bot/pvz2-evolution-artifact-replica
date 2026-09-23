@@ -1,0 +1,1095 @@
+{
+	"#comment": "Renai 16",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_NEW_PVP]",
+				"GameOverDialogShowBrain": false,
+				"LevelNumber": 1,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(NewPVPIntro@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(NewPVPSeedBank@CurrentLevel)"
+				],
+				"Name": "[NEW_PVP_LEVEL_NAME]",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"VictoryModule": "RTID(NewPVPGameOutro@LevelModules)",
+				"StageModule": "RTID(NewPVPStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"NewPVPSeedBank"
+			],
+			"objclass": "NewPVPSeedBankProperties",
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
+				"HasWinCondition": false
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 8,
+				"WaveCount": 20,
+				"WaveSpendingPointIncrement": 45,
+				"WaveSpendingPoints": 100,
+				"ZombieCountdownFirstWaveSecs": 2,
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10@CurrentLevel)"
+					],
+					[
+						"RTID(Wave11@CurrentLevel)"
+					],
+					[
+						"RTID(Wave12@CurrentLevel)"
+					],
+					[
+						"RTID(Wave13@CurrentLevel)"
+					],
+					[
+						"RTID(Wave14@CurrentLevel)"
+					],
+					[
+						"RTID(Wave15@CurrentLevel)"
+					],
+					[
+						"RTID(Wave16@CurrentLevel)"
+					],
+					[
+						"RTID(Wave17@CurrentLevel)"
+					],
+					[
+						"RTID(Wave18@CurrentLevel)"
+					],
+					[
+						"RTID(Wave19@CurrentLevel)"
+					],
+					[
+						"RTID(Wave20@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesMirrorWaveActionProps",
+			"objdata": {
+				"FixedOffset": 8.0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesMirrorWaveActionProps",
+			"objdata": {
+				"FixedOffset": 8.0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesMirrorWaveActionProps",
+			"objdata": {
+				"FixedOffset": 8.0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesMirrorWaveActionProps",
+			"objdata": {
+				"FixedOffset": 8.0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesMirrorWaveActionProps",
+			"objdata": {
+				"FixedOffset": 8.0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesMirrorWaveActionProps",
+			"objdata": {
+				"FixedOffset": 8.0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesMirrorWaveActionProps",
+			"objdata": {
+				"FixedOffset": 8.0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesMirrorWaveActionProps",
+			"objdata": {
+				"FixedOffset": 8.0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesMirrorWaveActionProps",
+			"objdata": {
+				"FixedOffset": 8.0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(beghouled_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(beghouled_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(beghouled_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(beghouled_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(beghouled_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(beghouled_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(beghouled_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(beghouled_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(beghouled_newspaper@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesMirrorWaveActionProps",
+			"objdata": {
+				"FixedOffset": 8.0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesMirrorWaveActionProps",
+			"objdata": {
+				"FixedOffset": 8.0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesMirrorWaveActionProps",
+			"objdata": {
+				"FixedOffset": 8.0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesMirrorWaveActionProps",
+			"objdata": {
+				"FixedOffset": 8.0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Level": 3,
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 3,
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 3,
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Level": 3,
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 3,
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 3,
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Level": 3,
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 3,
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 3,
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesMirrorWaveActionProps",
+			"objdata": {
+				"FixedOffset": 8.0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Level": 3,
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 3,
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 3,
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Level": 3,
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 3,
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 3,
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Level": 3,
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 3,
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 3,
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesMirrorWaveActionProps",
+			"objdata": {
+				"FixedOffset": 8.0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Level": 3,
+						"Type": "RTID(beghouled_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 3,
+						"Type": "RTID(beghouled_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 3,
+						"Type": "RTID(beghouled_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Level": 3,
+						"Type": "RTID(beghouled_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 3,
+						"Type": "RTID(beghouled_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 3,
+						"Type": "RTID(beghouled_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Level": 3,
+						"Type": "RTID(beghouled_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 3,
+						"Type": "RTID(beghouled_newspaper@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 3,
+						"Type": "RTID(beghouled_newspaper@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave16"
+			],
+			"objclass": "SpawnZombiesMirrorWaveActionProps",
+			"objdata": {
+				"FixedOffset": 8.0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Level": 3,
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 3,
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 3,
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Level": 3,
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 3,
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 3,
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Level": 3,
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 3,
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 3,
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave17"
+			],
+			"objclass": "SpawnZombiesMirrorWaveActionProps",
+			"objdata": {
+				"FixedOffset": 8.0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Level": 5,
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 5,
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 5,
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Level": 5,
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 5,
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 5,
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Level": 5,
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 5,
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 5,
+						"Type": "RTID(modern_allstar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave18"
+			],
+			"objclass": "SpawnZombiesMirrorWaveActionProps",
+			"objdata": {
+				"FixedOffset": 8.0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Level": 5,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 5,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 5,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Level": 5,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 5,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 5,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Level": 5,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 5,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 5,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave19"
+			],
+			"objclass": "SpawnZombiesMirrorWaveActionProps",
+			"objdata": {
+				"FixedOffset": 8.0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Level": 6,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 6,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 6,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Level": 6,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 6,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 6,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Level": 6,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 6,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 6,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave20"
+			],
+			"objclass": "SpawnZombiesMirrorWaveActionProps",
+			"objdata": {
+				"FixedOffset": 8.0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Level": 7,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 7,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 7,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Level": 7,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 7,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 7,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Level": 7,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 7,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 7,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Level": 7,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 7,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 7,
+						"Type": "RTID(tutorial_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		}
+	],
+	"version": 1
+}

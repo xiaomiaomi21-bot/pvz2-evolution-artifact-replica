@@ -1,0 +1,949 @@
+{
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_MEMORY]",
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(EventItemPlacement@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(TimeEnergy3@LevelModules)",
+					"RTID(InitialPlants@CurrentLevel)"
+				],
+				"Name": "[S30_MEMORY_LEVEL_NAME_041]",
+				"StageModule": "RTID(FairyTaleStage@LevelModules)",
+				"VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+				"MusicType": "",
+				"LevelNumber": 1,
+				"DisablePeavine": true,
+				"StartingSun": 400
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"OverrideSeedSlotsCount": 6,
+				"PresetPlantList": [
+					"hocuscrocus",
+					"riflebamboo",
+					"ents",
+					"sunshroom",
+					"hurrikale",
+					"spikerock"
+				],
+				"SelectionMethod": "preset",
+				"GlobalLevel": 1
+			}
+		},
+		{
+			"aliases": [
+				"EventItemPlacement"
+			],
+			"objclass": "InitialGridItemWizardCrucibleProps",
+			"objdata": {
+				"InitialGridItemWizardCrucibles": [
+					{
+						"GridX": 6,
+						"GridY": 0,
+						"TypeName": "wizard_crucible",
+						"BoilingDuration": 5,
+						"CrucibleHitpoints": 5000,
+						"ExplodeDamageAmount": 2000,
+						"VenomDamageAmountPerSecond": 50,
+						"VenomExistDuration": 5
+					},
+					{
+						"GridX": 6,
+						"GridY": 1,
+						"TypeName": "wizard_crucible",
+						"BoilingDuration": 5,
+						"CrucibleHitpoints": 5000,
+						"ExplodeDamageAmount": 2000,
+						"VenomDamageAmountPerSecond": 50,
+						"VenomExistDuration": 5
+					},
+					{
+						"GridX": 6,
+						"GridY": 2,
+						"TypeName": "wizard_crucible",
+						"BoilingDuration": 5,
+						"CrucibleHitpoints": 5000,
+						"ExplodeDamageAmount": 2000,
+						"VenomDamageAmountPerSecond": 50,
+						"VenomExistDuration": 5
+					},
+					{
+						"GridX": 6,
+						"GridY": 3,
+						"TypeName": "wizard_crucible",
+						"BoilingDuration": 5,
+						"CrucibleHitpoints": 5000,
+						"ExplodeDamageAmount": 2000,
+						"VenomDamageAmountPerSecond": 50,
+						"VenomExistDuration": 5
+					},
+					{
+						"GridX": 6,
+						"GridY": 4,
+						"TypeName": "wizard_crucible",
+						"BoilingDuration": 5,
+						"CrucibleHitpoints": 5000,
+						"ExplodeDamageAmount": 2000,
+						"VenomDamageAmountPerSecond": 50,
+						"VenomExistDuration": 5
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"InitialPlants"
+			],
+			"objclass": "InitialPlantEntryProperties",
+			"objdata": {
+				"Plants": [
+					{
+						"Avatar": false,
+						"GridX": 4,
+						"GridY": 0,
+						"Level": 1,
+						"PlantTypes": [
+							"hatmushroom"
+						]
+					},
+					{
+						"Avatar": false,
+						"GridX": 4,
+						"GridY": 1,
+						"Level": 1,
+						"PlantTypes": [
+							"hatmushroom"
+						]
+					},
+					{
+						"Avatar": false,
+						"GridX": 4,
+						"GridY": 2,
+						"Level": 1,
+						"PlantTypes": [
+							"hatmushroom"
+						]
+					},
+					{
+						"Avatar": false,
+						"GridX": 4,
+						"GridY": 3,
+						"Level": 1,
+						"PlantTypes": [
+							"hatmushroom"
+						]
+					},
+					{
+						"Avatar": false,
+						"GridX": 4,
+						"GridY": 4,
+						"Level": 1,
+						"PlantTypes": [
+							"hatmushroom"
+						]
+					},
+					{
+						"Avatar": true,
+						"GridX": 5,
+						"GridY": 2,
+						"Level": 1,
+						"PlantTypes": [
+							"ents"
+						]
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(SunProduced@CurrentLevel)",
+						"RTID(PlantsSurive@CurrentLevel)",
+						"RTID(ApplyZombieConditionsChallenge@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"ApplyZombieConditionsChallenge"
+			],
+			"objclass": "ApplyZombieConditionsChallengeProps",
+			"objdata": {
+				"ConditionToInflict": [
+					"shrunken",
+					"hocuscrocus_shrunken"
+				],
+				"NumZombieConditionsToApply": 3
+			}
+		},
+		{
+			"aliases": [
+				"PlantsSurive"
+			],
+			"objclass": "StarChallengePlantsSurviveProps",
+			"objdata": {
+				"Count": 15
+			}
+		},
+		{
+			"aliases": [
+				"SunProduced"
+			],
+			"objclass": "StarChallengeSunProducedProps",
+			"objdata": {
+				"TargetSun": 2500
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": 100,
+						"StartingPoints": 150,
+						"StartingWave": 0,
+						"ZombieLevel": [
+							1,
+							1,
+							1
+						],
+						"ZombiePool": [
+							"RTID(fairy_tale@ZombieTypes)",
+							"RTID(fairy_tale_armor1@ZombieTypes)",
+							"RTID(fairy_tale_armor2@ZombieTypes)"
+						]
+					}
+				],
+				"WaveManagerPropsVector": [
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerPropsWeek1"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 4,
+				"MaxNextWaveHealthPercentage": 0.6,
+				"MinNextWaveHealthPercentage": 0.5,
+				"WaveCount": 12,
+				"DescriptionName": "[PVZ2_UNCHARTED_MODE_MODE_TITLE_CRUCIBLE]",
+				"Description": "[PVZ2_UNCHARTED_MODE_MODE_DESC_CRUCIBLE]",
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)",
+						"RTID(ShowZombies@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)",
+						"RTID(Wave4PortalEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)",
+						"RTID(Wave7PortalEvent0@CurrentLevel)",
+						"RTID(Wave7PortalEvent1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9@CurrentLevel)",
+						"RTID(Wave9PortalEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10@CurrentLevel)"
+					],
+					[
+						"RTID(Wave11@CurrentLevel)",
+						"RTID(Wave11PortalEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave12@CurrentLevel)",
+						"RTID(Wave12PortalEvent0@CurrentLevel)",
+						"RTID(Wave12PortalEvent1@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(universe_uncharted_juggler@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(universe_uncharted_juggler@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dino_pushzomshell@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(universe_uncharted_juggler@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pvp_hammer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pvp_hammer@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(dino_pushzomshell@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dino_pushzomshell@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(fairy_tale_knight_rider@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(fairy_tale_knight_rider@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(fairy_tale_armed_gargantuar@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pvp_hammer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(dino_pushzomshell@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(dino_pushzomshell@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(fairy_tale_knight_rider@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(fairy_tale_knight_rider@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(universe_uncharted_juggler@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(universe_uncharted_juggler@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "5",
+						"Level": 2,
+						"Type": "RTID(card_game_enemy_fairy_tale_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pvp_hammer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pvp_hammer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pvp_hammer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pvp_hammer@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(pvp_hammer@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "5",
+						"Type": "RTID(dino_pushzomshell@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(dino_pushzomshell@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(dino_pushzomshell@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dino_pushzomshell@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(dino_pushzomshell@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(fairy_tale_knight_rider@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(fairy_tale_knight_rider@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(fairy_tale_armed_gargantuar@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(universe_uncharted_juggler@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(universe_uncharted_juggler@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(universe_uncharted_juggler@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(universe_uncharted_juggler@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(universe_uncharted_juggler@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": "4",
+						"Level": 2,
+						"Type": "RTID(card_game_enemy_fairy_tale_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 2,
+						"Type": "RTID(card_game_enemy_fairy_tale_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(dino_pushzomshell@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(dino_pushzomshell@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(dino_pushzomshell@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(pvp_hammer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(pvp_hammer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(pvp_hammer@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(pvp_hammer@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(pvp_hammer@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(fairy_tale_knight_rider@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(fairy_tale_knight_rider@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(fairy_tale_knight_rider@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4PortalEvent0"
+			],
+			"objclass": "SpawnModernPortalsWaveActionProps",
+			"objdata": {
+				"IgnoreGraveStone": true,
+				"PortalColumn": "6",
+				"PortalRow": "2",
+				"PortalType": "memo",
+				"SpawnEffect": "",
+				"SpawnSoundID": ""
+			}
+		},
+		{
+			"aliases": [
+				"Wave7PortalEvent0"
+			],
+			"objclass": "SpawnModernPortalsWaveActionProps",
+			"objdata": {
+				"IgnoreGraveStone": true,
+				"PortalColumn": "7",
+				"PortalRow": "0",
+				"PortalType": "memo",
+				"SpawnEffect": "",
+				"SpawnSoundID": ""
+			}
+		},
+		{
+			"aliases": [
+				"Wave7PortalEvent1"
+			],
+			"objclass": "SpawnModernPortalsWaveActionProps",
+			"objdata": {
+				"IgnoreGraveStone": true,
+				"PortalColumn": "5",
+				"PortalRow": "3",
+				"PortalType": "memo",
+				"SpawnEffect": "",
+				"SpawnSoundID": ""
+			}
+		},
+		{
+			"aliases": [
+				"Wave9PortalEvent0"
+			],
+			"objclass": "SpawnModernPortalsWaveActionProps",
+			"objdata": {
+				"IgnoreGraveStone": true,
+				"PortalColumn": "7",
+				"PortalRow": "4",
+				"PortalType": "memo",
+				"SpawnEffect": "",
+				"SpawnSoundID": ""
+			}
+		},
+		{
+			"aliases": [
+				"Wave11PortalEvent0"
+			],
+			"objclass": "SpawnModernPortalsWaveActionProps",
+			"objdata": {
+				"IgnoreGraveStone": true,
+				"PortalColumn": "7",
+				"PortalRow": "1",
+				"PortalType": "memo",
+				"SpawnEffect": "",
+				"SpawnSoundID": ""
+			}
+		},
+		{
+			"aliases": [
+				"Wave12PortalEvent0"
+			],
+			"objclass": "SpawnModernPortalsWaveActionProps",
+			"objdata": {
+				"IgnoreGraveStone": true,
+				"PortalColumn": "7",
+				"PortalRow": "3",
+				"PortalType": "memo",
+				"SpawnEffect": "",
+				"SpawnSoundID": ""
+			}
+		},
+		{
+			"aliases": [
+				"Wave12PortalEvent1"
+			],
+			"objclass": "SpawnModernPortalsWaveActionProps",
+			"objdata": {
+				"IgnoreGraveStone": true,
+				"PortalColumn": "7",
+				"PortalRow": "2",
+				"PortalType": "memo",
+				"SpawnEffect": "",
+				"SpawnSoundID": ""
+			}
+		},
+		{
+			"aliases": [
+				"ShowZombies"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"GridTypes": [
+					"RTID(house_3@GridItemTypes)"
+				],
+				"WaveStartMessage": "",
+				"Zombies": [
+					{
+						"Type": "RTID(fairy_tale_armed_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"fairy_tale_armed_gargantuar"
+			],
+			"objdata": {
+				"TypeName": "fairy_tale_armed_gargantuar",
+				"ZombieClass": "ZombieFairyTaleArmedGargantuar",
+				"Properties": "RTID(ZombieArmedGargantuarFairyTale@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieFairyTaleGargantuarGroup",
+					"ZombieFairyTaleImpGroup",
+					"ZombieZombossMech_HydraGroup",
+					"ZombieGargantuarEffects"
+				],
+				"AudioGroups": [
+					"ZombieGlobalGargantuarAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_FairyTaleArmedGargantuar",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_GARGANTUAR",
+				"BoardAlmanac": false,
+				"HomeWorld": "fairy_tale"
+			}
+		},
+		{
+			"aliases": [
+				"ZombieArmedGargantuarFairyTale"
+			],
+			"objclass": "ZombieFairyTaleArmedGargantuarProps",
+			"objdata": {
+				"ArmDropFraction": -1,
+				"HeadDropFraction": 0,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 30,
+					"mX": 0,
+					"mY": 10
+				},
+				"CanBeFlickedOff": false,
+				"CanSpawnPlantFood": true,
+				"Cost": 150,
+				"SizeType": "big",
+				"EatDPS": 0,
+				"ExplodesWhenMowed": true,
+				"FlickIsLaneRestricted": true,
+				"HasImp": true,
+				"GroundTrackName": "ground_swatch",
+				"SpawnShieldName": "card_game_heavy_shield",
+				"HealthThresholdToImpAmmoLayers": [
+					{
+						"HealthPercentThrowImp": 0.65,
+						"ProjectileLayersToHide": [
+							"zombie_imp_skull",
+							"zombie_imp_jaw",
+							"zombie_imp_arm_inner_lower",
+							"zombie_imp_arm_inner_upper",
+							"zombie_imp_arm_outer_lower",
+							"zombie_imp_arm_outer_upper_01",
+							"zombie_imp_arm_outer_upper_02",
+							"zombie_imp_arms_outer_upper",
+							"zombie_imp_eye",
+							"zombie_imp_dress",
+							"zombie_imp_skirt1",
+							"zombie_imp_skirt2",
+							"zombie_imp_skirt3",
+							"zombie_imp_skirt4",
+							"zombie_imp_skirt5",
+							"zombie_imp_skirt6",
+							"zombie_imp_eye_sm",
+							"zombie_imp_hand_inner",
+							"zombie_imp_hand_outer",
+							"zombie_imp_leg_inner_lower",
+							"zombie_imp_leg_inner_upper",
+							"zombie_imp_leg_outer_lower",
+							"zombie_imp_leg_outer_upper",
+							"zombie_imp_pupil",
+							"zombie_imp_torso",
+							"zombie_imp_waist",
+							"zombie_imp_toe_outer",
+							"zombie_net_animation",
+							"zombie_imp_head_top",
+							"zombie_imp_helm_jaw",
+							"zombie_imp_helm_jaw_lion_fur"
+						]
+					}
+				],
+				"HitRect": {
+					"mHeight": 95,
+					"mWidth": 62,
+					"mX": 10,
+					"mY": 10
+				},
+				"Hitpoints": 2000,
+				"HypnoshroomEffectOffset": {
+					"x": 0,
+					"y": 120
+				},
+				"ImpApex": 55,
+				"ImpFlightTime": 0.3,
+				"ImpTargetColumn": 2,
+				"ImpSpawnOffset": {
+					"x": -60,
+					"y": 2,
+					"z": 55
+				},
+				"ImpType": "fairy_tale_imp",
+				"IsValidPinchTarget": false,
+				"MinPosXThrowImp": 400,
+				"ShadowOffset": {
+					"x": 5,
+					"y": 0,
+					"z": 1.4
+				},
+				"Size": "large",
+				"SmashDamage": 1875,
+				"SmashDuration": 2,
+				"SoundOnCannon": "Play_Zomb_Future_Gargantuar_Mvmt_Cannon",
+				"SoundOnDeath": "Play_Zomb_Future_Gargantuar_Mvmt_Death",
+				"SoundOnSmash": "Play_Zomb_Future_Gargantuar_Mvmt_Attack",
+				"SoundOnWalk": "Play_Zomb_Future_Gargantuar_Mvmt_Foley",
+				"Speed": 0.25,
+				"StaticArtImageAsset": "IMAGE_GARGANTUAR",
+				"ThrowImpDuration": 1,
+				"WavePointCost": 2000,
+				"Weight": 3000,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness7"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed1"
+					}
+				],
+				"ZombieLevelStats": [
+					{
+						"AttackLevel": 1,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 2,
+						"HitPointsLevel": 2
+					},
+					{
+						"AttackLevel": 3,
+						"HitPointsLevel": 3
+					},
+					{
+						"AttackLevel": 4.5,
+						"HitPointsLevel": 4.5
+					},
+					{
+						"AttackLevel": 5,
+						"HitPointsLevel": 5
+					}
+				]
+			}
+		},
+		{
+			"objclass": "GridItemZombiePortalProps",
+			"aliases": [
+				"GridItemZombiePortalMemo"
+			],
+			"objdata": {
+				"PopAnimRigClass": "GridItemZombiePortal_AnimRig",
+				"Hitpoints": 600,
+				"Height": "ground",
+				"PopAnim": "POPANIM_EFFECTS_ZOMBOSS_HYDRA_MIRROR",
+				"PopAnimRenderOffset": {
+					"x": 105,
+					"y": 115
+				},
+				"SpawnAnimation": "zombiepass",
+				"CloseAnimation": "die",
+				"CanBeMowed": false,
+				"World": "egypt",
+				"ZombieTypesToSpawn": [
+					{
+						"ZombieTypeName": "fairy_tale_witch",
+						"Weight": 50
+					},
+					{
+						"ZombieTypeName": "fairy_tale_armor1",
+						"Weight": 30
+					},
+					{
+						"ZombieTypeName": "fairy_tale_armor2",
+						"Weight": 20
+					}
+				],
+				"ZombieSpawnMethod": "NonRandomShuffled",
+				"ZombieSpawnPointOffset": -20
+			}
+		}
+	],
+	"version": 1
+}

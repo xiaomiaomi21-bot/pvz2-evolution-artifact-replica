@@ -1,0 +1,4607 @@
+{
+	"#comment": "Insert new Artifact here",
+	"version": 1,
+	"objects": [
+		{
+			"objclass": "ArtifactWindProperties",
+			"aliases": [
+				"artifact_wind"
+			],
+			"objdata": {
+				"TypeName": "artifact_wind",
+				"ClassName": "ArtifactWind",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"HeianWind"
+				],
+				"MainField": [
+					"2.0+level*0.1",
+					"4.0+level*0.1",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"40.0-(level-20.0)*2.0",
+					"3.0"
+				],
+				"PassiveField3": [
+					"30.0+(level-30.0)*1.0"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"DisplayActions": "RTID(ArtifactWindAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_WIND_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Wind",
+				"ObtainWay": "get_in_store",
+				"TornadoGridX": 6,
+				"TornadoGridY": 2,
+				"TornadoDelay": 3.5,
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"icelotus",
+						"dendrobiumguard",
+						"tupistrastalker",
+						"eggplantninja",
+						"whitemelonsumowrestlers"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactLightningProperties",
+			"aliases": [
+				"artifact_lightning"
+			],
+			"objdata": {
+				"TypeName": "artifact_lightning",
+				"ClassName": "ArtifactLightning",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"thunder",
+					"PlantPepperpult"
+				],
+				"MainField": [
+					"1.0+level*0.1",
+					"3.0+level*0.1",
+					"20.0+level*1",
+					"10.0+level*0.5",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"50.0+(level-20.0)*1.5",
+					"10.0+(level-20.0)*1.0"
+				],
+				"PassiveField3": [
+					"30.0+(level-30.0)*1.5"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"DisplayActions": "RTID(ArtifactLightningAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_LIGHTNING_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Lightning",
+				"ObtainWay": "get_in_store",
+				"LightningBuffDuration": 60.0,
+				"BleedingDuration": 10.0,
+				"TriggerCondition": "stucked",
+				"SecondLightningDelay": 5.0,
+				"FieldLightningNum": 5,
+				"FieldLightningDelay": 20.0,
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"lightningreed",
+						"cactus",
+						"nekotail",
+						"electricblueberry",
+						"anthurium",
+						"thundersnapdragon",
+						"electricitea",
+						"electriccurrant",
+						"electricpeashoote",
+						"alarmsagittifolia"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactVaseProperties",
+			"aliases": [
+				"artifact_vase"
+			],
+			"objdata": {
+				"TypeName": "artifact_vase",
+				"ClassName": "ArtifactVase",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"VaseBreakerGroup"
+				],
+				"MainField": [
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"40.0-(level-20.0)*1.0"
+				],
+				"PassiveField3": [
+					"30.0+(level-30.0)*1.5"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"DisplayActions": "RTID(ArtifactVaseAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"GetLevel": "Artifact_Unlock_Vase",
+				"ObtainWay": "unlock_free",
+				"Description": "[ARTIFACT_VASE_DESCRIPTION]",
+				"InitialPosition": {
+					"x": 0,
+					"y": -100.0,
+					"z": 0
+				},
+				"VaseProjectile": "RTID(ArtifactTossedVase@ProjectileTypes)",
+				"VaseShotHeight": 500,
+				"VaseShotTime": 1,
+				"VaseCount": 10,
+				"VaseConfigs": [
+					{
+						"TypeName": "cherry_bomb",
+						"VaseType": 0,
+						"Level": 1,
+						"Weight": 20,
+						"HasPlantfood": false
+					},
+					{
+						"TypeName": "potatomine",
+						"VaseType": 0,
+						"Level": 1,
+						"Weight": 20,
+						"HasPlantfood": false
+					},
+					{
+						"TypeName": "wallnut",
+						"VaseType": 0,
+						"Level": 1,
+						"Weight": 20,
+						"HasPlantfood": false
+					},
+					{
+						"TypeName": "chicken",
+						"VaseType": 1,
+						"Level": 1,
+						"Weight": 10,
+						"HasPlantfood": false
+					},
+					{
+						"TypeName": "mummy",
+						"VaseType": 1,
+						"Level": 1,
+						"Weight": 10,
+						"HasPlantfood": true
+					},
+					{
+						"TypeName": "roman_gargantuar",
+						"VaseType": 1,
+						"Level": 1,
+						"Weight": 5,
+						"HasPlantfood": false
+					},
+					{
+						"TypeName": "sun",
+						"VaseType": 2,
+						"Level": 100,
+						"Weight": 30,
+						"HasPlantfood": false
+					},
+					{
+						"TypeName": "sun",
+						"VaseType": 2,
+						"Level": 50,
+						"Weight": 30,
+						"HasPlantfood": false
+					}
+				],
+				"AdvancedVaseConfigs": [
+					{
+						"TypeName": "grapeshot",
+						"VaseType": 0,
+						"Level": 1,
+						"Weight": 20,
+						"HasPlantfood": false
+					},
+					{
+						"TypeName": "primalpotatomine",
+						"VaseType": 0,
+						"Level": 1,
+						"Weight": 20,
+						"HasPlantfood": false
+					},
+					{
+						"TypeName": "tallnut",
+						"VaseType": 0,
+						"Level": 1,
+						"Weight": 20,
+						"HasPlantfood": false
+					},
+					{
+						"TypeName": "chicken",
+						"VaseType": 1,
+						"Level": 3,
+						"Weight": 10,
+						"HasPlantfood": false
+					},
+					{
+						"TypeName": "mummy",
+						"VaseType": 1,
+						"Level": 3,
+						"Weight": 10,
+						"HasPlantfood": true
+					},
+					{
+						"TypeName": "roman_gargantuar",
+						"VaseType": 1,
+						"Level": 3,
+						"Weight": 5,
+						"HasPlantfood": false
+					},
+					{
+						"TypeName": "sun",
+						"VaseType": 2,
+						"Level": 200,
+						"Weight": 30,
+						"HasPlantfood": false
+					},
+					{
+						"TypeName": "sun",
+						"VaseType": 2,
+						"Level": 100,
+						"Weight": 30,
+						"HasPlantfood": false
+					}
+				],
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"melonpult",
+						"wintermelon",
+						"cabbagepult",
+						"primalrafflesia",
+						"akee",
+						"kernelpult",
+						"pepperpult",
+						"sapfling",
+						"applemortar",
+						"dusklobber",
+						"bloomingheart",
+						"convallariachemist",
+						"elaeocarpus",
+						"cypripedium",
+						"stickybombrice"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactCureProperties",
+			"aliases": [
+				"artifact_cure"
+			],
+			"objdata": {
+				"TypeName": "artifact_cure",
+				"ClassName": "ArtifactCure",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"MainField": [
+					"100.0",
+					"3.0+level*0.1",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"20.0+(level-20.0)*1.0"
+				],
+				"PassiveField3": [
+					"40.0+(level-30.0)*1.0",
+					"100.0"
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"PassiveCureInterval": 20.0,
+				"PassiveAttackBuffPercent": 1.0,
+				"PassiveSpeedBuffPercent": 1.0,
+				"DisplayActions": "RTID(ArtifactCureAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"GetLevel": "Artifact_Unlock_Cure",
+				"ObtainWay": "unlock_free",
+				"Description": "[ARTIFACT_CURE_DESCRIPTION]"
+			}
+		},
+		{
+			"objclass": "ArtifactShieldProperties",
+			"aliases": [
+				"artifact_shield"
+			],
+			"objdata": {
+				"TypeName": "artifact_shield",
+				"ClassName": "ArtifactShield",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"ZombieFutureProtectorGroup",
+					"PlantHolonut"
+				],
+				"MainField": [
+					"10.0+level*0.3",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"30.0",
+					"1000.0+(level-20.0)*50.0"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"ShieldVelocity": 40.0,
+				"ShieldRadius": 20.0,
+				"MinSpeedFactor": 0.1,
+				"SmallSizeSpeedFactor": {
+					"NormalFactor": 0.2,
+					"AdvancedFactor": 0.1
+				},
+				"MidSizeSpeedFactor": {
+					"NormalFactor": 0.4,
+					"AdvancedFactor": 0.2
+				},
+				"LargeSizeSpeedFactor": {
+					"NormalFactor": 0.6,
+					"AdvancedFactor": 0.3
+				},
+				"MinPlantHitPoints": 1500.0,
+				"DisplayActions": "RTID(ArtifactShieldAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_SHIELD_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Shield",
+				"ObtainWay": "get_in_activity",
+				"DemoLevelWonMessage": ""
+			}
+		},
+		{
+			"objclass": "ArtifactSquidProperties",
+			"aliases": [
+				"artifact_squid"
+			],
+			"objdata": {
+				"TypeName": "artifact_squid",
+				"ClassName": "ArtifactSquid",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"ZombieBeachOctopusGroup"
+				],
+				"MainField": [
+					"500.0+level*50.0",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"60.0-(level-20.0)*2.0",
+					"1.0+(level-20.0)*0.2"
+				],
+				"PassiveField3": [
+					"1.0+(level-30.0)*0.1"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"DisplayActions": "RTID(ArtifactSquidAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_SQUID_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Squid",
+				"ObtainWay": "get_in_store",
+				"InitialPosition": {
+					"x": 0,
+					"y": -100.0,
+					"z": 0
+				},
+				"SquidProjectile": "RTID(ArtifactSquidDefault@ProjectileTypes)",
+				"SquidShotHeight": 500,
+				"SquidShotTime": 1,
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"snapdragon",
+						"guacodile",
+						"toadstool",
+						"dragonroar",
+						"nekotail",
+						"kiwibeast",
+						"kiwifruit",
+						"thundersnapdragon",
+						"coldsnapdragon"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactTimeProperties",
+			"aliases": [
+				"artifact_time"
+			],
+			"objdata": {
+				"TypeName": "artifact_time",
+				"ClassName": "ArtifactTime",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"PlantThymeWarp"
+				],
+				"MainField": [
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"10.0+(level-20.0)*0.5"
+				],
+				"PassiveField3": [
+					"100.0+(level-30.0)*5"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"WarpZombieDuration": 3.0,
+				"ConditionsRemovedByWarping": [
+					"chill",
+					"freeze",
+					"stun",
+					"butter",
+					"bleeding",
+					"lightning",
+					"rush",
+					"speedup1",
+					"speedup2",
+					"speedup3",
+					"speedup4",
+					"tossed",
+					"warpingIn",
+					"potionspeed1",
+					"potionspeed2",
+					"potionspeed3",
+					"potiontoughness1",
+					"potiontoughness2",
+					"potiontoughness3",
+					"hypnotized",
+					"sunbeaned",
+					"morphedtogargantuar",
+					"damageflash",
+					"zombossstun",
+					"haunted",
+					"icecubed",
+					"sapped",
+					"unsuspendable",
+					"stalled",
+					"speeddown1",
+					"speeddown2",
+					"speeddown3",
+					"invincible",
+					"warpingOut",
+					"poisoned",
+					"contagiouspoison",
+					"bloomingheartdebuff"
+				],
+				"SpeedUpPlantRatio": 2.0,
+				"DisplayActions": "RTID(ArtifactTimeAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_TIME_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Time",
+				"ObtainWay": "get_in_store"
+			}
+		},
+		{
+			"objclass": "ArtifactArcadeProperties",
+			"aliases": [
+				"artifact_arcade"
+			],
+			"objdata": {
+				"TypeName": "artifact_arcade",
+				"ClassName": "ArtifactArcade",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"HeianWind"
+				],
+				"MainField": [
+					"40.0+level*5.0",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"20.0+(level-20.0)*1.0"
+				],
+				"PassiveField3": [
+					""
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"DisplayActions": "RTID(ArtifactArcadeAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_ARCADE_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_ARCADE",
+				"ObtainWay": "get_in_activity",
+				"DemoLevelWonMessage": "",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"magnifyinggrass",
+						"citron",
+						"laser_bean",
+						"starfruit",
+						"pinkstarfruit"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactWeatherMonkeyProperties",
+			"aliases": [
+				"artifact_weathermonkey"
+			],
+			"objdata": {
+				"TypeName": "artifact_weathermonkey",
+				"ClassName": "ArtifactWeatherMonkey",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"HeianWind"
+				],
+				"MainField": [
+					"850.0+level*50.0",
+					"stage*1.0+1.0",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"10.0+(level-20.0)*1.0"
+				],
+				"PassiveField3": [
+					""
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"Projectile": "RTID(ArtifactWeatherMonkeyProjectileDefault@ProjectileTypes)",
+				"ProjectileSmall": "RTID(ArtifactWeatherMonkeyProjectileSmallDefault@ProjectileTypes)",
+				"DisplayActions": "RTID(ArtifactWeatherMonkeyAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_WEATHERMONKEY_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_WEATHERMONKEY",
+				"ObtainWay": "get_in_store",
+				"DemoLevelWonMessage": "",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"cobcannon",
+						"banana",
+						"coconutcannon",
+						"carrotlauncher",
+						"greenturnip"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactGashaponProperties",
+			"aliases": [
+				"artifact_gashapon"
+			],
+			"objdata": {
+				"TypeName": "artifact_gashapon",
+				"ClassName": "ArtifactGashapon",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"HeianWind",
+					"PlantHypnoShroom",
+					"PlantGuacodile",
+					"PlantGuacodileAudio",
+					"PlantIceburg",
+					"PlantIceburgAudio",
+					"FreezonEffectGroup",
+					"PlantParsnip",
+					"PlantParsnipAudio",
+					"PlantMonotropa",
+					"PlantMonotropaAudio"
+				],
+				"MainField": [
+					"850.0+level*50.0",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"10.0+(level-20.0)*1.0"
+				],
+				"PassiveField3": [
+					""
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"PamName": "POPANIM_EFFECTS_ARTIFACT_GASHAPON_RESULT",
+				"AnimLabelToPlay": "idle",
+				"Possibility2s": [
+					0.06,
+					0.14,
+					0.14,
+					0.2,
+					0.26,
+					0.06,
+					0.14,
+					0.14,
+					0.2,
+					0.26
+				],
+				"Possibility3s": [
+					0.01,
+					0.03,
+					0.03,
+					0.05,
+					0.08,
+					0.01,
+					0.03,
+					0.03,
+					0.05,
+					0.08
+				],
+				"DisplayActions": "RTID(ArtifactGashaponAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_GASHAPON_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_GASHAPON",
+				"ObtainWay": "get_in_activity",
+				"DemoLevelWonMessage": "",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"eleocurling",
+						"thundersnapdragon",
+						"hammerflower",
+						"plantain",
+						"headbutterlettuce"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactGashaponProperties",
+			"aliases": [
+				"artifact_magicbeans"
+			],
+			"objdata": {
+				"TypeName": "artifact_magicbeans",
+				"ClassName": "ArtifactMagicBeans",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"PlantMonotropa",
+					"PlantMonotropaAudio",
+					"PlantMagicbeans",
+					"PlantMagicbeans",
+					"PlantPotatomineAudio",
+					"PlantPotatomine",
+					"PlantBanana",
+					"PlantGrapeshot",
+					"PlantGrapeshot",
+					"PlantThreepeater",
+					"PlantGatlingPea",
+					"PlantPrimalPeashooter",
+					"PlantPeapod",
+					"PlantRepeater"
+				],
+				"MainField": [
+					"4000.0+level*200.0",
+					"1000.0+level*50.0",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"500.0+(level-20.0)*50.0"
+				],
+				"PassiveField3": [
+					""
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"DisplayActions": "RTID(ArtifactMagicbeansAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_MAGICBEANS_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_MAGICBEANS",
+				"ObtainWay": "get_in_activity",
+				"DemoLevelWonMessage": "",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"threepeater",
+						"gatlingpea",
+						"primalpeashooter",
+						"peapod",
+						"repeater"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactUFOProperties",
+			"aliases": [
+				"artifact_ufo"
+			],
+			"objdata": {
+				"TypeName": "artifact_ufo",
+				"ClassName": "ArtifactUFO",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"HeianWind"
+				],
+				"MainField": [
+					"300.0+level*20.0",
+					"6.0+level*0.2",
+					"2.0",
+					"1.0",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"40.0-(level-20.0)*1.0"
+				],
+				"PassiveField3": [
+					""
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"PamName": "POPANIM_EFFECTS_ARTIFACT_UFO_EFFECT",
+				"AsAnimLabelToPlay": "enter",
+				"AsLoopAnimLabelToPlay": "loop",
+				"AsStopAnimLabelToPlay": "quit",
+				"PsAnimLabelToPlay": "enter2",
+				"PsLoopAnimLabelToPlay": "loop",
+				"PsStopAnimLabelToPlay": "quit2",
+				"MinRaiseSpeed": 20.0,
+				"CannotBeRised": [
+					"pirate_barrel"
+				],
+				"DisplayActions": "RTID(ArtifactUFOAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_UFO_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_UFO",
+				"ObtainWay": "get_in_store",
+				"DemoLevelWonMessage": "",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"ghostpepper",
+						"xshot",
+						"doublesamara",
+						"asparagus",
+						"saucer",
+						"horsebean",
+						"caulipower",
+						"egretflower"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactDevolveProperties",
+			"aliases": [
+				"artifact_devolve"
+			],
+			"objdata": {
+				"TypeName": "artifact_devolve",
+				"ClassName": "ArtifactDevolve",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"ZombieImpPearImpGroup",
+					"ZombieGlobalGargantuarAudio",
+					"thunder",
+					"PlantPepperpult",
+					"PlantWitchHazel",
+					"ZombieDarkWizardGroup"
+				],
+				"MainField": [
+					"1.0+level*0.1",
+					"3.0+level*0.1",
+					"20.0+level*1",
+					"10.0+level*0.5",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"40.0-(level-20.0)*1.0",
+					"10.0+(level-20.0)*1.0"
+				],
+				"PassiveField3": [
+					"40.0-(level-20.0)*1.0"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"DisplayActions": "RTID(ArtifactDevolveAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_DEVOLVE_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Devolve",
+				"ObtainWay": "get_in_activity",
+				"LightningBuffDuration": 60.0,
+				"BleedingDuration": 10.0,
+				"TriggerCondition": "stucked",
+				"SecondLightningDelay": 3.0,
+				"FieldLightningNum": 3,
+				"FieldLightningDelay": 5.0,
+				"CannotBeDevolvedZombieTypes": [
+					"mirror_queen_phase1",
+					"mirror_queen_phase2",
+					"mirror_queen_phase3",
+					"bubble_machine_imp",
+					"trench_coat_imps"
+				],
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"iceshroom",
+						"fireshroom",
+						"missiletoe",
+						"magicshroom",
+						"pumpkinwitch",
+						"flamelady",
+						"witchhazel"
+					]
+				},
+				"Normal_Zombies": [
+					"tutorial",
+					"mummy",
+					"pirate",
+					"cowboy",
+					"kongfu_basic",
+					"future",
+					"dark",
+					"beach",
+					"beach_fem",
+					"iceage",
+					"skycity",
+					"lostcity",
+					"eighties",
+					"dino",
+					"steam_worker",
+					"renai_worker",
+					"roman",
+					"lny",
+					"heian_worker",
+					"fairy_tale"
+				],
+				"Armor1_Zombies": [
+					"tutorial_armor1",
+					"mummy_armor1",
+					"pirate_armor1",
+					"cowboy_armor1",
+					"kongfu_basic_armor1",
+					"future_armor1",
+					"dark_armor1",
+					"beach_armor1",
+					"beach_fem_armor1",
+					"iceage_armor1",
+					"skycity_armor1",
+					"lostcity_armor1",
+					"eighties_armor1",
+					"dino_armor1",
+					"steam_armor1",
+					"renai_armor1",
+					"roman_armor1",
+					"lny_armor1",
+					"heian_armor1",
+					"fairy_tale_armor1"
+				],
+				"Armor2_Zombies": [
+					"tutorial_armor2",
+					"mummy_armor2",
+					"pirate_armor2",
+					"cowboy_armor2",
+					"kongfu_basic_armor2",
+					"future_armor2",
+					"dark_armor2",
+					"beach_armor2",
+					"beach_fem_armor2",
+					"iceage_armor2",
+					"skycity_armor2",
+					"lostcity_armor2",
+					"eighties_armor2",
+					"dino_armor2",
+					"steam_armor2",
+					"renai_armor2",
+					"roman_armor2",
+					"lny_armor2",
+					"heian_armor2",
+					"fairy_tale_armor2"
+				],
+				"Imp_Zombies": [
+					"pirate_imp",
+					"kongfu_monk_imp",
+					"future_imp",
+					"dark_imp",
+					"beach_imp",
+					"iceage_imp",
+					"lostcity_imp",
+					"eighties_imp",
+					"dino_imp",
+					"steam_imp",
+					"roman_imp",
+					"lny_imp",
+					"fairy_tale_imp",
+					"modern_superfanimp",
+					"heian_ninja"
+				],
+				"Gargantuar_Zombies": [
+					"egypt_gargantuar",
+					"pirate_gargantuar",
+					"cowboy_gargantuar",
+					"future_gargantuar",
+					"dark_gargantuar",
+					"beach_gargantuar",
+					"iceage_gargantuar",
+					"skycity_gargantuar",
+					"lostcity_gargantuar",
+					"eighties_gargantuar",
+					"dino_gargantuar",
+					"steam_gargantuar",
+					"renai_gargantuar",
+					"roman_gargantuar",
+					"heian_gargantuar",
+					"fairy_tale_gargantuar",
+					"kongfu_strong_bronze",
+					"kongfu_agile_bronze",
+					"kongfu_magic_bronze"
+				],
+				"Small_Zombies": [
+					"tutorial_flag",
+					"mummy_flag",
+					"pirate_flag",
+					"cowboy_flag",
+					"kongfu_flag",
+					"kongfu_monk_flag",
+					"future_flag",
+					"dark_flag",
+					"beach_flag",
+					"iceage_flag",
+					"skycity_flag",
+					"lostcity_flag",
+					"eighties_flag",
+					"dino_flag",
+					"steam_flag",
+					"renai_flag",
+					"roman_flag",
+					"lny_flag",
+					"heian_flag",
+					"ra",
+					"camel_almanac",
+					"roman_shield_almanac",
+					"explorer",
+					"pharaoh",
+					"swashbuckler",
+					"seagull",
+					"barrelroller",
+					"pirate_captain",
+					"pirate_captain_parrot",
+					"poncho",
+					"chicken_farmer",
+					"chicken",
+					"west_bullrider",
+					"kongfu_hammer",
+					"kongfu_torch",
+					"kongfu_gong",
+					"kongfu_selfexplode",
+					"kongfu_qigong",
+					"kongfu_drink",
+					"kongfu_monk_cone",
+					"kongfu_monk_bucket",
+					"kongfu_monk_basic",
+					"kongfu_monk_drink",
+					"kongfu_monk_blade",
+					"kongfu_monk_torch",
+					"kongfu_monk_nunchaku",
+					"future_jetpack",
+					"future_jetpack_disco",
+					"dark_armor3",
+					"dark_juggler",
+					"dark_imp_dragon",
+					"dark_rogue",
+					"iceage_armor3",
+					"iceage_hunter",
+					"iceage_weaselhoarder",
+					"lostcity_lostpilot",
+					"lostcity_excavator",
+					"lostcity_jane",
+					"lostcity_bug",
+					"lostcity_impporter",
+					"lostcity_relichunter",
+					"lostcity_crystalskull",
+					"lostcity_guide",
+					"lostcity_doctor",
+					"eighties_punk",
+					"eighties_mc",
+					"eighties_breakdancer",
+					"eighties_glitter",
+					"eighties_boombox",
+					"eighties_8bit",
+					"dino_pushegg",
+					"dino_stealegg",
+					"dino_eggshell",
+					"modern_balloon",
+					"modern_allstar",
+					"modern_newspaper",
+					"newspaper_veteran",
+					"modern_miner",
+					"explosion_proof",
+					"steam_gentleman",
+					"steam_stove",
+					"renai_carver",
+					"renai_perfumer",
+					"renai_ballet",
+					"roman_armor4",
+					"roman_healer",
+					"zombie_jalapeno",
+					"zombie_explodenut",
+					"zombie_snowpea",
+					"zombie_gatlingpea",
+					"heian_onmyoji",
+					"heian_akinndo",
+					"fairy_tale_flag"
+				],
+				"Mid_Zombies": [
+					"dino_armor3",
+					"cannon",
+					"prospector",
+					"piano",
+					"west_bull",
+					"football_mech",
+					"disco_mech",
+					"mech_cone",
+					"future_protector",
+					"dark_wizard",
+					"dark_king",
+					"dark_archmage",
+					"dark_cavalry",
+					"iceage_dodo",
+					"iceage_troglobite",
+					"iceage_walrus",
+					"iceage_ski",
+					"iceage_chief",
+					"eighties_arcade",
+					"dino_bully",
+					"modern_solar_truck",
+					"steam_coal_miner",
+					"renai_gliding",
+					"roman_armor3",
+					"roman_medusa",
+					"roman_ballista",
+					"heian_hanabi",
+					"heian_sushi",
+					"fairy_tale_witch",
+					"fairy_tale_knight"
+				],
+				"All_Zombies": [
+					"elite_roman_healer",
+					"elite_roman_ballista",
+					"elite_heian_onmyoji",
+					"elite_skycity_electric"
+				]
+			}
+		},
+		{
+			"objclass": "ArtifactPrismTowerProperties",
+			"aliases": [
+				"artifact_prismtower"
+			],
+			"objdata": {
+				"TypeName": "artifact_prismtower",
+				"ClassName": "ArtifactPrismTower",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"HeianWind",
+					"PlantCherryBomb"
+				],
+				"MainField": [
+					"1.0+level*0.1",
+					"10.0+level",
+					"0.5+level*0.25",
+					"5.0+level*0.5",
+					"100.0",
+					"20.0",
+					"5.0",
+					"2.0",
+					"1.0",
+					"999999.0"
+				],
+				"PassiveField1": [
+					"100.0+(level-10.0)*10.0",
+					"5.0+(level-10.0)*0.5"
+				],
+				"PassiveField2": [
+					"30.0+(level-20.0)*2.0"
+				],
+				"PassiveField3": [
+					"200.0"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"PamName": "",
+				"DisabledPercentDamage": [
+					""
+				],
+				"DisplayActions": "RTID(ArtifactPrismTowerAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_PRISMTOWER_DESCRIPTION]",
+				"IsNeedPedestal": false,
+				"DemoLevel": "Artifact_Demo_PrismTower",
+				"ObtainWay": "get_in_store",
+				"DemoLevelWonMessage": "",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						""
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactDinosaurHornProperties",
+			"aliases": [
+				"artifact_dinosaurhorn"
+			],
+			"objdata": {
+				"TypeName": "artifact_dinosaurhorn",
+				"ClassName": "ArtifactDinosaurHorn",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"HeianWind"
+				],
+				"MainField": [
+					"2.0",
+					"4.0",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"4.0+(level-10.0)*0.3"
+				],
+				"PassiveField3": [
+					"55.0-level",
+					"5000.0",
+					"4.0"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"MusicalNoteEffectPlayInterval": 4.0,
+				"MagicalNoteEffectPopanimName": "POPANIM_EFFECTS_ARTIFACT_DINOSAURHORN_EFFECT",
+				"MagicalNoteEffectAnimationToPlay": "idle",
+				"MagicalNoteEffectPopanimOffset": {
+					"x": 30,
+					"y": -30
+				},
+				"DinosTypeToSpawn": [
+					{
+						"#comment": "jian long ",
+						"EntityName": "dinostegorunner",
+						"Weight": 30,
+						"MinNumToSeckill": 1,
+						"MaxNumToSeckill": 3,
+						"DamageAmountToSurvivor": 2500
+					},
+					{
+						"#comment": "xun meng long ",
+						"EntityName": "dinoraptorrunner",
+						"Weight": 65,
+						"MinNumToSeckill": 1,
+						"MaxNumToSeckill": 2,
+						"DamageAmountToSurvivor": 1500
+					},
+					{
+						"#comment": "jia long ",
+						"EntityName": "dinoankylorunner",
+						"Weight": 50,
+						"MinNumToSeckill": 2,
+						"MaxNumToSeckill": 3,
+						"DamageAmountToSurvivor": 2500
+					},
+					{
+						"#comment": "ba wang long ",
+						"EntityName": "dinotyrannorunner",
+						"Weight": 20,
+						"MinNumToSeckill": 2,
+						"MaxNumToSeckill": 3,
+						"DamageAmountToSurvivor": 2500
+					}
+				],
+				"DisplayActions": "RTID(ArtifactDinosaurHornAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_DINOSAURHORN_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_DinosaurHorn",
+				"ObtainWay": "get_in_store",
+				"DemoLevelWonMessage": "",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"primalpeashooter",
+						"primalpotatomine",
+						"primalsunflower",
+						"primalwallnut",
+						"primalrafflesia",
+						"bramble"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactWatergunProperties",
+			"aliases": [
+				"artifact_watergun"
+			],
+			"objdata": {
+				"TypeName": "artifact_watergun",
+				"ClassName": "ArtifactWatergun",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"PlantLotusshooter",
+					"LevelCommon"
+				],
+				"MainField": [
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"30.0-(level-10.0)*1.0",
+					"0.25",
+					"10.0"
+				],
+				"PassiveField3": [
+					"(level-20.0)*0.05"
+				],
+				"PushDistancePerSecond": 1.0,
+				"NoPushDistancePerSecond": 6.0,
+				"Duration": 6.0,
+				"BigZombiePushDebuffDistance": 0.25,
+				"DripZombieConditionDuration": 15,
+				"DripZombieConditionValueNormal": 8,
+				"DripZombieConditionValueBig": 4,
+				"DripPlantConditionDuration": 15,
+				"DripPlantConditionValue": 0.25,
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"DisplayActions": "RTID(ArtifactWatergunAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_WATERGUN_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Watergun",
+				"ObtainWay": "get_in_activity",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"wintermelon",
+						"snowpea",
+						"iceburg",
+						"iceshroom",
+						"cottonyeti",
+						"coldsnapdragon",
+						"missiletoe",
+						"icycurrant",
+						"eleocurling",
+						"narcissusshooter",
+						"monotropa",
+						"aloes",
+						"icelotus",
+						"lotusshooter",
+						"beercoconut"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactBlackholeProperties",
+			"aliases": [
+				"artifact_blackhole"
+			],
+			"objdata": {
+				"TypeName": "artifact_blackhole",
+				"ClassName": "ArtifactBlackhole",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"PlantMagicbeans"
+				],
+				"MainField": [
+					"6.0+level*0.2",
+					"500.0+level*3.0",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"40.0-(level-20.0)*1.0",
+					"3.0+level*0.1"
+				],
+				"PassiveField3": [
+					"6.0+level*0.2+7.0"
+				],
+				"ImgZombieMass": 0.2,
+				"SmallZombieMass": 0.5,
+				"MidZombieMass": 2,
+				"BigZombieMass": 5,
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"DisplayActions": "RTID(ArtifactBlackholeAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_BLACKHOLE_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Blackhole",
+				"ObtainWay": "get_in_store",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactMeteorProperties",
+			"aliases": [
+				"artifact_meteor"
+			],
+			"objdata": {
+				"TypeName": "artifact_meteor",
+				"ClassName": "ArtifactMeteor",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"PlantLavaGuava",
+					"PlantBanana",
+					"PlantPepperpult"
+				],
+				"MainField": [
+					"5.0",
+					"5.0",
+					"3.0",
+					"2500.0+level*250.0",
+					"2.0736",
+					"3.0",
+					"15.0",
+					"40.0+level*1.0",
+					"10.0",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"40.0+level*2.0",
+					"40.0+level*3.0"
+				],
+				"PassiveField2": [
+					"40.0-(level-20.0)*1.0",
+					"5.0"
+				],
+				"PassiveField3": [
+					"1.0+level*0.1",
+					"10.0"
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"DisplayActions": "RTID(ArtifactMeteorAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"DemoLevel": "Artifact_Demo_Meteor",
+				"ObtainWay": "get_in_store",
+				"Description": "[ARTIFACT_METEOR_DESCRIPTION]",
+				"InitialPositionOffset": {
+					"x": 0,
+					"y": -100.0,
+					"z": 0
+				},
+				"MeteorProjectile": "RTID(ArtifactMeteorProjectile@ProjectileTypes)",
+				"MeteorShotHeight": 100,
+				"MeteorShotTime": 3.0,
+				"MeteorAngle": 45.0
+			}
+		},
+		{
+			"objclass": "ArtifactAcidProperties",
+			"aliases": [
+				"artifact_acid"
+			],
+			"objdata": {
+				"TypeName": "artifact_acid",
+				"ClassName": "ArtifactAcid",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"AcidCorrosion",
+					"PlantBanana",
+					"PlantPepperpult"
+				],
+				"MainField": [
+					"0.0",
+					"stage*1.0+2.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"30.0+(level-20.0)*2.0"
+				],
+				"PassiveField3": [
+					"2.0",
+					"2.0",
+					"1.3",
+					"10.0",
+					"1000.0"
+				],
+				"DisplayActions": "RTID(ArtifactAcidAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"DemoLevel": "Artifact_Demo_Acid",
+				"ObtainWay": "get_in_store",
+				"Description": "[ARTIFACT_ACID_DESCRIPTION]",
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"lemon",
+						"chilibean",
+						"stallia",
+						"primalrafflesia",
+						"dragonroar",
+						"shadowshroom",
+						"convallariachemist",
+						"imppear",
+						"poisonpeashooter",
+						"pokra",
+						"cypripedium"
+					]
+				},
+				"AcidReturnAddCD": 10.0
+			}
+		},
+		{
+			"objclass": "ArtifactMagichatProperties",
+			"aliases": [
+				"artifact_magichat"
+			],
+			"objdata": {
+				"TypeName": "artifact_magichat",
+				"ClassName": "ArtifactMagichat",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"LevelCommon"
+				],
+				"MainField": [
+					"level/6.0",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"1.0"
+				],
+				"PassiveField2": [
+					"40.0-(level-20.0)*1.0",
+					"1.0",
+					"1.0"
+				],
+				"PassiveField3": [
+					"1000.0+level*100.0",
+					"15.0"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"DisplayActions": "RTID(ArtifactMagichatAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_MAGICHAT_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Magichat",
+				"ObtainWay": "get_in_store",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactBeehiveProperties",
+			"aliases": [
+				"artifact_beehive"
+			],
+			"objdata": {
+				"TypeName": "artifact_beehive",
+				"ClassName": "ArtifactBeehive",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"PlantHorsebean",
+					"LevelCommon",
+					"PlantPokraAudio",
+					"PlantConvallariaChemist"
+				],
+				"MainField": [
+					"15.0",
+					"50.0+level*3.0",
+					"500.0+level*30.0",
+					"50.0",
+					"30.0",
+					"999999.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"30.0+(level-20.0)*2.0",
+					"1.0"
+				],
+				"PassiveField3": [
+					"1.0"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"DisplayActions": "RTID(ArtifactBeehiveAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_BEEHIVE_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Beehive",
+				"ObtainWay": "get_in_store",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactEvolutionProperties",
+			"aliases": [
+				"artifact_evolution"
+			],
+			"objdata": {
+				"TypeName": "artifact_evolution",
+				"ClassName": "ArtifactEvolution",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"PlantMagicbeans",
+					"ZombieDarkWizardGroup",
+					"PlantLightningReed",
+					"PlantMonotropaAudio",
+					"PlantPotatomineAudio"
+				],
+				"MainField": [
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"40.0-(level-20.0)*1.0",
+					"3.0+level*0.1"
+				],
+				"PassiveField3": [
+					"1"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"DisplayActions": "RTID(ArtifactEvolutionAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_EVOLUTION_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Evolution",
+				"ObtainWay": "get_in_store",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"threepeater",
+						"wintermelon",
+						"coconutcannon",
+						"melonpult",
+						"citron",
+						"carrotlauncher",
+						"sweetpotato",
+						"banana",
+						"rafflesia",
+						"acorn",
+						"horsebean",
+						"agave",
+						"flamelady",
+						"gatlingpea",
+						"morningglory",
+						"nekotail",
+						"primalrafflesia",
+						"cobcannon",
+						"caulipower",
+						"missiletoe",
+						"plantain",
+						"narcissusshooter",
+						"strawburst",
+						"nukelauncher",
+						"boomflower",
+						"megagatling"
+					]
+				},
+				"plantBlackList": [
+					"sunflower",
+					"twinsunflower",
+					"birthsunflower",
+					"primalsunflower",
+					"imitater",
+					"goldbloom",
+					"sunshroom",
+					"powerplant",
+					"coffeebean",
+					"armorflame",
+					"aquaweed",
+					"oxygenalgae",
+					"kelpguard",
+					"seashroom",
+					"seaderris",
+					"seashooter",
+					"uncharted_phatbeet",
+					"uncharted_haystack",
+					"uncharted_carrotlauncher",
+					"moton",
+					"sunflowerzombie",
+					"gloombara",
+					"soudacheMegagatling",
+					"soudacheMegagatling_Fire",
+					"soudacheMegagatling_Electric"
+				]
+			}
+		},
+		{
+			"objclass": "ArtifactSnowdriftProperties",
+			"aliases": [
+				"artifact_snowdrift"
+			],
+			"objdata": {
+				"TypeName": "artifact_snowdrift",
+				"ClassName": "ArtifactSnowdrift",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"PlantMagicbeans",
+					"ZombieDarkWizardGroup",
+					"PlantLightningReed",
+					"PlantMonotropaAudio",
+					"PlantBloverAudio",
+					"FreezonEffectGroup"
+				],
+				"MainField": [
+					"0.3",
+					"6.0+level*0.2",
+					"3",
+					"0.05",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"30.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"40.0-(level-20.0)*1.0",
+					"5"
+				],
+				"PassiveField3": [
+					"2",
+					"1000"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"SnowBallProjectile": "RTID(ArtifactSnowBallProjectile@ProjectileTypes)",
+				"IcebulletsProjectile": "RTID(ArtifactIcebulletsProjectile@ProjectileTypes)",
+				"DisplayActions": "RTID(ArtifactSnowdriftAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_SNOWDRIFT_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Snowdrift",
+				"ObtainWay": "get_in_store",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						
+					]
+				},
+				"plantBlackList": [
+					
+				]
+			}
+		},
+		{
+			"objclass": "ArtifactGuitarProperties",
+			"aliases": [
+				"artifact_guitar"
+			],
+			"objdata": {
+				"TypeName": "artifact_guitar",
+				"ClassName": "ArtifactGuitar",
+				"ResourceGroups": [
+					"UI_DailyAchievement",
+					"GuitarAudio"
+				],
+				"MainField": [
+					"500+level*25",
+					"1000+level*50",
+					"2000+level*100",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"40.0-(level-20.0)*2.0",
+					"500+(level-20.0)*100.0",
+					"0.5",
+					"10"
+				],
+				"PassiveField3": [
+					"1",
+					"200",
+					"0.1"
+				],
+				"MusicalInterval": [
+					1,
+					1,
+					0.9,
+					0.9,
+					0.8,
+					0.8,
+					0.7,
+					0.7,
+					0.6,
+					0.6
+				],
+				"SuccessfulTimestamp": "0.2",
+				"PerfectTimestamp": "0.1",
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"MusicalNotesProjectile": "RTID(MusicalNotesProjectileDefault@ProjectileTypes)",
+				"GuitarSoundProjectile": "RTID(ProjectileSoundDefault@ProjectileTypes)",
+				"DisplayActions": "RTID(ArtifactGuitarAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_GUITAR_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Guitar",
+				"ObtainWay": "get_in_store",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"birthsunflower",
+						"morningglory",
+						"phatbeet",
+						"tuliptrumpeter",
+						"hydrocotyledrummer",
+						"plantain",
+						"ghostpepper",
+						"hoyacordata"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactMidasTouchProperties",
+			"aliases": [
+				"artifact_midastouch"
+			],
+			"objdata": {
+				"TypeName": "artifact_midastouch",
+				"ClassName": "ArtifactMidasTouch",
+				"ResourceGroups": [
+					"PlantLightningReed",
+					"ArtifactAudio"
+				],
+				"#comment": "Last two fields must be cooldown and max used times",
+				"MainField": [
+					"5.0+level/6.0",
+					"100+level*10",
+					"200+level*20",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"100*level"
+				],
+				"PassiveField2": [
+					"60-level",
+					"3",
+					"10"
+				],
+				"PassiveField3": [
+					"1600"
+				],
+				"Boosts": [
+					
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"DisplayActions": "RTID(ArtifactMidasTouchAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_MIDASTOUCH_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Midastouch",
+				"ObtainWay": "get_in_activity",
+				"DemoLevelWonMessage": "",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactSkateBoardProperties",
+			"aliases": [
+				"artifact_skateboard"
+			],
+			"objdata": {
+				"TypeName": "artifact_skateboard",
+				"ClassName": "ArtifactSkateBoard",
+				"ResourceGroups": [
+					"ArtifactAudio",
+					"PlantStarfruitAudio",
+					"PlantThistleAudio",
+					"PlantMagnifyingGrassAudio",
+					"PlantElectricBlueberryAudio",
+					"PlantCitronAudio",
+					"ZombieBeachSurferAudio"
+				],
+				"#comment": "Last two fields must be cooldown and max used times",
+				"MainField": [
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"40.0-(level-20.0)*1.0",
+					"3",
+					"4000"
+				],
+				"PassiveField3": [
+					"1600"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"DisplayActions": "RTID(ArtifactSkateBoardAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_SKATEBOARD_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Skateboard",
+				"ObtainWay": "get_in_activity",
+				"DemoLevelWonMessage": "",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"starfruit",
+						"pinkstarfruit",
+						"homingthistle",
+						"nekotail",
+						"electricblueberry",
+						"citron",
+						"mandrake"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactSilverKeyProperties",
+			"aliases": [
+				"artifact_silverkey"
+			],
+			"objdata": {
+				"TypeName": "artifact_silverkey",
+				"ClassName": "ArtifactSilverKey",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"PlantCthulhuActinia",
+					"LevelCommon",
+					"PlantShrinkingViolet"
+				],
+				"MainField": [
+					"5.0+(level-30.0)*0.1",
+					"6+level*0.2",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"40.0-(level-20.0)*1.0",
+					"3.0"
+				],
+				"PassiveField3": [
+					"1.0"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"DisplayActions": "RTID(ArtifactSilverKeyAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_SILVERKEY_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_SilverKey",
+				"ObtainWay": "get_in_store",
+				"SpawnGargantuarSumConditions": [
+					6,
+					9,
+					12
+				],
+				"SpawnGargantuarBaseLevel": 3,
+				"ZombieBlacklist": [
+					"ZombieTreasureYeti",
+					"ZombieGargantuar",
+					"ZombieDarkKing",
+					"ZombieZombossMech",
+					"ZombieGeneralBase",
+					"ZombieHamsterBall",
+					"ZombieBull",
+					"ZombiePirateBarrel",
+					"ZombiePiano",
+					"Zomboss",
+					"ZombieModernSolarTruck",
+					"ZombieIceAgeWalrus",
+					"ZombieEliteRomanHealer",
+					"ZombieEliteRomanBallista",
+					"ZombieEliteOnmyoji",
+					"ZombieEliteSkyCityElectric"
+				],
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"cthulhuactinia",
+						"devilsflower",
+						"guardshroom",
+						"minishroom"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactDragonProperties",
+			"aliases": [
+				"artifact_dragon"
+			],
+			"objdata": {
+				"TypeName": "artifact_dragon",
+				"ClassName": "ArtifactDragon",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"MainField": [
+					"200.0+level*5.0",
+					"6.0+level*0.2",
+					"15.0",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField2": [
+					"40.0-(level-20.0)*1.0",
+					"100.0+level*2.5"
+				],
+				"PassiveField3": [
+					"30.0+(level-30.0)*1.5"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"DisplayActions": "RTID(ArtifactDragonAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_DRAGON_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Dragon",
+				"ObtainWay": "get_in_activity",
+				"DemoLevelWonMessage": "[ARTIFACT_FREE_DEMO_LEVEL_WON_MESSAGE_TEXT2]",
+				"BaseDuration": 60.0,
+				"DamageInterval": 0.1,
+				"SmallDragonLength": 5,
+				"ThrowBallInterval": {
+					"Min": 5.0,
+					"Max": 5.0
+				},
+				"BallProjectile": "RTID(ArtifactTossedBall@ProjectileTypes)",
+				"BallShotHeight": 500,
+				"BallShotTime": 1,
+				"DurationAdded": 3.0,
+				"WidenDurationAdded": 5.0,
+				"MaxBallAllowed": 4,
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"thundersnapdragon",
+						"coldsnapdragon",
+						"snapdragon",
+						"dragonroar",
+						"gluttonydragon"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactTridentProperties",
+			"aliases": [
+				"artifact_trident"
+			],
+			"objdata": {
+				"TypeName": "artifact_trident",
+				"ClassName": "ArtifactTrident",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"PlantTangleKelpAudio",
+					"ArtifactTridentAudio"
+				],
+				"MainField": [
+					"5",
+					"5",
+					"4.0",
+					"stage",
+					"300 + level * 40",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"40.0-(level-20.0)*1.0",
+					"1+((level-20)/5)"
+				],
+				"PassiveField3": [
+					"30.0+(level-30.0)*1.5"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"WaterSpoutProjectile": "RTID(WaterSpoutProjectileDefault@ProjectileTypes)",
+				"DisplayActions": "RTID(ArtifactTridentAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_TRIDENT_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Trident",
+				"ObtainWay": "get_in_store",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"spartanbamboo",
+						"dracaena",
+						"lancerhoya",
+						"geraniifencer",
+						"dragoncane"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactCalabashProperties",
+			"aliases": [
+				"artifact_calabash"
+			],
+			"objdata": {
+				"TypeName": "artifact_calabash",
+				"ClassName": "ArtifactCalabash",
+				"ResourceGroups": [
+					
+				],
+				"#comment": "Last two fields must be cooldown and max used times",
+				"MainField": [
+					"5",
+					"3",
+					"5+level*0.5",
+					"20+level",
+					"5+level*0.5",
+					"10+level*0.5",
+					"0.0",
+					"999999.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"(level-20.0)*2.0",
+					"(level-20.0)*3.0"
+				],
+				"PassiveField3": [
+					"80"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"DisplayActions": "RTID(ArtifactCalabashAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_CALABASH_DESCRIPTION]",
+				"IsNeedPedestal": false,
+				"DemoLevel": "Artifact_Demo_Calabash",
+				"ObtainWay": "get_in_activity",
+				"DemoLevelWonMessage": "[ARTIFACT_FREE_DEMO_LEVEL_WON_MESSAGE_TEXT2]",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"bonkchoy",
+						"dragoncane",
+						"bromelblade",
+						"firegourd",
+						"peach",
+						"bamboo",
+						"turnip"
+					]
+				},
+				"ZombieBlacklist": [
+					"hamster_ball",
+					"fairy_tale_armed_gargantuar_Elite"
+				]
+			}
+		},
+		{
+			"objclass": "ArtifactCameraProperties",
+			"aliases": [
+				"artifact_camera"
+			],
+			"objdata": {
+				"TypeName": "artifact_camera",
+				"ClassName": "ArtifactCamera",
+				"ResourceGroups": [
+					"SomeArtifactAudio"
+				],
+				"#comment": "Last two fields must be cooldown and max used times",
+				"MainField": [
+					"1.0+level*0.1",
+					"1.0+level*0.1",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"40-(level-20.0)*1.0",
+					"3"
+				],
+				"PassiveField3": [
+					"5"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"DisplayActions": "RTID(ArtifactCameraAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_CAMERA_DESCRIPTION]",
+				"IsNeedPedestal": false,
+				"DemoLevel": "Artifact_Demo_Camera",
+				"ObtainWay": "get_in_activity",
+				"DemoLevelWonMessage": "[ARTIFACT_FREE_DEMO_LEVEL_WON_MESSAGE_TEXT]",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"applemortar",
+						"mandrake",
+						"gumnut",
+						"geraniifencer",
+						"tigerstool",
+						"dazeychain",
+						"chardguard"
+					]
+				},
+				"CapturePlantBlacklist": {
+					"ListType": "whitelist",
+					"List": [
+						"carrotmissile",
+						"powerplant",
+						"smallChestnut",
+						"flowerpot",
+						"bitpeashooter",
+						"magicbeans",
+						"frog",
+						"hollybarrierleaf",
+						"intensivecarrot",
+						"escaperoot"
+					]
+				},
+				"ThreatZombieBlacklist": {
+					"ListType": "whitelist",
+					"List": [
+						"beach_fisherman",
+						"modern_miner",
+						"prospector"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactSwarmProperties",
+			"aliases": [
+				"artifact_swarm"
+			],
+			"objdata": {
+				"TypeName": "artifact_swarm",
+				"ClassName": "ArtifactSwarm",
+				"#comment": "maxprojectile, short shoot count, short to long shoot switch time, long shoot charging, idle to recovery cooldown, recovery projectile per second",
+				"ResourceGroups": [
+					
+				],
+				"MainField": [
+					"90.0",
+					"5.0",
+					"1.0",
+					"6.0",
+					"2.0",
+					"5.0",
+					"1.0",
+					"999999.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"90.0+(level-10.0)*5.0",
+					"10.0"
+				],
+				"PassiveField3": [
+					"30.0+(level-30.0)*1.5"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"NormalProjectile": "RTID(ArtifactSwarmFirePeaDefault@ProjectileTypes)",
+				"AdvanceProjectile": "RTID(ArtifactSwarmBlueFirePeaDefault@ProjectileTypes)",
+				"SpecialProjectile": "RTID(ArtifactSwarmBlueBigPeaDefault@ProjectileTypes)",
+				"DisplayActions": "RTID(ArtifactSwarmAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_SWARM_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Swarm",
+				"ObtainWay": "get_in_activity",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"dracaena",
+						"peach",
+						"snowpea",
+						"elaeocarpus",
+						"tigerstool"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactHoloProperties",
+			"aliases": [
+				"artifact_holo"
+			],
+			"objdata": {
+				"TypeName": "artifact_holo",
+				"ClassName": "ArtifactHolo",
+				"#comment": "maxprojectile, short shoot count, short to long shoot switch time, long shoot charging, idle to recovery cooldown, recovery projectile per second",
+				"ResourceGroups": [
+					
+				],
+				"MainField": [
+					"10.0+level*0.5",
+					"20.0+level*1.0",
+					"10.0+level*1.0",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"50.0-level*1.0",
+					"3.0",
+					"10.0+level*0.5"
+				],
+				"PassiveField3": [
+					"10.0"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"HoloTargetablePlantTypes": {
+					"ListType": "blacklist",
+					"List": [
+						"icycurrant",
+						"tallnut",
+						"electriccurrant",
+						"powerplant",
+						"goldleaf",
+						"gravebuster",
+						"hotpotato",
+						"armorflame",
+						"chestnut",
+						"smallChestnut",
+						"frog",
+						"smallcactus",
+						"jackfruit",
+						"moonflower",
+						"squash",
+						"intensivecarrot",
+						"escaperoot",
+						"heavendatura",
+						"pineclone"
+					]
+				},
+				"HoloTargetableGridItemTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"thorns"
+					]
+				},
+				"HoloTargetableZombieTypes": {
+					"ListType": "blacklist",
+					"List": [
+						"cannon",
+						"eighties_bass",
+						"barrelroller",
+						"pirate_barrel",
+						"birthday_barrelroller",
+						"birthday_barrel",
+						"eighties_glitter",
+						"hamster_ball",
+						"snow_ball",
+						"snow_ballroller"
+					]
+				},
+				"DisplayActions": "RTID(ArtifactHoloAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_HOLO_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Holo",
+				"ObtainWay": "get_in_store",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"deodarcedar",
+						"ultomato",
+						"crownflower",
+						"powervine",
+						"empea"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactSoulBellProperties",
+			"aliases": [
+				"artifact_soulbell"
+			],
+			"objdata": {
+				"TypeName": "artifact_soulbell",
+				"ClassName": "ArtifactSoulBell",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"PlantTangleKelpAudio",
+					"ArtifactTridentAudio",
+					"ZombieTutorialGroup",
+					"PlantHypnoShroom",
+					"Egypt_Gravestone"
+				],
+				"MainField": [
+					"5+level * 0.3",
+					"1.5",
+					"stage",
+					"300 + level * 40",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"40-(level-20)",
+					"5"
+				],
+				"PassiveField3": [
+					"5+level * 0.3"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"FuluProjectile": "RTID(FuluProjectileDefault@ProjectileTypes)",
+				"AffectedZombieTypes": [
+					"mech_cone",
+					"football_mech",
+					"disco_mech",
+					"west_bull",
+					"treasureyeti",
+					"future_imp",
+					"future_protector",
+					"zombossmech_future",
+					"children_toycar",
+					"modern_solar_truck",
+					"wave_elecshieldgenerator",
+					"beach_fisherman",
+					"dark_king",
+					"disco_mech",
+					"pvz1_bungee",
+					"pirate_captain_parrot",
+					"renai_ballet",
+					"renai_perfumer",
+					"seagull",
+					"children_airbubble",
+					"cannon",
+					"pirate_barrel",
+					"roman_healer",
+					"roman_medusa",
+					"zombie_explodenut",
+					"zombie_jalapeno",
+					"zombie_snowpea",
+					"zombie_gatlingpea",
+					"roman_ballista"
+				],
+				"DisplayActions": "RTID(ArtifactSoulBellAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_SOULBELL_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_SoulBell",
+				"ObtainWay": "get_in_activity",
+				"DemoLevelWonMessage": "[ARTIFACT_FREE_DEMO_LEVEL_WON_MESSAGE_TEXT3]",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"perfumeshroom",
+						"caulipower",
+						"pumpkinwitch",
+						"zoybeanpod",
+						"clawgloriosa"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactGravityProperties",
+			"aliases": [
+				"artifact_gravity"
+			],
+			"objdata": {
+				"TypeName": "artifact_gravity",
+				"ClassName": "ArtifactGravity",
+				"ResourceGroups": [
+					"ArtifactGravityAudio"
+				],
+				"MainField": [
+					"6+level * 0.2",
+					"3+level * 0.1",
+					"1.5",
+					"stage",
+					"300 + level * 40",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"40-(level-20)",
+					"5"
+				],
+				"PassiveField3": [
+					"5+level * 0.3"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"TargetableProjectileTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"peashooter",
+						"cabbagepult",
+						"splitpea",
+						"snowpea",
+						"kernelpult",
+						"melonpult",
+						"peapod",
+						"repeater",
+						"threepeater",
+						"wintermelon",
+						"peanut",
+						"firepeashooter",
+						"pepperpult",
+						"gatlingpea",
+						"primalpeashooter",
+						"nightshade",
+						"dusklobber",
+						"bloominghearts",
+						"convallariachemist",
+						"impatiensshooter",
+						"turkeypult",
+						"beanchemist",
+						"rapeflower"
+					]
+				},
+				"DisplayActions": "RTID(ArtifactGravityAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_GRAVITY_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Gravity",
+				"ObtainWay": "get_in_activity",
+				"DemoLevelWonMessage": "[ARTIFACT_FREE_DEMO_LEVEL_WON_MESSAGE_TEXT2]",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"kiwifruit",
+						"kiwibeast",
+						"waxgourd",
+						"squash",
+						"hammerflower"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactHydraulicProperties",
+			"aliases": [
+				"artifact_hydraulic"
+			],
+			"objdata": {
+				"TypeName": "artifact_hydraulic",
+				"ClassName": "ArtifactHydraulic",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"Egypt_Gravestone",
+					"PlantCoconutCannonAudio"
+				],
+				"MainField": [
+					"10+level*0.5",
+					"10.0",
+					"stage*1.0+2.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"40-(level-20)",
+					"1000",
+					"5"
+				],
+				"PassiveField3": [
+					"5+level * 0.3"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"ZombieStuckBlacklist": [
+					"egypt_gargantuar",
+					"seagull",
+					"barrelroller",
+					"cannon",
+					"pirate_captain_parrot",
+					"pirate_gargantuar",
+					"piano",
+					"chicken",
+					"west_bull",
+					"west_bullrider",
+					"treasureyeti",
+					"cowboy_gargantuar",
+					"kongfu_strong_bronze",
+					"kongfu_agile_bronze",
+					"kongfu_magic_bronze",
+					"kongfu_zomboss_explosive",
+					"kongfu_zomboss_blade",
+					"zombossmech_egypt",
+					"future_jetpack",
+					"future_jetpack_disco",
+					"football_mech",
+					"disco_mech",
+					"mech_cone",
+					"future_protector",
+					"future_imp",
+					"future_gargantuar",
+					"dark_gargantuar",
+					"dark_king",
+					"zombossmech_dark",
+					"dark_cavalry",
+					"beach_snorkel",
+					"beach_surfer",
+					"beach_fisherman",
+					"beach_octopus",
+					"beach_shell",
+					"beach_gargantuar",
+					"zombossmech_beach",
+					"iceage_dodo",
+					"iceage_weasel",
+					"iceage_gargantuar",
+					"zombossmech_iceage",
+					"iceage_walrus",
+					"iceage_ski",
+					"skycity",
+					"skycity_armor1",
+					"skycity_armor2",
+					"skycity_flag",
+					"skycity_ggtimp",
+					"skycity_battleplane",
+					"skycity_twinsplane",
+					"skycity_electric",
+					"invisible_plane",
+					"air_missile_launcher",
+					"skycity_gargantuar",
+					"lostcity_lostpilot",
+					"lostcity_jane",
+					"lostcity_bug",
+					"lostcity_bug_armor1",
+					"lostcity_bug_armor2",
+					"lostcity_gargantuar",
+					"lostcity_impporter",
+					"zombossmech_lostcity",
+					"pvp_imp",
+					"pvp_shadowimp",
+					"pvp_gargantuar",
+					"pvp_nurse",
+					"eighties_gargantuar",
+					"dino_gargantuar",
+					"zombossmech_steam",
+					"renai_perfumer",
+					"renai_ballet",
+					"renai_ballet_mid"
+				],
+				"DisplayActions": "RTID(ArtifactHydraulicAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_HYDRAULIC_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Hydraulic",
+				"ObtainWay": "get_in_activity",
+				"DemoLevelWonMessage": "[ARTIFACT_FREE_DEMO_LEVEL_WON_MESSAGE_TEXT2]",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"kiwifruit",
+						"bromelblade",
+						"burdockbatter",
+						"squash",
+						"byttneriameteorhammer",
+						"hammerflower"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactBowlingProperties",
+			"aliases": [
+				"artifact_bowling"
+			],
+			"objdata": {
+				"TypeName": "artifact_bowling",
+				"ClassName": "ArtifactBowling",
+				"#comment": "Last two fields must be cooldown and max used times",
+				"ResourceGroups": [
+					"NewBowling",
+					"PlantJackfruit"
+				],
+				"MainField": [
+					"2+level/10",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"20-(level-20)*1.0"
+				],
+				"PassiveField3": [
+					""
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"NormalBowlingType": [
+					"ArtifactBowlingWallnutProjectileDefault",
+					"ArtifactBowlingJackfruitProjectileDefault",
+					"ArtifactBowlingPrimevalWallnutProjectileDefault",
+					"ArtifactBowlingBigWallnutProjectileDefault"
+				],
+				"SpecialBowlingType": [
+					"ArtifactBowlingWinterrambutanProjectileDefault",
+					"ArtifactBowlingSuperJackfruitProjectileDefault",
+					"ArtifactBowlingFossilPrimevalWallnutProjectileDefault",
+					"ArtifactBowlingGreedyDragonBallProjectileDefault"
+				],
+				"KillAfterOneImpacts": {
+					"ListType": "blacklist",
+					"List": [
+						"ZombieRa",
+						"ZombieTombRaiser",
+						"ZombieExplorer",
+						"ZombiePirateBarrelPusher",
+						"ZombieImp",
+						"ZombiePirateSeagull",
+						"ZombiePirateCaptain",
+						"ZombiePirateParrot",
+						"ZombieSwashbuckler",
+						"ZombiePirateBarrel",
+						"ZombieProspector",
+						"ZombieProspectorUniverseUncharted",
+						"ZombieChicken",
+						"ZombieHammer",
+						"ZombieSelfExplode",
+						"ZombieSelfExplodeUniverseUncharted",
+						"ZombieGong",
+						"ZombieRocket",
+						"ZombieQigong",
+						"ZombieMonkImp",
+						"ZombieFutureJetpack",
+						"ZombieFutureImp",
+						"ZombieDarkWizard",
+						"ZombieDarkJuggler",
+						"ZombieArchmage",
+						"ZombieTarget",
+						"ZombieCavalryRider",
+						"ZombieTowerDefendBasic",
+						"ZombieWolfFire",
+						"ZombieWolfImp",
+						"ZombieRogue",
+						"ZombieTargetArchmage",
+						"ZombieTargetWizard",
+						"ZombieBeachSnorkel",
+						"ZombieBeachSurfer",
+						"ZombieBeachFisherman",
+						"ZombieIceAgeHunter",
+						"ZombieWeasel",
+						"ZombieIceAgeSki",
+						"ZombieSkyCityGgtImp",
+						"ZombieSkyCityElectric",
+						"ZombieImpPorter",
+						"ZombieExcavator",
+						"ZombieExcavatorUniverseUncharted",
+						"ZombieLostCityJane",
+						"ZombieLostCityJaneUniverseUncharted",
+						"ZombieLostCityBug",
+						"ZombieCrystalSkull",
+						"ZombieUnchartedQigong",
+						"ZombieLostCityGuide",
+						"ZombiePVPNurse",
+						"ZombieEightiesPunk",
+						"ZombieEightiesMC",
+						"ZombieEightiesBreakDancer",
+						"ZombieEightiesGlitter",
+						"ZombieUnchartedGlitter",
+						"ZombieDinoPushEgg",
+						"ZombieDinoStealEgg",
+						"ZombieDinoEggShell",
+						"ZombieToygun",
+						"ZombieAirbubble",
+						"ZombieLollipops",
+						"ZombieModernSuperfanImp",
+						"ZombieGentleman",
+						"ZombieUnchartedGentleman",
+						"ZombiePerfumer",
+						"ZombieBallet",
+						"ZombieRomanImp",
+						"ZombieRomanShield",
+						"ZombieRomanHealer",
+						"ZombieFutureImp",
+						"ZombieHeianAkinndo",
+						"ZombieHeianAkinndoUniverseUncharted",
+						"ZombieSnowPea",
+						"ZombieGatlingPea",
+						"ZombieZoybeanPodGatlingPea",
+						"ZombieHanabi",
+						"ZombieOnmyoji",
+						"ZombieSwashbuckler",
+						"ZombieHeianNinja",
+						"ZombieFairyTaleWitch",
+						"ZombieFairyTaleImp",
+						"ZombieBungee",
+						"ZombieMiniGargantuar",
+						"UniverseUnchartedZombiePVPNurse",
+						"ZombieUniverseUnchartedJuggler",
+						"ZombieJourneyToTheWestSuperfanImp",
+						"ZombieJourneyToTheWestTrident"
+					]
+				},
+				"KillAfterTwoImpacts": {
+					"ListType": "blacklist",
+					"List": [
+						"ZombieCamel",
+						"ZombiePirateCannon",
+						"ZombieBull",
+						"ZombiePoncho",
+						"ZombieChickenFarmer",
+						"ZombieDrink",
+						"ZombieMonkDrink",
+						"ZombieMonkBlade",
+						"ZombieMonkNunchaku",
+						"ZombieFutureProtector",
+						"ZombieCavalry",
+						"ZombieIceAgeDodo",
+						"ZombieIceAgeWalrus",
+						"ZombieSkycityBattlePlane",
+						"ZombieLostCityLostPilot",
+						"ZombieEightiesBoombox",
+						"ZombieModernNewspaper",
+						"ZombieBallon",
+						"ZombieModernBalloon",
+						"ZombieModernNewspaper",
+						"ZombieModernNewspaperUniverseUncharted",
+						"ZombieModernMiner",
+						"ZombieUnchartedMiner",
+						"ZombieSteamStove",
+						"ZombieRomanShield",
+						"ZombiePonchoDefault",
+						"ZombieJalapeno",
+						"ZombiePiano",
+						"ZombieLostCityBug",
+						"ZombieWallnut",
+						"ZombieSlimes",
+						"ZombieJourneyToTheWestBalloon",
+						"ZombieJourneyToTheWestCatapult"
+					]
+				},
+				"KillAfterThreeImpacts": {
+					"ListType": "blacklist",
+					"List": [
+						"ZombieUnchartedCrystalSkull",
+						"ZombieMechFootball",
+						"ZombieMechDisco",
+						"ZombieDarkKing",
+						"ZombieWeaselHoarder",
+						"ZombieIceAgeTroglobite",
+						"ZombieSkyCityTwinsPlane",
+						"ZombieEightiesArcade",
+						"ZombieEightiesBass",
+						"ZombieDinoBully",
+						"ZombieModernSolarTruck",
+						"ZombieSteamCoalMiner",
+						"ZombieGliding",
+						"ZombieRomanBallista",
+						"ZombieCamel",
+						"ZombieHeianSushi",
+						"ZombieExplodenut",
+						"ZombieRomanMedusa",
+						"ZombieMoneyTree",
+						"ZombieBumperCar",
+						"ZombieSlimesGargantuar",
+						"ZombieJourneyToTheWestMiner"
+					]
+				},
+				"KillAfterFourImpacts": {
+					"ListType": "blacklist",
+					"List": [
+						"ZombiePharaoh",
+						"ZombieMech",
+						"ZombieBeachOctopus",
+						"ZombieBeachShell",
+						"ZombieIceAgeChief",
+						"ZombieInvisiblePlane",
+						"ZombieModernAllStar",
+						"UniverseUnchartedAllStar",
+						"ZombieExplosionProofPolice",
+						"ZombieNeuropathy"
+					]
+				},
+				"KillAfterFiveImpacts": {
+					"ListType": "blacklist",
+					"List": [
+						"ZombieUnchartedCannon",
+						"ZombieTreasureYeti",
+						"ZombieStrongBronze",
+						"ZombieGargantuar",
+						"ZombieMagicBronze",
+						"ZombieAgileBronze",
+						"ZombieGargantuarMech",
+						"ZombieTargetGargantuar",
+						"ZombieSkyCityGargantuar",
+						"ZombieLostCityGargantuar",
+						"ZombieEightiesGargantuar",
+						"ZombieZoybeanPodGargantuar",
+						"ZombieZoybeanPodChildGargantuar",
+						"ZombieFairyTaleGargantuar",
+						"ZombieFairyTaleArmedGargantuar",
+						"ZombieSnowman",
+						"ZombieSilverkeyGargantuar",
+						"UniverseUnchartedZombieGargantuarBasic",
+						"ZombieJourneyToTheWestGargantuar"
+					]
+				},
+				"SpawnOffset": {
+					"x": -10.0,
+					"y": -27.0
+				},
+				"DisplayActions": "RTID(ArtifactBowlingAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_BOWLING_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Bowling",
+				"ObtainWay": "get_in_activity",
+				"DemoLevelWonMessage": "[ARTIFACT_FREE_DEMO_LEVEL_WON_MESSAGE_TEXT4]",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"wallnut",
+						"explodeonut",
+						"primalwallnut",
+						"holonut",
+						"chestnut",
+						"jackfruit",
+						"citron",
+						"homingthistle",
+						"mangosteen",
+						"eleocurling",
+						"winterrambutan",
+						"gluttonydragon",
+						"bowlingbulb"
+					]
+				}
+			}
+		},
+		{
+			"objclass": "ArtifactLiondanceProperties",
+			"aliases": [
+				"artifact_liondance"
+			],
+			"objdata": {
+				"TypeName": "artifact_liondance",
+				"ClassName": "ArtifactLiondance",
+				"#comment": "maxprojectile, short shoot count, short to long shoot switch time, long shoot charging, idle to recovery cooldown, recovery projectile per second",
+				"ResourceGroups": [
+					"ArtifactLionDanceAudio"
+				],
+				"MainField": [
+					"1000.0+(level)*50.0",
+					"15.0+(level)*0.5",
+					"30.0+(level)*0.5",
+					"4.0",
+					"3.0",
+					"30.0",
+					"stage*1.0-1.0"
+				],
+				"PassiveField1": [
+					"10.0+(level-10.0)*1.0"
+				],
+				"PassiveField2": [
+					"60.0-(level)*1.0",
+					"1000.0+(level)*50.0",
+					"15.0+(level)*0.5",
+					"30.0+(level)*0.5"
+				],
+				"PassiveField3": [
+					"4.0"
+				],
+				"Boosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"GlobalBoosts": [
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraHitPoints@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastPlant@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostExtraAttack@PropertySheets)",
+						"Values": [
+							0
+						]
+					},
+					{
+						"PlantBoostProps": "RTID(BoostFastCooldown@PropertySheets)",
+						"Values": [
+							0
+						]
+					}
+				],
+				"DisplayActions": "RTID(ArtifactLiondanceAction@ArtifactDisplayActions)",
+				"Cultivation": "RTID(ArtifactCultivationProperty@ArtifactCultivation)",
+				"Description": "[ARTIFACT_LIONDANCE_DESCRIPTION]",
+				"DemoLevel": "Artifact_Demo_Liondance",
+				"ObtainWay": "get_in_store",
+				"TargetablePlantTypes": {
+					"ListType": "whitelist",
+					"List": [
+						"doomshroom",
+						"jalapeno",
+						"cherry_bomb",
+						"grapeshot",
+						"cracker",
+						"lavaguava",
+						"hotdate"
+					]
+				}
+			}
+		}
+	]
+}

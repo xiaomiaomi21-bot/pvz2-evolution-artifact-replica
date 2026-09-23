@@ -1,0 +1,123 @@
+{
+	"#comment": "Memory",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_MEMORY]",
+				"LevelNumber": 3,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(ZombossRobotIntro@CurrentLevel)",
+					"RTID(ModernMowers@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(RoofMoudle@CurrentLevel)",
+					"RTID(ZombossBattle@CurrentLevel)"
+				],
+				"Name": "[S8_MEMORY_LEVEL_NAME_NORMALBOSS]",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+				"StageModule": "RTID(RoofNightStage@LevelModules)",
+				"ShowZombies": [
+					
+				]
+			}
+		},
+		{
+			"objclass": "ZombossBattleIntroProperties",
+			"aliases": [
+				"ZombossRobotIntro"
+			],
+			"objdata": {
+				"ResourceGroupNames": [
+					
+				],
+				"PanStartOffset": 78,
+				"PanEndOffset": 468,
+				"PanRightDuration": 1.5,
+				"PanLeftDuration": 1.5,
+				"ZombossPhaseCount": 4,
+				"SkipShowingStreetBossBattle": false
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(SunProduced@CurrentLevel)",
+						"RTID(PlantsSurvive@CurrentLevel)",
+						"RTID(SimultaneousPlants@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"SunProduced"
+			],
+			"objclass": "StarChallengeSunProducedProps",
+			"objdata": {
+				"TargetSun": 8000
+			}
+		},
+		{
+			"aliases": [
+				"PlantsSurvive"
+			],
+			"objclass": "StarChallengePlantsSurviveProps",
+			"objdata": {
+				"Count": 20
+			}
+		},
+		{
+			"aliases": [
+				"SimultaneousPlants"
+			],
+			"objclass": "StarChallengeSimultaneousPlantsProps",
+			"objdata": {
+				"MaximumPlants": 20
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"ZombossBattle"
+			],
+			"objclass": "ZombossBattleModuleProperties",
+			"objdata": {
+				"ReservedColumnCount": 2,
+				"ZombossMechType": "zombossmech_pvz1_robot_1",
+				"ZombossDeathRow": 3,
+				"ZombossDeathColumn": 8,
+				"ZombossStageCount": 4
+			}
+		},
+		{
+			"aliases": [
+				"RoofMoudle"
+			],
+			"objclass": "RoofProperties",
+			"objdata": {
+				"FlowerPotStartColumn": 0,
+				"FlowerPotEndColumn": 3
+			}
+		}
+	],
+	"version": 1
+}

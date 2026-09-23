@@ -1,0 +1,1107 @@
+{
+	"#comment": "Memory",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_MEMORY]",
+				"LevelNumber": 1,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(ModernMowers@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(FastSpeed@CurrentLevel)",
+					"RTID(InitialPlant@CurrentLevel)",
+					"RTID(DefaultSnow@LevelModules)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(TimeEnergy@CurrentLevel)"
+				],
+				"Name": "[S28_MEMORY_LEVEL_NAME_017]",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"MusicType": "MiniGame_A",
+				"StartingSun": 300,
+				"DisablePeavine": true,
+				"VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+				"StageModule": "RTID(NewYearDaylightStage@CurrentLevel)",
+				"ShowZombies": [
+					
+				]
+			}
+		},
+		{
+			"objclass": "StageModuleProperties",
+			"aliases": [
+				"NewYearDaylightStage"
+			],
+			"objdata": {
+				"ResourceGroupNames": [
+					"Egypt_Gravestone",
+					"Game_Tombstones_Dynamic",
+					"Tombstone_Dark_Effects",
+					"DelayLoad_Background_NewYear_Daylight",
+					"AudioTutorial"
+				],
+				"GroupsToUnloadForAds": [
+					"DelayLoad_Background_NewYear_Daylight"
+				],
+				"StagePrefix": "newyear_daylight",
+				"BackgroundResourceGroup": "DelayLoad_Background_NewYear_Daylight",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_NEWYEAR_DAYLIGHT",
+				"LevelPowerupSet": "LevelPowerupsDefault",
+				"BasicZombieTypeName": "lny",
+				"FlagZombieTypeName": "lny_flag",
+				"Armor1ZombieTypeName": "lny_armor1",
+				"Armor2ZombieTypeName": "lny_armor2",
+				"MusicSuffix": "Modern",
+				"AmbientAudioSuffix": "Amb_Tutorial_Garden_BG_LP",
+				"RailcartDefaultTypeName": "railcart_tutotial",
+				"GravestoneDefaultTypeName": "gravestone_tutorial",
+				"DisabledStreetCells": [
+					
+				]
+			}
+		},
+		{
+			"aliases": [
+				"FastSpeed"
+			],
+			"objclass": "ZombieMoveFastModuleProperties",
+			"objdata": {
+				"SpeedUp": 3.0,
+				"StopColumn": 8
+			}
+		},
+		{
+			"objclass": "TimeEnergyModuleProperties",
+			"aliases": [
+				"TimeEnergy"
+			],
+			"objdata": {
+				"TimeEnergyValueMax": 480,
+				"TimeEnergyTriggers": [
+					
+				]
+			}
+		},
+		{
+			"aliases": [
+				"InitialPlant"
+			],
+			"objclass": "InitialPlantEntryProperties",
+			"objdata": {
+				"Plants": [
+					{
+						"GridX": 7,
+						"GridY": 2,
+						"Level": 1,
+						"Avatar": false,
+						"PlantTypes": [
+							"potatomine"
+						]
+					},
+					{
+						"GridX": 7,
+						"GridY": 2,
+						"Level": 1,
+						"Avatar": false,
+						"PlantTypes": [
+							"primalpotatomine"
+						]
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(SunUsed@CurrentLevel)",
+						"RTID(ZombieDistance@CurrentLevel)",
+						"RTID(PlantsSurvive@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"SunUsed"
+			],
+			"objclass": "StarChallengeSunUsedProps",
+			"objdata": {
+				"MaximumSun": 10000
+			}
+		},
+		{
+			"aliases": [
+				"ZombieDistance"
+			],
+			"objclass": "StarChallengeZombieDistanceProps",
+			"objdata": {
+				"TargetDistance": 1.5
+			}
+		},
+		{
+			"aliases": [
+				"PlantsSurvive"
+			],
+			"objclass": "StarChallengePlantsSurviveProps",
+			"objdata": {
+				"Count": 15
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"SelectionMethod": "chooser",
+				"OverrideSeedSlotsCount": 8,
+				"PlantWhiteList": [
+					"sunflower",
+					"wintermelon",
+					"peashooter",
+					"tallnut",
+					"gatlingpea",
+					"nekotail",
+					"doomshroom",
+					"imitater",
+					"bonkchoy",
+					"seashooter",
+					"slingpea",
+					"aquaweed",
+					"kelpguard",
+					"cabbagepult",
+					"melonpult",
+					"iceburg",
+					"laser_bean",
+					"seashroom",
+					"repeater",
+					"snapdragon",
+					"threepeater",
+					"springbean",
+					"chilibean",
+					"phatbeet",
+					"peapod",
+					"magnifyinggrass",
+					"bloomerang",
+					"blover",
+					"empea",
+					"starfruit",
+					"holonut",
+					"twinsunflower",
+					"spikerock",
+					"squash",
+					"citron",
+					"bamboo",
+					"turnip",
+					"peach",
+					"sunshroom",
+					"puffshroom",
+					"fumeshroom",
+					"sunbean",
+					"peanut",
+					"magnetshroom",
+					"oakshooter",
+					"sweetpotato",
+					"banana",
+					"guacodile",
+					"homingthistle",
+					"lotusshower",
+					"lilypad",
+					"ghostpepper",
+					"asparagus",
+					"saucer",
+					"horsebean",
+					"anthurium",
+					"sapfling",
+					"hotpotato",
+					"chardguard",
+					"stunion",
+					"akee",
+					"redstinger",
+					"stallia",
+					"celerystalker",
+					"sporeshroom",
+					"garlic",
+					"intensivecarrot",
+					"morningglory",
+					"primalpeashooter",
+					"primalwallnut",
+					"primalsunflower",
+					"primalpotatomine",
+					"shadowshroom",
+					"moonflower",
+					"nightshade",
+					"bloominghearts",
+					"xshot",
+					"magicshroom",
+					"roseswordman",
+					"electricblueberry",
+					"endurian",
+					"lotusshooter",
+					"vanilla",
+					"stephania",
+					"icelotus",
+					"tupistrastalker",
+					"carrotlauncher",
+					"broccoli",
+					"cottonyeti",
+					"dragonfruit",
+					"shrinkingviolet",
+					"electriccurrant",
+					"electricpeashooter",
+					"spikeweed",
+					"wallnut",
+					"lightningreed",
+					"kernelpult",
+					"coconutcannon",
+					"cherry_bomb",
+					"buduhboom",
+					"dragonbruit",
+					"tuliptrumpeter",
+					"electricitea",
+					"pumpkin",
+					"splitpea",
+					"repeater",
+					"snowpea",
+					"goldbloom",
+					"jalapeno",
+					"marigold",
+					"stickybombrice",
+					"hatmushroom",
+					"springprincess",
+					"hocuscrocus",
+					"scaredyshroom",
+					"snappea",
+					"beanchemist",
+					"vamporcini",
+					"zoybeanpod",
+					"pumpkinwitch",
+					"beercoconut",
+					"hydrocotyledrummer",
+					"firecrackerflower",
+					"plantain",
+					"birthsunflower",
+					"parsnip",
+					"eagleclaw",
+					"egretflower",
+					"monotropa",
+					"narcissusshooter",
+					"tuliptrumpeter",
+					"icycurrant",
+					"kiwibeast",
+					"imppear",
+					"alarmsagittifolia",
+					"strawburst",
+					"elaeocarpus",
+					"shadowvanilla",
+					"dazeychain",
+					"clawgloriosa",
+					"impatiensshooter",
+					"tigerstool",
+					"mandrake",
+					"maybee",
+					"happyleek",
+					"electricpeel",
+					"waxgourd",
+					"shinevine",
+					"gloomvine",
+					"aquavine",
+					"rafflesia",
+					"hurrikale",
+					"winterrambutan",
+					"mapleblade",
+					"dracaena",
+					"bowlingbulb",
+					"kiwifruit",
+					"shadowpeashooter",
+					"dusklobber",
+					"caulipower",
+					"toadstool",
+					"pomegranatejeweler",
+					"poisonvine",
+					"wizardthorns",
+					"riflebamboo",
+					"coldsnapdragon",
+					"cactus",
+					"grapeshot",
+					"lemon",
+					"powervine",
+					"heathseeker",
+					"bubblecoral",
+					"dartichoke",
+					"primalrafflesia",
+					"bramble",
+					"oxygenalgae",
+					"mangosteen",
+					"turkeypult",
+					"heliconiagunner",
+					"goldencassia",
+					"longmalily",
+					"inferno",
+					"tristerixaphyllus",
+					"aeonium",
+					"pinkstarfruit",
+					"missiletoe",
+					"flamelady",
+					"matchflower",
+					"thundersnapdragon",
+					"byttneriameteorhammer",
+					"duckpear",
+					"chainsawburmannii",
+					"twinshoneysuckle"
+				],
+				"PlantBlackList": [
+					"scaredyshroom",
+					"doomshroom"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": 200,
+						"StartingPoints": 200,
+						"StartingWave": 1,
+						"ZombiePool": [
+							"RTID(lny@ZombieTypes)",
+							"RTID(lny_armor1@ZombieTypes)",
+							"RTID(lny_armor2@ZombieTypes)",
+							"RTID(zcorp@ZombieTypes)",
+							"RTID(zcorp_armor1@ZombieTypes)",
+							"RTID(zcorp_armor2@ZombieTypes)"
+						]
+					}
+				],
+				"WaveManagerPropsVector": [
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerPropsWeek1"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 4,
+				"WaveCount": 12,
+				"ZombieCountdownFirstWaveSecs": 10,
+				"MaxNextWaveHealthPercentage": 0.6,
+				"MinNextWaveHealthPercentage": 0.5,
+				"WaveSpendingPointIncrement": 0,
+				"WaveSpendingPoints": 0,
+				"DescriptionName": "[PVZ1MODE_FESTIVALTENT]",
+				"Description": "[MAGICSHROOM_PLANTFOOD]",
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)",
+						"RTID(TimeStop@CurrentLevel)",
+						"RTID(TentSpawnEvent3@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)",
+						"RTID(TentSpawnEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)",
+						"RTID(TimeStop@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)",
+						"RTID(TimeStop@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)",
+						"RTID(TimeStop@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)",
+						"RTID(TimeStop@CurrentLevel)",
+						"RTID(TentSpawnEvent1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)",
+						"RTID(TimeStop@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8@CurrentLevel)",
+						"RTID(TimeStop@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9@CurrentLevel)",
+						"RTID(TimeStop@CurrentLevel)",
+						"RTID(TentSpawnEvent1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10@CurrentLevel)"
+					],
+					[
+						"RTID(Wave11@CurrentLevel)",
+						"RTID(TimeStop@CurrentLevel)"
+					],
+					[
+						"RTID(Wave12@CurrentLevel)",
+						"RTID(TentSpawnEvent2@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"TimeStop"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(time_stop@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": 3,
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					},
+					{
+						"Row": 3,
+						"Type": "RTID(lny_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(lny@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(lny@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(lny_camel_onehump@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_helpdesk@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(zcorp_helpdesk@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lny_camel_onehump@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lny_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(lny_camel_twohump@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Level": 1,
+						"Type": "RTID(heian_ninja@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Level": 1,
+						"Type": "RTID(heian_ninja@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Level": 2,
+						"Type": "RTID(heian_ninja@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_helpdesk@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lny_camel_onehump@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lny_camel_onehump@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(heian_ninja@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(zombie_moneytree@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(heian_ninja@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Level": 2,
+						"Type": "RTID(heian_ninja@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zombie_moneytree@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(heian_ninja@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(zcorp_helpdesk@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(zombie_moneytree@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(heian_ninja@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lny_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Level": 2,
+						"Type": "RTID(heian_ninja@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(heian_ninja@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(heian_ninja@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(heian_ninja@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(zcorp_imp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Level": 2,
+						"Type": "RTID(heian_ninja@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(zombie_moneytree@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(zombie_moneytree@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Level": 2,
+						"Type": "RTID(heian_ninja@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 2,
+						"Type": "RTID(heian_ninja@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 2,
+						"Type": "RTID(heian_ninja@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Level": 2,
+						"Type": "RTID(heian_ninja@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lny_camel_onehump@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(lny_camel_twohump@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"TentSpawnEvent0"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 3,
+						"Type": "RTID(zombie_festival_tent@CurrentLevel)"
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+				"SpawnPositionsRect": {
+					"mX": 6,
+					"mY": 0,
+					"mWidth": 1,
+					"mHeight": 4
+				},
+				"RandomPlacement": true,
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"
+			}
+		},
+		{
+			"aliases": [
+				"TentSpawnEvent1"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 4,
+						"Type": "RTID(zombie_festival_tent@CurrentLevel)"
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+				"SpawnPositionsRect": {
+					"mX": 6,
+					"mY": 0,
+					"mWidth": 2,
+					"mHeight": 4
+				},
+				"RandomPlacement": true,
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"
+			}
+		},
+		{
+			"aliases": [
+				"TentSpawnEvent2"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 10,
+						"Type": "RTID(zombie_festival_tent@CurrentLevel)"
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+				"SpawnPositionsRect": {
+					"mX": 7,
+					"mY": 0,
+					"mWidth": 2,
+					"mHeight": 4
+				},
+				"RandomPlacement": true,
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"
+			}
+		},
+		{
+			"aliases": [
+				"TentSpawnEvent3"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 1,
+						"Type": "RTID(zombie_festival_tent@CurrentLevel)"
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+				"SpawnPositionsPool": [
+					{
+						"mX": 8,
+						"mY": 2
+					}
+				],
+				"RandomPlacement": true,
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"
+			}
+		},
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"zombie_festival_tent"
+			],
+			"objdata": {
+				"TypeName": "zombie_festival_tent",
+				"GridItemClass": "GridItemFestivalZombieTent",
+				"Properties": "RTID(GridItemFestivalZombieTentDefault@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieImpPorterGroup",
+					"ZombieBeachSurferAudio"
+				]
+			}
+		},
+		{
+			"objclass": "GridItemFestivalZombieTentProps",
+			"aliases": [
+				"GridItemFestivalZombieTentDefault"
+			],
+			"objdata": {
+				"Hitpoints": 3000,
+				"PopAnim": "POPANIM_EFFECTS_LOSTCITY_PACK_FESTIVAL_TENT",
+				"PopAnimRigClass": "ZombieTentAnimRig",
+				"DamageStateCount": 4,
+				"ProductInterval": 9999,
+				"IsAnimated": true,
+				"HitRectOffsetX": 10,
+				"HitRectOffsetWidth": -20,
+				"ArtCenter": {
+					"x": 98,
+					"y": 122
+				},
+				"ZombieTypesToSpawn": [
+					{
+						"ZombieTypeName": "gum",
+						"Weight": 10
+					}
+				],
+				"ZombieTransform": [
+					{
+						"Before": "zcorp",
+						"After": "zcorp_armor1"
+					},
+					{
+						"Before": "zcorp_armor1",
+						"After": "zcorp_armor2"
+					},
+					{
+						"Before": "lny",
+						"After": "zcorp_fem_armor1"
+					},
+					{
+						"Before": "lny_armor1",
+						"After": "zcorp_fem_armor2"
+					},
+					{
+						"Before": "lny_armor2",
+						"After": "zombie_moneytree"
+					},
+					{
+						"Before": "zcorp_imp",
+						"After": "tutorial_gargantuar"
+					},
+					{
+						"Before": "heian_ninja",
+						"After": "journey_to_the_west_trident"
+					}
+				],
+				"ZombieSpawnOnDestory": "",
+				"ZombieSpawnPointOffset": -20,
+				"CanBeEatenByGravebuster": false,
+				"CanBeMowed": false
+			}
+		},
+		{
+			"objclass": "ZombieType",
+			"aliases": [
+				"time_stop"
+			],
+			"objdata": {
+				"TypeName": "general_caesar_phase1",
+				"ZombieClass": "ZombieGeneralCaesar",
+				"Properties": "RTID(ZombieTimeStopDefault@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieCaesarGroup",
+					"ZombieDarkKingGroup",
+					"Egypt_Gravestone"
+				],
+				"AnimRigClass": "ZombieAnimRig_GeneralCaesar",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_ROMAN_GENERAL_CAESAR",
+				"HomeWorld": "rift1a",
+				"BoardAlmanac": false
+			}
+		},
+		{
+			"aliases": [
+				"ZombieTimeStopDefault"
+			],
+			"objclass": "ZombieGeneralCaesarProps",
+			"objdata": {
+				"Actions": [
+					"RTID(ZombieGeneralCaesarWalkOn@CurrentLevel)",
+					"RTID(ZombieGeneralCaesarIdlePhase1@ZombieActions)",
+					"RTID(ZombieGeneralWalkOff@CurrentLevel)"
+				],
+				"SizeType": "big",
+				"EnableEliteImmunities": true,
+				"EnableNoInvincibleTakeDamage": true,
+				"NoInvincibleTakeDamagePlantsList": [
+					"escaperoot"
+				],
+				"AffectedBySliders": true,
+				"LifetimeSeconds": 13,
+				"GeneralPhase": 0,
+				"ActionAttackTargetRect": {
+					"mX": 6,
+					"mY": 0,
+					"mWidth": 2.5,
+					"mHeight": 5
+				},
+				"ScoreOverride": 100000,
+				"StreetSize": {
+					"x": 3,
+					"y": 2
+				},
+				"SkipHeadDropState": true,
+				"ArtScale": 1,
+				"ArtCenter": {
+					"x": 9000,
+					"y": 13700
+				},
+				"AlmanacOffset": {
+					"x": 0,
+					"y": 46
+				},
+				"ShadowOffset": {
+					"x": 10,
+					"y": 0,
+					"z": 0
+				},
+				"AttackRect": {
+					"mHeight": 95,
+					"mWidth": 82,
+					"mX": 10,
+					"mY": 0
+				},
+				"HitRect": {
+					"mHeight": 0,
+					"mWidth": 0,
+					"mX": 99999,
+					"mY": 99999
+				},
+				"CollideHypnotizedZombies": "ignore",
+				"CanBeLaunchedByPlants": false,
+				"CanBePlantTossedStrong": false,
+				"CanBePlantTossedweak": false,
+				"HeadDropFraction": -1,
+				"ArmDropFraction": -1,
+				"Cost": 150,
+				"EatDPS": 100,
+				"GroundTrackName": "ground_swatch",
+				"Hitpoints": 300000,
+				"Speed": 1,
+				"WavePointCost": 900,
+				"Weight": 3500,
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness5"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed0"
+					}
+				],
+				"ZombieLevelStats": [
+					{
+						"AttackLevel": 1,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 2,
+						"HitPointsLevel": 2
+					},
+					{
+						"AttackLevel": 3,
+						"HitPointsLevel": 3
+					},
+					{
+						"AttackLevel": 4.5,
+						"HitPointsLevel": 4.5
+					},
+					{
+						"AttackLevel": 5,
+						"HitPointsLevel": 5
+					}
+				]
+			}
+		},
+		{
+			"objclass": "ZombiePlayAnimationActionDefinition",
+			"aliases": [
+				"ZombieGeneralCaesarWalkOn"
+			],
+			"objdata": {
+				"Weight": 10,
+				"RepeatMin": 0,
+				"RepeatMax": 1,
+				"AnimationToPlay": "idle",
+				"CanPickAgain": false,
+				"Phase": "Entering",
+				"PhaseAfter": "Attacking"
+			}
+		},
+		{
+			"objclass": "ZombiePlayAnimationActionDefinition",
+			"aliases": [
+				"ZombieGeneralWalkOff"
+			],
+			"objdata": {
+				"Weight": 1,
+				"RepeatMin": 0,
+				"RepeatMax": 0,
+				"Phase": "Retreat",
+				"PhaseAfter": "Destroy",
+				"AnimationToPlay": "die"
+			}
+		}
+	],
+	"version": 1
+}

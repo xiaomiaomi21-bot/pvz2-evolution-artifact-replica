@@ -1,0 +1,823 @@
+{
+	"#comment": "Primalraffresia MiniGame CiJiuYingXin",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_DINOSAURDANGER]",
+				"LevelNumber": 1,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(ConveyorBelt@CurrentLevel)",
+					"RTID(DinosaurDanger@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(InitialPlant@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
+				"Name": "[DINOSAUR4_LEVEL_NAME]",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"StageModule": "RTID(KongfuStage@LevelModules)",
+				"CanSaveGameState": false
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"DinosaurDanger"
+			],
+			"objclass": "DinosaurDangerProperties",
+			"objdata": {
+				
+			}
+		},
+		{
+			"aliases": [
+				"InitialPlant"
+			],
+			"objclass": "InitialPlantEntryProperties",
+			"objdata": {
+				"Plants": [
+					{
+						"GridX": 7,
+						"GridY": 0,
+						"PlantTypes": [
+							"wallnut"
+						]
+					},
+					{
+						"GridX": 7,
+						"GridY": 1,
+						"PlantTypes": [
+							"wallnut"
+						]
+					},
+					{
+						"GridX": 7,
+						"GridY": 2,
+						"PlantTypes": [
+							"wallnut"
+						]
+					},
+					{
+						"GridX": 7,
+						"GridY": 3,
+						"PlantTypes": [
+							"wallnut"
+						]
+					},
+					{
+						"GridX": 7,
+						"GridY": 4,
+						"PlantTypes": [
+							"wallnut"
+						]
+					},
+					{
+						"GridX": 5,
+						"GridY": 0,
+						"PlantTypes": [
+							"primalwallnut"
+						]
+					},
+					{
+						"GridX": 5,
+						"GridY": 1,
+						"PlantTypes": [
+							"primalwallnut"
+						]
+					},
+					{
+						"GridX": 5,
+						"GridY": 2,
+						"PlantTypes": [
+							"primalwallnut"
+						]
+					},
+					{
+						"GridX": 5,
+						"GridY": 3,
+						"PlantTypes": [
+							"primalwallnut"
+						]
+					},
+					{
+						"GridX": 5,
+						"GridY": 4,
+						"PlantTypes": [
+							"primalwallnut"
+						]
+					},
+					{
+						"GridX": 3,
+						"GridY": 0,
+						"PlantTypes": [
+							"tallnut"
+						]
+					},
+					{
+						"GridX": 3,
+						"GridY": 1,
+						"PlantTypes": [
+							"tallnut"
+						]
+					},
+					{
+						"GridX": 3,
+						"GridY": 2,
+						"PlantTypes": [
+							"tallnut"
+						]
+					},
+					{
+						"GridX": 3,
+						"GridY": 3,
+						"PlantTypes": [
+							"tallnut"
+						]
+					},
+					{
+						"GridX": 3,
+						"GridY": 4,
+						"PlantTypes": [
+							"tallnut"
+						]
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ConveyorBelt"
+			],
+			"objclass": "ConveyorSeedBankProperties",
+			"objdata": {
+				"DropDelayConditions": [
+					{
+						"Delay": 5,
+						"MaxPackets": 0
+					},
+					{
+						"Delay": 8,
+						"MaxPackets": 4
+					},
+					{
+						"Delay": 10,
+						"MaxPackets": 7
+					},
+					{
+						"Delay": 14,
+						"MaxPackets": 9
+					}
+				],
+				"InitialPlantList": [
+					{
+						"MinCount": 2,
+						"MaxCount": 5,
+						"MinWeightFactor": 0.5,
+						"MaxWeightFactor": 0,
+						"PlantType": "rafflesia",
+						"iLevel": 3,
+						"Weight": 125
+					}
+				],
+				"SpeedConditions": [
+					{
+						"MaxPackets": 0,
+						"Speed": 100
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": 0,
+						"StartingPoints": 0,
+						"StartingWave": 11,
+						"ZombiePool": [
+							"RTID(lostcity@ZombieTypes)",
+							"RTID(lostcity_armor1@ZombieTypes)",
+							"RTID(lostcity_armor2@ZombieTypes)"
+						]
+					}
+				],
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 10,
+				"WaveCount": 10,
+				"WaveSpendingPointIncrement": 100,
+				"WaveSpendingPoints": 100,
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)",
+						"RTID(Wave3ModConveyor0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)",
+						"RTID(Wave5ModConveyor0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9@CurrentLevel)",
+						"RTID(Wave9ModConveyor0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": 3,
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": 3,
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Row": 2,
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": 2,
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": 4,
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": 4,
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Row": 1,
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": 1,
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": 1,
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": 1,
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_gong@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_gong@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Row": 2,
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": 2,
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": 2,
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": 2,
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_gong@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_gong@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_gong@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Row": 3,
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": 3,
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": 3,
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": 3,
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_gong@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_gong@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Type": "RTID(kongfu_gong@ZombieTypes)",
+						"Level": 3
+					},
+					{
+						"Row": 4,
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": 4,
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": 4,
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": 4,
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Type": "RTID(kongfu_gong@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Type": "RTID(kongfu_gong@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Type": "RTID(kongfu_gong@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Row": 5,
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": 5,
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": 5,
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Row": 5,
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Type": "RTID(kongfu_gong@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Type": "RTID(kongfu_gong@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Type": "RTID(kongfu_gong@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Type": "RTID(kongfu_gong@ZombieTypes)",
+						"Level": 4
+					},
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chicken@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3ModConveyor0"
+			],
+			"objclass": "ModifyConveyorWaveActionProps",
+			"objdata": {
+				"Add": [
+					{
+						"MaxCount": 5,
+						"MinCount": 1,
+						"MinWeightFactor": 0.5,
+						"MaxWeightFactor": 0,
+						"Type": "RTID(primalrafflesia@PlantTypes)",
+						"iLevel": 3,
+						"Weight": 125
+					}
+				],
+				"Remove": [
+					
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5ModConveyor0"
+			],
+			"objclass": "ModifyConveyorWaveActionProps",
+			"objdata": {
+				"Add": [
+					{
+						"MaxCount": 1,
+						"MaxWeightFactor": 0,
+						"Type": "RTID(iceburg@PlantTypes)",
+						"iLevel": 1,
+						"Weight": 100
+					}
+				],
+				"Remove": [
+					
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9ModConveyor0"
+			],
+			"objclass": "ModifyConveyorWaveActionProps",
+			"objdata": {
+				"Add": [
+					{
+						"MaxCount": 1,
+						"MaxWeightFactor": 0,
+						"Type": "RTID(stallia@PlantTypes)",
+						"iLevel": 1,
+						"Weight": 100
+					}
+				],
+				"Remove": [
+					
+				]
+			}
+		}
+	],
+	"version": 1
+}

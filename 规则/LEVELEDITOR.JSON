@@ -1,0 +1,832 @@
+{
+	"version": 1,
+	"objects": [
+		{
+			"objclass": "LevelEditorConfig",
+			"objdata": {
+				"GroundCardList": [
+					{
+						"CardType": "griditem",
+						"TypeName": "gravestone_egypt"
+					},
+					{
+						"CardType": "griditem",
+						"TypeName": "gravestone_dark"
+					},
+					{
+						"CardType": "rail",
+						"TypeName": "railcart_cowboy"
+					},
+					{
+						"CardType": "griditem",
+						"TypeName": "zombiepotion_speed"
+					},
+					{
+						"CardType": "griditem",
+						"TypeName": "zombiepotion_toughness"
+					},
+					{
+						"CardType": "griditem",
+						"TypeName": "slider_up_modern"
+					},
+					{
+						"CardType": "griditem",
+						"TypeName": "slider_down_modern"
+					},
+					{
+						"CardType": "griditem",
+						"TypeName": "zombiepotion_poison"
+					},
+					{
+						"CardType": "griditem",
+						"TypeName": "zombiepotion_invisible"
+					},
+					{
+						"CardType": "griditem",
+						"TypeName": "zombie_bound_tile"
+					},
+					{
+						"CardType": "griditem",
+						"TypeName": "bufftile_shield"
+					},
+					{
+						"CardType": "griditem",
+						"TypeName": "bufftile_speed"
+					},
+					{
+						"CardType": "griditem",
+						"TypeName": "bufftile_attack"
+					}
+				],
+				"SurfaceCardList": [
+					{
+						"CardType": "powertile",
+						"TypeName": "powertile_alpha"
+					},
+					{
+						"CardType": "powertile",
+						"TypeName": "powertile_beta"
+					},
+					{
+						"CardType": "powertile",
+						"TypeName": "powertile_gamma"
+					},
+					{
+						"CardType": "powertile",
+						"TypeName": "powertile_delta"
+					},
+					{
+						"CardType": "powertile",
+						"TypeName": "powertile_epsilon"
+					},
+					{
+						"CardType": "mold",
+						"TypeName": "mold"
+					},
+					{
+						"CardType": "griditem",
+						"TypeName": "goldtile"
+					},
+					{
+						"CardType": "griditem",
+						"TypeName": "flame_spreader_trap"
+					},
+					{
+						"CardType": "griditem",
+						"TypeName": "boulder_trap_falling_forward"
+					}
+				],
+				"ExtraPlantCardList": [
+					{
+						"CardType": "projectile_plant",
+						"TypeName": "tool_projectile_wallnut"
+					},
+					{
+						"CardType": "projectile_plant",
+						"TypeName": "tool_projectile_wallnut_explode"
+					},
+					{
+						"CardType": "projectile_plant",
+						"TypeName": "tool_projectile_jackfruit"
+					},
+					{
+						"CardType": "projectile_plant",
+						"TypeName": "tool_projectile_wallnut_primeval"
+					},
+					{
+						"CardType": "projectile_plant",
+						"TypeName": "tool_projectile_wallnut_big"
+					},
+					{
+						"CardType": "plant",
+						"TypeName": "minigame_imitater"
+					}
+				],
+				"SunProductPlantBanList": [
+					"sunflower",
+					"twinsunflower",
+					"sunshroom",
+					"sunbean",
+					"toadstool",
+					"birthsunflower",
+					"primalsunflower",
+					"moonflower",
+					"goldbloom"
+				],
+				"AshPlantBanList": [
+					"potatomine",
+					"cherry_bomb",
+					"jalapeno",
+					"cracker",
+					"lavaguava",
+					"primalpotatomine",
+					"grapeshot",
+					"buduhboom",
+					"doomshroom"
+				],
+				"NormalGridPlantBlackList": [
+					"gravebuster",
+					"imitater",
+					"cherry_bomb",
+					"powerlily",
+					"blover",
+					"powerplant",
+					"coffeebean",
+					"lilypad",
+					"tanglekelp",
+					"hurrikale",
+					"hotpotato",
+					"doublesamara",
+					"groundcherry",
+					"goldleaf",
+					"thymewarp",
+					"intensivecarrot",
+					"perfumeshroom",
+					"grapeshot",
+					"shrinkingviolet",
+					"cobcannon",
+					"escaperoot",
+					"goldbloom",
+					"flattenedshroom",
+					"olive",
+					"flowerpot",
+					"jalapeno",
+					"empea",
+					"jackfruit",
+					"draftodil",
+					"heathseeker",
+					"byttneriameteorhammer",
+					"crownflower",
+					"zoybeanpod",
+					"orchidmage",
+					"mandrake",
+					"cthulhuactinia",
+					"devilsflower",
+					"pumpkin",
+					"powervine",
+					"peavine",
+					"shinevine",
+					"powervine",
+					"paphiopedilum",
+					"eywa",
+					"buduhboom",
+					"guardshroom",
+					"rheumnobile",
+					"megagatling",
+					"kelpguard",
+					"seashroom",
+					"seaderris",
+					"oxygenalgae",
+					"aquaweed",
+					"seashooter",
+					"actinostemma",
+					"sunflowerzombie",
+					"soudacheMegagatling",
+					"soudacheMegagatling_Fire",
+					"soudacheMegagatling_Electric"
+				],
+				"SingleHandedPlantBlackList": [
+					"sunflower",
+					"wallnut",
+					"potatomine",
+					"tallnut",
+					"spikerock",
+					"gravebuster",
+					"torchwood",
+					"imitater",
+					"cherry_bomb",
+					"iceburg",
+					"twinsunflower",
+					"springbean",
+					"spikeweed",
+					"powerlily",
+					"squash",
+					"chilibean",
+					"jalapeno",
+					"turnip",
+					"peach",
+					"blover",
+					"empea",
+					"holonut",
+					"magnifyinggrass",
+					"powerplant",
+					"hypnoshroom",
+					"sunshroom",
+					"puffshroom",
+					"sunbean",
+					"magnetshroom",
+					"coffeebean",
+					"streetlamp",
+					"sweetpotato",
+					"cracker",
+					"lilypad",
+					"guacodile",
+					"tanglekelp",
+					"ghostpepper",
+					"hurrikale",
+					"hotpotato",
+					"chardguard",
+					"stunion",
+					"chestnut",
+					"sugarcane",
+					"doublesamara",
+					"saucer",
+					"horsebean",
+					"groundcherry",
+					"anthurium",
+					"pineapple",
+					"endurian",
+					"birthsunflower",
+					"goldleaf",
+					"lavaguava",
+					"stallia",
+					"jackfruit",
+					"thymewarp",
+					"celerystalker",
+					"garlic",
+					"intensivecarrot",
+					"primalwallnut",
+					"perfumeshroom",
+					"primalsunflower",
+					"primalpotatomine",
+					"grapeshot",
+					"shrinkingviolet",
+					"bramble",
+					"escaperoot",
+					"Whitemelonsumowrestlers",
+					"shadowshroom",
+					"moonflower",
+					"grimrose",
+					"explodeonut",
+					"hotdate",
+					"tuliptrumpeter",
+					"goldbloom",
+					"flattenedshroom",
+					"imppear",
+					"plantain",
+					"alarmsagittifolia",
+					"hollyknight",
+					"aloes",
+					"waxgourd",
+					"olive",
+					"hydrocotyledrummer",
+					"icelotus",
+					"dendrobiumguard",
+					"gumnut",
+					"olivepit",
+					"beercoconut",
+					"flowerpot",
+					"heathseeker",
+					"byttneriameteorhammer",
+					"crownflower",
+					"zoybeanpod",
+					"orchidmage",
+					"mandrake",
+					"cthulhuactinia",
+					"devilsflower",
+					"shinevine",
+					"armorflame",
+					"paphiopedilum",
+					"eywa",
+					"twinshoneysuckle",
+					"rhubarbarian",
+					"aquavine",
+					"buduhboom",
+					"guardshroom",
+					"rheumnobile",
+					"megagatling",
+					"kelpguard",
+					"seashroom",
+					"seaderris",
+					"oxygenalgae",
+					"aquaweed",
+					"seashooter",
+					"animnuts",
+					"actinostemma",
+					"marigold",
+					"aeonium",
+					"peonychi",
+					"poisonvine",
+					"doomshroom",
+					"cosmicpea",
+					"cosmicmushroom",
+					"cosmicnut",
+					"gravitree",
+					"darkmatter_dragonfruit"
+				],
+				"NormalSeedPlantBlackList": [
+					"imitater",
+					"sunflowerzombie"
+				]
+			}
+		},
+		{
+			"objclass": "LevelEditorStageInfo",
+			"objdata": {
+				"StageName": "egypt",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_EGYPT",
+				"BackgroundImageLeft": "TEXTURE_LEFT",
+				"BackgroundImageMiddle": "TEXTURE",
+				"BackgroundImageRight": "TEXTURE_RIGHT",
+				"LoadGroups": [
+					"DelayLoad_Background_Egypt_Compressed"
+				],
+				"ZombieList": [
+					"mummy",
+					"mummy_armor1",
+					"mummy_armor2",
+					"ra",
+					"explorer",
+					"tomb_raiser",
+					"pharaoh",
+					"egypt_gargantuar",
+					"egypt_imp"
+				]
+			}
+		},
+		{
+			"objclass": "LevelEditorStageInfo",
+			"objdata": {
+				"StageName": "pirate",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_PIRATE",
+				"BackgroundImageLeft": "TEXTURE_LEFT",
+				"BackgroundImageMiddle": "TEXTURE",
+				"BackgroundImageRight": "TEXTURE_RIGHT",
+				"LoadGroups": [
+					"DelayLoad_Background_Pirate_Compressed"
+				],
+				"ZombieList": [
+					"pirate",
+					"pirate_armor1",
+					"pirate_armor2",
+					"seagull",
+					"barrelroller",
+					"pirate_imp",
+					"cannon",
+					"pirate_captain",
+					"pirate_gargantuar"
+				]
+			}
+		},
+		{
+			"objclass": "LevelEditorStageInfo",
+			"objdata": {
+				"StageName": "cowboy",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_OLDWEST",
+				"BackgroundImageLeft": "TEXTURE_LEFT",
+				"BackgroundImageMiddle": "TEXTURE",
+				"BackgroundImageRight": "TEXTURE_RIGHT",
+				"LoadGroups": [
+					"DelayLoad_Background_West_Compressed"
+				],
+				"ZombieList": [
+					"cowboy",
+					"cowboy_armor1",
+					"cowboy_armor2",
+					"prospector",
+					"piano",
+					"poncho",
+					"chicken_farmer",
+					"chicken",
+					"west_bull",
+					"west_bullrider",
+					"cowboy_gargantuar"
+				]
+			}
+		},
+		{
+			"objclass": "LevelEditorStageInfo",
+			"objdata": {
+				"StageName": "kongfu",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_KONGFU",
+				"BackgroundImageLeft": "TEXTURE_LEFT",
+				"BackgroundImageMiddle": "TEXTURE",
+				"BackgroundImageRight": "TEXTURE_RIGHT",
+				"LoadGroups": [
+					"DelayLoad_Background_KongFu_Compressed"
+				],
+				"ZombieList": [
+					"kongfu_basic",
+					"kongfu_basic_armor1",
+					"kongfu_basic_armor2",
+					"kongfu_hammer",
+					"kongfu_torch",
+					"kongfu_gong",
+					"kongfu_selfexplode",
+					"kongfu_qigong",
+					"kongfu_drink",
+					"kongfu_monk_cone",
+					"kongfu_monk_bucket",
+					"kongfu_monk_basic",
+					"kongfu_monk_drink",
+					"kongfu_monk_blade",
+					"kongfu_monk_imp",
+					"kongfu_monk_torch",
+					"kongfu_monk_nunchaku",
+					"kongfu_agile_bronze",
+					"kongfu_magic_bronze"
+				]
+			}
+		},
+		{
+			"objclass": "LevelEditorStageInfo",
+			"objdata": {
+				"StageName": "future",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_FUTURE",
+				"BackgroundImageLeft": "TEXTURE_LEFT",
+				"BackgroundImageMiddle": "TEXTURE",
+				"BackgroundImageRight": "TEXTURE_RIGHT",
+				"LoadGroups": [
+					"DelayLoad_Background_Future"
+				],
+				"ZombieList": [
+					"future",
+					"future_armor1",
+					"future_armor2",
+					"future_jetpack",
+					"football_mech",
+					"disco_mech",
+					"mech_cone",
+					"future_protector",
+					"future_imp",
+					"future_gargantuar"
+				]
+			}
+		},
+		{
+			"objclass": "LevelEditorStageInfo",
+			"objdata": {
+				"StageName": "eighties",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_EIGHTIES",
+				"BackgroundImageLeft": "TEXTURE_LEFT",
+				"BackgroundImageMiddle": "TEXTURE",
+				"BackgroundImageRight": "TEXTURE_RIGHT",
+				"LoadGroups": [
+					"DelayLoad_Background_Eighties_Compressed"
+				],
+				"ZombieList": [
+					"eighties",
+					"eighties_armor1",
+					"eighties_armor2",
+					"eighties_imp",
+					"eighties_punk",
+					"eighties_mc",
+					"eighties_breakdancer",
+					"eighties_glitter",
+					"eighties_boombox",
+					"eighties_arcade",
+					"eighties_gargantuar"
+				]
+			}
+		},
+		{
+			"objclass": "LevelEditorStageInfo",
+			"objdata": {
+				"StageName": "dark",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_DARK",
+				"BackgroundImageLeft": "TEXTURE_LEFT",
+				"BackgroundImageMiddle": "TEXTURE",
+				"BackgroundImageRight": "TEXTURE_RIGHT",
+				"LoadGroups": [
+					"DelayLoad_Background_Dark"
+				],
+				"ZombieList": [
+					"dark",
+					"dark_armor1",
+					"dark_armor2",
+					"dark_armor3",
+					"dark_wizard",
+					"dark_juggler",
+					"dark_gargantuar",
+					"dark_imp",
+					"dark_imp_dragon",
+					"dark_king",
+					"dark_archmage",
+					"dark_cavalry",
+					"dark_rogue"
+				]
+			}
+		},
+		{
+			"objclass": "LevelEditorStageInfo",
+			"objdata": {
+				"StageName": "childrenday",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_CHILDRENDAY",
+				"BackgroundImageLeft": "TEXTURE_LEFT",
+				"BackgroundImageMiddle": "TEXTURE",
+				"BackgroundImageRight": "TEXTURE_RIGHT",
+				"LoadGroups": [
+					"ChildrenDayStage",
+					"Game_Tombstones_Dynamic",
+					"AudioModern",
+					"Tombstone_Dark_Effects",
+					"Tombstone_Dark_Sun",
+					"Tombstone_Dark_Special"
+				],
+				"ZombieList": [
+					"children_ballon",
+					"children_schoolbag",
+					"children_toycar",
+					"children_toygun",
+					"children_lollipops",
+					"childrensday",
+					"childrensday_armor1",
+					"childrensday_armor2",
+					"childrensday_flag",
+					"childrensday_gargantuar",
+					"childrensday_imp"
+				]
+			}
+		},
+		{
+			"objclass": "LevelEditorStageInfo",
+			"objdata": {
+				"StageName": "beach",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_BEACH",
+				"BackgroundImageLeft": "TEXTURE_LEFT",
+				"BackgroundImageMiddle": "TEXTURE",
+				"BackgroundImageRight": "TEXTURE_RIGHT",
+				"LoadGroups": [
+					"DelayLoad_Background_Beach_Compressed"
+				],
+				"ZombieList": [
+					"beach",
+					"beach_armor1",
+					"beach_armor2",
+					"beach_fem",
+					"beach_fem_armor1",
+					"beach_fem_armor2",
+					"beach_snorkel",
+					"beach_surfer",
+					"beach_fisherman",
+					"beach_octopus",
+					"beach_shell",
+					"beach_imp",
+					"beach_gargantuar"
+				]
+			}
+		},
+		{
+			"objclass": "LevelEditorStageInfo",
+			"objdata": {
+				"StageName": "dino",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_DINO",
+				"BackgroundImageLeft": "TEXTURE_LEFT",
+				"BackgroundImageMiddle": "TEXTURE",
+				"BackgroundImageRight": "TEXTURE_RIGHT",
+				"LoadGroups": [
+					"DelayLoad_Background_Dino_Compressed"
+				],
+				"ZombieList": [
+					"dino",
+					"dino_armor1",
+					"dino_armor2",
+					"dino_armor3",
+					"dino_bully",
+					"dino_imp",
+					"dino_gargantuar",
+					"dino_pushegg",
+					"dino_stealegg",
+					"dino_eggshell"
+				]
+			}
+		},
+		{
+			"objclass": "LevelEditorStageInfo",
+			"objdata": {
+				"StageName": "iceage",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_ICEAGE",
+				"BackgroundImageLeft": "TEXTURE_LEFT",
+				"BackgroundImageMiddle": "TEXTURE",
+				"BackgroundImageRight": "TEXTURE_RIGHT",
+				"LoadGroups": [
+					"DelayLoad_Background_Iceage_Compressed"
+				],
+				"ZombieList": [
+					"iceage",
+					"iceage_armor1",
+					"iceage_armor2",
+					"iceage_armor3",
+					"iceage_hunter",
+					"iceage_imp",
+					"iceage_dodo",
+					"iceage_troglobite",
+					"iceage_weaselhoarder",
+					"iceage_weasel",
+					"iceage_gargantuar",
+					"iceage_walrus",
+					"iceage_ski",
+					"iceage_chief"
+				]
+			}
+		},
+		{
+			"objclass": "LevelEditorStageInfo",
+			"objdata": {
+				"StageName": "lostcity",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_LOSTCITY",
+				"BackgroundImageLeft": "TEXTURE_LEFT",
+				"BackgroundImageMiddle": "TEXTURE",
+				"BackgroundImageRight": "TEXTURE_RIGHT",
+				"LoadGroups": [
+					"DelayLoad_Background_LostCity_Compressed"
+				],
+				"ZombieList": [
+					"lostcity",
+					"lostcity_armor1",
+					"lostcity_armor2",
+					"lostcity_imp",
+					"lostcity_excavator",
+					"lostcity_jane",
+					"lostcity_bug",
+					"lostcity_gargantuar",
+					"lostcity_impporter",
+					"lostcity_crystalskull",
+					"lostcity_guide",
+					"lostcity_doctor"
+				]
+			}
+		},
+		{
+			"objclass": "LevelEditorStageInfo",
+			"objdata": {
+				"StageName": "skycity",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_SKYCITY",
+				"BackgroundImageLeft": "TEXTURE_LEFT",
+				"BackgroundImageMiddle": "TEXTURE",
+				"BackgroundImageRight": "TEXTURE_RIGHT",
+				"LoadGroups": [
+					"DelayLoad_Background_Skycity_Compressed"
+				]
+			}
+		},
+		{
+			"objclass": "LevelEditorStageInfo",
+			"objdata": {
+				"StageName": "modern",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_MODERN",
+				"BackgroundImageLeft": "TEXTURE_LEFT",
+				"BackgroundImageMiddle": "TEXTURE",
+				"BackgroundImageRight": "TEXTURE_RIGHT",
+				"LoadGroups": [
+					"DelayLoad_Background_Modern_Compressed"
+				],
+				"ZombieList": [
+					"tutorial",
+					"tutorial_armor1",
+					"tutorial_armor2",
+					"modern_balloon",
+					"modern_allstar",
+					"modern_superfanimp",
+					"newspaper_veteran",
+					"modern_miner",
+					"explosion_proof",
+					"modern_solar_truck",
+					"tutorial_gargantuar",
+					"tutorial_imp"
+				]
+			}
+		},
+		{
+			"objclass": "LevelEditorStageInfo",
+			"objdata": {
+				"StageName": "steam",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_STEAM",
+				"BackgroundImageLeft": "TEXTURE_LEFT",
+				"BackgroundImageMiddle": "TEXTURE",
+				"BackgroundImageRight": "TEXTURE_RIGHT",
+				"LoadGroups": [
+					"DelayLoad_Background_Steam_Compressed"
+				],
+				"ZombieList": [
+					"steam_worker",
+					"steam_armor1",
+					"steam_armor2",
+					"steam_coal_miner",
+					"steam_gentleman",
+					"steam_stove",
+					"steam_imp",
+					"steam_gargantuar"
+				]
+			}
+		},
+		{
+			"objclass": "LevelEditorStageInfo",
+			"objdata": {
+				"StageName": "renai",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_RENAI",
+				"BackgroundImageLeft": "TEXTURE_DAY_LEFT",
+				"BackgroundImageMiddle": "TEXTURE_DAY",
+				"BackgroundImageRight": "TEXTURE_DAY_RIGHT",
+				"LoadGroups": [
+					"DelayLoad_Background_Renai_Compressed"
+				],
+				"ZombieList": [
+					"renai_carver",
+					"renai_gargantuar",
+					"renai_worker",
+					"renai_armor1",
+					"renai_armor2",
+					"renai_perfumer",
+					"renai_gliding"
+				]
+			}
+		},
+		{
+			"objclass": "LevelEditorStageInfo",
+			"objdata": {
+				"StageName": "heian",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_HEIAN",
+				"BackgroundImageLeft": "TEXTURE_LEFT",
+				"BackgroundImageMiddle": "TEXTURE",
+				"BackgroundImageRight": "TEXTURE_RIGHT",
+				"LoadGroups": [
+					"DelayLoad_Background_Heian_Compressed"
+				],
+				"ZombieList": [
+					"heian_gargantuar",
+					"heian_worker",
+					"heian_armor1",
+					"heian_armor2",
+					"heian_hanabi",
+					"heian_ninja",
+					"heian_sushi",
+					"heian_onmyoji",
+					"heian_akinndo"
+				]
+			}
+		},
+		{
+			"objclass": "LevelEditorStageInfo",
+			"objdata": {
+				"StageName": "atlantis",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_ATLANTIS",
+				"BackgroundImageLeft": "TEXTURE_LEFT",
+				"BackgroundImageMiddle": "TEXTURE",
+				"BackgroundImageRight": "TEXTURE_RIGHT",
+				"LoadGroups": [
+					"DelayLoad_Background_Atlantis_Compressed"
+				],
+				"ZombieList": [
+					
+				]
+			}
+		},
+		{
+			"objclass": "LevelEditorStageInfo",
+			"objdata": {
+				"StageName": "theatre_dark",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_THEATRE_DARK",
+				"BackgroundImageLeft": "TEXTURE_LEFT",
+				"BackgroundImageMiddle": "TEXTURE",
+				"BackgroundImageRight": "TEXTURE_RIGHT",
+				"LoadGroups": [
+					"DelayLoad_Background_Theatre_Dark"
+				]
+			}
+		},
+		{
+			"objclass": "LevelEditorStageInfo",
+			"objdata": {
+				"StageName": "fairy_tale",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_FAIRY_TALE",
+				"BackgroundImageLeft": "TEXTURE_LEFT",
+				"BackgroundImageMiddle": "TEXTURE",
+				"BackgroundImageRight": "TEXTURE_RIGHT",
+				"LoadGroups": [
+					"DelayLoad_Background_FairyTale"
+				],
+				"ZombieList": [
+					"fairy_tale",
+					"fairy_tale_armor1",
+					"fairy_tale_armor2",
+					"fairy_tale_witch",
+					"fairy_tale_gargantuar",
+					"fairy_tale_armed_gargantuar",
+					"fairy_tale_imp",
+					"fairy_tale_knight"
+				]
+			}
+		}
+	]
+}

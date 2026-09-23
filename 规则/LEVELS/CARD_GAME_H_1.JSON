@@ -1,0 +1,129 @@
+{
+	"#comment": "Renai 16",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_CARDGAME]",
+				"GameOverDialogShowBrain": false,
+				"LevelNumber": 1,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@CurrentLevel)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(DefaultCardGameZombieWinCondition@LevelModules)",
+					"RTID(CardGameZombiesDeadWinCon@LevelModules)",
+					"RTID(CardGameModule@CurrentLevel)"
+				],
+				"Name": "[CARDGAME_LEVEL_NAME]",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"VictoryModule": "RTID(CardGameOutroNoModes@LevelModules)",
+				"StageModule": "RTID(CardGameStage@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(TurnTarget1@CurrentLevel)",
+						"RTID(TurnTarget2@CurrentLevel)",
+						"RTID(TurnTarget3@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"TurnTarget1"
+			],
+			"objclass": "StarChallengeCardGameTurnPassProps",
+			"objdata": {
+				"Count": 30
+			}
+		},
+		{
+			"aliases": [
+				"TurnTarget2"
+			],
+			"objclass": "StarChallengeCardGameTurnPassBetaProps",
+			"objdata": {
+				"Count": 20
+			}
+		},
+		{
+			"aliases": [
+				"TurnTarget3"
+			],
+			"objclass": "StarChallengeCardGameTurnPassGammaProps",
+			"objdata": {
+				"Count": 10
+			}
+		},
+		{
+			"objclass": "CardGameModuleProperties",
+			"aliases": [
+				"CardGameModule"
+			],
+			"objdata": {
+				"ResourceGroupNames": [
+					"UI_CardGame",
+					"ZombiePirateBarrelPusherGroup",
+					"ZombiePirateImpGroup"
+				],
+				"PlayerCardsNumberMax": 5,
+				"PlayerCardsPointsMax": 3,
+				"PlayerActionRoundTimeLimitMax": 30.0,
+				"DefaultZombieList": [
+					{
+						"Name": "card_game_zombie_barrel",
+						"Level": 1,
+						"GridX": 11,
+						"GridY": 3,
+						"TowerList": [
+							{
+								"Name": "card_game_tower_barrel",
+								"GridX": 12,
+								"GridY": 1
+							},
+							{
+								"Name": "card_game_tower_barrel",
+								"GridX": 12,
+								"GridY": 5
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"objclass": "StandardLevelIntroProperties",
+			"aliases": [
+				"StandardIntro"
+			],
+			"objdata": {
+				"PanStartOffset": 78,
+				"PanEndOffset": 468,
+				"PanRightDuration": 2.0,
+				"PanLeftDuration": 2.5,
+				"SkipShowingStreet": true
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"DescriptiveName": "[CARD_GAME_CHALLENGE_NAME]",
+				"Description": "[CARD_GAME_CHALLENGE]"
+			}
+		}
+	],
+	"version": 1
+}

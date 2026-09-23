@@ -1,0 +1,645 @@
+{
+	"#comment": "Memory",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_MEMORY]",
+				"LevelNumber": 1,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(TimeEnergy@LevelModules)"
+				],
+				"MusicType": "MiniGame_A",
+				"Name": "[MEMORY_LEVEL_NAME_005_H]",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+				"StageModule": "RTID(NightStage@LevelModules)",
+				"ShowZombies": [
+					"tutorial",
+					"tutorial_armor1",
+					"tutorial_armor2",
+					"kongfu_selfexplode",
+					"steam_stove"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(PlantsLost@CurrentLevel)",
+						"RTID(SunProduce@CurrentLevel)",
+						"RTID(SimultaneousPlants@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"PlantsLost"
+			],
+			"objclass": "StarChallengePlantsLostProps",
+			"objdata": {
+				"MaximumPlantsLost": 20
+			}
+		},
+		{
+			"aliases": [
+				"SunProduce"
+			],
+			"objclass": "StarChallengeSunProducedProps",
+			"objdata": {
+				"TargetSun": 5000
+			}
+		},
+		{
+			"aliases": [
+				"SimultaneousPlants"
+			],
+			"objclass": "StarChallengeSimultaneousPlantsProps",
+			"objdata": {
+				"MaximumPlants": 25
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": -40,
+						"StartingPoints": -100,
+						"StartingWave": 3,
+						"ZombiePool": [
+							"RTID(tutorial@ZombieTypes)",
+							"RTID(tutorial_armor1@ZombieTypes)"
+						]
+					},
+					{
+						"PointIncrementPerWave": 40,
+						"StartingPoints": 200,
+						"StartingWave": 4,
+						"ZombiePool": [
+							"RTID(tutorial@ZombieTypes)",
+							"RTID(tutorial_armor1@ZombieTypes)"
+						]
+					}
+				],
+				"WaveManagerPropsVector": [
+					"RTID(WaveManagerPropsWeek4@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek4@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek4@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek4@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerPropsWeek4"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 5,
+				"WaveCount": 15,
+				"WaveSpendingPointIncrement": 100,
+				"WaveSpendingPoints": 100,
+				"DescriptionName": "[PVZ1MODE_BRICK]",
+				"Description": "[PVZ1MODE_BRICK_HARD_DESC]",
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)",
+						"RTID(Wave1BrickEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10@CurrentLevel)"
+					],
+					[
+						"RTID(Wave11@CurrentLevel)"
+					],
+					[
+						"RTID(Wave12@CurrentLevel)"
+					],
+					[
+						"RTID(Wave13@CurrentLevel)"
+					],
+					[
+						"RTID(Wave14@CurrentLevel)"
+					],
+					[
+						"RTID(Wave15@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 3,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 2,
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Level": 3,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 2,
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 3,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Level": 3,
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 2,
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 3,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Level": 3,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 2,
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 3,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Level": 2,
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 3,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 2,
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Level": 3,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 2,
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 3,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Level": 2,
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Level": 2,
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 3,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Level": 3,
+						"Type": "RTID(kongfu_selfexplode@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1BrickEvent0"
+			],
+			"objclass": "ZombiePotionActionProps",
+			"objdata": {
+				"Potions": [
+					{
+						"Location": {
+							"mX": 5,
+							"mY": 0
+						},
+						"Type": "bufftile_speed"
+					},
+					{
+						"Location": {
+							"mX": 5,
+							"mY": 4
+						},
+						"Type": "bufftile_shield"
+					},
+					{
+						"Location": {
+							"mX": 3,
+							"mY": 0
+						},
+						"Type": "bufftile_attack"
+					},
+					{
+						"Location": {
+							"mX": 3,
+							"mY": 4
+						},
+						"Type": "bufftile_attack"
+					},
+					{
+						"Location": {
+							"mX": 6,
+							"mY": 1
+						},
+						"Type": "bufftile_shield"
+					},
+					{
+						"Location": {
+							"mX": 6,
+							"mY": 2
+						},
+						"Type": "bufftile_shield"
+					},
+					{
+						"Location": {
+							"mX": 6,
+							"mY": 3
+						},
+						"Type": "bufftile_shield"
+					},
+					{
+						"Location": {
+							"mX": 8,
+							"mY": 1
+						},
+						"Type": "bufftile_speed"
+					},
+					{
+						"Location": {
+							"mX": 8,
+							"mY": 2
+						},
+						"Type": "bufftile_speed"
+					},
+					{
+						"Location": {
+							"mX": 8,
+							"mY": 3
+						},
+						"Type": "bufftile_speed"
+					}
+				]
+			}
+		}
+	],
+	"version": 1
+}

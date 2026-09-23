@@ -1,0 +1,781 @@
+{
+	"#comment": "Memory",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_MEMORY]",
+				"LevelNumber": 1,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(ModernMowers@LevelModules)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(TimeEnergy@LevelModules)",
+					"RTID(RoofMoudle@CurrentLevel)",
+					"RTID(DefaultSnow@LevelModules)"
+				],
+				"MusicType": "MiniGame_B",
+				"Name": "[S3_MEMORY_LEVEL_NAME_025]",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+				"StageModule": "RTID(SnowRoofStage@LevelModules)",
+				"ShowZombies": [
+					"tutorial",
+					"tutorial_armor1",
+					"tutorial_armor2",
+					"pirate_captain",
+					"chicken_farmer"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"RoofMoudle"
+			],
+			"objclass": "RoofProperties",
+			"objdata": {
+				"FlowerPotStartColumn": 0,
+				"FlowerPotEndColumn": 3
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(SunProduced@CurrentLevel)",
+						"RTID(PlantFoodNonuse@CurrentLevel)",
+						"RTID(SpendSunHoldout@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"SunProduced"
+			],
+			"objclass": "StarChallengeSunProducedProps",
+			"objdata": {
+				"TargetSun": 5555
+			}
+		},
+		{
+			"aliases": [
+				"PlantFoodNonuse"
+			],
+			"objclass": "StarChallengePlantFoodNonuseProps",
+			"objdata": {
+				
+			}
+		},
+		{
+			"aliases": [
+				"SpendSunHoldout"
+			],
+			"objclass": "StarChallengeSpendSunHoldoutProps",
+			"objdata": {
+				"HoldoutSeconds": 7
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": -40,
+						"StartingPoints": -100,
+						"StartingWave": 3,
+						"ZombiePool": [
+							"RTID(tutorial@ZombieTypes)",
+							"RTID(tutorial_armor1@ZombieTypes)"
+						]
+					},
+					{
+						"PointIncrementPerWave": 40,
+						"StartingPoints": 200,
+						"StartingWave": 4,
+						"ZombiePool": [
+							"RTID(tutorial@ZombieTypes)",
+							"RTID(tutorial_armor1@ZombieTypes)"
+						]
+					}
+				],
+				"WaveManagerPropsVector": [
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerPropsWeek1"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 5,
+				"WaveCount": 15,
+				"WaveSpendingPointIncrement": 100,
+				"WaveSpendingPoints": 100,
+				"DescriptionName": "[PVZ1MODE_POTION]",
+				"Description": "[PVZ1MODE_POTION_NORMAL_DESC]",
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)",
+						"RTID(Wave1PotionEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)",
+						"RTID(Wave5PotionEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10@CurrentLevel)",
+						"RTID(Wave10PotionEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave11@CurrentLevel)"
+					],
+					[
+						"RTID(Wave12@CurrentLevel)"
+					],
+					[
+						"RTID(Wave13@CurrentLevel)"
+					],
+					[
+						"RTID(Wave14@CurrentLevel)"
+					],
+					[
+						"RTID(Wave15@CurrentLevel)",
+						"RTID(Wave15PotionEvent0@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "4",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(tutorial@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(pirate_captain@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(pirate_captain@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(pirate_captain@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(pirate_captain@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(pirate_captain@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(pirate_captain@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(pirate_captain@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(pirate_captain@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(pirate_captain@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(pirate_captain@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(pirate_captain@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave13"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(pirate_captain@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave14"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor2@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(pirate_captain@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(tutorial_armor1@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(chicken_farmer@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(pirate_captain@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(pirate_captain@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(pirate_captain@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1PotionEvent0"
+			],
+			"objclass": "ZombiePotionActionProps",
+			"objdata": {
+				"Potions": [
+					{
+						"Location": {
+							"mX": 8,
+							"mY": 0
+						},
+						"Type": "zombiepotion_toughness"
+					},
+					{
+						"Location": {
+							"mX": 8,
+							"mY": 1
+						},
+						"Type": "zombiepotion_toughness"
+					},
+					{
+						"Location": {
+							"mX": 8,
+							"mY": 2
+						},
+						"Type": "zombiepotion_toughness"
+					},
+					{
+						"Location": {
+							"mX": 8,
+							"mY": 3
+						},
+						"Type": "zombiepotion_toughness"
+					},
+					{
+						"Location": {
+							"mX": 8,
+							"mY": 4
+						},
+						"Type": "zombiepotion_toughness"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5PotionEvent0"
+			],
+			"objclass": "ZombiePotionActionProps",
+			"objdata": {
+				"Potions": [
+					{
+						"Location": {
+							"mX": 7,
+							"mY": 0
+						},
+						"Type": "zombiepotion_poison"
+					},
+					{
+						"Location": {
+							"mX": 7,
+							"mY": 1
+						},
+						"Type": "zombiepotion_poison"
+					},
+					{
+						"Location": {
+							"mX": 7,
+							"mY": 2
+						},
+						"Type": "zombiepotion_poison"
+					},
+					{
+						"Location": {
+							"mX": 7,
+							"mY": 3
+						},
+						"Type": "zombiepotion_poison"
+					},
+					{
+						"Location": {
+							"mX": 7,
+							"mY": 4
+						},
+						"Type": "zombiepotion_poison"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10PotionEvent0"
+			],
+			"objclass": "ZombiePotionActionProps",
+			"objdata": {
+				"Potions": [
+					{
+						"Location": {
+							"mX": 8,
+							"mY": 0
+						},
+						"Type": "zombiepotion_toughness"
+					},
+					{
+						"Location": {
+							"mX": 8,
+							"mY": 1
+						},
+						"Type": "zombiepotion_poison"
+					},
+					{
+						"Location": {
+							"mX": 8,
+							"mY": 2
+						},
+						"Type": "zombiepotion_toughness"
+					},
+					{
+						"Location": {
+							"mX": 8,
+							"mY": 3
+						},
+						"Type": "zombiepotion_poison"
+					},
+					{
+						"Location": {
+							"mX": 8,
+							"mY": 4
+						},
+						"Type": "zombiepotion_toughness"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave15PotionEvent0"
+			],
+			"objclass": "ZombiePotionActionProps",
+			"objdata": {
+				"Potions": [
+					{
+						"Location": {
+							"mX": 8,
+							"mY": 0
+						},
+						"Type": "zombiepotion_toughness"
+					},
+					{
+						"Location": {
+							"mX": 8,
+							"mY": 1
+						},
+						"Type": "zombiepotion_toughness"
+					},
+					{
+						"Location": {
+							"mX": 8,
+							"mY": 2
+						},
+						"Type": "zombiepotion_toughness"
+					},
+					{
+						"Location": {
+							"mX": 8,
+							"mY": 3
+						},
+						"Type": "zombiepotion_toughness"
+					},
+					{
+						"Location": {
+							"mX": 8,
+							"mY": 4
+						},
+						"Type": "zombiepotion_toughness"
+					},
+					{
+						"Location": {
+							"mX": 7,
+							"mY": 0
+						},
+						"Type": "zombiepotion_poison"
+					},
+					{
+						"Location": {
+							"mX": 7,
+							"mY": 1
+						},
+						"Type": "zombiepotion_poison"
+					},
+					{
+						"Location": {
+							"mX": 7,
+							"mY": 2
+						},
+						"Type": "zombiepotion_poison"
+					},
+					{
+						"Location": {
+							"mX": 7,
+							"mY": 3
+						},
+						"Type": "zombiepotion_poison"
+					},
+					{
+						"Location": {
+							"mX": 7,
+							"mY": 4
+						},
+						"Type": "zombiepotion_poison"
+					}
+				]
+			}
+		}
+	],
+	"version": 1
+}

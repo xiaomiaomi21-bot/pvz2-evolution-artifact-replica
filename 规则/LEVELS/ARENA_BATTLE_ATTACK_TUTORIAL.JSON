@@ -1,0 +1,117 @@
+{
+	"#comment": "Arena Plant Battle Module",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_ARENA_BATTLE]",
+				"EnableAutoHard": false,
+				"GameOverDialogTaskFailed": true,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(ArenaSeedBank@CurrentLevel)",
+					"RTID(IntroArenaTutorialBattle@CurrentLevel)"
+				],
+				"Name": "",
+				"NormalPresentTable": "future_normal_01",
+				"ShinyPresentTable": "future_shiny_01",
+				"StageModule": "RTID(ArenaStage@LevelModules)",
+				"StartingSun": 1000,
+				"IsArenaBattle": true,
+				"CanSaveGameState": false
+			}
+		},
+		{
+			"aliases": [
+				"IntroArenaTutorialBattle"
+			],
+			"objclass": "IntroArenaTutorialBattleProperties",
+			"objdata": {
+				"ResourceGroupNames": [
+					"PVP_Brain"
+				],
+				"PlantDistance": 6.0,
+				"MowerEntryAnimDuration": 2.5,
+				"MowerActivatedAudioEvent": "Play_Lawn_Lawnmower",
+				"MowerPopAnim": "POPANIM_EFFECTS_BRAIN",
+				"Duration": 360.0,
+				"PlantFoodIntervalMin": 25.0,
+				"PlantFoodIntervalMax": 40.0,
+				"PlantFoodRate": 0.5,
+				"PlantFoodZombieSeed": 9,
+				"PrepareDuration": 30.0,
+				"ChangeCurrency": 30
+			}
+		},
+		{
+			"aliases": [
+				"ArenaSeedBank"
+			],
+			"objclass": "PVPSeedBankProperties",
+			"objdata": {
+				"TotalBrains": 2500,
+				"SkillEnergy": 200,
+				"SkillList": [
+					{
+						"SkillName": "pvpskill_zombiefood",
+						"InitEnergyCost": 30,
+						"MaxEnergyCost": 300
+					},
+					{
+						"SkillName": "pvpskill_aid",
+						"InitEnergyCost": 25,
+						"MaxEnergyCost": 300
+					},
+					{
+						"SkillName": "pvpskill_invisible",
+						"InitEnergyCost": 15,
+						"MaxEnergyCost": 300
+					},
+					{
+						"SkillName": "pvpskill_rage",
+						"InitEnergyCost": 25,
+						"MaxEnergyCost": 300
+					}
+				],
+				"PlantList": [
+					{
+						"PlantName": "peashooter",
+						"MaxNum": "5",
+						"NeedZoneLevel": 1
+					}
+				],
+				"ZombieList": [
+					{
+						"ZombieName": "pvp_change",
+						"NeedZoneLevel": 1
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(BeatTheLevel@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"BeatTheLevel"
+			],
+			"objclass": "StarChallengeBeatTheLevelProps",
+			"objdata": {
+				"Description": "[STARCHALLENGE_EVIL]",
+				"DescriptiveName": "[STARCHALLENGE_EVIL_NAME]"
+			}
+		}
+	],
+	"version": 1
+}

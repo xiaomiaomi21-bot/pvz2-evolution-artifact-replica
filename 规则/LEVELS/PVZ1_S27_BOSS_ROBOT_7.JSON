@@ -1,0 +1,236 @@
+{
+	"#comment": "Memory",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_MEMORY]",
+				"LevelNumber": 1,
+				"StartingSun": 400,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(ZombossRobotIntro@CurrentLevel)",
+					"RTID(ModernMowers@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(GlacierModule@CurrentLevel)",
+					"RTID(ZombossBattle@CurrentLevel)"
+				],
+				"Name": "[S8_MEMORY_LEVEL_NAME_NORMALBOSS]",
+				"NormalPresentTable": "egypt_normal_01",
+				"ShinyPresentTable": "egypt_shiny_01",
+				"VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)",
+				"StageModule": "RTID(SnowNightStage@LevelModules)",
+				"ShowZombies": [
+					
+				]
+			}
+		},
+		{
+			"objclass": "ZombossBattleIntroProperties",
+			"aliases": [
+				"ZombossRobotIntro"
+			],
+			"objdata": {
+				"ResourceGroupNames": [
+					
+				],
+				"PanStartOffset": 78,
+				"PanEndOffset": 468,
+				"PanRightDuration": 1.5,
+				"PanLeftDuration": 1.5,
+				"ZombossPhaseCount": 3,
+				"SkipShowingStreetBossBattle": false
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(PlantFoodNonuse@CurrentLevel)",
+						"RTID(UnfreezePlants@CurrentLevel)",
+						"RTID(SpendSunHoldout@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"PlantFoodNonuse"
+			],
+			"objclass": "StarChallengePlantFoodNonuseProps",
+			"objdata": {
+				
+			}
+		},
+		{
+			"aliases": [
+				"UnfreezePlants"
+			],
+			"objclass": "StarChallengeUnfreezePlantsProps",
+			"objdata": {
+				"Count": 10
+			}
+		},
+		{
+			"aliases": [
+				"SpendSunHoldout"
+			],
+			"objclass": "StarChallengeSpendSunHoldoutProps",
+			"objdata": {
+				"HoldoutSeconds": 20
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"GlacierModule"
+			],
+			"#comment": "Zombie Spawn Weights by Row From Left",
+			"objclass": "GlacierModuleProperties",
+			"objdata": {
+				"ZombieSpawnData": [
+					{
+						"Entries": [
+							{
+								"TypeName": "",
+								"Weight": 3
+							}
+						]
+					},
+					{
+						"Entries": [
+							{
+								"TypeName": "",
+								"Weight": 2
+							},
+							{
+								"TypeName": "iceage_weaselhoarder",
+								"Weight": 3
+							},
+							{
+								"TypeName": "iceage_imp",
+								"Weight": 5
+							},
+							{
+								"TypeName": "iceage",
+								"Weight": 1
+							}
+						]
+					},
+					{
+						"Entries": [
+							{
+								"TypeName": "iceage_armor1",
+								"Weight": 2
+							},
+							{
+								"TypeName": "iceage_weaselhoarder",
+								"Weight": 3
+							},
+							{
+								"TypeName": "iceage",
+								"Weight": 3
+							}
+						]
+					},
+					{
+						"Entries": [
+							{
+								"TypeName": "iceage_armor2",
+								"Weight": 3
+							},
+							{
+								"TypeName": "iceage_imp",
+								"Weight": 2
+							},
+							{
+								"TypeName": "iceage",
+								"Weight": 5
+							}
+						]
+					},
+					{
+						"Entries": [
+							{
+								"TypeName": "",
+								"Weight": 0
+							},
+							{
+								"TypeName": "iceage_imp",
+								"Weight": 1
+							},
+							{
+								"TypeName": "iceage_chief",
+								"Weight": 2
+							},
+							{
+								"TypeName": "iceage_armor3",
+								"Weight": 3
+							},
+							{
+								"TypeName": "iceage_hunter",
+								"Weight": 3
+							}
+						]
+					},
+					{
+						"Entries": [
+							{
+								"TypeName": "",
+								"Weight": 0
+							},
+							{
+								"TypeName": "iceage_gargantuar",
+								"Weight": 2
+							},
+							{
+								"TypeName": "iceage_armor3",
+								"Weight": 4
+							},
+							{
+								"TypeName": "iceage_hunter",
+								"Weight": 3
+							},
+							{
+								"TypeName": "iceage_dodo",
+								"Weight": 3
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombossBattle"
+			],
+			"objclass": "ZombossBattleModuleProperties",
+			"objdata": {
+				"ReservedColumnCount": 3,
+				"ZombossMechType": "zombossmech_iceage_vacation",
+				"ZombossDeathRow": 3,
+				"ZombossDeathColumn": 5,
+				"ZombossSpawnGridPosition": {
+					"mX": 6,
+					"mY": 3
+				}
+			}
+		}
+	],
+	"version": 1
+}

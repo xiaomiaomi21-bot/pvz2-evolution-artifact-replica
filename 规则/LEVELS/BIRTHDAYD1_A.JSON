@@ -1,0 +1,502 @@
+{
+	"#comment": "stickybombrice",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"IsLevelOfTheDay": true,
+				"LevelNumber": 1,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(LevelEscalationModule@CurrentLevel)",
+					"RTID(ModernMowers@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(ConveyorBelt@CurrentLevel)",
+					"RTID(ZombiesDeadWinCon@LevelModules)"
+				],
+				"Name": "[ANOTHER_CHILDREN_DAY_CHALLENGE_LEVEL1]",
+				"NormalPresentTable": "modern_normal_01",
+				"ShinyPresentTable": "modern_shiny_01",
+				"StageModule": "RTID(SummerNightStage@LevelModules)",
+				"VictoryModule": "RTID(LevelOfTheDayOutro@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"ConveyorBelt"
+			],
+			"objclass": "ConveyorSeedBankProperties",
+			"objdata": {
+				"DropDelayConditions": [
+					{
+						"Delay": 3,
+						"MaxPackets": 0
+					},
+					{
+						"Delay": 6,
+						"MaxPackets": 2
+					},
+					{
+						"Delay": 9,
+						"MaxPackets": 4
+					},
+					{
+						"Delay": 12,
+						"MaxPackets": 8
+					}
+				],
+				"InitialPlantList": [
+					{
+						"MaxCount": 5,
+						"MaxWeightFactor": 0,
+						"PlantType": "primalpeashooter",
+						"Weight": 100
+					},
+					{
+						"MaxCount": 10,
+						"MaxWeightFactor": 0,
+						"PlantType": "pokra",
+						"Weight": 100
+					}
+				],
+				"SpeedConditions": [
+					{
+						"MaxPackets": 0,
+						"Speed": 100
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"LevelEscalationModule"
+			],
+			"objclass": "LevelEscalationModuleProperties",
+			"objdata": {
+				"FlagCount": 3,
+				"PlantfoodToSpawnCount": 3,
+				"PointIncrementPerWave": 75,
+				"StartingPoints": 100,
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)",
+				"WavesPerFlag": 3,
+				"ZombiePool": [
+					"RTID(summer_imp@ZombieTypes)",
+					"RTID(kongfu_hammer@ZombieTypes)",
+					"RTID(summer_armor2@ZombieTypes)",
+					"RTID(summer_gargantuar@ZombieTypes)",
+					"RTID(modern_superfanimp@ZombieTypes)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 3,
+				"MaxNextWaveHealthPercentage": 0.9,
+				"MinNextWaveHealthPercentage": 0.8,
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10@CurrentLevel)"
+					],
+					[
+						"RTID(Wave11@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(dino_bully@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dino_pushegg@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(dino_bully@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(dino_pushegg@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(pirate_captain@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(heian_hanabi@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_gargantuar@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(dino_pushegg@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(dino_pushegg@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(summer_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(summer_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(newspaper_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 2,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(dino_bully@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(dino_bully@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(heian_hanabi@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(summer_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(summer_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(summer_gargantuar@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(pirate_captain@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(explosion_proof@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(kongfu_hammer@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_imp@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(summer_armor2@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				
+			}
+		}
+	],
+	"version": 1
+}

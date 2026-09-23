@@ -1,0 +1,932 @@
+{
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_MEMORY]",
+				"DisablePeavine": true,
+				"LevelNumber": 1,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(StandardIntro@LevelModules)",
+					"RTID(SteamMowers@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(ChallengeModule@CurrentLevel)",
+					"RTID(NewWaves@CurrentLevel)",
+					"RTID(SmokeManhole@CurrentLevel)",
+					"RTID(ConveyorBelt@CurrentLevel)",
+					"RTID(FastSpeed@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(TimeEnergy@CurrentLevel)",
+					"RTID(ManholePipeline@CurrentLevel)"
+				],
+				"MusicType": "MiniGame_A",
+				"Name": "[S30_MEMORY_LEVEL_NAME_011]",
+				"StageModule": "RTID(SteamStage@CurrentLevel)",
+				"StartingSun": 50,
+				"VictoryModule": "RTID(PVZ1ModeOutro@LevelModules)"
+			}
+		},
+		{
+			"aliases": [
+				"SteamStage"
+			],
+			"objclass": "SteamStageProperties",
+			"objdata": {
+				"ResourceGroupNames": [
+					"Steam_Gravestone",
+					"Game_Tombstones_Dynamic",
+					"DelayLoad_Background_Steam_Compressed",
+					"Dirt_Spawn_Steam",
+					"Tombstone_Dark_Effects",
+					"AudioSteam"
+				],
+				"GroupsToUnloadForAds": [
+					"DelayLoad_Background_Steam_Compressed"
+				],
+				"StagePrefix": "steam",
+				"BackgroundResourceGroup": "DelayLoad_Background_Steam_Compressed",
+				"BackgroundImagePrefix": "IMAGE_BACKGROUNDS_STEAM",
+				"LevelPowerupSet": "LevelPowerupsDefault",
+				"BasicZombieTypeName": "steam_worker",
+				"FlagZombieTypeName": "steam_flag",
+				"Armor1ZombieTypeName": "steam_armor1",
+				"Armor2ZombieTypeName": "steam_armor2",
+				"GravestoneDefaultTypeName": "gravestone_steam",
+				"DirtSpawnEffectName": "POPANIM_EFFECTS_DIRT_SPAWN_STEAM",
+				"MusicSuffix": "Modern",
+				"DisabledStreetCells": [
+					
+				]
+			}
+		},
+		{
+			"aliases": [
+				"TimeEnergy"
+			],
+			"objclass": "TimeEnergyModuleProperties",
+			"objdata": {
+				"TimeEnergyValueMax": 480,
+				"TimeEnergyTriggers": [
+					
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ManholePipeline"
+			],
+			"objclass": "ManholePipelineModuleProperties",
+			"objdata": {
+				"OperationTimePerGrid": 1,
+				"DamagePerSecond": 30,
+				"PipelineList": [
+					{
+						"StartX": 6,
+						"StartY": 0,
+						"EndX": 3,
+						"EndY": 1
+					},
+					{
+						"StartX": 6,
+						"StartY": 4,
+						"EndX": 3,
+						"EndY": 3
+					},
+					{
+						"StartX": 6,
+						"StartY": 2,
+						"EndX": 3,
+						"EndY": 0
+					},
+					{
+						"StartX": 6,
+						"StartY": 3,
+						"EndX": 3,
+						"EndY": 4
+					},
+					{
+						"StartX": 6,
+						"StartY": 1,
+						"EndX": 3,
+						"EndY": 2
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"FastSpeed"
+			],
+			"objclass": "ZombieMoveFastModuleProperties",
+			"objdata": {
+				"SpeedUp": 3.0,
+				"StopColumn": 8
+			}
+		},
+		{
+			"aliases": [
+				"ConveyorBelt"
+			],
+			"objclass": "ConveyorSeedBankProperties",
+			"objdata": {
+				"DropDelayConditions": [
+					{
+						"Delay": 3,
+						"MaxPackets": 0
+					},
+					{
+						"Delay": 4,
+						"MaxPackets": 4
+					},
+					{
+						"Delay": 8,
+						"MaxPackets": 7
+					},
+					{
+						"Delay": 10,
+						"MaxPackets": 10
+					}
+				],
+				"InitialPlantList": [
+					{
+						"MaxCount": 8,
+						"MaxWeightFactor": 0,
+						"MinCount": 0,
+						"MinWeightFactor": 1,
+						"PlantType": "passionflower",
+						"iLevel": 1,
+						"Weight": 50
+					},
+					{
+						"MaxCount": 5,
+						"MaxWeightFactor": 0,
+						"MinCount": 0,
+						"MinWeightFactor": 1,
+						"PlantType": "convallariachemist",
+						"iLevel": 1,
+						"Weight": 50
+					},
+					{
+						"MaxCount": 5,
+						"MaxWeightFactor": 0,
+						"MinCount": 0,
+						"MinWeightFactor": 1,
+						"PlantType": "wintermelon",
+						"iLevel": 1,
+						"Weight": 50
+					},
+					{
+						"MaxCount": 1,
+						"MaxWeightFactor": 0,
+						"PlantType": "blover",
+						"MinCount": 0,
+						"MinWeightFactor": 2,
+						"iLevel": 1,
+						"Weight": 100
+					}
+				],
+				"SpeedConditions": [
+					{
+						"MaxPackets": 0,
+						"Speed": 100
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SmokeManhole"
+			],
+			"objclass": "SmokePollutionModuleProperties",
+			"objdata": {
+				"GridItem": "SmokeManhole",
+				"SmokeManholeList": [
+					{
+						"GridColumn": 8,
+						"GridRow": 1,
+						"StartTime": 15
+					},
+					{
+						"GridColumn": 8,
+						"GridRow": 3,
+						"StartTime": 15
+					},
+					{
+						"GridColumn": 7,
+						"GridRow": 2,
+						"StartTime": 15
+					},
+					{
+						"GridColumn": 8,
+						"GridRow": 0,
+						"StartTime": 5
+					},
+					{
+						"GridColumn": 7,
+						"GridRow": 1,
+						"StartTime": 5
+					},
+					{
+						"GridColumn": 8,
+						"GridRow": 2,
+						"StartTime": 5
+					},
+					{
+						"GridColumn": 7,
+						"GridRow": 3,
+						"StartTime": 5
+					},
+					{
+						"GridColumn": 8,
+						"GridRow": 4,
+						"StartTime": 5
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ChallengeModule"
+			],
+			"objclass": "StarChallengeModuleProperties",
+			"objdata": {
+				"Challenges": [
+					[
+						"RTID(SteamManholeChallenge@CurrentLevel)",
+						"RTID(ApplyZombieConditionsChallenge@CurrentLevel)",
+						"RTID(DestroyGridItems@CurrentLevel)"
+					]
+				],
+				"ChallengesAlwaysAvailable": true
+			}
+		},
+		{
+			"aliases": [
+				"SteamManholeChallenge"
+			],
+			"objclass": "SteamManholeChallengeProps",
+			"objdata": {
+				"MaximumManholeEntered": 100
+			}
+		},
+		{
+			"aliases": [
+				"ApplyZombieConditionsChallenge"
+			],
+			"objclass": "ApplyZombieConditionsChallengeProps",
+			"objdata": {
+				"ConditionToInflict": [
+					"chemist_poison",
+					"chemist_contagiouspoison"
+				],
+				"NumZombieConditionsToApply": 30
+			}
+		},
+		{
+			"aliases": [
+				"DestroyGridItems"
+			],
+			"objclass": "DestroyGridItemsChallengeProps",
+			"objdata": {
+				"GridItemType": "gliding",
+				"GridItemsToDestroy": 5,
+				"ChallengeDescription": "[CHALLENGE_DESTROY_GLIDING]"
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"DynamicZombies": [
+					{
+						"PointIncrementPerWave": 200,
+						"StartingPoints": 200,
+						"StartingWave": 0,
+						"ZombiePool": [
+							"RTID(parkour@ZombieTypes)",
+							"RTID(parkour_armor1@ZombieTypes)",
+							"RTID(parkour_armor2@ZombieTypes)",
+							"RTID(steam_worker@ZombieTypes)",
+							"RTID(steam_armor1@ZombieTypes)",
+							"RTID(steam_armor2@ZombieTypes)"
+						]
+					}
+				],
+				"WaveManagerPropsVector": [
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)",
+					"RTID(WaveManagerPropsWeek1@CurrentLevel)"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerPropsWeek1"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 4,
+				"MaxNextWaveHealthPercentage": 0.6,
+				"MinNextWaveHealthPercentage": 0.5,
+				"WaveCount": 12,
+				"DescriptionName": "[PVZ1MODE_GIFT]",
+				"Description": "[PVZ1MODE_GIFT_DESC]",
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)",
+						"RTID(ShowZombies@CurrentLevel)",
+						"RTID(GiftEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)",
+						"RTID(JetpackRainEvent1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)",
+						"RTID(GiftEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)"
+					],
+					[
+						"RTID(Wave6@CurrentLevel)",
+						"RTID(JetpackRainEvent1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave7@CurrentLevel)"
+					],
+					[
+						"RTID(Wave8@CurrentLevel)",
+						"RTID(GiftEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave9@CurrentLevel)",
+						"RTID(JetpackRainEvent1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave10@CurrentLevel)"
+					],
+					[
+						"RTID(Wave11@CurrentLevel)",
+						"RTID(GiftEvent0@CurrentLevel)"
+					],
+					[
+						"RTID(Wave12@CurrentLevel)",
+						"RTID(JetpackRainEvent1@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(parkour_imp@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "3",
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(birthday_troglobite@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(birthday_troglobite@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(birthday_troglobite@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave6"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave7"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(birthday_troglobite@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(birthday_troglobite@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave8"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "2",
+						"Type": "RTID(birthday_troglobite@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(birthday_troglobite@CurrentLevel)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave9"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Level": 2,
+						"Type": "RTID(birthday_troglobite@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave10"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					},
+					{
+						"Level": 2,
+						"Type": "RTID(birthday_troglobite@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave11"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(birthday_troglobite@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave12"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 0,
+				"Zombies": [
+					{
+						"Row": "1",
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(birthday_troglobite@CurrentLevel)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "3",
+						"Level": 2,
+						"Type": "RTID(steam_gargantuar@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(steam_stove@ZombieTypes)"
+					},
+					{
+						"Row": "1",
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					},
+					{
+						"Row": "2",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "4",
+						"Type": "RTID(future_jetpack_veteran@ZombieTypes)"
+					},
+					{
+						"Row": "5",
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(birthday_troglobite@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(birthday_troglobite@CurrentLevel)"
+					},
+					{
+						"Type": "RTID(renai_gliding@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ShowZombies"
+			],
+			"objclass": "SpawnZombiesFromGridItemSpawnerProps",
+			"objdata": {
+				"GridTypes": [
+					"RTID(house_3@GridItemTypes)"
+				],
+				"WaveStartMessage": "",
+				"Zombies": [
+					{
+						"Type": "RTID(birthday_troglobite@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"GiftEvent0"
+			],
+			"objclass": "SpawnGravestonesWaveActionProps",
+			"objdata": {
+				"GravestonePool": [
+					{
+						"Count": 6,
+						"Type": "RTID(team_boss_gold@CurrentLevel)"
+					}
+				],
+				"SpawnEffectAnimID": "POPANIM_EFFECTS_TOMBSTONE_DARK_SPAWN_EFFECT",
+				"SpawnPositionsRect": {
+					"mX": 5,
+					"mY": 0,
+					"mWidth": 3,
+					"mHeight": 4
+				},
+				"RandomPlacement": true,
+				"SpawnSoundID": "Play_Zomb_Egypt_TombRaiser_Grave_Rise"
+			}
+		},
+		{
+			"aliases": [
+				"JetpackRainEvent1"
+			],
+			"objclass": "BassRainZombieSpawnerProps",
+			"objdata": {
+				"ColumnEnd": 7,
+				"ColumnStart": 4,
+				"GroupSize": 2,
+				"SpiderCount": 5,
+				"SpiderZombieName": "future_jetpack_veteran",
+				"TimeBeforeFullSpawn": 0.5,
+				"TimeBetweenGroups": 1.0,
+				"WaveStartMessage": "[PAPHIOPEDILUM_SKILL_LEVEL5]",
+				"ZombieFallTime": 2.0
+			}
+		},
+		{
+			"aliases": [
+				"birthday_troglobite"
+			],
+			"objclass": "ZombieType",
+			"objdata": {
+				"TypeName": "birthday_troglobite",
+				"ZombieClass": "ZombieIceAgeTroglobite",
+				"Properties": "RTID(ZombieBirthdayTroglobite@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieIceageTroglobiteGroup",
+					"BirthdayPresentZombieGroup",
+					"ZombieIceageImpGroup"
+				],
+				"AudioGroups": [
+					"ZombieIceAgeTroglobiteAudio"
+				],
+				"AnimRigClass": "ZombieAnimRig_Troglobite",
+				"PopAnim": "POPANIM_ZOMBIE_ZOMBIE_ICEAGE_TROGLOBITE",
+				"BoardAlmanac": false,
+				"HomeWorld": "tutorial"
+			}
+		},
+		{
+			"aliases": [
+				"ZombieBirthdayTroglobite"
+			],
+			"objclass": "ZombieIceAgeTroglobiteProps",
+			"objdata": {
+				"Speed": 0.185,
+				"Hitpoints": 670,
+				"EatDPS": 100,
+				"CanSpawnPlantFood": true,
+				"ChillInsteadOfFreeze": true,
+				"SizeType": "mid",
+				"IsLarge": true,
+				"Actions": [
+					"RTID(ZombiePushBirthdayPresentAction@CurrentLevel)"
+				],
+				"HitRect": {
+					"mX": 10,
+					"mY": 10,
+					"mWidth": 32,
+					"mHeight": 95
+				},
+				"AttackRect": {
+					"mX": 15,
+					"mY": 0,
+					"mWidth": 20,
+					"mHeight": 95
+				},
+				"NumberOfIceblocksToSpawnWith": 2,
+				"ConditionToApply": "present_boxed",
+				"Cost": 150,
+				"WavePointCost": 700,
+				"Weight": 3500,
+				"ArtCenter": {
+					"x": 90,
+					"y": 125
+				},
+				"ShadowOffset": {
+					"x": 10,
+					"y": 0,
+					"z": 1.2
+				},
+				"GroundTrackName": "ground_swatch",
+				"ZombieStats": [
+					{
+						"Type": "toughness",
+						"Value": "toughness4"
+					},
+					{
+						"Type": "speed",
+						"Value": "speed2"
+					}
+				],
+				"ZombieLevelStats": [
+					{
+						"AttackLevel": 1,
+						"HitPointsLevel": 1
+					},
+					{
+						"AttackLevel": 2,
+						"HitPointsLevel": 2
+					},
+					{
+						"AttackLevel": 3,
+						"HitPointsLevel": 3
+					},
+					{
+						"AttackLevel": 4.5,
+						"HitPointsLevel": 4.5
+					},
+					{
+						"AttackLevel": 5,
+						"HitPointsLevel": 5
+					}
+				]
+			}
+		},
+		{
+			"objclass": "GridItemType",
+			"aliases": [
+				"team_boss_gold"
+			],
+			"objdata": {
+				"TypeName": "team_boss_gold",
+				"GridItemClass": "GridItemGold",
+				"Properties": "RTID(GridItemGoldDefault@CurrentLevel)",
+				"ResourceGroups": [
+					"ZombieTeamBossZombossGroup",
+					"PlantActinostemma"
+				]
+			}
+		},
+		{
+			"objclass": "GridItemGoldProps",
+			"aliases": [
+				"GridItemGoldDefault"
+			],
+			"objdata": {
+				"Hitpoints": 700,
+				"PopAnim": "POPANIM_EFFECTS_ACTINOSTEMMA_EFFECT",
+				"PopAnimRigClass": "PopAnimRig",
+				"PopAnimRenderOffset": {
+					"x": 97,
+					"y": 123
+				},
+				"PopAnimIdleAnim": "idle_lv5",
+				"PopAnimDeathAnim": "open_fireworks",
+				"PresetList": [
+					"flattenedshroom",
+					"flattenedshroom",
+					"passionflower",
+					"flattenedshroom"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"ZombiePushBirthdayPresentAction"
+			],
+			"objclass": "ZombiePushGridItemActionDefinition",
+			"objdata": {
+				"PushableGridItems": {
+					"ListType": "whitelist",
+					"List": [
+						"zombietarget_stoneblock",
+						"planttarget_iceblock",
+						"zombietarget_iceblock",
+						"zombietarget_birthday_present"
+					]
+				},
+				"PushBlockingGridItems": {
+					"ListType": "blacklist",
+					"List": [
+						"lilypad",
+						"powertile_alpha",
+						"powertile_beta",
+						"powertile_gamma",
+						"powertile_delta",
+						"powertile_epsilon",
+						"sap",
+						"plantfoodsap",
+						"lava",
+						"goldtile",
+						"wisp",
+						"sunspore",
+						"Coal",
+						"CoalCart",
+						"plantPot",
+						"plantPotAnimation",
+						"SmokeManhole",
+						"PipelineStart",
+						"team_boss_gold",
+						"PipelineEnd",
+						"gliding"
+					]
+				},
+				"NotSquashedPlants": {
+					"ListType": "blacklist",
+					"List": [
+						"potatomine",
+						"primalpotatomine"
+					]
+				},
+				"RelocationDuration": 0.5,
+				"PushRectangle": {
+					"mX": 15,
+					"mY": 0,
+					"mWidth": 65,
+					"mHeight": 95
+				}
+			}
+		}
+	],
+	"version": 1
+}

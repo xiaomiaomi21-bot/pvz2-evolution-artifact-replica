@@ -1,0 +1,277 @@
+{
+	"#comment": "Egypt 1",
+	"objects": [
+		{
+			"objclass": "LevelDefinition",
+			"objdata": {
+				"Description": "[PLAYERS_TRIP_TO_EGYPT]",
+				"FirstRewardParam": "cabbagepult",
+				"FirstRewardType": "unlock_plant",
+				"GameFeaturesToUnlock": [
+					"feature_worldmap",
+					"feature_plantfood",
+					"feature_battle_array"
+				],
+				"LevelNumber": 1,
+				"ForceToWorldMap": true,
+				"Loot": "RTID(DefaultLoot@LevelModules)",
+				"Modules": [
+					"RTID(PlantfoodTutorial@CurrentLevel)",
+					"RTID(DefaultSunDropper@LevelModules)",
+					"RTID(ZombiesDeadWinCon@LevelModules)",
+					"RTID(TutorialPeashooterDeath@LevelModules)",
+					"RTID(EgyptMowers@LevelModules)",
+					"RTID(SeedBank@CurrentLevel)",
+					"RTID(DefaultZombieWinCondition@LevelModules)",
+					"RTID(NewWaves@CurrentLevel)"
+				],
+				"Name": "[EGYPT_LEVEL_NAME]",
+				"NormalPresentTable": "egypt_normal_01",
+				"RepeatPlayForceToWorldMap": false,
+				"ShinyPresentTable": "egypt_shiny_01",
+				"StageModule": "RTID(EgyptStage@LevelModules)",
+				"SuppressDynamicTutorial": true,
+				"ShowZombies": [
+					"mummy",
+					"mummy_armor1"
+				]
+			}
+		},
+		{
+			"aliases": [
+				"PlantfoodTutorial"
+			],
+			"objclass": "PlantfoodTutorialIntroProperties",
+			"objdata": {
+				"Entities": [
+					{
+						"TypeName": "sunflower",
+						"EntityType": "plant",
+						"Column": 0,
+						"Row": 0
+					},
+					{
+						"TypeName": "sunflower",
+						"EntityType": "plant",
+						"Column": 0,
+						"Row": 1
+					},
+					{
+						"TypeName": "sunflower",
+						"EntityType": "plant",
+						"Column": 0,
+						"Row": 3
+					},
+					{
+						"TypeName": "sunflower",
+						"EntityType": "plant",
+						"Column": 0,
+						"Row": 4
+					},
+					{
+						"TypeName": "peashooter",
+						"EntityType": "plant",
+						"Column": 2,
+						"Row": 0
+					},
+					{
+						"TypeName": "peashooter",
+						"EntityType": "plant",
+						"Column": 1,
+						"Row": 1
+					},
+					{
+						"TypeName": "peashooter",
+						"EntityType": "plant",
+						"Column": 1,
+						"Row": 3
+					},
+					{
+						"TypeName": "peashooter",
+						"EntityType": "plant",
+						"Column": 2,
+						"Row": 4
+					},
+					{
+						"TypeName": "wallnut",
+						"EntityType": "plant",
+						"Column": 4,
+						"Row": 2
+					},
+					{
+						"TypeName": "potatomine",
+						"EntityType": "plant",
+						"Column": 5,
+						"Row": 0
+					},
+					{
+						"TypeName": "potatomine",
+						"EntityType": "plant",
+						"Column": 5,
+						"Row": 1
+					},
+					{
+						"TypeName": "potatomine",
+						"EntityType": "plant",
+						"Column": 5,
+						"Row": 3
+					},
+					{
+						"TypeName": "potatomine",
+						"EntityType": "plant",
+						"Column": 5,
+						"Row": 4
+					},
+					{
+						"TypeName": "potatomine",
+						"EntityType": "plant",
+						"Column": 5,
+						"Row": 2
+					},
+					{
+						"TypeName": "mummy",
+						"EntityType": "zombie",
+						"Column": 8,
+						"Row": 2,
+						"PlantFood": 1
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"SeedBank"
+			],
+			"objclass": "SeedBankProperties",
+			"objdata": {
+				"PlantBlackList": [
+					
+				],
+				"SelectionMethod": "chooser"
+			}
+		},
+		{
+			"aliases": [
+				"NewWaves"
+			],
+			"objclass": "WaveManagerModuleProperties",
+			"objdata": {
+				"WaveManagerProps": "RTID(WaveManagerProps@CurrentLevel)"
+			}
+		},
+		{
+			"aliases": [
+				"WaveManagerProps"
+			],
+			"objclass": "WaveManagerProperties",
+			"objdata": {
+				"FlagWaveInterval": 6,
+				"WaveCount": 6,
+				"WaveSpendingPointIncrement": 30,
+				"WaveSpendingPoints": 100,
+				"Waves": [
+					[
+						"RTID(Wave1@CurrentLevel)"
+					],
+					[
+						"RTID(Wave2@CurrentLevel)"
+					],
+					[
+						"RTID(Wave3@CurrentLevel)"
+					],
+					[
+						"RTID(Wave4@CurrentLevel)"
+					],
+					[
+						"RTID(Wave5@CurrentLevel)"
+					]
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave1"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave2"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AddToZombiePool": [
+					
+				],
+				"Zombies": [
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave3"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave4"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"AdditionalPlantfood": 1,
+				"Zombies": [
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					}
+				]
+			}
+		},
+		{
+			"aliases": [
+				"Wave5"
+			],
+			"objclass": "SpawnZombiesJitteredWaveActionProps",
+			"objdata": {
+				"Zombies": [
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy@ZombieTypes)"
+					},
+					{
+						"Type": "RTID(mummy_armor1@ZombieTypes)"
+					}
+				]
+			}
+		}
+	],
+	"version": 1
+}
